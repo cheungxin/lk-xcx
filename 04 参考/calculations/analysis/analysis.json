@@ -1,7 +1,0 @@
-{
-  "navigationStyle":"custom",  
-  "navigationBarTextStyle": "white", 
-    "usingComponents": {  
-      "van-sticky": "@vant/weapp/sticky/index"
-    }
-}

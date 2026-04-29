@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"d:\\\\其他\\\\lk-xcx\")",
+      "Bash(find d:/其他/lk-xcx -type f \\\\\\(-name *.png -o -name *.jpg -o -name *.jpeg -o -name *.gif \\\\\\))"
+    ]
+  }
+}
