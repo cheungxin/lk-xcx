@@ -1,0 +1,38 @@
+<!--
+  全局组件 - 空状态与加载态
+-->
+<view class="empty-state">
+  <!-- 加载中 -->
+  <view wx:if="{{type === 'loading'}}" class="empty-state__loading">
+    <view class="loading-spinner">
+      <view class="loading-spinner__dot"></view>
+      <view class="loading-spinner__dot"></view>
+      <view class="loading-spinner__dot"></view>
+    </view>
+    <text class="empty-state__title">{{title || '加载中...'}}</text>
+  </view>
+
+  <!-- 空状态 -->
+  <view wx:elif="{{type === 'empty'}}" class="empty-state__content">
+    <view class="empty-state__icon">
+      <t-icon wx:if="{{icon}}" name="{{icon}}" size="{{imageHeight}}rpx" color="#C8CDD8" />
+      <image wx:else class="empty-state__image" mode="aspectFit" style="width: {{imageHeight}}rpx; height: {{imageHeight}}rpx;"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAwIiByeD0iMTAwIiBmaWxsPSIjRjVGN0ZBIi8+PHBhdGggZD0iTTg1IDEyNUM4NSAxMDguNiA5MC45NiAxMDAgMTAwIDk1LjgzQzEwOS4wNCAxMDAgMTE1IDEwOC42IDExNSAxMjVDMTE1IDE0MS40IDEwOS4wNCAxNTAgMTAwIDE1NC4xN0M5MC45NiAxNTAgODUgMTQxLjQgODUgMTI1WiIgZmlsbD0iI0M4Q0REOCIvPjxwYXRoIGQ9Ik03NSA3NUM3NSA2NS41OCA4MS4wNiA1OCA5MCA1OC4xN0M5OC45NCA1OCAxMDUgNjUuNTggMTA1IDc1QzEwNSA4NC40MiA5OC45NCA5MiA5MCA5MS44M0M4MS4wNiA5MiA3NSA4NC40MiA3NSA3NVoiIGZpbGw9IiNDOENERDgiLz48L3N2Zz4="
+      />
+    </view>
+    <text class="empty-state__title">{{title}}</text>
+    <text class="empty-state__desc" wx:if="{{description}}">{{description}}</text>
+  </view>
+
+  <!-- 错误 -->
+  <view wx:elif="{{type === 'error' || type === 'network'}}" class="empty-state__content">
+    <view class="empty-state__icon">
+      <t-icon name="error-circle" size="{{imageHeight}}rpx" color="#E34D59" />
+    </view>
+    <text class="empty-state__title">{{title || '出错了'}}</text>
+    <text class="empty-state__desc" wx:if="{{description}}">{{description}}</text>
+    <view wx:if="{{showRetry}}" class="empty-state__retry" bindtap="onRetry">
+      <text>{{retryText}}</text>
+    </view>
+  </view>
+</view>

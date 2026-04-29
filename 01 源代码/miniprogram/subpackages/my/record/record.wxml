@@ -1,0 +1,76 @@
+<!-- 学习记录页 -->
+<view class="record-page">
+  <t-navbar title="学习记录" left-arrow fixed bind:go-back="handleBack" />
+  <!-- 筛选标签 -->
+  <view class="filter-bar" style="top:{{ navigationBarHeight }}px">
+    <t-tabs t-class="filter-tabs" value="{{activeTab}}" bind:change="onTabChange" space-evenly>
+      <t-tab-panel wx:for="{{filterTabs}}" wx:key="value" label="{{item.label}}" value="{{item.value}}" />
+    </t-tabs>
+  </view>
+  <scroll-view scroll-y class="record-scroll" style="margin-top: {{navBarHeight + 88}}px; height: calc(100vh - {{navBarHeight + 88}}px);">
+    <view class="record-content">
+      <!-- 按日期分组 -->
+      <view class="date-group" wx:for="{{filteredRecords}}" wx:key="date">
+        <!-- 日期头 -->
+        <view class="date-header">
+          <view class="date-header__left">
+            <text class="date-header__date">{{item.date}}</text>
+            <text class="date-header__weekday">{{item.weekday}}</text>
+          </view>
+          <view class="date-header__summary">
+            <text class="date-header__stat">共{{item.summary.total}}题</text>
+            <text class="date-header__stat">正确{{item.summary.correct}}题</text>
+            <text class="date-header__stat">{{item.summary.time}}</text>
+          </view>
+        </view>
+        <!-- 时间线 -->
+        <view class="timeline">
+          <view class="timeline-item" wx:for="{{item.records}}" wx:key="id" wx:for-item="record" data-record="{{record}}" bindtap="handleRecordTap">
+            <!-- 记录卡片 -->
+            <view class="record-card">
+              <view class="record-card__top">
+                <view class="record-card__type">
+                  <t-tag size="small" theme="primary" variant="light">{{record.type}}</t-tag>
+                </view>
+                <text class="record-card__time">{{record.time}}</text>
+              </view>
+              <text class="record-card__title">{{record.title}}</text>
+              <view class="record-card__stats">
+                <view class="record-stat">
+                  <t-icon name="file-text" size="24rpx" color="#86909C" />
+                  <text>{{record.questions}}题</text>
+                </view>
+                <view class="record-stat">
+                  <t-icon name="check-circle" size="24rpx" color="#00A870" />
+                  <text style="color: #00A870;">{{record.correct}}对</text>
+                </view>
+                <view class="record-stat">
+                  <t-icon name="close-circle" size="24rpx" color="#E34D59" />
+                  <text style="color: #E34D59;">{{record.questions - record.correct}}错</text>
+                </view>
+                <view class="record-stat">
+                  <text class="record-accuracy {{record.accuracy >= 70 ? 'record-accuracy--good' : 'record-accuracy--bad'}}">
+                    {{record.accuracy}}%
+                  </text>
+                </view>
+              </view>
+              <view class="record-card__footer">
+                <text>用时 {{record.duration}}</text>
+                <view class="record-card__footer-action">
+                  <text>{{record.detailAvailable ? '查看解析' : '暂无详情'}}</text>
+                  <t-icon name="chevron-right" size="28rpx" color="#C9CDD4" />
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 空状态 -->
+      <view class="empty-state" wx:if="{{filteredRecords.length === 0}}">
+        <t-icon name="file-copy" size="96rpx" color="#C9CDD4" />
+        <text class="empty-state__text">暂无相关记录</text>
+      </view>
+      <view class="bottom-spacer"></view>
+    </view>
+  </scroll-view>
+</view>

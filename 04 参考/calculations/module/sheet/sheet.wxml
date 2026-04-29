@@ -1,0 +1,43 @@
+<view class="module-container" wx:if="{{show_sheet}}">
+   <view class="module-content fadeInUpBig">
+	<view class="module-body">
+		  <view class="moddule-header">
+			 <view class="moddule-title">答题卡</view> 
+			 <view class="moddule-close" bindtap="quitSheetLists">
+				<text class="iconfont icon-cross"></text>
+			 </view>
+		  </view>
+		  <view class="divider"></view> 
+			<view class="moddule-info">
+				<view class="title-txt">
+					全部   {{sheet_lists.length}}
+				</view>
+				<view class="number-info">
+					<view class="done">  已做<text> {{done_counts}}</text> </view>
+					<view class="undo"> 未做  <text> {{remaining_counts}}</text>  </view>
+				</view>
+			</view> 
+	  <view class="module-section"> 
+		 <scroll-view  scroll-y="{{true}}" style="height:calc( {{client_height}}px - 456rpx)">
+			<view class="cells-box"> 
+				<view class="cells-item-box" wx:for="{{sheet_lists}}" wx:key="sheet">
+					<view class="cells-item  {{ item.question_option && 'answered' }} " bindtap="clickQusetionSerial" data-now_question_index="{{index}}">
+						<view>
+							<text> {{index+1}} </text>
+						</view>
+					</view>
+				</view> 
+			</view> 
+			 </scroll-view>
+	  </view>	 
+		<view class="button-container">
+			<view class="button  cancel" bindtap="quitSheetLists">
+			 <text class="iconfont icon-clear"></text>	取消
+			</view>
+			<view class="button submit" bindtap="onSubmit">
+				<text class="iconfont icon-checked"></text>交卷并查看结果
+			</view>
+		</view>
+	</view>
+  </view>	
+</view>

@@ -1,0 +1,12 @@
+<!--
+  全局组件 - 浮窗按钮
+-->
+<view
+  wx:if="{{visible}}"
+  class="fab fab--{{position}}"
+  style="bottom: {{bottom}}px; background: {{bgColor}};"
+  bindtap="onTap"
+>
+  <t-icon name="{{icon}}" size="48rpx" color="{{iconColor}}" />
+  <text wx:if="{{text}}" class="fab__text">{{text}}</text>
+</view>

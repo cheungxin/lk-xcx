@@ -1,0 +1,29 @@
+{
+  "description": "TDesign 主题配置文件",
+  "comment": "此文件用于配置 TDesign 组件库的主题样式",
+  "theme": {
+    "primaryColor": "#1677ff",
+    "successColor": "#52c41a",
+    "warningColor": "#faad14",
+    "errorColor": "#ff4d4f",
+    "infoColor": "#1677ff",
+    "textColor": "#000000",
+    "textColorSecondary": "#666666",
+    "textColorTertiary": "#999999",
+    "bgColor": "#ffffff",
+    "bgColorSecondary": "#f5f5f5",
+    "borderColor": "#d9d9d9",
+    "borderRadius": "8rpx",
+    "fontSize": "32rpx",
+    "fontSizeSmall": "28rpx",
+    "fontSizeLarge": "36rpx"
+  },
+  "usage": {
+    "description": "如何使用主题配置",
+    "step1": "1. 安装 TDesign 组件库后，可以通过此文件自定义主题",
+    "step2": "2. 修改 theme 对象中的颜色值和样式参数",
+    "step3": "3. 在 app.wxss 中引入主题变量",
+    "step4": "4. 参考 TDesign 官方文档了解更多主题配置选项"
+  },
+  "documentation": "https://tdesign.tencent.com/miniprogram/custom-theme"
+}

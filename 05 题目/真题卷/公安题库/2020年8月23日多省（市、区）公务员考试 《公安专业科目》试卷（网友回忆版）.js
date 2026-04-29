@@ -1,0 +1,8572 @@
+[{
+    "code": "PUB-00000",
+    "page": {
+        "currentPage": 1,
+        "pageItemSize": 500,
+        "totalItemCount": 100,
+        "totalPageCount": 1
+    },
+    "content": [
+        {
+            "id": 444922,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929083,
+            "level": 0,
+            "subjectDo": {
+                "id": 929083,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>习近平总书记指出：“坚持不忘初心，继续前进，就要坚信党的根基在人民、党的力量在人民，坚持一切为了人民、一切依靠人民。”这表明人民警察最应该坚持的政治立场是（    ）。</p>",
+                "opt": "[{\"content\": \"公平立场\", \"label\": \"A\"}, {\"content\": \"正义立场\", \"label\": \"B\"}, {\"content\": \"法治立场\", \"label\": \"C\"}, {\"content\": \"人民立场\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>人民警察的立场是国家的立场，是人民的立场。国家和人民的利益，是人民警察一切工作的出发点，也是人民警察一切工作的归宿。题干中，习近平总书记指出，党的根基在人民、党的力量在人民，坚持一切为了人民，一切依靠人民。这表明人民警察应该坚持的政治立场为人民立场。</p><p>故正确答案为D。</p>",
+                "optList": [
+                    {
+                        "content": "公平立场",
+                        "label": "A"
+                    },
+                    {
+                        "content": "正义立场",
+                        "label": "B"
+                    },
+                    {
+                        "content": "法治立场",
+                        "label": "C"
+                    },
+                    {
+                        "content": "人民立场",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "公平立场",
+                        "label": "A"
+                    },
+                    {
+                        "content": "正义立场",
+                        "label": "B"
+                    },
+                    {
+                        "content": "法治立场",
+                        "label": "C"
+                    },
+                    {
+                        "content": "人民立场",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "D",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "人民立场",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "正义立场",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "法治立场",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "公平立场",
+                        "label": "A"
+                    }
+                },
+                "labelText": "政治常识",
+                "labelsArray_text": "政治常识",
+                "examPointName": "政治常识",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444923,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929084,
+            "level": 1,
+            "subjectDo": {
+                "id": 929084,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"B\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>为全面落实2019年5月全国公安工作会议精神，公安部要求全国公安机关开展为期三年的“全警实战大练兵”。其主要目的是（    ）。</p>",
+                "opt": "[{\"content\": \"筑牢思想根基\", \"label\": \"A\"}, {\"content\": \"提高实战能力\", \"label\": \"B\"}, {\"content\": \"提升办案效率\", \"label\": \"C\"}, {\"content\": \"规范队伍管理\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查公安时政。</p><p>公安部印发《关于2019年至2022年开展全警实战大练兵的指导意见》，部署在全国公安机关开展全警实战大练兵。全国公安机关锚定锻造“四个铁一般”公安铁军标准，突出实战实用实效，坚持从高从难从严，全面加强全警基本训练、警种专业训练和应急处突实战协同训练。通过全警实战大练兵，着力练就克敌制胜硬功夫，不断提高维护国家政治安全和社会稳定的能力水平，坚决履行好新时代公安机关的职责使命。所以“全警实战大练兵”的主要目的是提高实战能力。</p><p>故正确答案为B。</p>",
+                "optList": [
+                    {
+                        "content": "筑牢思想根基",
+                        "label": "A"
+                    },
+                    {
+                        "content": "提高实战能力",
+                        "label": "B"
+                    },
+                    {
+                        "content": "提升办案效率",
+                        "label": "C"
+                    },
+                    {
+                        "content": "规范队伍管理",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "筑牢思想根基",
+                        "label": "A"
+                    },
+                    {
+                        "content": "提高实战能力",
+                        "label": "B"
+                    },
+                    {
+                        "content": "提升办案效率",
+                        "label": "C"
+                    },
+                    {
+                        "content": "规范队伍管理",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "B",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "规范队伍管理",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "提高实战能力",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "提升办案效率",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "筑牢思想根基",
+                        "label": "A"
+                    }
+                },
+                "labelText": "政治常识",
+                "labelsArray_text": "政治常识",
+                "examPointName": "政治常识",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444924,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929085,
+            "level": 2,
+            "subjectDo": {
+                "id": 929085,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"A\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>习近平总书记在接见全国公安系统英雄模范代表时指出，公安队伍是一支在和平时期牺牲最多、奉献最大的队伍，涌现出了许许多多的英雄模范，体现了中华民族的英雄精神。这种精神的内涵是（    ）。</p>",
+                "opt": "[{\"content\": \"忠诚信念、担当精神、英雄气概\", \"label\": \"A\"}, {\"content\": \"忠诚信念、敢于担当、勇敢无畏\", \"label\": \"B\"}, {\"content\": \"忠诚为民、担当精神、勇敢无畏\", \"label\": \"C\"}, {\"content\": \"忠诚为民、敢于担当、英雄气概\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>5月19日，全国公安系统英雄模范立功集体表彰大会在北京人民大会堂举行，习近平指出：广大公安英雄模范身上体现的忠诚信念、担当精神、英雄气概，是中华民族伟大精神的真实写照。</p><p>故正确答案为A。</p>",
+                "optList": [
+                    {
+                        "content": "忠诚信念、担当精神、英雄气概",
+                        "label": "A"
+                    },
+                    {
+                        "content": "忠诚信念、敢于担当、勇敢无畏",
+                        "label": "B"
+                    },
+                    {
+                        "content": "忠诚为民、担当精神、勇敢无畏",
+                        "label": "C"
+                    },
+                    {
+                        "content": "忠诚为民、敢于担当、英雄气概",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "忠诚信念、担当精神、英雄气概",
+                        "label": "A"
+                    },
+                    {
+                        "content": "忠诚信念、敢于担当、勇敢无畏",
+                        "label": "B"
+                    },
+                    {
+                        "content": "忠诚为民、担当精神、勇敢无畏",
+                        "label": "C"
+                    },
+                    {
+                        "content": "忠诚为民、敢于担当、英雄气概",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "A",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "忠诚为民、敢于担当、英雄气概",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "忠诚信念、敢于担当、勇敢无畏",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "忠诚为民、担当精神、勇敢无畏",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "忠诚信念、担当精神、英雄气概",
+                        "label": "A"
+                    }
+                },
+                "labelText": "政治常识",
+                "labelsArray_text": "政治常识",
+                "examPointName": "政治常识",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444925,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929086,
+            "level": 3,
+            "subjectDo": {
+                "id": 929086,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"C\"]",
+                "label": "39878",
+                "material": "",
+                "hasMaterial": 0,
+                "content": "<p>在爱民街道，盛传“十个社区争抢一个民警”的佳话，这个民警就是李弘。他制作抖音宣传片和电子警民联系卡，利用掌上“微警局”平台开展便民服务，深受社区百姓欢迎。像这样的警察在公安队伍中比比皆是，突出反映出人民警察的职业精神是（    ）。</p>",
+                "opt": "[{\"label\":\"A\",\"content\":\"英勇善战\"},{\"label\":\"B\",\"content\":\"勇于献身\"},{\"label\":\"C\",\"content\":\"<p>爱岗敬业</p>\"},{\"label\":\"D\",\"content\":\"克己奉公\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查职业道德与纪律要求。</p><p>A项错误，英勇善战具体表现为坚韧不拔，机智果敢，崇尚荣誉，题意不符。</p><p>B项错误，勇于献身是指人民警察在重大危难面前，无私奉献，冲锋在前，不惜牺牲自己的生命，与题意不符。</p><p>C项正确，民警李弘利用“微警局”平台开展便民服务，体现出其爱岗敬业、人民警察为人民服务的精神，即爱民敬业。</p><p>D项错误，克己奉公属于清正廉洁的总要求，清正廉洁具体表现为艰苦朴素，情趣健康，克己奉公，与题意不符。</p><p>故正确答案为C。</p>",
+                "optList": [
+                    {
+                        "label": "A",
+                        "content": "英勇善战"
+                    },
+                    {
+                        "label": "B",
+                        "content": "勇于献身"
+                    },
+                    {
+                        "label": "C",
+                        "content": "<p>爱岗敬业</p>"
+                    },
+                    {
+                        "label": "D",
+                        "content": "克己奉公"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "label": "A",
+                        "content": "英勇善战"
+                    },
+                    {
+                        "label": "B",
+                        "content": "勇于献身"
+                    },
+                    {
+                        "label": "C",
+                        "content": "<p>爱岗敬业</p>"
+                    },
+                    {
+                        "label": "D",
+                        "content": "克己奉公"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "C",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "label": "D",
+                        "content": "克己奉公"
+                    },
+                    "option_2": {
+                        "label": "B",
+                        "content": "勇于献身"
+                    },
+                    "option_3": {
+                        "label": "C",
+                        "content": "<p>爱岗敬业</p>"
+                    },
+                    "option_1": {
+                        "label": "A",
+                        "content": "英勇善战"
+                    }
+                },
+                "labelText": "职业道德和纪律要求",
+                "labelsArray_text": "职业道德和纪律要求",
+                "examPointName": "职业道德和纪律要求",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444926,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929087,
+            "level": 4,
+            "subjectDo": {
+                "id": 929087,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"B\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>某派出所辖区内有一位失独老人，考虑到老人的实际生活困难，社区民警小王经常利用闲暇时间主动照顾老人，被老人亲切地称为“我的民警女儿”。这充分体现了小王心内坚守的是（    ）。</p>",
+                "opt": "[{\"content\": \"立场坚定的政治信念\", \"label\": \"A\"}, {\"content\": \"服务人民的初心使命\", \"label\": \"B\"}, {\"content\": \"执法公正的职业操守\", \"label\": \"C\"}, {\"content\": \"纪律严明的优良传统\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查职业道德。</p><p>A项错误，立场坚定的政治信念即对党忠诚，民警主动照顾辖区失独老人体现了人民警察服务人民，与对党忠诚无关。</p><p>B项正确，社区民警小王主动照顾辖区失独老人，被老人称为“我的民警女儿”体现了人民警察服务人民的初心使命。</p><p>C项错误，民警主动照顾辖区失独老人体现了人民警察服务人民，与执法公正无关。</p><p>D项错误，民警主动照顾辖区失独老人体现了人民警察服务人民，与纪律严明无关。</p><p>故正确答案为B。</p>",
+                "optList": [
+                    {
+                        "content": "立场坚定的政治信念",
+                        "label": "A"
+                    },
+                    {
+                        "content": "服务人民的初心使命",
+                        "label": "B"
+                    },
+                    {
+                        "content": "执法公正的职业操守",
+                        "label": "C"
+                    },
+                    {
+                        "content": "纪律严明的优良传统",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "立场坚定的政治信念",
+                        "label": "A"
+                    },
+                    {
+                        "content": "服务人民的初心使命",
+                        "label": "B"
+                    },
+                    {
+                        "content": "执法公正的职业操守",
+                        "label": "C"
+                    },
+                    {
+                        "content": "纪律严明的优良传统",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "B",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "纪律严明的优良传统",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "服务人民的初心使命",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "执法公正的职业操守",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "立场坚定的政治信念",
+                        "label": "A"
+                    }
+                },
+                "labelText": "职业道德和纪律要求",
+                "labelsArray_text": "职业道德和纪律要求",
+                "examPointName": "职业道德和纪律要求",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444927,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929088,
+            "level": 5,
+            "subjectDo": {
+                "id": 929088,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"C\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>人民警察必须具备过硬的政治素质，其中最重要的两个政治素质是（    ）。</p>",
+                "opt": "[{\"content\": \"政治倾向性，政治鉴别力\", \"label\": \"A\"}, {\"content\": \"政治敏锐性、政治识别力\", \"label\": \"B\"}, {\"content\": \"政治敏锐性、政治鉴别力\", \"label\": \"C\"}, {\"content\": \"政治纪律性、政治识别力\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查政治敏锐性与鉴别力。</p><p>人民警察政治素质体现在多方面，其中政治敏锐性和政治鉴别力这两个能力是当前对公安队伍强调的重点，是人民警察最为核心的两个政治素质。</p><p>人民警察的政治敏锐性是指人民警察善于从政治上判断形势、分析问题，在政治问题上保持头脑清醒，而不是嗅觉迟钝、糊涂麻木。</p><p>人民警察的政治鉴别力是指人民警察在各种警务活动中，坚持马克思主义的基本立场观点，贯彻执行党的路线、方针、政策，明辨是非善恶，坚持执法为民，维护公平正义，保持廉洁自律的理性判断力。它是人民警察思想观念、理论知识、政治经验、政治立场、政治观点的综合运用。</p><p>故正确答案为C。</p>",
+                "optList": [
+                    {
+                        "content": "政治倾向性，政治鉴别力",
+                        "label": "A"
+                    },
+                    {
+                        "content": "政治敏锐性、政治识别力",
+                        "label": "B"
+                    },
+                    {
+                        "content": "政治敏锐性、政治鉴别力",
+                        "label": "C"
+                    },
+                    {
+                        "content": "政治纪律性、政治识别力",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "政治倾向性，政治鉴别力",
+                        "label": "A"
+                    },
+                    {
+                        "content": "政治敏锐性、政治识别力",
+                        "label": "B"
+                    },
+                    {
+                        "content": "政治敏锐性、政治鉴别力",
+                        "label": "C"
+                    },
+                    {
+                        "content": "政治纪律性、政治识别力",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "C",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "政治纪律性、政治识别力",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "政治敏锐性、政治识别力",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "政治敏锐性、政治鉴别力",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "政治倾向性，政治鉴别力",
+                        "label": "A"
+                    }
+                },
+                "labelText": "公安队伍建设",
+                "labelsArray_text": "公安队伍建设",
+                "examPointName": "公安队伍建设",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444928,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929089,
+            "level": 6,
+            "subjectDo": {
+                "id": 929089,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>人民警察核心价值观是被全体民警共同认可、普遍遵循、自觉践行的主导价值观念和价值追求。其中反映核心价值观内在要求的是（    ）。</p>",
+                "opt": "[{\"content\": \"忠诚\", \"label\": \"A\"}, {\"content\": \"为民\", \"label\": \"B\"}, {\"content\": \"公正\", \"label\": \"C\"}, {\"content\": \"廉洁\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查职业道德与纪律要求。</p><p>人民警察的核心价值观是“忠诚、为民、公正、廉洁”。</p><p>A项错误，忠诚是人民警察核心价值观的根本要求。</p><p>B项错误，为民是人民警察核心价值观的根本出发点和落脚点。</p><p>C项错误，公正是人民警察核心价值观的法律精神。</p><p>D项正确，廉洁是人民警察核心价值观的内在要求。</p><p>故正确答案为D。</p>",
+                "optList": [
+                    {
+                        "content": "忠诚",
+                        "label": "A"
+                    },
+                    {
+                        "content": "为民",
+                        "label": "B"
+                    },
+                    {
+                        "content": "公正",
+                        "label": "C"
+                    },
+                    {
+                        "content": "廉洁",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "忠诚",
+                        "label": "A"
+                    },
+                    {
+                        "content": "为民",
+                        "label": "B"
+                    },
+                    {
+                        "content": "公正",
+                        "label": "C"
+                    },
+                    {
+                        "content": "廉洁",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "D",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "廉洁",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "为民",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "公正",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "忠诚",
+                        "label": "A"
+                    }
+                },
+                "labelText": "政治素质",
+                "labelsArray_text": "政治素质",
+                "examPointName": "政治素质",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444929,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929090,
+            "level": 7,
+            "subjectDo": {
+                "id": 929090,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"C\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>某公安分局接到群众举报，有人在餐馆进行毒品交易，民警立即出警，现场抓获毒贩。在带离嫌疑人时，办案民警向餐馆老板和客人们致歉说：“我们是警察，正在执行任务，损坏的东西我们会补偿的，打扰大家用餐了！”获得在场群众一致点赞。这一行为主要体现出人民警察职业道德的特征是（    ）。</p>",
+                "opt": "[{\"content\": \"坚定的政治性\", \"label\": \"A\"}, {\"content\": \"工作的坚韧性\", \"label\": \"B\"}, {\"content\": \"行为的表率性\", \"label\": \"C\"}, {\"content\": \"为民的服务性\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>人民警察的职业道德是指人民警察在依法履职过程中所遵循的道德原则和道德规范。三个显著特征：鲜明的阶级性，广泛的人民性，行为的表率性。</p><p>本题中人民警察在餐馆中抓捕毒贩后，对抓捕工作打扰到客人用餐以及损坏了餐馆的东西致歉，并承诺对损坏的东西予以补偿，表现出人民警察的表率和示范性，指引人民群众在打扰到别人是要致歉，损坏别人东西要赔偿（公安机关履职中损坏他人物品的予以补偿），主要体现了人民警察职业道德中行为的表率性。</p><p>故正确答案为C。</p>",
+                "optList": [
+                    {
+                        "content": "坚定的政治性",
+                        "label": "A"
+                    },
+                    {
+                        "content": "工作的坚韧性",
+                        "label": "B"
+                    },
+                    {
+                        "content": "行为的表率性",
+                        "label": "C"
+                    },
+                    {
+                        "content": "为民的服务性",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "坚定的政治性",
+                        "label": "A"
+                    },
+                    {
+                        "content": "工作的坚韧性",
+                        "label": "B"
+                    },
+                    {
+                        "content": "行为的表率性",
+                        "label": "C"
+                    },
+                    {
+                        "content": "为民的服务性",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "C",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "为民的服务性",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "工作的坚韧性",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "行为的表率性",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "坚定的政治性",
+                        "label": "A"
+                    }
+                },
+                "labelText": "职业道德和纪律要求",
+                "labelsArray_text": "职业道德和纪律要求",
+                "examPointName": "职业道德和纪律要求",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444930,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929091,
+            "level": 8,
+            "subjectDo": {
+                "id": 929091,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"B\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>为深入贯彻落实党的十九大精神，保障人民安居乐业、社会安定有序、国家长治久安，党中央、国务院决定从2018年1月至2020年12月开展为期三年的专项斗争。这项专项斗争的名称是（    ）。</p>",
+                "opt": "[{\"content\": \"扫黄打非\", \"label\": \"A\"}, {\"content\": \"扫黑除恶\", \"label\": \"B\"}, {\"content\": \"清网行动\", \"label\": \"C\"}, {\"content\": \"净边行动\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查公安时政的内容。</p><p>2018年1月24日，中共中央、国务院发出《关于开展扫黑除恶专项斗争的通知》。《通知》指出，为深入贯彻落实党的十九大部署和习近平总书记重要指示精神，保障人民安居乐业、社会安定有序、国家长治久安，进一步巩固党的执政基础，党中央、国务院决定，在全国开展扫黑除恶专项斗争。2019年1月15日至16日，中央政法工作会议在北京召开。习近平总书记出席会议并发表重要讲话。他强调，黑恶势力是社会毒瘤，严重破坏经济社会秩序，侵蚀党的执政根基。要咬定三年为期目标不放松，分阶段、分领域地完善策略方法、调整主攻方向，保持强大攻势。由此可见，该专项斗争的名称为扫黑除恶。</p><p>故正确答案为B。</p>",
+                "optList": [
+                    {
+                        "content": "扫黄打非",
+                        "label": "A"
+                    },
+                    {
+                        "content": "扫黑除恶",
+                        "label": "B"
+                    },
+                    {
+                        "content": "清网行动",
+                        "label": "C"
+                    },
+                    {
+                        "content": "净边行动",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "扫黄打非",
+                        "label": "A"
+                    },
+                    {
+                        "content": "扫黑除恶",
+                        "label": "B"
+                    },
+                    {
+                        "content": "清网行动",
+                        "label": "C"
+                    },
+                    {
+                        "content": "净边行动",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "B",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "净边行动",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "扫黑除恶",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "清网行动",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "扫黄打非",
+                        "label": "A"
+                    }
+                },
+                "labelText": "政治常识",
+                "labelsArray_text": "政治常识",
+                "examPointName": "政治常识",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444931,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929092,
+            "level": 9,
+            "subjectDo": {
+                "id": 929092,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"C\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>某派出所副所长在办理一起治安案件时，他的姐姐打来电话为违法行为人求情，要求从轻处理。他不为所动，仍然依法作出了处罚。这体现的人民警察核心价值观是（    ）。</p>",
+                "opt": "[{\"content\": \"一心为民\", \"label\": \"A\"}, {\"content\": \"无私奉献\", \"label\": \"B\"}, {\"content\": \"公平正义\", \"label\": \"C\"}, {\"content\": \"恪尽职守\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查职业道德与纪律要求。</p><p>人民警察核心价值观是忠诚、为民、公正、廉洁，其中忠诚要求公安机关人民警察要永葆忠于党、忠于祖国、忠于人民、忠于法律，是人民警察的政治本色；为民要求人民警察服从并服务于人民的根本利益，把人民摆在主体地位，是人民警察的宗旨理念；公正是指公安机关人民警察要依法履行职责，秉公执法办事，维护公平正义，是人民警察的神圣职责。廉洁就是要清正廉明、作风正派，廉洁从警，时刻注意拒腐防变，是人民警察的基本操守，是人民警察核心价值观的基本内涵。本题中，某派出所所长在办理一起治安案件时，他的姐姐为人求情，要求从轻处罚，他不为所动，体现的就是公平正义的人民警察核心价值观。</p><p>故正确答案为C。</p>",
+                "optList": [
+                    {
+                        "content": "一心为民",
+                        "label": "A"
+                    },
+                    {
+                        "content": "无私奉献",
+                        "label": "B"
+                    },
+                    {
+                        "content": "公平正义",
+                        "label": "C"
+                    },
+                    {
+                        "content": "恪尽职守",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "一心为民",
+                        "label": "A"
+                    },
+                    {
+                        "content": "无私奉献",
+                        "label": "B"
+                    },
+                    {
+                        "content": "公平正义",
+                        "label": "C"
+                    },
+                    {
+                        "content": "恪尽职守",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "C",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "恪尽职守",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "无私奉献",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "公平正义",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "一心为民",
+                        "label": "A"
+                    }
+                },
+                "labelText": "政治素质",
+                "labelsArray_text": "政治素质",
+                "examPointName": "政治素质",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444932,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929093,
+            "level": 10,
+            "subjectDo": {
+                "id": 929093,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>严守纪律、遵章守纪、保守秘密、令行禁止是人民警察队伍战斗力的重要保证，人民警察在工作中必须严守各项纪律要求。下列属于严守纪律要求的是（    ）。</p>",
+                "opt": "[{\"content\": \"民警小赵身着便装驾驶警车\", \"label\": \"A\"}, {\"content\": \"民警小陈在公共区域办理涉密案件\", \"label\": \"B\"}, {\"content\": \"民警小张处置突发事件时对老百姓言辞过激\", \"label\": \"C\"}, {\"content\": \"疫情期间民警小王放弃春节休假按期返岗\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查职业道德与纪律要求。</p><p>A项错误，《警车管理规定》第十四条规定：“公安机关、国家安全机关、监狱、劳动教养管理机关和人民法院、人民检察院应当严格管理本部门的警车。警车除执行本规定第二条所列任务外，不得挪作他用。 警车应当由警车所属单位的人民警察驾驶，驾驶警车时应当按照规定着制式警服（驾驶汽车可不戴警帽，驾驶摩托车应当戴制式警用安全头盔），持有机动车驾驶证和人民警察证。驾驶实习期内的人民警察不得驾驶警车。 人民警察驾驶警车到异地执行职务的，应当遵守有关办案协作的规定。”所以小赵着便装驾驶警车错误。</p><p>B项错误，《公安机关办理行政案件程序规定》第八条规定：“公安机关及其人民警察在办理行政案件时，对涉及的国家秘密、商业秘密或者个人隐私，应当保密。”并且人民警察职业道德规范第六项为严守纪律：遵章守纪，保守秘密，令行禁止。所以公共区域办理涉密案件显然不正确。</p><p>C项错误， 人民警察职业道德规范中热诚服务为：情系民生，服务社会，热情周到。文明理性为：理性平和，文明礼貌，诚信友善。小张在处置突发事件时对老百姓言辞激烈违背人民警察职业道德规范。</p><p>D项正确，疫情期间小王放弃休假返岗的行为充分体现的人民警察职业道德规范中的爱岗敬业：恪尽职守，勤学善思，精益求精。</p><p>故正确答案为D。</p>",
+                "optList": [
+                    {
+                        "content": "民警小赵身着便装驾驶警车",
+                        "label": "A"
+                    },
+                    {
+                        "content": "民警小陈在公共区域办理涉密案件",
+                        "label": "B"
+                    },
+                    {
+                        "content": "民警小张处置突发事件时对老百姓言辞过激",
+                        "label": "C"
+                    },
+                    {
+                        "content": "疫情期间民警小王放弃春节休假按期返岗",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "民警小赵身着便装驾驶警车",
+                        "label": "A"
+                    },
+                    {
+                        "content": "民警小陈在公共区域办理涉密案件",
+                        "label": "B"
+                    },
+                    {
+                        "content": "民警小张处置突发事件时对老百姓言辞过激",
+                        "label": "C"
+                    },
+                    {
+                        "content": "疫情期间民警小王放弃春节休假按期返岗",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "D",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "疫情期间民警小王放弃春节休假按期返岗",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "民警小陈在公共区域办理涉密案件",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "民警小张处置突发事件时对老百姓言辞过激",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "民警小赵身着便装驾驶警车",
+                        "label": "A"
+                    }
+                },
+                "labelText": "职业道德和纪律要求",
+                "labelsArray_text": "职业道德和纪律要求",
+                "examPointName": "职业道德和纪律要求",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444933,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929094,
+            "level": 11,
+            "subjectDo": {
+                "id": 929094,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"A\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>看守所民警李某，多次私自将手机借给羁押人员张某使用并放任其与外界联系，张某使用该手机与案件相关人员串供，导致涉案人员逃脱，对李某行为最准确的界定是（    ）。</p>",
+                "opt": "[{\"content\": \"违纪违法行为\", \"label\": \"A\"}, {\"content\": \"违反政治纪律行为\", \"label\": \"B\"}, {\"content\": \"违反廉洁自律行为\", \"label\": \"C\"}, {\"content\": \"违反职业道德行为\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查职业道德与纪律要求。</p><p>A项正确，根据《公安机关人民警察纪律条令》第十条规定：有下列行为之一的，给予记过或者记大过处分；情节较重的，给予降级或者撤职处分；情节严重的，给予开除处分：......（二）擅自安排在押人员与其亲友会见，私自为在押人员或者其亲友传递物品、信件，造成不良后果的。因此题目中警察的这种行为属于违法违纪行为。</p><p>B项错误，党的政治纪律，党组织和党员的政治言论、政治行动的规范， 要求党的各级组织和全体党员必须在政治上同党中央的路线、方针和政策保持高度一致。李某作为看守所民警私借手机，违反的是法律和警察纪律，B项说法错误。</p><p>C项错误，题干中未能体现违反廉洁自律的行为。</p><p>D项错误，李某的行为属于违法行为，虽然也是违反职业道德的行为，但不够准确。</p><p>故正确答案为A。</p>",
+                "optList": [
+                    {
+                        "content": "违纪违法行为",
+                        "label": "A"
+                    },
+                    {
+                        "content": "违反政治纪律行为",
+                        "label": "B"
+                    },
+                    {
+                        "content": "违反廉洁自律行为",
+                        "label": "C"
+                    },
+                    {
+                        "content": "违反职业道德行为",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "违纪违法行为",
+                        "label": "A"
+                    },
+                    {
+                        "content": "违反政治纪律行为",
+                        "label": "B"
+                    },
+                    {
+                        "content": "违反廉洁自律行为",
+                        "label": "C"
+                    },
+                    {
+                        "content": "违反职业道德行为",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "A",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "违反职业道德行为",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "违反政治纪律行为",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "违反廉洁自律行为",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "违纪违法行为",
+                        "label": "A"
+                    }
+                },
+                "labelText": "职业道德和纪律要求",
+                "labelsArray_text": "职业道德和纪律要求",
+                "examPointName": "职业道德和纪律要求",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444934,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929095,
+            "level": 12,
+            "subjectDo": {
+                "id": 929095,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"B\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>党的十九大提出“成立中央全面依法治国领导小组，加强对法治中国建设的统一领导。”下列关于依法治国说法正确的是（    ）。</p>",
+                "opt": "[{\"content\": \"将依法治国和以德治国有机统一作为治理国家的基本方略\", \"label\": \"A\"}, {\"content\": \"全面依法治国是中国特色社会主义的本质要求和重要保障\", \"label\": \"B\"}, {\"content\": \"依法治国要求通过法律解决一切纠纷\", \"label\": \"C\"}, {\"content\": \"依法治国是社会主义法治的价值追求\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查法理学。</p><p>A项错误，1997年9月12日，党的十五大报告正式提出“依法治国，是党领导人民治理国家的基本方略”。党的十八大报告指出：“坚持依法治国这个党领导人民治理国家的基本方略，最广泛地动员和组织人民依法管理国家事务和社会事务、管理经济和文化事业、积极投身社会主义现代化建设，更好保障人民权益，更好保证人民当家作主。”故该说法不正确。</p><p>B项正确，依法治国，是坚持和发展中国特色社会主义的本质要求和重要保障，是实现国家治理体系和治理能力现代化的必然要求，事关我们党执政兴国，事关人民幸福安康，事关党和国家长治久安。</p><p>C项错误，“依法治国要求通过法律解决一切纠纷”的说法太过绝对，法律作为调整社会关系的手段，不是万能的，有局限性，依法治国并不能将所有社会关系法律化，故该说法不正确。</p><p>D项错误，我国社会主义法治理念的价值追求是公平正义，故该说法不正确。</p><p>故正确答案为B。</p>",
+                "optList": [
+                    {
+                        "content": "将依法治国和以德治国有机统一作为治理国家的基本方略",
+                        "label": "A"
+                    },
+                    {
+                        "content": "全面依法治国是中国特色社会主义的本质要求和重要保障",
+                        "label": "B"
+                    },
+                    {
+                        "content": "依法治国要求通过法律解决一切纠纷",
+                        "label": "C"
+                    },
+                    {
+                        "content": "依法治国是社会主义法治的价值追求",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "将依法治国和以德治国有机统一作为治理国家的基本方略",
+                        "label": "A"
+                    },
+                    {
+                        "content": "全面依法治国是中国特色社会主义的本质要求和重要保障",
+                        "label": "B"
+                    },
+                    {
+                        "content": "依法治国要求通过法律解决一切纠纷",
+                        "label": "C"
+                    },
+                    {
+                        "content": "依法治国是社会主义法治的价值追求",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "B",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "依法治国是社会主义法治的价值追求",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "全面依法治国是中国特色社会主义的本质要求和重要保障",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "依法治国要求通过法律解决一切纠纷",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "将依法治国和以德治国有机统一作为治理国家的基本方略",
+                        "label": "A"
+                    }
+                },
+                "labelText": "政治常识",
+                "labelsArray_text": "政治常识",
+                "examPointName": "政治常识",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444935,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929096,
+            "level": 13,
+            "subjectDo": {
+                "id": 929096,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"A\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>关于颁布实施《民法典》的重大意义，下列说法正确的是（    ）。</p>",
+                "opt": "[{\"content\": \"《民法典》是一部固根本、稳预期、利长远的基础性法律\", \"label\": \"A\"}, {\"content\": \"《民法典》是新中国成立以来第一部以“法典”命名的法律，因此法律地位最高\", \"label\": \"B\"}, {\"content\": \"《民法典》的颁布实施，意味着一劳永逸解决了民事法治建设的所有问题\", \"label\": \"C\"}, {\"content\": \"《民法典》的颁布实施，标志着我国民事商事法治建设的全面完成\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>2020年5月28日，十三届全国人大三次会议表决通过了《中华人民共和国民法典》，自2021年1月1日起施行。</p><p>A项正确，民法典调整市场经济、经济以外的其他社会领域、家庭关系和个人人格四大领域，是一个国家调整民事法律关系的所有法律的综合大典，是社会的基本法、国之大典。而《民法通则》是我国改革开放后鉴于当时国情和紧迫形势出台的一部不太完善、不太全面和系统的调整我国民事关系的法律，《民法典》的出台不仅弥补了《民法通则》的不足，更弥补了我国民法典的空白，它是一部固根本、稳预期、利长远的基础性法律；</p><p>B项错误，《宪法》是我国的根本大法，具有最高权威性，所有法律都要以宪法为依据，不得违背宪法的规定。《民法典》是新中国成立以来第一部以“法典”命名的法律，但依然属于部门法，《民法典》的修订需要以宪法为依据；</p><p>C项错误，《民法典》颁布深刻地形塑社会并影响社会的运行体制和机制，但随着社会的发展、新事物的出现，仍然会有不可预期的新法律关系的产生，为此，题目中所说的《民法典》可以一劳永逸解决了民事法治建设的所有问题的这个说法较绝对；</p><p>D项错误，《民法典》的颁布是当前法治建设的标志性工程，为社会主义法治国家与法治社会的建立奠定基础，题干中的标志着我国民事商事法治建设的全面完成过于片面、绝对。</p><p>故正确答案为A。</p>",
+                "optList": [
+                    {
+                        "content": "《民法典》是一部固根本、稳预期、利长远的基础性法律",
+                        "label": "A"
+                    },
+                    {
+                        "content": "《民法典》是新中国成立以来第一部以“法典”命名的法律，因此法律地位最高",
+                        "label": "B"
+                    },
+                    {
+                        "content": "《民法典》的颁布实施，意味着一劳永逸解决了民事法治建设的所有问题",
+                        "label": "C"
+                    },
+                    {
+                        "content": "《民法典》的颁布实施，标志着我国民事商事法治建设的全面完成",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "《民法典》是一部固根本、稳预期、利长远的基础性法律",
+                        "label": "A"
+                    },
+                    {
+                        "content": "《民法典》是新中国成立以来第一部以“法典”命名的法律，因此法律地位最高",
+                        "label": "B"
+                    },
+                    {
+                        "content": "《民法典》的颁布实施，意味着一劳永逸解决了民事法治建设的所有问题",
+                        "label": "C"
+                    },
+                    {
+                        "content": "《民法典》的颁布实施，标志着我国民事商事法治建设的全面完成",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "A",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "《民法典》的颁布实施，标志着我国民事商事法治建设的全面完成",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "《民法典》是新中国成立以来第一部以“法典”命名的法律，因此法律地位最高",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "《民法典》的颁布实施，意味着一劳永逸解决了民事法治建设的所有问题",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "《民法典》是一部固根本、稳预期、利长远的基础性法律",
+                        "label": "A"
+                    }
+                },
+                "labelText": "民法基础知识",
+                "labelsArray_text": "民法基础知识",
+                "examPointName": "民法基础知识",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444936,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929097,
+            "level": 14,
+            "subjectDo": {
+                "id": 929097,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"A\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>詹某不服某县公安局交警大队对其违法停车的行政处罚决定，向人民法院提起行政诉讼，公安局负责人出庭应诉的行为是（    ）。</p>",
+                "opt": "[{\"content\": \"法的遵守\", \"label\": \"A\"}, {\"content\": \"法的执行\", \"label\": \"B\"}, {\"content\": \"法的适用\", \"label\": \"C\"}, {\"content\": \"法的解释\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查法理学。</p><p>A项正确，法的遵守是指在社会主义国家里，一切国家机关和武装力量、各政党和各社会团体、各企业事业组织和全体公民，即所有的社会主体都必须恪守法律的规定，严格依法办事。因此，公安局负责人出庭应诉的行为是法的遵守，与题意相符，当选。</p><p>B项错误，法的执行指法律执行，广义上是指国家机关以及公职人员，在国家和公共事务管理中依照法定职权和程序，贯彻和实施法律的活动。与题意不符，排除。</p><p>C项错误，法的适用，是指国家司法机关根据法定职权和法定程序，具体应用法律处理案件的专门活动。与题意不符，排除。</p><p>D项错误，法的解释是指有关国家机关、组织或个人，对法律、法规或法律条文的内容、含义以及所使用的概念、术语等所作的说明理解。其目的是使人们准确理解法律规范的精神实质和内容，以保证法律规范的正确实施，达到立法者所预期的效果。与题意不符，排除。</p><p>故正确答案为A。</p>",
+                "optList": [
+                    {
+                        "content": "法的遵守",
+                        "label": "A"
+                    },
+                    {
+                        "content": "法的执行",
+                        "label": "B"
+                    },
+                    {
+                        "content": "法的适用",
+                        "label": "C"
+                    },
+                    {
+                        "content": "法的解释",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "法的遵守",
+                        "label": "A"
+                    },
+                    {
+                        "content": "法的执行",
+                        "label": "B"
+                    },
+                    {
+                        "content": "法的适用",
+                        "label": "C"
+                    },
+                    {
+                        "content": "法的解释",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "A",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "法的解释",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "法的执行",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "法的适用",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "法的遵守",
+                        "label": "A"
+                    }
+                },
+                "labelText": "法律基本概念",
+                "labelsArray_text": "法律基本概念",
+                "examPointName": "法律基本概念",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444937,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929098,
+            "level": 15,
+            "subjectDo": {
+                "id": 929098,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>法的溯及力是指法的溯及既往的效力。我国刑法关于溯及力的适用原则是（    ）。</p>",
+                "opt": "[{\"content\": \"从新原则\", \"label\": \"A\"}, {\"content\": \"从旧原则\", \"label\": \"B\"}, {\"content\": \"从新兼从轻原则\", \"label\": \"C\"}, {\"content\": \"从旧兼从轻原则\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查刑法。</p><p>《刑法》第十二条规定：“【刑法溯及力】中华人民共和国成立以后本法施行以前的行为，如果当时的法律不认为是犯罪的，适用当时的法律；如果当时的法律认为是犯罪的，依照本法总则第四章第八节的规定应当追诉的，按照当时的法律追究刑事责任，但是如果本法不认为是犯罪或者处刑较轻的，适用本法。本法施行以前，依照当时的法律已经作出的生效判决，继续有效。”则本法的意思是我国刑法溯及力适用于从旧兼从轻原则。</p><p>故正确答案为D。</p>",
+                "optList": [
+                    {
+                        "content": "从新原则",
+                        "label": "A"
+                    },
+                    {
+                        "content": "从旧原则",
+                        "label": "B"
+                    },
+                    {
+                        "content": "从新兼从轻原则",
+                        "label": "C"
+                    },
+                    {
+                        "content": "从旧兼从轻原则",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "从新原则",
+                        "label": "A"
+                    },
+                    {
+                        "content": "从旧原则",
+                        "label": "B"
+                    },
+                    {
+                        "content": "从新兼从轻原则",
+                        "label": "C"
+                    },
+                    {
+                        "content": "从旧兼从轻原则",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "D",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "从旧兼从轻原则",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "从旧原则",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "从新兼从轻原则",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "从新原则",
+                        "label": "A"
+                    }
+                },
+                "labelText": "法律基本概念",
+                "labelsArray_text": "法律基本概念",
+                "examPointName": "法律基本概念",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444938,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929099,
+            "level": 16,
+            "subjectDo": {
+                "id": 929099,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"A\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>我国设立国家监察委员会和地方各级监察委员会，独立行使监察权。有权选举产生国家监察委员会主任的是（    ）。</p>",
+                "opt": "[{\"content\": \"全国人民代表大会\", \"label\": \"A\"}, {\"content\": \"全国人民代表大会常务委员会\", \"label\": \"B\"}, {\"content\": \"国务院\", \"label\": \"C\"}, {\"content\": \"国家监察委员会\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查宪法。</p><p>根据《宪法》第六十二条规定：“全国人民代表大会行使下列职权： （一）修改宪法；（二）监督宪法的实施；（三）制定和修改刑事、民事、国家机构的和其他的基本法律；（四）选举中华人民共和国主席、副主席；（五）根据中华人民共和国主席的提名，决定国务院总理的人选；根据国务院总理的提名，决定国务院副总理、国务委员、各部部长、各委员会主任、审计长、秘书长的人选；（六）选举中央军事委员会主席；根据中央军事委员会主席的提名，决定中央军事委员会其他组成人员的人选；（七）选举国家监察委员会主任；（八）选举最高人民法院院长；（九）选举最高人民检察院检察长；（十）审查和批准国民经济和社会发展计划和计划执行情况的报告；（十一）审查和批准国家的预算和预算执行情况的报告；（十二）改变或者撤销全国人民代表大会常务委员会不适当的决定； （十三）批准省、自治区和直辖市的建置；（十四）决定特别行政区的设立及其制度；（十五）决定战争和和平的问题；（十六）应当由最高国家权力机关行使的其他职权。”国家监察委员会主任应由全国人民代表大会选举产生。因此A项正确，B、C、D项错误。</p><p>故正确答案为A。</p>",
+                "optList": [
+                    {
+                        "content": "全国人民代表大会",
+                        "label": "A"
+                    },
+                    {
+                        "content": "全国人民代表大会常务委员会",
+                        "label": "B"
+                    },
+                    {
+                        "content": "国务院",
+                        "label": "C"
+                    },
+                    {
+                        "content": "国家监察委员会",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "全国人民代表大会",
+                        "label": "A"
+                    },
+                    {
+                        "content": "全国人民代表大会常务委员会",
+                        "label": "B"
+                    },
+                    {
+                        "content": "国务院",
+                        "label": "C"
+                    },
+                    {
+                        "content": "国家监察委员会",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "A",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "国家监察委员会",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "全国人民代表大会常务委员会",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "国务院",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "全国人民代表大会",
+                        "label": "A"
+                    }
+                },
+                "labelText": "刑法",
+                "labelsArray_text": "刑法",
+                "examPointName": "刑法",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444939,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929100,
+            "level": 17,
+            "subjectDo": {
+                "id": 929100,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"C\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>根据《宪法》的规定，在某县人大代表选举期间，下列享有选举权的公民是（    ）。</p>",
+                "opt": "[{\"content\": \"甲，16周岁，在国内某知名大学就读\", \"label\": \"A\"}, {\"content\": \"乙，18周岁，因犯间谍罪被利夺政治权利三年\", \"label\": \"B\"}, {\"content\": \"丙，20周岁，正在俄罗斯留学\", \"label\": \"C\"}, {\"content\": \"丁，22周岁，因犯故意杀人罪被判处死刑缓期二年执行\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查宪法。</p><p>《中华人民共和国宪法》第三十四条规定：“中华人民共和国年满十八周岁的公民，不分民族、种族、性别、职业、家庭出身、宗教信仰、教育程度、财产状况、居住期限，都有选举权和被选举权；但是依照法律被剥夺政治权利的人除外”。</p><p>A项错误，因为A选项中甲年龄未满18周岁。</p><p>B项错误，因为B虽然年满18周岁，但是危害国家安全被剥夺政治权利，故排除。</p><p>C项正确，丙年满18周岁，虽然在俄罗斯留学，但仍然属于中国公民，依法享有选举权。</p><p>D项错误，《刑法》第五十七条规定：“对于被判处死刑、无期徒刑的犯罪分子，应当剥夺政治权利终身”。丁因故意杀人罪被判处死刑缓期两年执行，依法被剥夺了政治权利，因此不享有选举权。</p><p>故正确答案为C。</p>",
+                "optList": [
+                    {
+                        "content": "甲，16周岁，在国内某知名大学就读",
+                        "label": "A"
+                    },
+                    {
+                        "content": "乙，18周岁，因犯间谍罪被利夺政治权利三年",
+                        "label": "B"
+                    },
+                    {
+                        "content": "丙，20周岁，正在俄罗斯留学",
+                        "label": "C"
+                    },
+                    {
+                        "content": "丁，22周岁，因犯故意杀人罪被判处死刑缓期二年执行",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "甲，16周岁，在国内某知名大学就读",
+                        "label": "A"
+                    },
+                    {
+                        "content": "乙，18周岁，因犯间谍罪被利夺政治权利三年",
+                        "label": "B"
+                    },
+                    {
+                        "content": "丙，20周岁，正在俄罗斯留学",
+                        "label": "C"
+                    },
+                    {
+                        "content": "丁，22周岁，因犯故意杀人罪被判处死刑缓期二年执行",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "C",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "丁，22周岁，因犯故意杀人罪被判处死刑缓期二年执行",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "乙，18周岁，因犯间谍罪被利夺政治权利三年",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "丙，20周岁，正在俄罗斯留学",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "甲，16周岁，在国内某知名大学就读",
+                        "label": "A"
+                    }
+                },
+                "labelText": "宪法基础知识",
+                "labelsArray_text": "宪法基础知识",
+                "examPointName": "宪法基础知识",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444940,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929101,
+            "level": 18,
+            "subjectDo": {
+                "id": 929101,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"B\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>“85后”快递小哥李某因勇救坠楼儿童校某市政府授予“最美好人”称号，该称号属于公民的（    ）。</p>",
+                "opt": "[{\"content\": \"名誉权\", \"label\": \"A\"}, {\"content\": \"荣誉权\", \"label\": \"B\"}, {\"content\": \"声誉权\", \"label\": \"C\"}, {\"content\": \"名称权\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查民法。</p><p>《中华人民共和国民法总则》第一百一十条规定：“自然人享有生命权、身体权、健康权、姓名权、肖像权、名誉权、荣誉权、隐私权、婚姻自主权等权利。法人、非法人组织享有名称权、名誉权、荣誉权等权利。”</p><p>A项错误，名誉是指人们对于公民或法人的品德、才干、声望、信誉和形象等各方面的综合评价。名誉权是人们依法享有的对自己所获得的客观社会评价、排除他人侵害的权利。任何个人、媒体，不得发布捏造虚假信息、刊登诽谤新闻，否则构成名誉权侵害。</p><p>B项正确，荣誉权，是指公民、法人所享有的，因自己的突出贡献或特殊劳动成果而获得的光荣称号或其他荣誉的权利。任何组织和个人不得非法剥夺他人的荣誉称号，不得诋毁、贬损他人的荣誉。“最美好人”是一种荣誉称号，属于李某个人的荣誉。</p><p>C项错误，民事主体享有的权利中没有“声誉权”，法律规定也没有“声誉权”这一表述。</p><p>D项错误，名称权是指法人及特殊的自然人的组合体依法享有的决定、使用、改变自己的名称以及依法转让自己的名称，并不受他人侵犯的一项权利。</p><p>故正确答案为B。</p>",
+                "optList": [
+                    {
+                        "content": "名誉权",
+                        "label": "A"
+                    },
+                    {
+                        "content": "荣誉权",
+                        "label": "B"
+                    },
+                    {
+                        "content": "声誉权",
+                        "label": "C"
+                    },
+                    {
+                        "content": "名称权",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "名誉权",
+                        "label": "A"
+                    },
+                    {
+                        "content": "荣誉权",
+                        "label": "B"
+                    },
+                    {
+                        "content": "声誉权",
+                        "label": "C"
+                    },
+                    {
+                        "content": "名称权",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "B",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "名称权",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "荣誉权",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "声誉权",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "名誉权",
+                        "label": "A"
+                    }
+                },
+                "labelText": "宪法基础知识",
+                "labelsArray_text": "宪法基础知识",
+                "examPointName": "宪法基础知识",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444941,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929102,
+            "level": 19,
+            "subjectDo": {
+                "id": 929102,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>《民法典》明确规定：禁止高利放贷，借款的利率不得违反国家规定。以下关于自然人之间借款利息说法正确的是（    ）。</p>",
+                "opt": "[{\"content\": \"甲借款10万元，借款人有权预先在本金中扣除利息\", \"label\": \"A\"}, {\"content\": \"乙借款10万元，借款人预先在本金中扣除利息的，乙应当返还借款10万元\", \"label\": \"B\"}, {\"content\": \"丙借款10万元，未约定利息，还款时借款人要求支付利息的，丙应当支付\", \"label\": \"C\"}, {\"content\": \"丁借款10万元，利息约定不明确，视为没有利息\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查法理学。</p><p>《民法典（草案）》通过并实施后，现行《合同法》将废止，有关合同的民事法律规范将由《民法典》中的合同编替代。不过《民法典》合同编大体继承了现行《合同法》的内容，总体上没有做出较大的调整，但是对有些内容进行了重新规范和梳理，将经济生活中日益常见的合同类型新增到了典型合同里面，用专门的条款进行约束和规范。</p><p>A项错误，根据原《合同法》第二百条规定：“借款的利息不得预先在本金中扣除，利息预先扣除的，应当按照实际借款数额返还借款并计算利息。”故借款人有权预先在本金中扣除利息，该说法不正确。</p><p>B项错误，根据原《合同法》第二百条规定：“借款的利息不得预先在本金中扣除，利息预先扣除的，应当按照实际借款数额返还借款并计算利息。”故该说法错误。</p><p>C项错误，根据原《合同法》第二百一十一条规定：“自然人之间的借款合同对支付利息没有约定或者约定不明确的，视为不支付利息。自然人之间的借款合同约定支付利息的，借款的利率不得违反国家有关限制借款利率的规定。故丙不应该支付，该说法不正确。</p><p>D项正确，根据原《合同法》第二百一十一条规定，自然人之间的借款合同对支付利息没有约定或者约定不明确的，视为不支付利息。</p><p>故正确答案为D。</p>",
+                "optList": [
+                    {
+                        "content": "甲借款10万元，借款人有权预先在本金中扣除利息",
+                        "label": "A"
+                    },
+                    {
+                        "content": "乙借款10万元，借款人预先在本金中扣除利息的，乙应当返还借款10万元",
+                        "label": "B"
+                    },
+                    {
+                        "content": "丙借款10万元，未约定利息，还款时借款人要求支付利息的，丙应当支付",
+                        "label": "C"
+                    },
+                    {
+                        "content": "丁借款10万元，利息约定不明确，视为没有利息",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "甲借款10万元，借款人有权预先在本金中扣除利息",
+                        "label": "A"
+                    },
+                    {
+                        "content": "乙借款10万元，借款人预先在本金中扣除利息的，乙应当返还借款10万元",
+                        "label": "B"
+                    },
+                    {
+                        "content": "丙借款10万元，未约定利息，还款时借款人要求支付利息的，丙应当支付",
+                        "label": "C"
+                    },
+                    {
+                        "content": "丁借款10万元，利息约定不明确，视为没有利息",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "D",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "丁借款10万元，利息约定不明确，视为没有利息",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "乙借款10万元，借款人预先在本金中扣除利息的，乙应当返还借款10万元",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "丙借款10万元，未约定利息，还款时借款人要求支付利息的，丙应当支付",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "甲借款10万元，借款人有权预先在本金中扣除利息",
+                        "label": "A"
+                    }
+                },
+                "labelText": "民法基础知识",
+                "labelsArray_text": "民法基础知识",
+                "examPointName": "民法基础知识",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444942,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929103,
+            "level": 20,
+            "subjectDo": {
+                "id": 929103,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"A\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>派出所民警周某带领警务辅助人员张某，在佩戴执法记录并全程录音录像时，可以从事的警务工作是（    ）。</p>",
+                "opt": "[{\"content\": \"对甲报案称自家车身被划伤的警情进行受案登记\", \"label\": \"A\"}, {\"content\": \"对乙驱使烈性犬伤害他人的违法行为进行调查处理\", \"label\": \"B\"}, {\"content\": \"强制传唤无正当理由逃避传唤的赌博违法嫌疑人丙\", \"label\": \"C\"}, {\"content\": \"询问因殴打他人被带至派出所的违法嫌疑人丁\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查行政执法依据。</p><p>A项正确，《公安机关办理行政案件程序规定》第五十一条第二款规定：“接报案、受案登记、接受证据、信息采集、调解、送达文书等工作，可以由一名人民警察带领警务辅助人员进行，但应当全程录音录像。”</p><p>B项错误，《公安机关办理行政案件程序规定》第五十二条规定：“公安机关进行询问、辨认、检查、勘验，实施行政强制措施等调查取证工作时，人民警察不得少于二人，并表明执法身份。”对违法行为进行调查取证至少需要两名民警，民警周某带领警务辅助人员张某进行调查取证不符合规定。</p><p>C项错误，《公安机关办理行政案件程序规定》第六十七条第三款规定：“对无正当理由不接受传唤或者逃避传唤的违反治安管理、出境入境管理的嫌疑人以及法律规定可以强制传唤的其他违法嫌疑人，经公安派出所、县级以上公安机关办案部门或者出入境边防检查机关负责人批准，可以强制传唤。”强制传唤无正当理由逃避传唤的赌博违法嫌疑人丙需要经过派出所负责人批准才能进行。《公安机关办理行政案件程序规定》第五十二条规定：“公安机关进行询问、辨认、检查、勘验，实施行政强制措施等调查取证工作时，人民警察不得少于二人，并表明执法身份。”强制传唤是行政强制措施的一种，民警周某带领警务辅助人员张某进行强制传唤不符合规定。</p><p>D项错误，公安机关办理行政案件程序规定》第五十二条规定：“公安机关进行询问、辨认、检查、勘验，实施行政强制措施等调查取证工作时，人民警察不得少于二人，并表明执法身份。”对殴打他人的违法嫌疑人进行询问至少需要两名民警，民警周某带领警务辅助人员张某进行询问不符合规定。</p><p>故正确答案为A。</p>",
+                "optList": [
+                    {
+                        "content": "对甲报案称自家车身被划伤的警情进行受案登记",
+                        "label": "A"
+                    },
+                    {
+                        "content": "对乙驱使烈性犬伤害他人的违法行为进行调查处理",
+                        "label": "B"
+                    },
+                    {
+                        "content": "强制传唤无正当理由逃避传唤的赌博违法嫌疑人丙",
+                        "label": "C"
+                    },
+                    {
+                        "content": "询问因殴打他人被带至派出所的违法嫌疑人丁",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "对甲报案称自家车身被划伤的警情进行受案登记",
+                        "label": "A"
+                    },
+                    {
+                        "content": "对乙驱使烈性犬伤害他人的违法行为进行调查处理",
+                        "label": "B"
+                    },
+                    {
+                        "content": "强制传唤无正当理由逃避传唤的赌博违法嫌疑人丙",
+                        "label": "C"
+                    },
+                    {
+                        "content": "询问因殴打他人被带至派出所的违法嫌疑人丁",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "A",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "询问因殴打他人被带至派出所的违法嫌疑人丁",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "对乙驱使烈性犬伤害他人的违法行为进行调查处理",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "强制传唤无正当理由逃避传唤的赌博违法嫌疑人丙",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "对甲报案称自家车身被划伤的警情进行受案登记",
+                        "label": "A"
+                    }
+                },
+                "labelText": "民法基础知识",
+                "labelsArray_text": "民法基础知识",
+                "examPointName": "民法基础知识",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444943,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929104,
+            "level": 21,
+            "subjectDo": {
+                "id": 929104,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"C\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>社会青年刘某（男，23周岁）、李某（男，13周岁）和王某（男，15周岁）到小店吃饭，结账时与店主发生争执，三人殴打店主致其轻微伤。下列说法正确的是（    ）。</p>",
+                "opt": "[{\"content\": \"对三人均作出行政拘留处罚决定并执行\", \"label\": \"A\"}, {\"content\": \"对刘某作出行政拘留处罚决定但不执行\", \"label\": \"B\"}, {\"content\": \"对王某作出行政拘留处罚决定但不执行\", \"label\": \"C\"}, {\"content\": \"对李某作出行政拘留处罚决定但不执行\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查行政执法依据。</p><p>A项错误，《治安管理处罚法》第十二条规定，“已满十四周岁不满十八周岁的人违反治安管理的，从轻或者减轻处罚；不满十四周岁的人违反治安管理的，不予处罚，但是应当责令其监护人严加管教。”据此，对于李某（13周岁）违反治安管理的行为，不予处罚。</p><p>B项错误，根据《公安机关办理行政案件程序规定》第一百六十四条规定：违法行为人具有下列情形之一，依法应当给予行政拘留处罚的，应当作出处罚决定，但不送拘留所执行：（一）已满十四周岁不满十六周岁的；（二）已满十六周岁不满十八周岁，初次违反治安管理或者其他公安行政管理的。但是，曾被收容教养、被行政拘留依法不执行行政拘留或者曾因实施扰乱公共秩序，妨害公共安全，侵犯人身权利、财产权利，妨害社会管理的行为被人民法院判决有罪的除外；（三）七十周岁以上的；（四）孕妇或者正在哺乳自己婴儿的妇女。题目中刘某23周岁不符合不予执行的条件，因此应当执行。</p><p>C项正确，根据《公安机关办理行政案件程序规定》第一百六十四条规定：违法行为人具有下列情形之一，依法应当给予行政拘留处罚的，应当作出处罚决定，但不送拘留所执行：（一）已满十四周岁不满十六周岁的；（二）已满十六周岁不满十八周岁，初次违反治安管理或者其他公安行政管理的。但是，曾被收容教养、被行政拘留依法不执行行政拘留或者曾因实施扰乱公共秩序，妨害公共安全，侵犯人身权利、财产权利，妨害社会管理的行为被人民法院判决有罪的除外；（三）七十周岁以上的；（四）孕妇或者正在哺乳自己婴儿的妇女。题目中王某15周岁应当处罚但是因符合已满十四周岁不满十六周岁的情况，不执行行政拘留。</p><p>D项错误，《治安管理处罚法》第十二条的规定，“已满十四周岁不满十八周岁的人违反治安管理的，从轻或者减轻处罚；不满十四周岁的人违反治安管理的，不予处罚，但是应当责令其监护人严加管教。”据此，由于李某现在13周岁，符合不予处罚的情形，因此不能做出处罚决定。</p><p>故正确答案为C。</p>",
+                "optList": [
+                    {
+                        "content": "对三人均作出行政拘留处罚决定并执行",
+                        "label": "A"
+                    },
+                    {
+                        "content": "对刘某作出行政拘留处罚决定但不执行",
+                        "label": "B"
+                    },
+                    {
+                        "content": "对王某作出行政拘留处罚决定但不执行",
+                        "label": "C"
+                    },
+                    {
+                        "content": "对李某作出行政拘留处罚决定但不执行",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "对三人均作出行政拘留处罚决定并执行",
+                        "label": "A"
+                    },
+                    {
+                        "content": "对刘某作出行政拘留处罚决定但不执行",
+                        "label": "B"
+                    },
+                    {
+                        "content": "对王某作出行政拘留处罚决定但不执行",
+                        "label": "C"
+                    },
+                    {
+                        "content": "对李某作出行政拘留处罚决定但不执行",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "C",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "对李某作出行政拘留处罚决定但不执行",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "对刘某作出行政拘留处罚决定但不执行",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "对王某作出行政拘留处罚决定但不执行",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "对三人均作出行政拘留处罚决定并执行",
+                        "label": "A"
+                    }
+                },
+                "labelText": "治安行政管理与服务能力",
+                "labelsArray_text": "治安行政管理与服务能力",
+                "examPointName": "治安行政管理与服务能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444944,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929105,
+            "level": 22,
+            "subjectDo": {
+                "id": 929105,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"B\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>张某持刀企图强奸女青年兰某，兰某奋力抵抗，在夺刀的过程中将刀刺入张某动脉导致张某失血过多死亡。对兰某的行为判断正确的是（    ）。</p>",
+                "opt": "[{\"content\": \"故意杀人\", \"label\": \"A\"}, {\"content\": \"正当防卫\", \"label\": \"B\"}, {\"content\": \"防卫过当\", \"label\": \"C\"}, {\"content\": \"意外事件\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查法律常识。</p><p>A项错误，故意杀人是指明知自己的行为会发生他人死亡的结果，并且希望或者放任这种结果的发生，主观上有非法剥夺他人生命的故意，客观上有剥夺他人生命的行为。本案中兰某是在面对现实危险时，为保护自己而反抗时对张某造成的损害，虽然造成了张某死亡，但是没有主观故意，兰某的行为不能构成故意杀人。</p><p>B项正确，为了使国家、公共利益、本人或者他人的人身、财产和其他权利免受正在进行的不法侵害，而采取的制止不法侵害的行为，对不法侵害人造成损害的，属于正当防卫。张某企图强奸兰某，并且持刀，该行为属于正在进行的不法侵害，兰某为了制止该侵害造成张某死亡，属于正当防卫。</p><p>C项错误，正在进行行凶、杀人、抢劫、强奸、绑架以及其他严重危及人身安全的暴力犯罪，采取防卫行为，造成不法侵害人伤亡的，不属于防卫过当。张某正在实施强奸行为，并且持刀，危及了兰某的人身安全，所以兰某反抗造成张某死亡不属于防卫过当。</p><p>D项错误，意外事件是指行为在客观上虽然造成了损害结果，但不是出于行为人的故意或者过失，而是不能预见的原因所引起的。兰某的行为在客观上造成了损害结果，但是兰某的损害行为的原因是张某的强奸行为，而不是不能预见的原因。</p><p>故正确答案为B。</p>",
+                "optList": [
+                    {
+                        "content": "故意杀人",
+                        "label": "A"
+                    },
+                    {
+                        "content": "正当防卫",
+                        "label": "B"
+                    },
+                    {
+                        "content": "防卫过当",
+                        "label": "C"
+                    },
+                    {
+                        "content": "意外事件",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "故意杀人",
+                        "label": "A"
+                    },
+                    {
+                        "content": "正当防卫",
+                        "label": "B"
+                    },
+                    {
+                        "content": "防卫过当",
+                        "label": "C"
+                    },
+                    {
+                        "content": "意外事件",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "B",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "意外事件",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "正当防卫",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "防卫过当",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "故意杀人",
+                        "label": "A"
+                    }
+                },
+                "labelText": "治安行政管理与服务能力",
+                "labelsArray_text": "治安行政管理与服务能力",
+                "examPointName": "治安行政管理与服务能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444945,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929106,
+            "level": 23,
+            "subjectDo": {
+                "id": 929106,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>在办理胡某故意伤害案件时，需要对胡某进行辨认，如果用照片进行辨认的话，照片数量不得少于（    ）。</p>",
+                "opt": "[{\"content\": \"5张\", \"label\": \"A\"}, {\"content\": \"7张\", \"label\": \"B\"}, {\"content\": \"9张\", \"label\": \"C\"}, {\"content\": \"10张\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查刑事执法依据。</p><p>《公安机关办理刑事案件程序规定》第二百五十一条规定：“辨认时，应当将辨认对象混杂在特征相类似的其他对象中，不得给辨认人任何暗示。辨认犯罪嫌疑人时，被辨认的人数不得少于七人；对犯罪嫌疑人照片进行辨认的，不得少于十人的照片；辨认物品时，混杂的同类物品不得少于五件。”</p><p>本题中是对胡某照片进行辨认的，不得少于十人的照片。</p><p>故正确答案为D。</p>",
+                "optList": [
+                    {
+                        "content": "5张",
+                        "label": "A"
+                    },
+                    {
+                        "content": "7张",
+                        "label": "B"
+                    },
+                    {
+                        "content": "9张",
+                        "label": "C"
+                    },
+                    {
+                        "content": "10张",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "5张",
+                        "label": "A"
+                    },
+                    {
+                        "content": "7张",
+                        "label": "B"
+                    },
+                    {
+                        "content": "9张",
+                        "label": "C"
+                    },
+                    {
+                        "content": "10张",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "D",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "10张",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "7张",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "9张",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "5张",
+                        "label": "A"
+                    }
+                },
+                "labelText": "刑事案件程序规定",
+                "labelsArray_text": "刑事案件程序规定",
+                "examPointName": "刑事案件程序规定",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444946,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929107,
+            "level": 24,
+            "subjectDo": {
+                "id": 929107,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>对于犯罪现场保护的时间规定，下列图例示意正确的是（    ）。</p>",
+                "opt": "[{\"content\": \"<p><img src=\\\"https://img.xdtech.top/uploadFiles/image/20200908/9076273cb6a21034612b5a689915ad07\\\"></img></p>\", \"label\": \"A\"}, {\"content\": \"<p><img src=\\\"https://img.xdtech.top/uploadFiles/image/20200908/ae9cafba1fa280e66c1f845afee4b84c\\\"></img></p>\", \"label\": \"B\"}, {\"content\": \"<p><img src=\\\"https://img.xdtech.top/uploadFiles/image/20200908/089a6280e96c84e66692d8cae9b3f0e7\\\"></img></p>\", \"label\": \"C\"}, {\"content\": \"<p><img src=\\\"https://img.xdtech.top/uploadFiles/image/20200908/def96dc68e564dd6d2a7a18805ed3534\\\"></img></p>\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查刑事执法依据。</p><p>《公安机关刑事案件现场勘验检查规则》第二十二条规定：“保护现场的时间，从发现刑事案件现场开始，至现场勘验、检查结束。不能完成现场勘验、检查的，应当对整个现场或者部分现场继续予以保护。”可以得知，现场保护的时间贯穿于现场勘查的全过程。一般案件的现场保护是从犯罪案件发生或者现场被发现时开始到现场勘验工作结束为止。重大复杂案件的现场或一时不能全部查明的案件现场，可以对整个或现场的某一部分延长保护的时间，到现场复查结束，作出对现场的善后处理为止。</p><p>故正确答案为D。</p>",
+                "optList": [
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/9076273cb6a21034612b5a689915ad07\"></img></p>",
+                        "label": "A"
+                    },
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/ae9cafba1fa280e66c1f845afee4b84c\"></img></p>",
+                        "label": "B"
+                    },
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/089a6280e96c84e66692d8cae9b3f0e7\"></img></p>",
+                        "label": "C"
+                    },
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/def96dc68e564dd6d2a7a18805ed3534\"></img></p>",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/9076273cb6a21034612b5a689915ad07\"></img></p>",
+                        "label": "A"
+                    },
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/ae9cafba1fa280e66c1f845afee4b84c\"></img></p>",
+                        "label": "B"
+                    },
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/089a6280e96c84e66692d8cae9b3f0e7\"></img></p>",
+                        "label": "C"
+                    },
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/def96dc68e564dd6d2a7a18805ed3534\"></img></p>",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "D",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/def96dc68e564dd6d2a7a18805ed3534\"></img></p>",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/ae9cafba1fa280e66c1f845afee4b84c\"></img></p>",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/089a6280e96c84e66692d8cae9b3f0e7\"></img></p>",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/9076273cb6a21034612b5a689915ad07\"></img></p>",
+                        "label": "A"
+                    }
+                },
+                "labelText": "刑事案件程序规定",
+                "labelsArray_text": "刑事案件程序规定",
+                "examPointName": "刑事案件程序规定",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444947,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929108,
+            "level": 25,
+            "subjectDo": {
+                "id": 929108,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"C\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>李某因涉嫌盗窃罪于6月1日被刑事拘留，6月11日被依法逮捕，6月15日李某交代了其在实施盗窃前一天还抢劫过路人甲的一条钻石项链。6月16日侦查人员呈请县级公安机关负责人批准后，制作重新计算侦查羁押期限通如书。对重新计算李某侦查羁押期限的起始时间表述正确的是（    ）。</p>",
+                "opt": "[{\"content\": \"6月1日\", \"label\": \"A\"}, {\"content\": \"6月11日\", \"label\": \"B\"}, {\"content\": \"6月15日\", \"label\": \"C\"}, {\"content\": \"6月16日\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查刑事执法依据。</p><p>《中华人民共和国刑事诉讼法》第一百五十六条规定：“对犯罪嫌疑人逮捕后的侦查羁押期限不得超过二个月。案情复杂、期限届满不能终结的案件，可以经上一级人民检察院批准延长一个月。”第一百六十条规定：“在侦查期间，发现犯罪嫌疑人另有重要罪行的，自发现之日起依照本法第一百五十六条的规定重新计算侦查羁押期限。……”李某因涉嫌盗窃罪被公安机关侦查期间，发现李某于6月15日犯抢劫罪，因此应该从6月15日重新计算李某的侦查羁押期限。</p><p>故正确答案为C。</p>",
+                "optList": [
+                    {
+                        "content": "6月1日",
+                        "label": "A"
+                    },
+                    {
+                        "content": "6月11日",
+                        "label": "B"
+                    },
+                    {
+                        "content": "6月15日",
+                        "label": "C"
+                    },
+                    {
+                        "content": "6月16日",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "6月1日",
+                        "label": "A"
+                    },
+                    {
+                        "content": "6月11日",
+                        "label": "B"
+                    },
+                    {
+                        "content": "6月15日",
+                        "label": "C"
+                    },
+                    {
+                        "content": "6月16日",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "C",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "6月16日",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "6月11日",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "6月15日",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "6月1日",
+                        "label": "A"
+                    }
+                },
+                "labelText": "刑事诉讼法",
+                "labelsArray_text": "刑事诉讼法",
+                "examPointName": "刑事诉讼法",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444948,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929109,
+            "level": 26,
+            "subjectDo": {
+                "id": 929109,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"A\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>为了促进行政案件繁简分流，2019年1月1日施行的《公安机关办理行政案件程序规定》增加了轻微行政案件快速办理的相关内容。以下可以适用快速办理的案件是（    ）。</p>",
+                "opt": "[{\"content\": \"无业人员段某吸食毒品案\", \"label\": \"A\"}, {\"content\": \"聋哑人张某偷开他人机动车案\", \"label\": \"B\"}, {\"content\": \"退休人员孔某制造噪声干扰正常生活案\", \"label\": \"C\"}, {\"content\": \"疑似精神病人刘某扰乱公共场所秩序案\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查行政执法依据。</p><p>A项正确，《中华人民共和国治安管理处罚法》第七十二条规定：“有下列行为之一的，处十日以上十五日以下拘留，可以并处二千元以下罚款；情节较轻的，处五日以下拘留或者五百元以下罚款：（三）吸食、注射毒品的”；《公安机关办理行政案件程序规定》第四十一条规定：行政案件具有下列情形之一的，不适用快速办理：（三）可能作出十日以上行政拘留处罚的。本题中无业人员段某吸食毒品如果是情节较轻的情况即五日以下拘留可以适用快速办理。</p><p>B项错误，《公安机关办理行政案件程序规定》第四十一条规定：行政案件具有下列情形之一的，不适用快速办理：（一）违法嫌疑人系盲、聋、哑人，未成年人或者疑似精神病人的。题目中张某系聋哑人，不适用快速办理程序。</p><p>C项错误，《公安机关办理行政案件程序规定》第四十条规定：对不适用简易程序，但事实清楚，违法嫌疑人自愿认错认罚，且对违法事实和法律适用没有异议的行政案件，公安机关可以通过简化取证方式和审核审批手续等措施快速办理。根据《治安管理处罚法》第五十八条规定：“违反关于社会生活噪声污染防治的法律规定，制造噪声干扰他人正常生活的，处警告；警告后不改正的，处二百元以上五百元以下罚款。”孔某制造噪声可以通过简易程序处理因此不适用快速办理。</p><p>D项错误，《公安机关办理行政案件程序规定》第四十一条规定：行政案件具有下列情形之一的，不适用快速办理：（一）违法嫌疑人系盲、聋、哑人，未成年人或者疑似精神病人的。题目中刘某为疑似精神病人，不适用快速办理程序。</p><p>本题为争议题，笔者倾向性答案为A。</p>",
+                "optList": [
+                    {
+                        "content": "无业人员段某吸食毒品案",
+                        "label": "A"
+                    },
+                    {
+                        "content": "聋哑人张某偷开他人机动车案",
+                        "label": "B"
+                    },
+                    {
+                        "content": "退休人员孔某制造噪声干扰正常生活案",
+                        "label": "C"
+                    },
+                    {
+                        "content": "疑似精神病人刘某扰乱公共场所秩序案",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "无业人员段某吸食毒品案",
+                        "label": "A"
+                    },
+                    {
+                        "content": "聋哑人张某偷开他人机动车案",
+                        "label": "B"
+                    },
+                    {
+                        "content": "退休人员孔某制造噪声干扰正常生活案",
+                        "label": "C"
+                    },
+                    {
+                        "content": "疑似精神病人刘某扰乱公共场所秩序案",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "A",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "疑似精神病人刘某扰乱公共场所秩序案",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "聋哑人张某偷开他人机动车案",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "退休人员孔某制造噪声干扰正常生活案",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "无业人员段某吸食毒品案",
+                        "label": "A"
+                    }
+                },
+                "labelText": "行政案件程序规定",
+                "labelsArray_text": "行政案件程序规定",
+                "examPointName": "行政案件程序规定",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444949,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929110,
+            "level": 27,
+            "subjectDo": {
+                "id": 929110,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>下列案件公安机关在作出行政处罚决定前，应当告知其有权要求举行听证的是（    ）。</p>",
+                "opt": "[{\"content\": \"刘某侮辱他人，拟对其处以罚款500元\", \"label\": \"A\"}, {\"content\": \"李某参与赌博，拟对其处以行政拘留5日\", \"label\": \"B\"}, {\"content\": \"某典当行违法经营，拟对其处以罚款5000元\", \"label\": \"C\"}, {\"content\": \"某保安培训公司违反规定，拟吊销其《保安培训许可证》\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查行政执法依据。</p><p>《公安机关办理行政案件程序规定》第一百二十三条规定：“在作出下列行政处罚决定之前，应当告知违法嫌疑人有要求举行听证的权利：（一）责令停产停业；（二）吊销许可证或者执照；（三）较大数额罚款；（四）法律、法规和规章规定违法嫌疑人可以要求举行听证的其他情形。 前款第三项所称“较大数额罚款”，是指对个人处以二千元以上罚款，对单位处以一万元以上罚款，对违反边防出境入境管理法律、法规和规章的个人处以六千元以上罚款。对依据地方性法规或者地方政府规章作出的罚款处罚，适用听证的罚款数额按照地方规定执行。”</p><p>A项错误，对刘某处500元罚款，无需告知违法嫌疑人有要求举行听证的权利。</p><p>B项错误，对李某行政拘留5日，无需告知违法嫌疑人有要求举行听证的权利。</p><p>C项错误，对典当行处以5000元罚款，无需告知其有要求举行听证的权利。</p><p>D项正确，吊销保安培训公司的《保安培训许可证》，应当告知其有要求举行听证的权利。</p><p>故正确答案为D。</p>",
+                "optList": [
+                    {
+                        "content": "刘某侮辱他人，拟对其处以罚款500元",
+                        "label": "A"
+                    },
+                    {
+                        "content": "李某参与赌博，拟对其处以行政拘留5日",
+                        "label": "B"
+                    },
+                    {
+                        "content": "某典当行违法经营，拟对其处以罚款5000元",
+                        "label": "C"
+                    },
+                    {
+                        "content": "某保安培训公司违反规定，拟吊销其《保安培训许可证》",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "刘某侮辱他人，拟对其处以罚款500元",
+                        "label": "A"
+                    },
+                    {
+                        "content": "李某参与赌博，拟对其处以行政拘留5日",
+                        "label": "B"
+                    },
+                    {
+                        "content": "某典当行违法经营，拟对其处以罚款5000元",
+                        "label": "C"
+                    },
+                    {
+                        "content": "某保安培训公司违反规定，拟吊销其《保安培训许可证》",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "D",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "某保安培训公司违反规定，拟吊销其《保安培训许可证》",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "李某参与赌博，拟对其处以行政拘留5日",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "某典当行违法经营，拟对其处以罚款5000元",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "刘某侮辱他人，拟对其处以罚款500元",
+                        "label": "A"
+                    }
+                },
+                "labelText": "行政案件程序规定",
+                "labelsArray_text": "行政案件程序规定",
+                "examPointName": "行政案件程序规定",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444950,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929111,
+            "level": 28,
+            "subjectDo": {
+                "id": 929111,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"A\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>根据《行政诉讼法》相关规定，公民、法人或其他组织认为行政机关的行政行为侵犯其合法权益的，有权提起行政诉讼。下列能够作为行政诉讼被告的是（    ）。</p>",
+                "opt": "[{\"content\": \"汉庄乡人民政府\", \"label\": \"A\"}, {\"content\": \"新宁路居民委员会\", \"label\": \"B\"}, {\"content\": \"花园村村民委员会\", \"label\": \"C\"}, {\"content\": \"城南公安分局法制大队\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查行政执法依据。</p><p>A项正确，《行政诉讼法》第二十六条规定：“公民、法人或者其他组织直接向人民法院提起诉讼的，作出行政行为的行政机关是被告。汉庄乡人民政府属于行政机关，能够作为行政诉讼被告。</p><p>B、C项错误《最高人民法院关于适用〈中华人民共和国行政诉讼法〉的解释》第二十四条规定：“当事人对村民委员会或者居民委员会依据法律、法规、规章的授权履行行政管理职责的行为不服提起诉讼的，以村民委员会或者居民委员会为被告。” 村委会和居委会虽然不属于行政机关，如果其行为属于被授权行使行政管理职责的范畴，能够作为行政诉讼被告。但是本题为单选题，题干并未对其是否授权做说明，因此择优选取A。</p><p>D项错误，《最高人民法院关于适用〈中华人民共和国行政诉讼法〉的解释》第二十条第三款规定：“法律、法规或者规章授权行使行政职权的行政机关内设机构、派出机构或者其他组织，超出法定授权范围实施行政行为，当事人不服提起诉讼的，应当以实施该行为的机构或者组织为被告。” 法制大队属于公安局的内设机构，一般情况下是不作为行政诉讼被告的，如果法制大队所实施的行政行为，属于法律、法规或者规章授权行使行政职权，则法制大队能够作为行政诉讼被告。但是本题为单选题，题干并未对其是否授权做说明，因此择优选取A。</p><p>本题为单选题，故正确答案为A。</p>",
+                "optList": [
+                    {
+                        "content": "汉庄乡人民政府",
+                        "label": "A"
+                    },
+                    {
+                        "content": "新宁路居民委员会",
+                        "label": "B"
+                    },
+                    {
+                        "content": "花园村村民委员会",
+                        "label": "C"
+                    },
+                    {
+                        "content": "城南公安分局法制大队",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "汉庄乡人民政府",
+                        "label": "A"
+                    },
+                    {
+                        "content": "新宁路居民委员会",
+                        "label": "B"
+                    },
+                    {
+                        "content": "花园村村民委员会",
+                        "label": "C"
+                    },
+                    {
+                        "content": "城南公安分局法制大队",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "A",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "城南公安分局法制大队",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "新宁路居民委员会",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "花园村村民委员会",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "汉庄乡人民政府",
+                        "label": "A"
+                    }
+                },
+                "labelText": "行政管理与服务能力",
+                "labelsArray_text": "行政管理与服务能力",
+                "examPointName": "行政管理与服务能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444951,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929112,
+            "level": 29,
+            "subjectDo": {
+                "id": 929112,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"C\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>新中国成立前人民公安机关经历了曲折的发展历程。我党在不同历史阶段设立了以下公安保卫组织或机构，按建立时间先后排序正确的是（    ）。</p><p>①中央社会部  ②中央特科  ③华北公安部  ④国家政治保卫局</p>",
+                "opt": "[{\"content\": \"①②③④\", \"label\": \"A\"}, {\"content\": \"②①③④\", \"label\": \"B\"}, {\"content\": \"②④①③\", \"label\": \"C\"}, {\"content\": \"①④②③\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>①中央社会部：1939年2月，中央决定在党的高级组织内成立社会部，下设侦查、治安、情报、干部保卫和中央警卫团等机构；</p><p>②中央特科：为了确保党中央的安全，在周恩来主持的中央特委的直接领导下，于1927年12月在上海建立了中央特科，这是我党在中央机关设立的最早的保卫组织；</p><p>③华北公安部：1948年5月8日华北公安部成立；</p><p>④国家政治保卫局：1931年11月，在江西瑞金召开的第一次中华苏维埃工农兵代表大会上，成立了中华苏维埃临时中央政府，以原来的苏区中央局保卫处为基础，组建国家政治保卫局，这是我国最早的人民政权的公安保卫机关。</p><p>按照时间顺序为中央特科、国家政治保卫局、中央社会部、华北公安部。</p><p>故正确答案为C。</p>",
+                "optList": [
+                    {
+                        "content": "①②③④",
+                        "label": "A"
+                    },
+                    {
+                        "content": "②①③④",
+                        "label": "B"
+                    },
+                    {
+                        "content": "②④①③",
+                        "label": "C"
+                    },
+                    {
+                        "content": "①④②③",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "①②③④",
+                        "label": "A"
+                    },
+                    {
+                        "content": "②①③④",
+                        "label": "B"
+                    },
+                    {
+                        "content": "②④①③",
+                        "label": "C"
+                    },
+                    {
+                        "content": "①④②③",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "C",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "①④②③",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "②①③④",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "②④①③",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "①②③④",
+                        "label": "A"
+                    }
+                },
+                "labelText": "政治常识",
+                "labelsArray_text": "政治常识",
+                "examPointName": "政治常识",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444952,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929113,
+            "level": 30,
+            "subjectDo": {
+                "id": 929113,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"B\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>国家安全工作应当坚持总体国家安全观，走中国特色国家安全道路。以下关于总体国家安全观基本内涵的表述中，正确的是（    ）。</p>",
+                "opt": "[{\"content\": \"以经济安全为宗旨\", \"label\": \"A\"}, {\"content\": \"以人民安全为宗旨\", \"label\": \"B\"}, {\"content\": \"以文化安全为根本\", \"label\": \"C\"}, {\"content\": \"以生态安全为根本\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查国家安全法。</p><p>2014年4月15日上午，中共中央总书记、国家主席、中央军委主席、中央国家安全委员会主席习近平在主持召开中央国家安全委员会第一次会议时提出，坚持总体国家安全观，走出一条中国特色国家安全道路。我国国家安全治理，是坚持中国特色国家安全道路的安全治理实践。以人民安全为宗旨，以政治安全为根本，以经济安全为基础，以军事、文化、社会安全为保障，以促进国际安全为依托，构成了总体国家安全观指引的安全治理方略。我国国家安全治理，是全面系统的安全治理体系。</p><p>A项错误，经济安全是总体国家安全观的基础。</p><p>B项正确，人民安全是总体国家安全观的宗旨。</p><p>C项错误，文化安全是总体国家安全观的保障。</p><p>D项错误，总体国家安全观的根本是政治安全，而不是生态安全。</p><p>故正确答案为B。</p>",
+                "optList": [
+                    {
+                        "content": "以经济安全为宗旨",
+                        "label": "A"
+                    },
+                    {
+                        "content": "以人民安全为宗旨",
+                        "label": "B"
+                    },
+                    {
+                        "content": "以文化安全为根本",
+                        "label": "C"
+                    },
+                    {
+                        "content": "以生态安全为根本",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "以经济安全为宗旨",
+                        "label": "A"
+                    },
+                    {
+                        "content": "以人民安全为宗旨",
+                        "label": "B"
+                    },
+                    {
+                        "content": "以文化安全为根本",
+                        "label": "C"
+                    },
+                    {
+                        "content": "以生态安全为根本",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "B",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "以生态安全为根本",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "以人民安全为宗旨",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "以文化安全为根本",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "以经济安全为宗旨",
+                        "label": "A"
+                    }
+                },
+                "labelText": "中华人民共和国国家安全法",
+                "labelsArray_text": "中华人民共和国国家安全法",
+                "examPointName": "中华人民共和国国家安全法",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444953,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929114,
+            "level": 31,
+            "subjectDo": {
+                "id": 929114,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>结合人民警察职业的性质、特点和任务，公安机关人民警察的职务序列分为警官职务序列、警员职务序列和警务技术职务序列。下列属于警官职务序列的是（    ）。</p>",
+                "opt": "[{\"content\": \"公安厅巡视员\", \"label\": \"A\"}, {\"content\": \"公安局调研员\", \"label\": \"B\"}, {\"content\": \"公安分局警长\", \"label\": \"C\"}, {\"content\": \"公安派出所教导员\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查公安基本理论。</p><p>根据《公安机关组织管理条例》第十一条规定：“公安机关履行警务指挥职责的人民警察实行警官职务序列。公安机关领导成员和内设综合管理机构警官职务由高至低为：省部级正职、省部级副职、厅局级正职、厅局级副职、县处级正职、县处级副职、乡科级正职、乡科级副职。公安机关内设执法勤务机构警官职务由高至低为：总队长、副总队长、支队长、副支队长、大队长、副大队长、中队长、副中队长。县级以上地方人民政府公安机关派出机构、内设执法勤务机构和不设区的市、县、自治县公安局根据工作需要，可以设置主管政治工作的政治委员、教导员、指导员等警官职务。”因此，公安派出所的教导员属于警官职务序列。</p><p>故正确答案为D。</p>",
+                "optList": [
+                    {
+                        "content": "公安厅巡视员",
+                        "label": "A"
+                    },
+                    {
+                        "content": "公安局调研员",
+                        "label": "B"
+                    },
+                    {
+                        "content": "公安分局警长",
+                        "label": "C"
+                    },
+                    {
+                        "content": "公安派出所教导员",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "公安厅巡视员",
+                        "label": "A"
+                    },
+                    {
+                        "content": "公安局调研员",
+                        "label": "B"
+                    },
+                    {
+                        "content": "公安分局警长",
+                        "label": "C"
+                    },
+                    {
+                        "content": "公安派出所教导员",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "D",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "公安派出所教导员",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "公安局调研员",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "公安分局警长",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "公安厅巡视员",
+                        "label": "A"
+                    }
+                },
+                "labelText": "公安队伍建设",
+                "labelsArray_text": "公安队伍建设",
+                "examPointName": "公安队伍建设",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444954,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929115,
+            "level": 32,
+            "subjectDo": {
+                "id": 929115,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"B\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>公安机关及其人民警察依法履职和遵守纪律的情况必须接受来自国家机关、社会组织和公民等方面的监督。根据监督主体和监督对象隶属关系的不同，公安执法监督可以分为外部监督和内部监督。下列属于内部监督的是（    ）。</p>",
+                "opt": "[{\"content\": \"群众监督\", \"label\": \"A\"}, {\"content\": \"督察监督\", \"label\": \"B\"}, {\"content\": \"监察监督\", \"label\": \"C\"}, {\"content\": \"检察监督\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查执法监督。</p><p>公安执法监督特征中，监督主体具有广泛性。包括国家权力机关、行政监察机关、检察机关、审判机关、社会组织、个人和公安机关内部的监督。公安机关内部执法监督有：督察制度、法制部门监督制度、公安行政复议制度、公安赔偿制度、职务回避制度。</p><p>公安机关外部执法监督有：国家权力机关监察制度、行政监察制度、检察监督制度、行政诉讼制度、社会监督制度。</p><p>A项错误，群众监督属于外部监督中的社会监督。</p><p>B项正确，督察监督属于内部监督。</p><p>C项错误，监察监督属于外部监督。</p><p>D项错误，检察监督属于外部监督。</p><p>故正确答案为B。</p>",
+                "optList": [
+                    {
+                        "content": "群众监督",
+                        "label": "A"
+                    },
+                    {
+                        "content": "督察监督",
+                        "label": "B"
+                    },
+                    {
+                        "content": "监察监督",
+                        "label": "C"
+                    },
+                    {
+                        "content": "检察监督",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "群众监督",
+                        "label": "A"
+                    },
+                    {
+                        "content": "督察监督",
+                        "label": "B"
+                    },
+                    {
+                        "content": "监察监督",
+                        "label": "C"
+                    },
+                    {
+                        "content": "检察监督",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "B",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "检察监督",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "督察监督",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "监察监督",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "群众监督",
+                        "label": "A"
+                    }
+                },
+                "labelText": "公安执法监督",
+                "labelsArray_text": "公安执法监督",
+                "examPointName": "公安执法监督",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444955,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929116,
+            "level": 33,
+            "subjectDo": {
+                "id": 929116,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"B\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>随着我国公安体制改革的持续推进，警察的事权划分更加合理，管理机制更加顺畅。以下关于公安体制改革的表述，正确的是（    ）。</p>",
+                "opt": "[{\"content\": \"组建国家移民管理局，加挂出入境管理局牌子，由民政部管理\", \"label\": \"A\"}, {\"content\": \"公安消防部队全部退出现役，成建制划归应急管理部\", \"label\": \"B\"}, {\"content\": \"铁路部门警察已经完全转隶到地方公安机关管理\", \"label\": \"C\"}, {\"content\": \"规范警务辅助人员管理，纳入警察职务序列改革\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查公安时政。</p><p>A项错误，国家移民管理局是根据第十三届全国人民代表大会第一次会议批准的国务院机构改革方案组建，由中华人民共和国公安部管理。A项由民政部管理的说法错误。</p><p>B项正确，2018年3月21日，国务院改革方案落地公布，公安消防部队转制敲定，现役官兵集体退役转制移交，其编制由现役编制转为行政编制，整体移交应急管理部，继续承担灭火救援和其他应急救援工作。</p><p>C项错误，铁路公安部门即中华人民共和国公安部铁路公安局，2018年12月28日中央政法委明确表示铁路公安部门为中华人民共和国公安部内设机构，即公安部十局。铁路公安机关由公安部统一领导，不归地方公安管理，故C项错误。</p><p>D项错误，公安机关执法勤务警员职务序列改革方案，是以在编在职的公安民警为范围，进行的公安机关执法勤务警员和警务技术职务序列改革，警务辅助人员未纳入本次改革。</p><p>故正确答案为B。</p>",
+                "optList": [
+                    {
+                        "content": "组建国家移民管理局，加挂出入境管理局牌子，由民政部管理",
+                        "label": "A"
+                    },
+                    {
+                        "content": "公安消防部队全部退出现役，成建制划归应急管理部",
+                        "label": "B"
+                    },
+                    {
+                        "content": "铁路部门警察已经完全转隶到地方公安机关管理",
+                        "label": "C"
+                    },
+                    {
+                        "content": "规范警务辅助人员管理，纳入警察职务序列改革",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "组建国家移民管理局，加挂出入境管理局牌子，由民政部管理",
+                        "label": "A"
+                    },
+                    {
+                        "content": "公安消防部队全部退出现役，成建制划归应急管理部",
+                        "label": "B"
+                    },
+                    {
+                        "content": "铁路部门警察已经完全转隶到地方公安机关管理",
+                        "label": "C"
+                    },
+                    {
+                        "content": "规范警务辅助人员管理，纳入警察职务序列改革",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "B",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "规范警务辅助人员管理，纳入警察职务序列改革",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "公安消防部队全部退出现役，成建制划归应急管理部",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "铁路部门警察已经完全转隶到地方公安机关管理",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "组建国家移民管理局，加挂出入境管理局牌子，由民政部管理",
+                        "label": "A"
+                    }
+                },
+                "labelText": "政治常识",
+                "labelsArray_text": "政治常识",
+                "examPointName": "政治常识",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444956,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929117,
+            "level": 34,
+            "subjectDo": {
+                "id": 929117,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"A\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>为充分利用大数据开展道路交通安全宣传教育，某地公安机关对交通事故的数据进行初步分析后下发到公安派出所，下图是驾龄段单起事故死亡率示意图，下列说法中存在认识误区的是（    ）。</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/43a070384d06d25c1efca65b6c81b5bd\"></img></p>",
+                "opt": "[{\"content\": \"驾龄长的机动车驾驶员有经验，不容易出恶性交通事故\", \"label\": \"A\"}, {\"content\": \"经验少的机动车驾驶员开车比较谨慎\", \"label\": \"B\"}, {\"content\": \"随着经验的积累，机动车驾驶员容易产生麻痹大意思想\", \"label\": \"C\"}, {\"content\": \"应当对各驾龄段机动车驾驶员开展经常性交通安全宣传教育\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查情报信息工作能力。</p><p>A项错误，驾龄高于省平均数的机动车驾驶员，单起事故死亡率都高于省平均值。故该说法不正确。</p><p>B项正确，驾龄位于省平均数以下的，单起事故死亡率都低于省平均数。</p><p>C项正确，根据图标可知，随着驾龄的增加，单起事故死亡率不断上升。</p><p>D项正确，各驾龄段机动车驾驶员都存在着单起事故死亡率，应经常性开展安全教育。</p><p>本题为选非题，故正确答案为A。</p>",
+                "optList": [
+                    {
+                        "content": "驾龄长的机动车驾驶员有经验，不容易出恶性交通事故",
+                        "label": "A"
+                    },
+                    {
+                        "content": "经验少的机动车驾驶员开车比较谨慎",
+                        "label": "B"
+                    },
+                    {
+                        "content": "随着经验的积累，机动车驾驶员容易产生麻痹大意思想",
+                        "label": "C"
+                    },
+                    {
+                        "content": "应当对各驾龄段机动车驾驶员开展经常性交通安全宣传教育",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "驾龄长的机动车驾驶员有经验，不容易出恶性交通事故",
+                        "label": "A"
+                    },
+                    {
+                        "content": "经验少的机动车驾驶员开车比较谨慎",
+                        "label": "B"
+                    },
+                    {
+                        "content": "随着经验的积累，机动车驾驶员容易产生麻痹大意思想",
+                        "label": "C"
+                    },
+                    {
+                        "content": "应当对各驾龄段机动车驾驶员开展经常性交通安全宣传教育",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "A",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "应当对各驾龄段机动车驾驶员开展经常性交通安全宣传教育",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "经验少的机动车驾驶员开车比较谨慎",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "随着经验的积累，机动车驾驶员容易产生麻痹大意思想",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "驾龄长的机动车驾驶员有经验，不容易出恶性交通事故",
+                        "label": "A"
+                    }
+                },
+                "labelText": "公安情报信息工作能力",
+                "labelsArray_text": "公安情报信息工作能力",
+                "examPointName": "公安情报信息工作能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444957,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929118,
+            "level": 35,
+            "subjectDo": {
+                "id": 929118,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"A\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>一辆轿车停在高速公路应急车道上，对交通安全造成很大影响，正在高速公路上巡逻的交警见状下车向驾驶员询问，得知汽车没油情况后，交警立即在车后方150米处设好警示牌，同时打开车辆双闪指示灯，提醒过往车辆注意安全，随后帮助驾驶员加油，驶离高速公路。交警的做法最能说明的是（    ）。</p>",
+                "opt": "[{\"content\": \"人民警察遇到群众的实际困难应予以必要协助\", \"label\": \"A\"}, {\"content\": \"人民警察是群众利益的忠实维护者\", \"label\": \"B\"}, {\"content\": \"群众在遇到困难时应及时向人民警察求助\", \"label\": \"C\"}, {\"content\": \"群众的困难都可以由人民警察来解决\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查人民警察法。</p><p>《人民警察法》第二十一条规定：“人民警察遇到公民人身、财产安全受到侵犯或者处于其他危难情形，应当立即救助；对公民提出解决纠纷的要求，应当给予帮助；对公民的报警案件，应当及时查处；人民警察应当积极参加抢险救灾和社会公益工作”。题目中，群众处于危难情形警察立即救助符合法律规定。</p><p>A项正确，符合“人民警察遇到公民人身、财产安全受到侵犯或者处于其他危难情形，应当立即救助”的法律规定。</p><p>B项错误，人民警察维护群众的利益但是选项与本题考点不符。</p><p>C项错误，但题目中是交警主动上前帮忙。</p><p>D项错误，警察并不是万能的，群众的某些困难需要社会共同帮助。</p><p>故正确答案为A。</p>",
+                "optList": [
+                    {
+                        "content": "人民警察遇到群众的实际困难应予以必要协助",
+                        "label": "A"
+                    },
+                    {
+                        "content": "人民警察是群众利益的忠实维护者",
+                        "label": "B"
+                    },
+                    {
+                        "content": "群众在遇到困难时应及时向人民警察求助",
+                        "label": "C"
+                    },
+                    {
+                        "content": "群众的困难都可以由人民警察来解决",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "人民警察遇到群众的实际困难应予以必要协助",
+                        "label": "A"
+                    },
+                    {
+                        "content": "人民警察是群众利益的忠实维护者",
+                        "label": "B"
+                    },
+                    {
+                        "content": "群众在遇到困难时应及时向人民警察求助",
+                        "label": "C"
+                    },
+                    {
+                        "content": "群众的困难都可以由人民警察来解决",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "A",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "群众的困难都可以由人民警察来解决",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "人民警察是群众利益的忠实维护者",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "群众在遇到困难时应及时向人民警察求助",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "人民警察遇到群众的实际困难应予以必要协助",
+                        "label": "A"
+                    }
+                },
+                "labelText": "人民警察法基础知识",
+                "labelsArray_text": "人民警察法基础知识",
+                "examPointName": "人民警察法基础知识",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444958,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929119,
+            "level": 36,
+            "subjectDo": {
+                "id": 929119,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"B\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>松北分局某派出所地处城乡结合部，辖区内接连发生多起电瓶车被盗案，作案手段相似、作案时间多在夜间至凌晨时段，小区出入人员较多，人员构成比较复杂，居民对小区安全感和满意度下降，派出所社区民警小赵认真分析了辖区情况，制定了群防群治工作方案，包括如下步骤：①组建群防群治队伍，开展相关的培训讲解；②召开群防群治骨干力量会议，征询防控工作建议；③民警抓捕偷车贼，提高小区居民安全感、满意度；④民警带领群防群治队伍开展小区巡控工作。</p><p>下列序号正确的是（    ）。</p>",
+                "opt": "[{\"content\": \"①②③④\", \"label\": \"A\"}, {\"content\": \"①②④③\", \"label\": \"B\"}, {\"content\": \"②①④③\", \"label\": \"C\"}, {\"content\": \"②①③④\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查行政管理能力。</p><p>本题更加侧重对业务能力的考查，依据题目本题需要对群防群治的工作步骤进行排序，首先应当组建群防群治队伍，在群防群治组织中选取骨干力量听取他们的建议，进一步确定群防群治的工作内容和工作步骤，最后抓捕偷车贼。</p><p>故正确答案为B。</p>",
+                "optList": [
+                    {
+                        "content": "①②③④",
+                        "label": "A"
+                    },
+                    {
+                        "content": "①②④③",
+                        "label": "B"
+                    },
+                    {
+                        "content": "②①④③",
+                        "label": "C"
+                    },
+                    {
+                        "content": "②①③④",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "①②③④",
+                        "label": "A"
+                    },
+                    {
+                        "content": "①②④③",
+                        "label": "B"
+                    },
+                    {
+                        "content": "②①④③",
+                        "label": "C"
+                    },
+                    {
+                        "content": "②①③④",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "B",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "②①③④",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "①②④③",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "②①④③",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "①②③④",
+                        "label": "A"
+                    }
+                },
+                "labelText": "治安行政管理与服务能力",
+                "labelsArray_text": "治安行政管理与服务能力",
+                "examPointName": "治安行政管理与服务能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444959,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929120,
+            "level": 37,
+            "subjectDo": {
+                "id": 929120,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"C\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>交警王某在查处一起涉嫌酒驾案件时，遇到司机的父亲阻挠。交警等对方情绪缓和后，问到：“今天您坐在车上，您儿子开车您放心，明天您不坐在他车上了，他喝完酒再开车，您放心吗？”司机的父亲顿时语塞，沉思片刻，主动让儿子接受了处罚，对于交警王某的执法方式，下列描述最恰当的是（    ）。</p>",
+                "opt": "[{\"content\": \"情绪式和比较式的执法方式易削弱严格执法的效果\", \"label\": \"A\"}, {\"content\": \"契合严格执法、热情服务的执法理念和职业道德\", \"label\": \"B\"}, {\"content\": \"平和、文明、理性的执法方式有助提高执法效果\", \"label\": \"C\"}, {\"content\": \"体现了人民警察礼貌待人、文明执勤的基本义务要求\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查职业道德与纪律要求。</p><p>A项错误，文中交警王某采用的情绪式和比较式的执法方式，不仅没有削弱严格的执法效果，反而有理有据，让司机的父亲信服，主动让儿子接受处罚，故A项错误。</p><p>B项错误，题中交警王某在执法过程中遇到阻挠时，依然有理有据严格执法，契合人民警察职业道德规范中“秉公执法”的要求，但题中全文并没有体现人民警察职业道德规范中“热请服务”一项，“热情服务”一项侧重于帮助他人，服务社会，故B项错误。</p><p>C项正确，人民警察职业道德规范中规定“文明理性：理性和平，文明礼貌，诚信友善”，交警王某的做法正体现了这一职业道德规范，正是王某体现这一职业道德规范，司机父亲主动让儿子接受处罚，提高了执法效果。故C正确。 </p><p>D项错误，《人民警察法》第二十条规定：“礼貌待人，文明执勤。人民警察必须做到文明办事，礼貌待人，接待群众热情耐心，态度和蔼，杜绝“冷、硬、横”。”题中交警王某已经查处司机涉嫌酒驾，应侧重点在执法方式，礼貌待人、文明执勤则侧重于对待群众求助，服务群众时的态度。故D项错误。</p><p>故正确答案为C。</p>",
+                "optList": [
+                    {
+                        "content": "情绪式和比较式的执法方式易削弱严格执法的效果",
+                        "label": "A"
+                    },
+                    {
+                        "content": "契合严格执法、热情服务的执法理念和职业道德",
+                        "label": "B"
+                    },
+                    {
+                        "content": "平和、文明、理性的执法方式有助提高执法效果",
+                        "label": "C"
+                    },
+                    {
+                        "content": "体现了人民警察礼貌待人、文明执勤的基本义务要求",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "情绪式和比较式的执法方式易削弱严格执法的效果",
+                        "label": "A"
+                    },
+                    {
+                        "content": "契合严格执法、热情服务的执法理念和职业道德",
+                        "label": "B"
+                    },
+                    {
+                        "content": "平和、文明、理性的执法方式有助提高执法效果",
+                        "label": "C"
+                    },
+                    {
+                        "content": "体现了人民警察礼貌待人、文明执勤的基本义务要求",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "C",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "体现了人民警察礼貌待人、文明执勤的基本义务要求",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "契合严格执法、热情服务的执法理念和职业道德",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "平和、文明、理性的执法方式有助提高执法效果",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "情绪式和比较式的执法方式易削弱严格执法的效果",
+                        "label": "A"
+                    }
+                },
+                "labelText": "职业道德和纪律要求",
+                "labelsArray_text": "职业道德和纪律要求",
+                "examPointName": "职业道德和纪律要求",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444960,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929121,
+            "level": 38,
+            "subjectDo": {
+                "id": 929121,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>入户走访是社区民警直接联系群众，沟通警民感情，了解掌握情况，获取工作信息的重要工作途径。关于入户走访，民警以下做法恰当的是（    ）。</p>",
+                "opt": "[{\"content\": \"坚持每天到不配合工作的群众家中访问\", \"label\": \"A\"}, {\"content\": \"每次走访都要求进入居民家中\", \"label\": \"B\"}, {\"content\": \"在上班时间到社区挨家挨户走访\", \"label\": \"C\"}, {\"content\": \"待居民下班回家后才开展入户走访\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查群众工作能力。</p><p>A项错误，每天到不配合工作的群众家中访问不仅影响群众的工作、生活，还有可能会造成逆反心理。</p><p>B项错误，每次走访都要进入居民家中不符合实际，也会给群众生活带来不便。</p><p>C项错误，上班时间走访可能会因为群众不在家了解不到真实情况，也可能会影响群众的正常工作。</p><p>D项正确，待居民下班后入户走访不会影响居民工作，大部分群众也都在家里，能了解到更加准确的情况。</p><p>故正确答案为D。</p>",
+                "optList": [
+                    {
+                        "content": "坚持每天到不配合工作的群众家中访问",
+                        "label": "A"
+                    },
+                    {
+                        "content": "每次走访都要求进入居民家中",
+                        "label": "B"
+                    },
+                    {
+                        "content": "在上班时间到社区挨家挨户走访",
+                        "label": "C"
+                    },
+                    {
+                        "content": "待居民下班回家后才开展入户走访",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "坚持每天到不配合工作的群众家中访问",
+                        "label": "A"
+                    },
+                    {
+                        "content": "每次走访都要求进入居民家中",
+                        "label": "B"
+                    },
+                    {
+                        "content": "在上班时间到社区挨家挨户走访",
+                        "label": "C"
+                    },
+                    {
+                        "content": "待居民下班回家后才开展入户走访",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "D",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "待居民下班回家后才开展入户走访",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "每次走访都要求进入居民家中",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "在上班时间到社区挨家挨户走访",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "坚持每天到不配合工作的群众家中访问",
+                        "label": "A"
+                    }
+                },
+                "labelText": "群众工作能力",
+                "labelsArray_text": "群众工作能力",
+                "examPointName": "群众工作能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444961,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929122,
+            "level": 39,
+            "subjectDo": {
+                "id": 929122,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"D\"]",
+                "label": "39878",
+                "material": "",
+                "hasMaterial": 0,
+                "content": "<p>化解矛盾纠纷、维护社会治安秩序是公安派出所的主要工作之一。下列可以采用纠纷化解来处理的是（    ）。</p>",
+                "opt": "[{\"label\":\"A\",\"content\":\"陈某刷码开启共享汽车给16岁的儿子“练手”，发生剐蹭事故\"},{\"label\":\"B\",\"content\":\"易某多次在微信朋友圈里对同事曾某进行辱骂\"},{\"label\":\"C\",\"content\":\"刘某因感情纠纷到前妻公司打砸物品，造成损失\"},{\"label\":\"D\",\"content\":\"赵某因外卖延时送达，与快递员李某发生争吵\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p style=\"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 32px; word-break: break-word; color: rgb(60, 70, 79); white-space: normal; background-color: rgb(255, 255, 255);\">本题考查行政管理能力。</p><p style=\"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 32px; word-break: break-word; color: rgb(60, 70, 79); white-space: normal; background-color: rgb(255, 255, 255);\">纠纷化解区别于治安调解，是指对未引起治安违法或刑事犯罪的民间纠纷的调处和化解，此种民间纠纷虽未引发违法犯罪，但因其存在着诱发治安问题的风险，故公安机关应及时化解。</p><p style=\"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 32px; word-break: break-word; color: rgb(60, 70, 79); white-space: normal; background-color: rgb(255, 255, 255);\">A项错误，《中华人民共和国治安管理处罚法》第六十四条规定：“未取得驾驶证驾驶或者偷开他人航空器、移动船舶的，应当处五百元以上一千元以下罚款。”陈某的儿子未满18周岁，不具备申请机动车驾驶证的资格，因此属于未取得驾驶证驾驶，已经涉及治安违法，故不适用于纠纷化解。</p><p style=\"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 32px; word-break: break-word; color: rgb(60, 70, 79); white-space: normal; background-color: rgb(255, 255, 255);\">B项错误，易某多次在微信朋友圈对曾某进行辱骂的行为属于侮辱他人或者寻衅滋事的行为，此行为已经引起治安违法，故不适用于纠纷化解。</p><p style=\"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 32px; word-break: break-word; color: rgb(60, 70, 79); white-space: normal; background-color: rgb(255, 255, 255);\">C项错误，刘某到前妻公司打砸物品的行为属于故意毁坏他人财物的行为，此行为已经引起治安违法，故不适用于纠纷化解。</p><p style=\"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 32px; word-break: break-word; color: rgb(60, 70, 79); white-space: normal; background-color: rgb(255, 255, 255);\">D项正确，赵某因外卖延时送达与李某发生争吵，属于未引起治安违法或刑事犯罪的民间纠纷，此纠纷如不及时化解，容易引发违法行为等更为严重的后果，所以对此可适用纠纷化解。</p><p style=\"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 32px; word-break: break-word; color: rgb(60, 70, 79); white-space: normal; background-color: rgb(255, 255, 255);\">故正确答案为D。</p><p><br/></p>",
+                "optList": [
+                    {
+                        "label": "A",
+                        "content": "陈某刷码开启共享汽车给16岁的儿子“练手”，发生剐蹭事故"
+                    },
+                    {
+                        "label": "B",
+                        "content": "易某多次在微信朋友圈里对同事曾某进行辱骂"
+                    },
+                    {
+                        "label": "C",
+                        "content": "刘某因感情纠纷到前妻公司打砸物品，造成损失"
+                    },
+                    {
+                        "label": "D",
+                        "content": "赵某因外卖延时送达，与快递员李某发生争吵"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "label": "A",
+                        "content": "陈某刷码开启共享汽车给16岁的儿子“练手”，发生剐蹭事故"
+                    },
+                    {
+                        "label": "B",
+                        "content": "易某多次在微信朋友圈里对同事曾某进行辱骂"
+                    },
+                    {
+                        "label": "C",
+                        "content": "刘某因感情纠纷到前妻公司打砸物品，造成损失"
+                    },
+                    {
+                        "label": "D",
+                        "content": "赵某因外卖延时送达，与快递员李某发生争吵"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "D",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "label": "D",
+                        "content": "赵某因外卖延时送达，与快递员李某发生争吵"
+                    },
+                    "option_2": {
+                        "label": "B",
+                        "content": "易某多次在微信朋友圈里对同事曾某进行辱骂"
+                    },
+                    "option_3": {
+                        "label": "C",
+                        "content": "刘某因感情纠纷到前妻公司打砸物品，造成损失"
+                    },
+                    "option_1": {
+                        "label": "A",
+                        "content": "陈某刷码开启共享汽车给16岁的儿子“练手”，发生剐蹭事故"
+                    }
+                },
+                "labelText": "治安行政管理与服务能力",
+                "labelsArray_text": "治安行政管理与服务能力",
+                "examPointName": "治安行政管理与服务能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444962,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929123,
+            "level": 40,
+            "subjectDo": {
+                "id": 929123,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"B\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>汉江市体育场将举办一场大型演唱会，为了保障活动的顺利进行，公安机关需要进行安全风险评估的重点是（    ）。</p>",
+                "opt": "[{\"content\": \"自然灾害风险\", \"label\": \"A\"}, {\"content\": \"人群聚集风险\", \"label\": \"B\"}, {\"content\": \"空气污染风险\", \"label\": \"C\"}, {\"content\": \"环境噪音风险\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查行政管理能力。</p><p>根据《大型群众性活动安全管理条例》第二条规定：“本条例所称大型群众性活动，是指法人或者其他组织面向社会公众举办的每场次预计参加人数达到1000人以上的下列活动：（一）体育比赛活动；（二）演唱会、音乐会等文艺演出活动；（三）展览、展销等活动；（四）游园、灯会、庙会、花会、焰火晚会等活动；（五）人才招聘会、现场开奖的彩票销售等活动。影剧院、音乐厅、公园、娱乐场所等在其日常业务范围内举办的活动，不适用本条例的规定。”在体育场举办大型演唱会，人员密集易发生踩踏风险，因此安全风险评估的重点是人群聚集风险。</p><p>故正确答案为B。</p>",
+                "optList": [
+                    {
+                        "content": "自然灾害风险",
+                        "label": "A"
+                    },
+                    {
+                        "content": "人群聚集风险",
+                        "label": "B"
+                    },
+                    {
+                        "content": "空气污染风险",
+                        "label": "C"
+                    },
+                    {
+                        "content": "环境噪音风险",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "自然灾害风险",
+                        "label": "A"
+                    },
+                    {
+                        "content": "人群聚集风险",
+                        "label": "B"
+                    },
+                    {
+                        "content": "空气污染风险",
+                        "label": "C"
+                    },
+                    {
+                        "content": "环境噪音风险",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "B",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "环境噪音风险",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "人群聚集风险",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "空气污染风险",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "自然灾害风险",
+                        "label": "A"
+                    }
+                },
+                "labelText": "治安行政管理与服务能力",
+                "labelsArray_text": "治安行政管理与服务能力",
+                "examPointName": "治安行政管理与服务能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444963,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929124,
+            "level": 41,
+            "subjectDo": {
+                "id": 929124,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"B\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>近年来网约车成为大众出行的便捷方式，网约车的安全问题也引起了社会的广泛关注，为了有效预防利用网约车实施的违法犯罪行为，公安机关开展的以下活动，正确的做法是（    ）。</p>",
+                "opt": "[{\"content\": \"将网约车车主信息向社会公布，以供监督\", \"label\": \"A\"}, {\"content\": \"通过新媒体向市民推送出行安全注意事项\", \"label\": \"B\"}, {\"content\": \"要求登记在册的所有网约车停业整顿\", \"label\": \"C\"}, {\"content\": \"责令平台加强对网约车的监管\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查行政管理能力。</p><p>A项错误，车主信息属于个人隐私，将网约车车主信息向社会公布侵犯了网约车车主的个人隐私，不应当公布。</p><p>B项正确，通过新媒体向市民推送出行安全注意事项有利于提高市民安全防范意识，有效预防网约车违法犯罪。</p><p>C项错误，《行政处罚法》第三条规定：公民、法人或者其他组织违反行政管理秩序的行为，应当给予行政处罚的，依照本法由法律、法规或者规章规定，并由行政机关依照本法规定的程序实施。 没有法定依据或者不遵守法定程序的，行政处罚无效。本题中不是所有的网约车都存在违法行为，不能要求所有网约车进行停业整顿。</p><p>D项错误，法律对责令平台加强对网约车的监管没有做出规定，公安机关责令平台加强监管没有法律依据。</p><p>故正确答案为B。</p>",
+                "optList": [
+                    {
+                        "content": "将网约车车主信息向社会公布，以供监督",
+                        "label": "A"
+                    },
+                    {
+                        "content": "通过新媒体向市民推送出行安全注意事项",
+                        "label": "B"
+                    },
+                    {
+                        "content": "要求登记在册的所有网约车停业整顿",
+                        "label": "C"
+                    },
+                    {
+                        "content": "责令平台加强对网约车的监管",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "将网约车车主信息向社会公布，以供监督",
+                        "label": "A"
+                    },
+                    {
+                        "content": "通过新媒体向市民推送出行安全注意事项",
+                        "label": "B"
+                    },
+                    {
+                        "content": "要求登记在册的所有网约车停业整顿",
+                        "label": "C"
+                    },
+                    {
+                        "content": "责令平台加强对网约车的监管",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "B",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "责令平台加强对网约车的监管",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "通过新媒体向市民推送出行安全注意事项",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "要求登记在册的所有网约车停业整顿",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "将网约车车主信息向社会公布，以供监督",
+                        "label": "A"
+                    }
+                },
+                "labelText": "治安行政管理与服务能力",
+                "labelsArray_text": "治安行政管理与服务能力",
+                "examPointName": "治安行政管理与服务能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444964,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929125,
+            "level": 42,
+            "subjectDo": {
+                "id": 929125,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"C\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>2020年5月12日0时至6时之间，某市经开区一化工厂财务室发生一起盗窃案，该辖区民警赶到现场展开调查，他不需要收集的信息是（    ）。</p>",
+                "opt": "[{\"content\": \"该化工厂的夜间安全措施信息\", \"label\": \"A\"}, {\"content\": \"被盗财物信息\", \"label\": \"B\"}, {\"content\": \"该化工厂财务室货金流水信息\", \"label\": \"C\"}, {\"content\": \"被盗现场信息\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查情报信息工作能力。</p><p>A项错误，收集该化工厂的夜间安全措施信息可以帮助分析犯罪嫌疑人进入化工厂的路径，所以需要收集。</p><p>B项错误，被盗财物信息关系到案件定性，所以需要收收集。</p><p>C项正确，该化工厂财务室货金流水信息对盗窃案的侦破没有作用，所以不需要收集。</p><p>D项错误，收集被盗现场信息供侦查破案，所以需要收集。</p><p>本题为选非题，故正确答案为C。</p>",
+                "optList": [
+                    {
+                        "content": "该化工厂的夜间安全措施信息",
+                        "label": "A"
+                    },
+                    {
+                        "content": "被盗财物信息",
+                        "label": "B"
+                    },
+                    {
+                        "content": "该化工厂财务室货金流水信息",
+                        "label": "C"
+                    },
+                    {
+                        "content": "被盗现场信息",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "该化工厂的夜间安全措施信息",
+                        "label": "A"
+                    },
+                    {
+                        "content": "被盗财物信息",
+                        "label": "B"
+                    },
+                    {
+                        "content": "该化工厂财务室货金流水信息",
+                        "label": "C"
+                    },
+                    {
+                        "content": "被盗现场信息",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "C",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "被盗现场信息",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "被盗财物信息",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "该化工厂财务室货金流水信息",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "该化工厂的夜间安全措施信息",
+                        "label": "A"
+                    }
+                },
+                "labelText": "公安情报信息工作能力",
+                "labelsArray_text": "公安情报信息工作能力",
+                "examPointName": "公安情报信息工作能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444965,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929126,
+            "level": 43,
+            "subjectDo": {
+                "id": 929126,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>江海市出海民警正在调查制毒贩毒团伙案，有线索显示该团伙头目赵某将乘机由江海市前往江东市，得到航班信息如下：</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/5893f39fc28dc05cae184bb729a55290\"></img></p><p>其中，最有可能与赵某同行的人员是（    ）。</p>",
+                "opt": "[{\"content\": \"钱某、孙某\", \"label\": \"A\"}, {\"content\": \"孙某、李某\", \"label\": \"B\"}, {\"content\": \"孙某、周某\", \"label\": \"C\"}, {\"content\": \"李某、周某\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查情报信息工作能力。</p><p>从表中信息可以得知，要想与赵某同行，需要表格中的各项信息高度重合，据此得知：</p><p>A项错误，从表格信息得知，钱某的航班号、起飞时间、订票电话等订票信息与赵某的信息都不一致，孙某的订票电话与赵某的信息不一致。</p><p>B项错误，从表格信息得知，李某的订票信息与赵某的订票信息完全一致，但孙某的订票电话与赵某的订票电话不一致。</p><p>C项错误，从表格的信息得知，周某的订票信息与赵某的订票信息完全一致，但孙某的订票电话与赵某的订票电话不一致。</p><p>D项正确，从表格的信息得知，赵某与李某和周某的航班号、起飞时间、始发地、目的地以及订票电话等信息全部一致，因而赵某最有可能与李某和周某同行。</p><p>故正确答案为D。</p>",
+                "optList": [
+                    {
+                        "content": "钱某、孙某",
+                        "label": "A"
+                    },
+                    {
+                        "content": "孙某、李某",
+                        "label": "B"
+                    },
+                    {
+                        "content": "孙某、周某",
+                        "label": "C"
+                    },
+                    {
+                        "content": "李某、周某",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "钱某、孙某",
+                        "label": "A"
+                    },
+                    {
+                        "content": "孙某、李某",
+                        "label": "B"
+                    },
+                    {
+                        "content": "孙某、周某",
+                        "label": "C"
+                    },
+                    {
+                        "content": "李某、周某",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "D",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "李某、周某",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "孙某、李某",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "孙某、周某",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "钱某、孙某",
+                        "label": "A"
+                    }
+                },
+                "labelText": "公安情报信息工作能力",
+                "labelsArray_text": "公安情报信息工作能力",
+                "examPointName": "公安情报信息工作能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444966,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929127,
+            "level": 44,
+            "subjectDo": {
+                "id": 929127,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"A\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>某日，民警甲、乙两人在街区巡逻途中，发现一名男子形迹可疑，初步判断该男子身上可能隐匿凶器，民警下列做法错误的是（    ）。</p>",
+                "opt": "[{\"content\": \"民警甲、乙直接上前对可疑男子进行盘问，然后对其控制检查\", \"label\": \"A\"}, {\"content\": \"盘问时，民警甲负责盘问，民警乙负责警戒\", \"label\": \"B\"}, {\"content\": \"盘问时，民警让该男子背对开阔街面并始终与该男子保持安全距离\", \"label\": \"C\"}, {\"content\": \"因男子拒不交代身份，民警将其带至公安派出所继续盘问\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>A项错误，《公安机关办理行政案件程序规定》第五十七条规定：“为维护社会秩序，人民警察对违法嫌疑的人员，经表明执法身份后，可以当场盘问、检查。对当场盘问、检查后，不能排除其违法嫌疑，依法可以适用继续盘问的，可以将其带至公安机关，经公安派出所负责人批准，对其继续盘问。”民警甲、乙应表明执法身份后，再进行盘问，题干直接上前盘问不妥。</p><p>B项正确，《人民警察现场盘问检查规定》第七条规定（三）：“盘问时由一人主问，其他人员负责警戒，防止被盘查人或者其同伙的袭击。”民警甲负责盘问，民警乙负责警戒正确。</p><p>C项正确，《人民警察现场盘问检查规定》第七条规定（一）：“与被盘查对象保持安全距离，尽量让其背对开阔场地。”民警的做法正确。</p><p>D项正确，《公安机关办理行政案件程序规定》第五十七条规定：“拒不交代身份，不能排除其违法嫌疑，可以适用继续盘问，可以将其带至公安机关对其继续盘问。”</p><p>本题为选非题，故正确答案为A。</p>",
+                "optList": [
+                    {
+                        "content": "民警甲、乙直接上前对可疑男子进行盘问，然后对其控制检查",
+                        "label": "A"
+                    },
+                    {
+                        "content": "盘问时，民警甲负责盘问，民警乙负责警戒",
+                        "label": "B"
+                    },
+                    {
+                        "content": "盘问时，民警让该男子背对开阔街面并始终与该男子保持安全距离",
+                        "label": "C"
+                    },
+                    {
+                        "content": "因男子拒不交代身份，民警将其带至公安派出所继续盘问",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "民警甲、乙直接上前对可疑男子进行盘问，然后对其控制检查",
+                        "label": "A"
+                    },
+                    {
+                        "content": "盘问时，民警甲负责盘问，民警乙负责警戒",
+                        "label": "B"
+                    },
+                    {
+                        "content": "盘问时，民警让该男子背对开阔街面并始终与该男子保持安全距离",
+                        "label": "C"
+                    },
+                    {
+                        "content": "因男子拒不交代身份，民警将其带至公安派出所继续盘问",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "A",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "因男子拒不交代身份，民警将其带至公安派出所继续盘问",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "盘问时，民警甲负责盘问，民警乙负责警戒",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "盘问时，民警让该男子背对开阔街面并始终与该男子保持安全距离",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "民警甲、乙直接上前对可疑男子进行盘问，然后对其控制检查",
+                        "label": "A"
+                    }
+                },
+                "labelText": "刑事案件侦查",
+                "labelsArray_text": "刑事案件侦查",
+                "examPointName": "刑事案件侦查",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444967,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929128,
+            "level": 45,
+            "subjectDo": {
+                "id": 929128,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"B\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>某日上午9：00许，某房地产公司的楼盘开发项目在施工建设过程中，受到当地部分村民的强烈阻挠，引发双方斗殴，民警接警后迅速赶赴现场。由于双方当事人人数众多。现场民警难以有效制止违法行为，下列做法恰当的是（    ）。</p>",
+                "opt": "[{\"content\": \"向当地派出所负责人报告\", \"label\": \"A\"}, {\"content\": \"向所属公安机关报告\", \"label\": \"B\"}, {\"content\": \"向上级公安机关报告\", \"label\": \"C\"}, {\"content\": \"向政府有关主管部门报告\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查应急处突能力。</p><p>《公安机关人民警察现场制止违法犯罪行为操作规程》第八条规定：“······现场警力难以有效制止违法犯罪行为时，公安民警应当立即向所属公安机关报告，请求增派警力支援······”</p><p>故正确答案为B。</p>",
+                "optList": [
+                    {
+                        "content": "向当地派出所负责人报告",
+                        "label": "A"
+                    },
+                    {
+                        "content": "向所属公安机关报告",
+                        "label": "B"
+                    },
+                    {
+                        "content": "向上级公安机关报告",
+                        "label": "C"
+                    },
+                    {
+                        "content": "向政府有关主管部门报告",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "向当地派出所负责人报告",
+                        "label": "A"
+                    },
+                    {
+                        "content": "向所属公安机关报告",
+                        "label": "B"
+                    },
+                    {
+                        "content": "向上级公安机关报告",
+                        "label": "C"
+                    },
+                    {
+                        "content": "向政府有关主管部门报告",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "B",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "向政府有关主管部门报告",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "向所属公安机关报告",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "向上级公安机关报告",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "向当地派出所负责人报告",
+                        "label": "A"
+                    }
+                },
+                "labelText": "应急处突能力",
+                "labelsArray_text": "应急处突能力",
+                "examPointName": "应急处突能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444968,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929129,
+            "level": 46,
+            "subjectDo": {
+                "id": 929129,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"B\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>驾驶人应当按照驾驶证载明的准驾车型驾驶机动车，根据表中准驾种类，下列说法正确的是（    ）。</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/5cf80e76905735722421785434a38a1b\"></img></p>",
+                "opt": "[{\"content\": \"A1驾照可驾驶大、中型客车和牵引车\", \"label\": \"A\"}, {\"content\": \"A2驾照可驾驶牵引车、中型客车和大型货车\", \"label\": \"B\"}, {\"content\": \"B1驾照可驾驶中型客车、大型货车和小型汽车\", \"label\": \"C\"}, {\"content\": \"C1驾照可驾驶中型客车、小型汽车和小型自动挡汽车\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查行政执法依据。</p><p>A项错误，A1准予驾驶其他准驾车型中没有A2（牵引车）车型；</p><p>B项正确，A2准驾车型为牵引车，其他准驾车型中有B1（中型客车）和B2（大型货车）；</p><p>C项错误，B1其他准驾车型中没有B2（大型货车）车型；</p><p>D项错误，C1准予驾驶其他准驾车型中没有B1（中型客车）车型。</p><p>故正确答案为B。</p>",
+                "optList": [
+                    {
+                        "content": "A1驾照可驾驶大、中型客车和牵引车",
+                        "label": "A"
+                    },
+                    {
+                        "content": "A2驾照可驾驶牵引车、中型客车和大型货车",
+                        "label": "B"
+                    },
+                    {
+                        "content": "B1驾照可驾驶中型客车、大型货车和小型汽车",
+                        "label": "C"
+                    },
+                    {
+                        "content": "C1驾照可驾驶中型客车、小型汽车和小型自动挡汽车",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "A1驾照可驾驶大、中型客车和牵引车",
+                        "label": "A"
+                    },
+                    {
+                        "content": "A2驾照可驾驶牵引车、中型客车和大型货车",
+                        "label": "B"
+                    },
+                    {
+                        "content": "B1驾照可驾驶中型客车、大型货车和小型汽车",
+                        "label": "C"
+                    },
+                    {
+                        "content": "C1驾照可驾驶中型客车、小型汽车和小型自动挡汽车",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "B",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "C1驾照可驾驶中型客车、小型汽车和小型自动挡汽车",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "A2驾照可驾驶牵引车、中型客车和大型货车",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "B1驾照可驾驶中型客车、大型货车和小型汽车",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "A1驾照可驾驶大、中型客车和牵引车",
+                        "label": "A"
+                    }
+                },
+                "labelText": "公安情报信息工作能力",
+                "labelsArray_text": "公安情报信息工作能力",
+                "examPointName": "公安情报信息工作能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444969,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929130,
+            "level": 47,
+            "subjectDo": {
+                "id": 929130,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"B\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>公安民警对违法犯罪嫌疑人进行人身安全检查时，下列做法正确的是（    ）。</p>",
+                "opt": "[{\"content\": \"一般应当从被检查人的双脚开始从下至上顺序进行检查\", \"label\": \"A\"}, {\"content\": \"对被检查人腋下、后背、腰部等重点部位及衣服重叠之处等易隐藏物品的地方重点检查\", \"label\": \"B\"}, {\"content\": \"怀疑被检查人可能携带赃款赃物、作案工具或者违禁品的，可以直接翻开衣帽进行检查\", \"label\": \"C\"}, {\"content\": \"在保证安全的前提下，也不得让被检查人将其衣服口袋翻出接受安全检查\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查公安勤务能力。</p><p>《公安机关执法细则》规定：“11-04.盘问、检查的程序，3.人身安全检查。对经过盘问，确认有违法犯罪行为或者嫌疑不能排除的，应当先对被盘查人依法进行人身安全检查，再检查其携带物品。对可疑人员进行人身安全检查时，应当遵守下列规定：（5）责令被检查人张开双手，伸开双臂高举过头，面向墙、车等，扶墙或者扶车站立，双脚分开尽量后移，民警站于其身后并将一只脚置于其双脚中间，一只手抵住其后背施加压力，另一只手迅速从上到下、从头到衣领及身体各部位进行检查，完成- -侧后再检查另一侧，特别注意头发内部、衣领、腋下、腰部、裆部及双腿内侧等可能藏匿凶器或者武器的部位。（6）必要时，穿戴防护用具或者使用工具进行检查，谨防因接触注射针筒、刀片等物品而感染疾病或者受伤。在保证安全的前提下，可以命令被检查人将其衣服口袋翻出、解下腰带、脱掉鞋袜接受检查。”</p><p>A项错误，根据上述规定第五项，一般应当从上到下进行检查。</p><p>B项正确，根据上述规定第五项，对重点部位和易隐藏物品的地方要特别注意，重点检查，本题为单选题，B项为最优选项。</p><p>C项错误，根据上述规定第六项，在保证安全的前提下，可以命令被检查人将其衣帽翻开接受检查，民警不得直接自行翻开嫌疑人衣帽。</p><p>D项错误，根据上述规定第六项，在保证安全的前提下，可以命令被检查人将其衣服口袋翻出接受检查。</p><p>故正确答案为B。</p>",
+                "optList": [
+                    {
+                        "content": "一般应当从被检查人的双脚开始从下至上顺序进行检查",
+                        "label": "A"
+                    },
+                    {
+                        "content": "对被检查人腋下、后背、腰部等重点部位及衣服重叠之处等易隐藏物品的地方重点检查",
+                        "label": "B"
+                    },
+                    {
+                        "content": "怀疑被检查人可能携带赃款赃物、作案工具或者违禁品的，可以直接翻开衣帽进行检查",
+                        "label": "C"
+                    },
+                    {
+                        "content": "在保证安全的前提下，也不得让被检查人将其衣服口袋翻出接受安全检查",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "一般应当从被检查人的双脚开始从下至上顺序进行检查",
+                        "label": "A"
+                    },
+                    {
+                        "content": "对被检查人腋下、后背、腰部等重点部位及衣服重叠之处等易隐藏物品的地方重点检查",
+                        "label": "B"
+                    },
+                    {
+                        "content": "怀疑被检查人可能携带赃款赃物、作案工具或者违禁品的，可以直接翻开衣帽进行检查",
+                        "label": "C"
+                    },
+                    {
+                        "content": "在保证安全的前提下，也不得让被检查人将其衣服口袋翻出接受安全检查",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "B",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "在保证安全的前提下，也不得让被检查人将其衣服口袋翻出接受安全检查",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "对被检查人腋下、后背、腰部等重点部位及衣服重叠之处等易隐藏物品的地方重点检查",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "怀疑被检查人可能携带赃款赃物、作案工具或者违禁品的，可以直接翻开衣帽进行检查",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "一般应当从被检查人的双脚开始从下至上顺序进行检查",
+                        "label": "A"
+                    }
+                },
+                "labelText": "警务查缉战术",
+                "labelsArray_text": "警务查缉战术",
+                "examPointName": "警务查缉战术",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444970,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929131,
+            "level": 48,
+            "subjectDo": {
+                "id": 929131,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>民警在美食街附近路段设置查车点对过往车辆进行安全检查时，突遇一辆黑色越野车闯卡拒绝停车接受检查，下列做法恰当的是（    ）。</p>",
+                "opt": "[{\"content\": \"民警立即冲到越野车前直接进行拦截\", \"label\": \"A\"}, {\"content\": \"民警一把抓住越野车方向盘迫使驾驶人停车\", \"label\": \"B\"}, {\"content\": \"越野车闯卡后，民警立即驾驶警车追缉\", \"label\": \"C\"}, {\"content\": \"民警利用交通信号灯控制的方式开展拦截\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查公安勤务能力。</p><p>根据《公安机关执法细则》11-04，5.检查车辆。检查车辆时，应当遵守下列规定：（1）对行进中的车辆进行拦截检查时，应当手持停车示意牌或者放置停车标志，在被检查车辆的侧前方向其作出明确的停车示意等非直接拦截的方式；不得站立在车辆行进方向的行车道上拦截车辆，不得站在车辆前强行拦截，不得脚踏车辆踏板、将头或者手臂等伸进车辆驾驶室、攀扒车辆······（8）驾驶员拒检逃逸的，应当立即报告本单位有关负责人，请求部署堵截；除驾车逃逸后可能对公共安全和他人生命安全有严重威胁外，民警不得驾车追缉，可采取通知前方执勤民警堵截，或者记下车号，事后追查的方式处理。</p><p>A项错误，民警不得站在车辆前面强行拦截。</p><p>B项错误，民警不得将头、手臂等伸进车辆驾驶室或者攀扒车辆。</p><p>C项错误，除机动车驾驶人驾车逃跑后可能对公共安全和他人生命安全有严重威胁以外，交通警察不得驾驶机动车追缉。</p><p>D项正确，堵截车辆应采取设置交通设施、利用交通信号灯控制所拦截车辆前方车辆停车等非直接拦截方式。</p><p>故正确答案为D。</p>",
+                "optList": [
+                    {
+                        "content": "民警立即冲到越野车前直接进行拦截",
+                        "label": "A"
+                    },
+                    {
+                        "content": "民警一把抓住越野车方向盘迫使驾驶人停车",
+                        "label": "B"
+                    },
+                    {
+                        "content": "越野车闯卡后，民警立即驾驶警车追缉",
+                        "label": "C"
+                    },
+                    {
+                        "content": "民警利用交通信号灯控制的方式开展拦截",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "民警立即冲到越野车前直接进行拦截",
+                        "label": "A"
+                    },
+                    {
+                        "content": "民警一把抓住越野车方向盘迫使驾驶人停车",
+                        "label": "B"
+                    },
+                    {
+                        "content": "越野车闯卡后，民警立即驾驶警车追缉",
+                        "label": "C"
+                    },
+                    {
+                        "content": "民警利用交通信号灯控制的方式开展拦截",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "D",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "民警利用交通信号灯控制的方式开展拦截",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "民警一把抓住越野车方向盘迫使驾驶人停车",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "越野车闯卡后，民警立即驾驶警车追缉",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "民警立即冲到越野车前直接进行拦截",
+                        "label": "A"
+                    }
+                },
+                "labelText": "警务查缉战术",
+                "labelsArray_text": "警务查缉战术",
+                "examPointName": "警务查缉战术",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444971,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929132,
+            "level": 49,
+            "subjectDo": {
+                "id": 929132,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"A\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>国家建立健全突发事件预警分级分类制度，按照突发事件发生的紧急程度、发展势态和可能造成的危害程度划分预警级别和颜色标识，正确的是（    ）。</p>",
+                "opt": "[{\"content\": \"<p><img src=\\\"https://img.xdtech.top/uploadFiles/image/20200908/54a00f56500a51db5b6209d34b03ec1f\\\"></img></p>\", \"label\": \"A\"}, {\"content\": \"<p><img src=\\\"https://img.xdtech.top/uploadFiles/image/20200908/838537cf97655897f9da9671c7aa8eda\\\"></img></p>\", \"label\": \"B\"}, {\"content\": \"<p><img src=\\\"https://img.xdtech.top/uploadFiles/image/20200908/7c01de7471e3e923cad96f5303404f69\\\"></img></p>\", \"label\": \"C\"}, {\"content\": \"<p><img src=\\\"https://img.xdtech.top/uploadFiles/image/20200908/35463002c3635287038afedafc577bb6\\\"></img></p>\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查应急处突能力。</p><p>《中华人民共和国突发事件应对法》第四十二条规定：“国家建立健全突发事件预警制度。可以预警的自然灾害、事故灾难和公共卫生事件的预警级别，按照突发事件发生的紧急程度、发展势态和可能造成的危害程度分为一级、二级、三级和四级，分别用红色、橙色、黄色和蓝色标示，一级为最高级别。预警级别的划分标准由国务院或者国务院确定的部门制定。”</p><p>故正确答案为A。</p>",
+                "optList": [
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/54a00f56500a51db5b6209d34b03ec1f\"></img></p>",
+                        "label": "A"
+                    },
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/838537cf97655897f9da9671c7aa8eda\"></img></p>",
+                        "label": "B"
+                    },
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/7c01de7471e3e923cad96f5303404f69\"></img></p>",
+                        "label": "C"
+                    },
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/35463002c3635287038afedafc577bb6\"></img></p>",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/54a00f56500a51db5b6209d34b03ec1f\"></img></p>",
+                        "label": "A"
+                    },
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/838537cf97655897f9da9671c7aa8eda\"></img></p>",
+                        "label": "B"
+                    },
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/7c01de7471e3e923cad96f5303404f69\"></img></p>",
+                        "label": "C"
+                    },
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/35463002c3635287038afedafc577bb6\"></img></p>",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "A",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/35463002c3635287038afedafc577bb6\"></img></p>",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/838537cf97655897f9da9671c7aa8eda\"></img></p>",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/7c01de7471e3e923cad96f5303404f69\"></img></p>",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/54a00f56500a51db5b6209d34b03ec1f\"></img></p>",
+                        "label": "A"
+                    }
+                },
+                "labelText": "应急处突能力",
+                "labelsArray_text": "应急处突能力",
+                "examPointName": "应急处突能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444972,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929133,
+            "level": 50,
+            "subjectDo": {
+                "id": 929133,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"B\",\"C\",\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>经党中央批准，国务院批复，自2021年起，将每年1月10日设立为“中国人民警察节”。设立警察节的重大意义有（    ）。</p>",
+                "opt": "[{\"content\": \"提高人民警察的社会地位、幸福感和薪资\", \"label\": \"A\"}, {\"content\": \"激励全警履行好党和人民赋予的新时代使命任务\", \"label\": \"B\"}, {\"content\": \"增强广大公安民警职业荣誉感、自豪感和归属感\", \"label\": \"C\"}, {\"content\": \"健全完善人民警察荣誉制度和标志体系的重要举措\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查公安时政。</p><p>经党中央批准、国务院批复，自2021年起，将每年1月10日设立为“中国人民警察节”。“中国人民警察节”的设立，充分体现了以习近平同志为核心的党中央对人民警察队伍的高度重视和关心关怀，是进一步健全完善人民警察荣誉制度和标志体系的重要举措，对于推动人民警察队伍革命化正规化专业化职业化建设，增强广大民警职业荣誉感自豪感归属感，激励全警以强烈的担当精神履行好党和人民赋予的新时代使命任务具有重大意义。</p><p>A项错误，设立人民警察节可以提高人民警察社会地位和幸福感，但是不能提高薪资。</p><p>B项正确，通过节日设立，激励全警以强烈的担当精神履行好党和人民赋予的新时代使命任务。</p><p>C项正确，提升警察职业社会认同，增强广大民警职业荣誉感自豪感归属感。</p><p>D项正确，节日设立可以健全完善人民警察荣誉制度和标志体系，体现了以习近平同志为核心的党中央对人民警察队伍的高度重视和关心关怀。</p><p>本题为多选题，故正确答案为BCD。</p>",
+                "optList": [
+                    {
+                        "content": "提高人民警察的社会地位、幸福感和薪资",
+                        "label": "A"
+                    },
+                    {
+                        "content": "激励全警履行好党和人民赋予的新时代使命任务",
+                        "label": "B"
+                    },
+                    {
+                        "content": "增强广大公安民警职业荣誉感、自豪感和归属感",
+                        "label": "C"
+                    },
+                    {
+                        "content": "健全完善人民警察荣誉制度和标志体系的重要举措",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "提高人民警察的社会地位、幸福感和薪资",
+                        "label": "A"
+                    },
+                    {
+                        "content": "激励全警履行好党和人民赋予的新时代使命任务",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "增强广大公安民警职业荣誉感、自豪感和归属感",
+                        "label": "C",
+                        "right": true
+                    },
+                    {
+                        "content": "健全完善人民警察荣誉制度和标志体系的重要举措",
+                        "label": "D",
+                        "right": true
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "健全完善人民警察荣誉制度和标志体系的重要举措",
+                        "label": "D",
+                        "right": true
+                    },
+                    "option_2": {
+                        "content": "激励全警履行好党和人民赋予的新时代使命任务",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "增强广大公安民警职业荣誉感、自豪感和归属感",
+                        "label": "C",
+                        "right": true
+                    },
+                    "option_1": {
+                        "content": "提高人民警察的社会地位、幸福感和薪资",
+                        "label": "A"
+                    }
+                },
+                "labelText": "政治常识",
+                "labelsArray_text": "政治常识",
+                "examPointName": "政治常识",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444973,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929134,
+            "level": 51,
+            "subjectDo": {
+                "id": 929134,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"A\",\"B\",\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>人民警察纪律是根据人民警察职业特点而制定的，是人民警察必须遵守的义务性行为规范。其中，政治纪律有（    ）。</p>",
+                "opt": "[{\"content\": \"政治觉悟的规范\", \"label\": \"A\"}, {\"content\": \"政治行为的规范\", \"label\": \"B\"}, {\"content\": \"政治素质的规范\", \"label\": \"C\"}, {\"content\": \"政治言论的规范\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>政治纪律是指有关人民警察政治觉悟、政治行为和政治言论方面的规范。人民警察必须坚定共产主义信念，坚信党的领导，捍卫人民民主专政的制度，维护宪法和法律的尊严，忠于社会主义祖国。</p><p>本题为多选题，故正确答案为ABD。</p>",
+                "optList": [
+                    {
+                        "content": "政治觉悟的规范",
+                        "label": "A"
+                    },
+                    {
+                        "content": "政治行为的规范",
+                        "label": "B"
+                    },
+                    {
+                        "content": "政治素质的规范",
+                        "label": "C"
+                    },
+                    {
+                        "content": "政治言论的规范",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "政治觉悟的规范",
+                        "label": "A",
+                        "right": true
+                    },
+                    {
+                        "content": "政治行为的规范",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "政治素质的规范",
+                        "label": "C"
+                    },
+                    {
+                        "content": "政治言论的规范",
+                        "label": "D",
+                        "right": true
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "政治言论的规范",
+                        "label": "D",
+                        "right": true
+                    },
+                    "option_2": {
+                        "content": "政治行为的规范",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "政治素质的规范",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "政治觉悟的规范",
+                        "label": "A",
+                        "right": true
+                    }
+                },
+                "labelText": "职业道德和纪律要求",
+                "labelsArray_text": "职业道德和纪律要求",
+                "examPointName": "职业道德和纪律要求",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444974,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929135,
+            "level": 52,
+            "subjectDo": {
+                "id": 929135,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"A\",\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>社会主义核心价值观和人民警察核心价值观的关系有（    ）。</p>",
+                "opt": "[{\"content\": \"辩证与统一的关系\", \"label\": \"A\"}, {\"content\": \"形式与内容的关系\", \"label\": \"B\"}, {\"content\": \"整体与部分的关系\", \"label\": \"C\"}, {\"content\": \"既有区别又有联系\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查职业道德与纪律要求。</p><p>社会主义核心价值观包括富强、民主、文明、和谐、自由、平等、公正、法治、爱国、敬业、诚信、友善。人民警察核心价值观包括忠诚、为民、公正、廉明。人民警察核心价值观是在社会主义核心价值观的基础上，根据人民警察自身的职业特点总结出来的，二者之间是辩证统一的关系，既相互联系又相互区分。</p><p>A项正确，辩证统一主要是说事物相互区别相互联系，并在一定的条件下可以相互渗透相互转化，即联系和发展的来分析问题。人民警察核心价值观和社会主义核心价值观存在辩证统一的关系。</p><p>B项错误，形式与内容是一个整体的不同表现，人民警察核心价值观和社会主义核心价值观都有具体的内容和要求，不存在形式与内容的关系。</p><p>C项错误，整体与部分是包含关系，而人民警察核心价值观不是社会主义核心价值观的组成部分，不存在整体与部分的关系。</p><p>D项正确，人民警察核心价值观和社会主义核心价值观的内容有重合也有区分，二者相互联系又相互区别。</p><p>本题为多选题，故正确答案为AD。</p>",
+                "optList": [
+                    {
+                        "content": "辩证与统一的关系",
+                        "label": "A"
+                    },
+                    {
+                        "content": "形式与内容的关系",
+                        "label": "B"
+                    },
+                    {
+                        "content": "整体与部分的关系",
+                        "label": "C"
+                    },
+                    {
+                        "content": "既有区别又有联系",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "辩证与统一的关系",
+                        "label": "A",
+                        "right": true
+                    },
+                    {
+                        "content": "形式与内容的关系",
+                        "label": "B"
+                    },
+                    {
+                        "content": "整体与部分的关系",
+                        "label": "C"
+                    },
+                    {
+                        "content": "既有区别又有联系",
+                        "label": "D",
+                        "right": true
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "既有区别又有联系",
+                        "label": "D",
+                        "right": true
+                    },
+                    "option_2": {
+                        "content": "形式与内容的关系",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "整体与部分的关系",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "辩证与统一的关系",
+                        "label": "A",
+                        "right": true
+                    }
+                },
+                "labelText": "政治素质",
+                "labelsArray_text": "政治素质",
+                "examPointName": "政治素质",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444975,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929136,
+            "level": 53,
+            "subjectDo": {
+                "id": 929136,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"A\",\"C\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>忠诚是对人民警察的要求，就是对党、国家、法律和人民绝对忠诚，绝对纯洁，绝对可靠，这是人民警察必须具备的政治品质。忠诚的类别有（    ）。</p>",
+                "opt": "[{\"content\": \"政治忠诚\", \"label\": \"A\"}, {\"content\": \"信仰忠诚\", \"label\": \"B\"}, {\"content\": \"行政忠诚\", \"label\": \"C\"}, {\"content\": \"纪律忠诚\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查职业道德与纪律要求。</p><p>\"忠诚、为民、公正、廉洁\"是对人民警察核心价值观的集中概括，而忠诚作为人民警察职业精神之灵魂，是人民警察立警为公、执法为民的立身之本、思想之基、力量之源。人民警察的忠诚是人民警察对上级权力主体和更高价值主体的服从，尽责和尊崇。人民警察的忠诚包括行政忠诚和政治忠诚两个方面。政治忠诚是人民警察对党、国家、人民和法律的忠诚。政治忠诚是一种政治信念、政治追求，是最高层次的忠诚。行政忠诚是人民警察对所在的组织和上级领导的忠诚，主要是工作上的忠诚，服从于组织和上级的指挥。</p><p>本题为多选题，故正确答案为AC。</p>",
+                "optList": [
+                    {
+                        "content": "政治忠诚",
+                        "label": "A"
+                    },
+                    {
+                        "content": "信仰忠诚",
+                        "label": "B"
+                    },
+                    {
+                        "content": "行政忠诚",
+                        "label": "C"
+                    },
+                    {
+                        "content": "纪律忠诚",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "政治忠诚",
+                        "label": "A",
+                        "right": true
+                    },
+                    {
+                        "content": "信仰忠诚",
+                        "label": "B"
+                    },
+                    {
+                        "content": "行政忠诚",
+                        "label": "C",
+                        "right": true
+                    },
+                    {
+                        "content": "纪律忠诚",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "纪律忠诚",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "信仰忠诚",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "行政忠诚",
+                        "label": "C",
+                        "right": true
+                    },
+                    "option_1": {
+                        "content": "政治忠诚",
+                        "label": "A",
+                        "right": true
+                    }
+                },
+                "labelText": "政治素质",
+                "labelsArray_text": "政治素质",
+                "examPointName": "政治素质",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444976,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929137,
+            "level": 54,
+            "subjectDo": {
+                "id": 929137,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"A\",\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>根据此图判断以下说法正确的有（    ）。</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/5b845ee5f3980ffe9e0845ad2cf5e4c5\"></img></p>",
+                "opt": "[{\"content\": \"全国人民代表大会及人大常委会都有国家立法权\", \"label\": \"A\"}, {\"content\": \"只有全国人民代表大会有宪法修改权和宪法实施的监督权\", \"label\": \"B\"}, {\"content\": \"只有全国人民代表大会有权撒销国务院制定的与法律相抵触的行政法规\", \"label\": \"C\"}, {\"content\": \"国务院有权撤销各部委发布的不适当的规章\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查法理学。</p><p>A项正确，《中华人民共和国立法法》第七条规定：“全国人民代表大会和全国人民代表大会常务委员会行使国家立法权。全国人民代表大会制定和修改刑事、民事、国家机构的和其他的基本法律。全国人民代表大会常务委员会制定和修改除应当由全国人民代表大会制定的法律以外的其他法律；在全国人民代表大会闭会期间，对全国人民代表大会制定的法律进行部分补充和修改，但是不得同该法律的基本原则相抵触。”</p><p>B项错误，宪法实施的监督权属于全国人大及其常委会。所以只有全国人民代表大会有宪法实施的监督权错误。</p><p>C项错误，《中华人民共和国立法法》第九十七条规定：“……；（二）全国人民代表大会常务委员会有权撤销同宪法和法律相抵触的行政法规，有权撤销同宪法、法律和行政法规相抵触的地方性法规，有权撤销省、自治区、直辖市的人民代表大会常务委员会批准的违背宪法和本法第七十五条第二款规定的自治条例和单行条例；……”所以并不是只有全国人民代表大会有权撤销国务院制定的与法律相抵触的行政法规。</p><p>D项正确，《中华人民共和国立法法》第九十七条规定：“……；（三）国务院有权改变或者撤销不适当的部门规章和地方政府规章。”</p><p>本题为多选题，故正确答案为AD。</p>",
+                "optList": [
+                    {
+                        "content": "全国人民代表大会及人大常委会都有国家立法权",
+                        "label": "A"
+                    },
+                    {
+                        "content": "只有全国人民代表大会有宪法修改权和宪法实施的监督权",
+                        "label": "B"
+                    },
+                    {
+                        "content": "只有全国人民代表大会有权撒销国务院制定的与法律相抵触的行政法规",
+                        "label": "C"
+                    },
+                    {
+                        "content": "国务院有权撤销各部委发布的不适当的规章",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "全国人民代表大会及人大常委会都有国家立法权",
+                        "label": "A",
+                        "right": true
+                    },
+                    {
+                        "content": "只有全国人民代表大会有宪法修改权和宪法实施的监督权",
+                        "label": "B"
+                    },
+                    {
+                        "content": "只有全国人民代表大会有权撒销国务院制定的与法律相抵触的行政法规",
+                        "label": "C"
+                    },
+                    {
+                        "content": "国务院有权撤销各部委发布的不适当的规章",
+                        "label": "D",
+                        "right": true
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "国务院有权撤销各部委发布的不适当的规章",
+                        "label": "D",
+                        "right": true
+                    },
+                    "option_2": {
+                        "content": "只有全国人民代表大会有宪法修改权和宪法实施的监督权",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "只有全国人民代表大会有权撒销国务院制定的与法律相抵触的行政法规",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "全国人民代表大会及人大常委会都有国家立法权",
+                        "label": "A",
+                        "right": true
+                    }
+                },
+                "labelText": "宪法基础知识",
+                "labelsArray_text": "宪法基础知识",
+                "examPointName": "宪法基础知识",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444977,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929138,
+            "level": 55,
+            "subjectDo": {
+                "id": 929138,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"B\",\"C\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>2020年5月28日，全国人民代表大会通过的《民法典》明确了公安机关的相关职责。以下说法正确的有（    ）。</p>",
+                "opt": "[{\"content\": \"从建筑物中坠落的物品造成他人损害。经调查难以确定具体侵权人的，公安机关应当依法及时调查，查清责任人\", \"label\": \"A\"}, {\"content\": \"收养关系成立后，公安机关应当按照有关规定为被收养人办理户口登记\", \"label\": \"B\"}, {\"content\": \"公安机关应当妥善保管拾得人送交的遗失物\", \"label\": \"C\"}, {\"content\": \"自然人下落不明满四年的，经利害关系人申请，公安机关应当宣告死亡\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查民法。</p><p>A项错误，《民法典》第一千二百五十四条规定：“禁止从建筑物中抛掷物品。从建筑物中抛掷物品或者从建筑物上坠落的物品造成他人损害的，由侵权人依法承担侵权责任；经调查难以确定具体侵权人的，除能够证明自己不是侵权人的外，由可能加害的建筑物使用人给予补偿。可能加害的建筑物使用人补偿后，有权向侵权人追偿。物业服务企业等建筑物管理人应当采取必要的安全保障措施防止前款规定情形的发生；未采取必要的安全保障措施的，应当依法承担未履行安全保障义务的侵权责任。发生本条第一款规定的情形的，公安等机关应当依法及时调查，查清责任人。”因此高空坠物造成他人损害的，公安机关应当依法及时查清责任人，但经调查难以确定具体侵权人的，除能够证明自己不是侵权人的外，由可能加害的建筑物使用人给予补偿，故A项说法错误。</p><p>B项正确，《民法典》第一千一百零六条规定：“收养关系成立后，公安机关应当按照国家有关规定为被收养人办理户口登记。”</p><p>C项正确，《民法典》第三百一十六条规定：“拾得人在遗失物送交有关部门前，有关部门在遗失物被领取前，应当妥善保管遗失物。”当公安机关作为遗失物送交的有关部门时，应当妥善保管遗失物，故C项正确。</p><p>D项错误，《民法典》第四十六条规定：“自然人有下列情形之一的，利害关系人可以向人民法院申请宣告该自然人死亡：（一）下落不明满四年；（二）因意外事件，下落不明满二年。”宣告死亡由人民法院作出，故D项错误。</p><p>本题为多选题，故正确答案为BC。</p>",
+                "optList": [
+                    {
+                        "content": "从建筑物中坠落的物品造成他人损害。经调查难以确定具体侵权人的，公安机关应当依法及时调查，查清责任人",
+                        "label": "A"
+                    },
+                    {
+                        "content": "收养关系成立后，公安机关应当按照有关规定为被收养人办理户口登记",
+                        "label": "B"
+                    },
+                    {
+                        "content": "公安机关应当妥善保管拾得人送交的遗失物",
+                        "label": "C"
+                    },
+                    {
+                        "content": "自然人下落不明满四年的，经利害关系人申请，公安机关应当宣告死亡",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "从建筑物中坠落的物品造成他人损害。经调查难以确定具体侵权人的，公安机关应当依法及时调查，查清责任人",
+                        "label": "A"
+                    },
+                    {
+                        "content": "收养关系成立后，公安机关应当按照有关规定为被收养人办理户口登记",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "公安机关应当妥善保管拾得人送交的遗失物",
+                        "label": "C",
+                        "right": true
+                    },
+                    {
+                        "content": "自然人下落不明满四年的，经利害关系人申请，公安机关应当宣告死亡",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "自然人下落不明满四年的，经利害关系人申请，公安机关应当宣告死亡",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "收养关系成立后，公安机关应当按照有关规定为被收养人办理户口登记",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "公安机关应当妥善保管拾得人送交的遗失物",
+                        "label": "C",
+                        "right": true
+                    },
+                    "option_1": {
+                        "content": "从建筑物中坠落的物品造成他人损害。经调查难以确定具体侵权人的，公安机关应当依法及时调查，查清责任人",
+                        "label": "A"
+                    }
+                },
+                "labelText": "政治常识",
+                "labelsArray_text": "政治常识",
+                "examPointName": "政治常识",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444978,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929139,
+            "level": 56,
+            "subjectDo": {
+                "id": 929139,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"B\",\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>崔某听说赵某能够搞到毒品，便打起通过毒品赚钱的主意，崔某多次给赵某打电话求购毒品，赵某均以此事违法为由拒绝。2020年6月8日，崔某再次给赵某打电话求购毒品时，赵某不堪其扰，于是从超市购买了200克冰糖，粉碎后分装成10小袋交给崔某并告知这批货纯度很高，收取了崔某3万元人民币。6月9日，崔某将其中一袋（净重20克）卖给钱某时被公安机关抓获。下列说法正确的有（    ）。</p>",
+                "opt": "[{\"content\": \"崔某的行为不构成犯罪\", \"label\": \"A\"}, {\"content\": \"崔某的行为构成贩卖毒品罪\", \"label\": \"B\"}, {\"content\": \"赵某的行为不构成犯罪\", \"label\": \"C\"}, {\"content\": \"赵某的行为构成诈骗罪\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查刑法。</p><p>A项错误,《刑法》第三百四十七条规定：“走私、贩卖、运输、制造毒品，无论数量多少，都应当追究刑事责任，予以刑事处罚。”，崔某的行为构成贩卖毒品罪。</p><p>B项正确，《刑法》第三百四十七条规定：“贩卖毒品罪指违犯毒品管理法规、有偿转让毒品的行为。”又根据1991年最高人民检察院颁布的《最高人民检察院关于贩卖假毒品案件如何定性问题的批复》：“对贩卖假毒品的犯罪案件，应根据不同情况区别处理：明知是假毒品而以毒品进行贩卖的，应当以诈骗罪追究被告人的刑事责任；不知是假毒品而以毒品进行贩卖的，应当以贩卖毒品罪追究被告人的刑事责任，对其所贩卖的是假毒品的事实，可以作为从轻或者减轻情节，在处理时予以考虑。”崔某有偿转让给钱某，该行为构成贩卖毒品罪。</p><p>C项错误，D项正确，《刑法》第二百六十六条规定：“诈骗罪是指以非法占有为目的，用虚构事实或者隐瞒真相的方法，骗取数额较大的公私财物的行为”，因此赵某的行为构成诈骗犯罪。</p><p>说明：关于不能犯是否有罪，在刑法学上有两大学派——主观主义和客观主义。主观主义先判断主观要件，后判断客观要件，只要行为人具备主观要件，即使不完全具备客观要件，也构成犯罪，只是未遂。我国目前的通说理论上仍然支持主观主义立场，比如在法学本科教材中及法硕考试中。</p><p>本题为多选题，故正确答案为BD。</p>",
+                "optList": [
+                    {
+                        "content": "崔某的行为不构成犯罪",
+                        "label": "A"
+                    },
+                    {
+                        "content": "崔某的行为构成贩卖毒品罪",
+                        "label": "B"
+                    },
+                    {
+                        "content": "赵某的行为不构成犯罪",
+                        "label": "C"
+                    },
+                    {
+                        "content": "赵某的行为构成诈骗罪",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "崔某的行为不构成犯罪",
+                        "label": "A"
+                    },
+                    {
+                        "content": "崔某的行为构成贩卖毒品罪",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "赵某的行为不构成犯罪",
+                        "label": "C"
+                    },
+                    {
+                        "content": "赵某的行为构成诈骗罪",
+                        "label": "D",
+                        "right": true
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "赵某的行为构成诈骗罪",
+                        "label": "D",
+                        "right": true
+                    },
+                    "option_2": {
+                        "content": "崔某的行为构成贩卖毒品罪",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "赵某的行为不构成犯罪",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "崔某的行为不构成犯罪",
+                        "label": "A"
+                    }
+                },
+                "labelText": "刑法",
+                "labelsArray_text": "刑法",
+                "examPointName": "刑法",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444979,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929140,
+            "level": 57,
+            "subjectDo": {
+                "id": 929140,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"A\",\"B\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>需经县级以上公安机关批准才能实施的侦查措施有（    ）。</p>",
+                "opt": "[{\"content\": \"冻结存款\", \"label\": \"A\"}, {\"content\": \"侦查实验\", \"label\": \"B\"}, {\"content\": \"指认现场\", \"label\": \"C\"}, {\"content\": \"辨认赃物\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查公安机关刑事执法依据。</p><p>A项正确，《公安机关办理刑事案件程序规定》第二百三十三条规定：“需要冻结犯罪嫌疑人在金融机构等单位的存款、汇款、债券、股票、基金份额等财产的，应当经县级以上公安机关负责人批准，制作协助冻结财产通知书，通知金融机构等单位执行。”</p><p>B项正确，《公安机关办理刑事案件程序规定》第二百一十六条规定：为了查明案情，在必要的时候，经县级以上公安机关负责人批准，可以进行侦查实验。对侦查实验的经过和结果，应当制作侦查实验笔录，由参加实验的人签名。必要时，应当对侦查实验过程进行录音或者录像。</p><p>C项错误，《公安机关办理刑事案件程序规定》第二百四十九条规定：“为了查明案情，在必要的时候，侦查人员可以让被害人、证人或者犯罪嫌疑人对与犯罪有关的物品、文件、尸体、场所或者犯罪嫌疑人进行辨认。”不需要经县级以上公安机关批准。</p><p>D项错误，査获与案件有关赃物时，可让事主、受害人及其亲属进行辨认，确认是否为该案件之赃物。辨认前应先请事主详述失物特征、核对是否与所获赃物特征一致，再交事主辨认。不需要经县级以上公安机关批准。</p><p>本题为多选题，故正确答案为AB。</p>",
+                "optList": [
+                    {
+                        "content": "冻结存款",
+                        "label": "A"
+                    },
+                    {
+                        "content": "侦查实验",
+                        "label": "B"
+                    },
+                    {
+                        "content": "指认现场",
+                        "label": "C"
+                    },
+                    {
+                        "content": "辨认赃物",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "冻结存款",
+                        "label": "A",
+                        "right": true
+                    },
+                    {
+                        "content": "侦查实验",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "指认现场",
+                        "label": "C"
+                    },
+                    {
+                        "content": "辨认赃物",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "辨认赃物",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "侦查实验",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "指认现场",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "冻结存款",
+                        "label": "A",
+                        "right": true
+                    }
+                },
+                "labelText": "刑事案件程序规定",
+                "labelsArray_text": "刑事案件程序规定",
+                "examPointName": "刑事案件程序规定",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444980,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929141,
+            "level": 58,
+            "subjectDo": {
+                "id": 929141,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"B\",\"C\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>讯问涉嫌虚开增值税专用发票的犯罪嫌疑人朱某（男，25岁）时，下列选项正确的有（    ）。</p>",
+                "opt": "[{\"content\": \"通知朱某的律师到场\", \"label\": \"A\"}, {\"content\": \"由两名侦查人员进行\", \"label\": \"B\"}, {\"content\": \"告知其诉讼权利\", \"label\": \"C\"}, {\"content\": \"通知朱某的家属\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>A项错误，《刑事诉讼法》第三十四条规定：“侦查机关在第一次讯问犯罪嫌疑人或者对犯罪嫌疑人采取强制措施的时候，应当告知犯罪嫌疑人有权委托辩护人”，讯问时律师不得在场。</p><p>B项正确，《刑事诉讼法》第一百一十八条规定：“讯问犯罪嫌疑人必须由人民检察院或者公安机关的侦查人员负责进行。讯问的时候，侦查人员不得少于二人”。因此讯问朱某应有两名侦查人员进行。</p><p>C项正确，《刑事诉讼法》第一百二十条规定：“侦查人员在讯问犯罪嫌疑人的时候，应当告知犯罪嫌疑人享有的诉讼权利，如实供述自己罪行可以从宽处理和认罪认罚的法律规定”，因此应当告知朱某诉讼权利。</p><p>D项错误，讯问是侦查人员与犯罪嫌疑人进行正面接触的一种侦查活动，因此无需通知朱某的家属。</p><p>本题为多选题，故正确答案为BC。</p>",
+                "optList": [
+                    {
+                        "content": "通知朱某的律师到场",
+                        "label": "A"
+                    },
+                    {
+                        "content": "由两名侦查人员进行",
+                        "label": "B"
+                    },
+                    {
+                        "content": "告知其诉讼权利",
+                        "label": "C"
+                    },
+                    {
+                        "content": "通知朱某的家属",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "通知朱某的律师到场",
+                        "label": "A"
+                    },
+                    {
+                        "content": "由两名侦查人员进行",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "告知其诉讼权利",
+                        "label": "C",
+                        "right": true
+                    },
+                    {
+                        "content": "通知朱某的家属",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "通知朱某的家属",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "由两名侦查人员进行",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "告知其诉讼权利",
+                        "label": "C",
+                        "right": true
+                    },
+                    "option_1": {
+                        "content": "通知朱某的律师到场",
+                        "label": "A"
+                    }
+                },
+                "labelText": "刑事案件程序规定",
+                "labelsArray_text": "刑事案件程序规定",
+                "examPointName": "刑事案件程序规定",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444981,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929142,
+            "level": 59,
+            "subjectDo": {
+                "id": 929142,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"B\",\"C\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>酒吧老板甲教唆女服务员小黄通过网络平台哄骗网友到酒吧消费。某日晚上，小黄约网友“风”在酒吧见面时点了一瓶酒，报价3000元，“风”认为价格过高拒绝接受，甲威胁说不付钱就暴打“风”，“风”害怕被迫接受了此价格。之后小黄还用同样的方式先后将5名网友骗至酒吧消费。下列说法正确的有（    ）。</p>",
+                "opt": "[{\"content\": \"本案构成诈骗罪\", \"label\": \"A\"}, {\"content\": \"本案构成强迫交易罪\", \"label\": \"B\"}, {\"content\": \"甲和小黄构成共同犯罪\", \"label\": \"C\"}, {\"content\": \"甲和小黄不构成共同犯罪\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查法律基础知识。</p><p>A项错误，诈骗罪是指以非法占有为目的，用虚构事实或者隐瞒真相的方法，骗取数额较大的公私财物的行为。指以欺诈的方式来获取财物的所有权，题中提到风已经拒接接受这瓶酒，是甲通过威胁的方式逼迫风接受酒，则不属于诈骗罪，故A项错误。</p><p>B项正确，《刑法》第二百二十六条规定：“强迫交易罪：以暴力、威胁手段，实施下列行为之一，情节严重的，处三年以下有期徒刑或者拘役，并处或者单处罚金；情节特别严重的，处三年以上七年以下有期徒刑，并处罚金：（一）强买强卖商品的；（二）强迫他人提供或者接受服务的；（三）强迫他人参与或者退出投标、拍卖的；（四）强迫他人转让或者收购公司、企业的股份、债券或者其他资产的；（五）强迫他人参与或者退出特定的经营活动的。”题中明显是甲以暴力威胁手段，强买强卖给网友“风”一瓶酒，故B正确。</p><p>C项正确，D项错误，《刑法》第二十九条规定：“教唆他人犯罪的，应当按照他在共同犯罪中所起的作用处罚。教唆不满十八周岁的人犯罪的，应当从重处罚。如果被教唆的人没有犯被教唆的罪，对于教唆犯，可以从轻或者减轻处罚。题中明显提到甲教唆小黄哄骗网友到酒吧消费，因此甲和小黄构成共同犯罪，故C正确。</p><p>本题为多选题，故正确答案为BC。</p>",
+                "optList": [
+                    {
+                        "content": "本案构成诈骗罪",
+                        "label": "A"
+                    },
+                    {
+                        "content": "本案构成强迫交易罪",
+                        "label": "B"
+                    },
+                    {
+                        "content": "甲和小黄构成共同犯罪",
+                        "label": "C"
+                    },
+                    {
+                        "content": "甲和小黄不构成共同犯罪",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "本案构成诈骗罪",
+                        "label": "A"
+                    },
+                    {
+                        "content": "本案构成强迫交易罪",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "甲和小黄构成共同犯罪",
+                        "label": "C",
+                        "right": true
+                    },
+                    {
+                        "content": "甲和小黄不构成共同犯罪",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "甲和小黄不构成共同犯罪",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "本案构成强迫交易罪",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "甲和小黄构成共同犯罪",
+                        "label": "C",
+                        "right": true
+                    },
+                    "option_1": {
+                        "content": "本案构成诈骗罪",
+                        "label": "A"
+                    }
+                },
+                "labelText": "刑法",
+                "labelsArray_text": "刑法",
+                "examPointName": "刑法",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444982,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929143,
+            "level": 60,
+            "subjectDo": {
+                "id": 929143,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"A\",\"B\",\"C\",\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>某县公安局治安大队在对全县娱乐场所进行监督检查时，发现“在水方”K歌城违规从事经营活动，经向公安机关负责人报告并经批准后，可以采取的行政强制措施有（    ）。</p>",
+                "opt": "[{\"content\": \"查封K歌城\", \"label\": \"A\"}, {\"content\": \"扣押营业设备\", \"label\": \"B\"}, {\"content\": \"责令停业整顿\", \"label\": \"C\"}, {\"content\": \"冻结经营帐户\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查行政执法依据。</p><p>行政强制措施，是指行政机关在行政管理过程中，为制止违法行为、防止证据损毁、避免危害发生、控制危险扩大等情形，依法对公民的人身自由实施暂时性限制，或者对公民、法人或者其他组织的财物实施暂时性控制的行为。</p><p>根据《行政强制法》第九条规定：“行政强制措施的种类：（一）限制公民人身自由；（二）查封场所、设施或者财物；（三）扣押财物；（四）冻结存款、汇款；（五）其他行政强制措施。”结合选项，查封K歌城、扣押营业设备、冻结经营账户属于行政强制措施。故ABD正确。</p><p>C项正确，根据《娱乐场所管理条例》第四十三条规定：“娱乐场所实施本条例第十四条禁止行为的，由县级公安部门没收违法所得和非法财物，责令停业整顿3个月至6个月；情节严重的，由原发证机关吊销娱乐经营许可证，对直接负责的主管人员和其他直接责任人员处1万元以上2万元以下的罚款。”责令停产整顿为行政强制措施。注意同行政处罚中的责令停产停业作出区分。</p><p>本题为多选题，故正确答案为ABCD。</p>",
+                "optList": [
+                    {
+                        "content": "查封K歌城",
+                        "label": "A"
+                    },
+                    {
+                        "content": "扣押营业设备",
+                        "label": "B"
+                    },
+                    {
+                        "content": "责令停业整顿",
+                        "label": "C"
+                    },
+                    {
+                        "content": "冻结经营帐户",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "查封K歌城",
+                        "label": "A",
+                        "right": true
+                    },
+                    {
+                        "content": "扣押营业设备",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "责令停业整顿",
+                        "label": "C",
+                        "right": true
+                    },
+                    {
+                        "content": "冻结经营帐户",
+                        "label": "D",
+                        "right": true
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "冻结经营帐户",
+                        "label": "D",
+                        "right": true
+                    },
+                    "option_2": {
+                        "content": "扣押营业设备",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "责令停业整顿",
+                        "label": "C",
+                        "right": true
+                    },
+                    "option_1": {
+                        "content": "查封K歌城",
+                        "label": "A",
+                        "right": true
+                    }
+                },
+                "labelText": "治安行政管理与服务能力",
+                "labelsArray_text": "治安行政管理与服务能力",
+                "examPointName": "治安行政管理与服务能力",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444983,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929144,
+            "level": 61,
+            "subjectDo": {
+                "id": 929144,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"B\",\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>回应求助、帮助群众是公安机关履行职能的重要内容，下列说法准确的有（    ）。</p>",
+                "opt": "[{\"content\": \"凡是群众提出要求，都要做到有求必应\", \"label\": \"A\"}, {\"content\": \"对群众提出的要求，应当尽快给予答复\", \"label\": \"B\"}, {\"content\": \"要满足群众的求助，不能得罪人民群众\", \"label\": \"C\"}, {\"content\": \"对群众提出的求助，应当在职权范围内进行帮助\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查公安基本理论。</p><p>《110接处警规则》第二十九条规定：“110报警服务台受理求助的范围：</p><p>（一）发生溺水、坠楼、自杀等状况，需要公安机关紧急救助的；</p><p>（二）老人、儿童以及智障人员、精神病患者等人员走失，需要公安机关在一定范围内帮助查找的；</p><p>（三）公众遇到危难，处于孤立无援状况，需要立即救助的；</p><p>（四）涉及水、电、气、热等公共设施出现险情，威胁公共安全、人身或者财产安全和工作、学习、生活秩序，需要公安机关先期紧急处置的；</p><p>（五）需要公安机关处理的其他紧急求助事项。”</p><p>A项错误，对于群众提出的要求，公安机关应当在职责范围内做到有求必应，A项中“凡是”的表述过于绝对。</p><p>B项正确，在合理期限内尽快答复群众提出的要求，是公安机关群众工作追求效率的一种表现，也是行政机关高效便民原则的一种体现。</p><p>C项错误，公安机关应当在职责范围内满足群众的要求，践行“服务人民”的总要求，不能得罪人民群众的表述不规范。</p><p>D项正确，对群众提出的求助，应当在职权范围内进行帮助，符合《110接处警规则》以及公安工作要求的相关规定。</p><p>本题为多选题，故正确答案为BD。</p>",
+                "optList": [
+                    {
+                        "content": "凡是群众提出要求，都要做到有求必应",
+                        "label": "A"
+                    },
+                    {
+                        "content": "对群众提出的要求，应当尽快给予答复",
+                        "label": "B"
+                    },
+                    {
+                        "content": "要满足群众的求助，不能得罪人民群众",
+                        "label": "C"
+                    },
+                    {
+                        "content": "对群众提出的求助，应当在职权范围内进行帮助",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "凡是群众提出要求，都要做到有求必应",
+                        "label": "A"
+                    },
+                    {
+                        "content": "对群众提出的要求，应当尽快给予答复",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "要满足群众的求助，不能得罪人民群众",
+                        "label": "C"
+                    },
+                    {
+                        "content": "对群众提出的求助，应当在职权范围内进行帮助",
+                        "label": "D",
+                        "right": true
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "对群众提出的求助，应当在职权范围内进行帮助",
+                        "label": "D",
+                        "right": true
+                    },
+                    "option_2": {
+                        "content": "对群众提出的要求，应当尽快给予答复",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "要满足群众的求助，不能得罪人民群众",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "凡是群众提出要求，都要做到有求必应",
+                        "label": "A"
+                    }
+                },
+                "labelText": "公安机关的职能",
+                "labelsArray_text": "公安机关的职能",
+                "examPointName": "公安机关的职能",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444984,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929145,
+            "level": 62,
+            "subjectDo": {
+                "id": 929145,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"B\",\"C\",\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>公安机关的权力是一种特殊的国家公共权力，具有法定性、强制性和单向性等特点。公安机关权力运行过程中必须严格遵守的原则有（    ）。</p>",
+                "opt": "[{\"content\": \"公共原则\", \"label\": \"A\"}, {\"content\": \"责任原则\", \"label\": \"B\"}, {\"content\": \"程序原则\", \"label\": \"C\"}, {\"content\": \"比例原则\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查公安工作。</p><p>公安机关属于行政机关，应遵守行政法规定的行政机关权力运行过程中的基本原则。行政法基本原则是指导和规范行政法的立法、执法以及指导规范行政行为的实施和行政争议的处理的基础性法则，是贯穿于行政法具体规范之中，同时又高于行政法具体规范体现行政法基本价值观念的准则。其六大原则是：合法行政原则、合理行政原则、程序正当原则、高效便民原则、诚实信用原则和权责统一原则。</p><p>A项错误，行政法原则没有“公共原则”。</p><p>B项正确，“责任原则”即权责统一原则，分为两个方面：第一是行政效能原则。行政机关依法履行经济、社会和文化事务管理职责，要由法律、法规赋予其相应的执法手段，保证政令有效。第二是行政责任原则。行政机关违法或者不当行使职权，应当依法承担法律责任。这一原则的基本要求是行政权力和法律责任的统一，即执法有保障、有权必有责、用权受监督、违法受追究、侵权须赔偿。 </p><p>C项正确，“程序原则”即程序正当原则，是当代行政法的主要原则之一，包含公众参与原则、回避原则和行政公开原则。</p><p>D项正确，“比例原则”即合理行政原则，指的是行政法律关系当事人的行为，特别是行政机关的行为，不仅要合法而且要合理，也就是行政机关的自由裁量行为要做到合情、合理、恰当和适度。</p><p>本题为多选题，故正确答案为BCD。</p>",
+                "optList": [
+                    {
+                        "content": "公共原则",
+                        "label": "A"
+                    },
+                    {
+                        "content": "责任原则",
+                        "label": "B"
+                    },
+                    {
+                        "content": "程序原则",
+                        "label": "C"
+                    },
+                    {
+                        "content": "比例原则",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "公共原则",
+                        "label": "A"
+                    },
+                    {
+                        "content": "责任原则",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "程序原则",
+                        "label": "C",
+                        "right": true
+                    },
+                    {
+                        "content": "比例原则",
+                        "label": "D",
+                        "right": true
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "比例原则",
+                        "label": "D",
+                        "right": true
+                    },
+                    "option_2": {
+                        "content": "责任原则",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "程序原则",
+                        "label": "C",
+                        "right": true
+                    },
+                    "option_1": {
+                        "content": "公共原则",
+                        "label": "A"
+                    }
+                },
+                "labelText": "公安工作根本原则与路线",
+                "labelsArray_text": "公安工作根本原则与路线",
+                "examPointName": "公安工作根本原则与路线",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444985,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929146,
+            "level": 63,
+            "subjectDo": {
+                "id": 929146,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"A\",\"B\",\"C\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>我国公安工作在长期实践中形成了成熟稳定的基本方针，即党委领导下的专门机关与广大人民群众相结合。下列对基本方针理解正确的有（    ）。</p>",
+                "opt": "[{\"content\": \"公安机关在与广大人民群众的结合中，应该处于主导地位\", \"label\": \"A\"}, {\"content\": \"公安机关与广大人民群众结合得好不好，关键在公安机关\", \"label\": \"B\"}, {\"content\": \"专门机关与广大人民群众的结合是公安机关与人民群众在目标一致基础上的结合\", \"label\": \"C\"}, {\"content\": \"基本方针完整地表述了公安工作中公安机关、人民群众和群防群治组织三者的关系\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查公安工作。</p><p>A项正确，公安机关基本方针是以公安机关为主导的全方位的结合。</p><p>B项正确，公安机关是专群结合主导，专群结合的好不好取决于公安机关一方。</p><p>C项正确，公安机关基本方针是在公安机关与广大群众双方目标一致基础上的结合， 只有目的一致才能将公安机关的职能责任与人民群众的主动参与紧密结合起来。 </p><p>D项错误，专群结合完整地表述了公安工作中党的领导、公安机关和人民群众三者的关系，是我国公安工作的重要特色和优势。</p><p>本题为多选题，故正确答案为ABC。</p>",
+                "optList": [
+                    {
+                        "content": "公安机关在与广大人民群众的结合中，应该处于主导地位",
+                        "label": "A"
+                    },
+                    {
+                        "content": "公安机关与广大人民群众结合得好不好，关键在公安机关",
+                        "label": "B"
+                    },
+                    {
+                        "content": "专门机关与广大人民群众的结合是公安机关与人民群众在目标一致基础上的结合",
+                        "label": "C"
+                    },
+                    {
+                        "content": "基本方针完整地表述了公安工作中公安机关、人民群众和群防群治组织三者的关系",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "公安机关在与广大人民群众的结合中，应该处于主导地位",
+                        "label": "A",
+                        "right": true
+                    },
+                    {
+                        "content": "公安机关与广大人民群众结合得好不好，关键在公安机关",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "专门机关与广大人民群众的结合是公安机关与人民群众在目标一致基础上的结合",
+                        "label": "C",
+                        "right": true
+                    },
+                    {
+                        "content": "基本方针完整地表述了公安工作中公安机关、人民群众和群防群治组织三者的关系",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "基本方针完整地表述了公安工作中公安机关、人民群众和群防群治组织三者的关系",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "公安机关与广大人民群众结合得好不好，关键在公安机关",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "专门机关与广大人民群众的结合是公安机关与人民群众在目标一致基础上的结合",
+                        "label": "C",
+                        "right": true
+                    },
+                    "option_1": {
+                        "content": "公安机关在与广大人民群众的结合中，应该处于主导地位",
+                        "label": "A",
+                        "right": true
+                    }
+                },
+                "labelText": "公安工作根本原则与路线",
+                "labelsArray_text": "公安工作根本原则与路线",
+                "examPointName": "公安工作根本原则与路线",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444986,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929147,
+            "level": 64,
+            "subjectDo": {
+                "id": 929147,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"B\",\"C\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>“时代楷模”马善祥三十多年如一日从事人民调解工作，探索出颇有成效服务群众的“老马工作法”，他的做法在公安工作中被广泛应用。公安机关下列做法中，体现组织动员群众的工作方法有（    ）。</p>",
+                "opt": "[{\"content\": \"党建引领，创建社区党员民警示范岗，服务群众提质增效\", \"label\": \"A\"}, {\"content\": \"协同联动，共同开展多种形式的活动，形成良好治安环境\", \"label\": \"B\"}, {\"content\": \"警民同行，转变角色主动引导和参与，实现社区安全目标\", \"label\": \"C\"}, {\"content\": \"开门评警，主动接受群众监督和批评，构建和谐警民关系\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查公安工作。</p><p>A项错误，A项侧重于服务人民，没有体现组织动员群众。</p><p>B、C项正确，《公安派出所执法执勤规范》第三十二条规定：“责任区民警应当动员、组织责任区内单位和群众开展群防群治工作，建立群防群治组织，落实各项安全防范措施，减少可防性案件和治安灾害事故的发生。”《公安派出所执法执勤规范》第三十三条规定：“安全防范的内容主要包括：（一）开展形式多样的法制宣传教育，努力提高群众的安全防范意识和自我防范能力；（二）建立、完善以治保会为主体的群防群治组织；（三）推进安全社区建设；（四）落实人防、物防、技防措施。”</p><p>D项错误，人民警察接受群众监督，只是人民警察单方面的行为，并没有体现出来组织动员群众。</p><p>本题为多选题，故正确答案为BC。</p>",
+                "optList": [
+                    {
+                        "content": "党建引领，创建社区党员民警示范岗，服务群众提质增效",
+                        "label": "A"
+                    },
+                    {
+                        "content": "协同联动，共同开展多种形式的活动，形成良好治安环境",
+                        "label": "B"
+                    },
+                    {
+                        "content": "警民同行，转变角色主动引导和参与，实现社区安全目标",
+                        "label": "C"
+                    },
+                    {
+                        "content": "开门评警，主动接受群众监督和批评，构建和谐警民关系",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "党建引领，创建社区党员民警示范岗，服务群众提质增效",
+                        "label": "A"
+                    },
+                    {
+                        "content": "协同联动，共同开展多种形式的活动，形成良好治安环境",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "警民同行，转变角色主动引导和参与，实现社区安全目标",
+                        "label": "C",
+                        "right": true
+                    },
+                    {
+                        "content": "开门评警，主动接受群众监督和批评，构建和谐警民关系",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "开门评警，主动接受群众监督和批评，构建和谐警民关系",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "协同联动，共同开展多种形式的活动，形成良好治安环境",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "警民同行，转变角色主动引导和参与，实现社区安全目标",
+                        "label": "C",
+                        "right": true
+                    },
+                    "option_1": {
+                        "content": "党建引领，创建社区党员民警示范岗，服务群众提质增效",
+                        "label": "A"
+                    }
+                },
+                "labelText": "公安工作根本原则与路线",
+                "labelsArray_text": "公安工作根本原则与路线",
+                "examPointName": "公安工作根本原则与路线",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444987,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929148,
+            "level": 65,
+            "subjectDo": {
+                "id": 929148,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"A\",\"C\",\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>中学生吕某（女，13岁）课间在学校卫生间被几个同龄女生强行脱衣并推搡的视频传到网上，一时间引起了社会各界对校园欺凌事件的广泛关注，为了防范此类事件的再次发生，新兴派出所计划对辖区内的几所学校开展系列活动，正确做法有（    ）。</p>",
+                "opt": "[{\"content\": \"进入校园开展法治宣传教育讲座\", \"label\": \"A\"}, {\"content\": \"责令涉事学生在全校大会当众检讨\", \"label\": \"B\"}, {\"content\": \"开展心理疏导，传授学生救己途径\", \"label\": \"C\"}, {\"content\": \"联合家庭学校对问题女生进行重点帮教\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查群众工作能力。</p><p>A项正确，进入校园开展法治宣传教育讲座有利于引导广大师生树立法治思维，传递法治理念，从而为和谐校园的建立打下良好的基础。</p><p>B项错误，由于案件所涉及的学生年龄较小，当众检讨影响学生的心理健康侵犯隐私。</p><p>C项正确，由于材料中的学生年龄尚小，价值观尚未形成，很容易受到此事件的影响，不利于其身心健康，而及时地开展心理疏导，传授学生救己途径能够在最大程度上减少学生心理伤害。</p><p>D项正确，联合家庭和学校对存在问题的女生进行及时的介入与重点帮教，有利于及时发现问题、解决问题，帮助问题女生从思想到行动上回归常态。</p><p>本题为多选题，故正确答案为ACD。</p>",
+                "optList": [
+                    {
+                        "content": "进入校园开展法治宣传教育讲座",
+                        "label": "A"
+                    },
+                    {
+                        "content": "责令涉事学生在全校大会当众检讨",
+                        "label": "B"
+                    },
+                    {
+                        "content": "开展心理疏导，传授学生救己途径",
+                        "label": "C"
+                    },
+                    {
+                        "content": "联合家庭学校对问题女生进行重点帮教",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "进入校园开展法治宣传教育讲座",
+                        "label": "A",
+                        "right": true
+                    },
+                    {
+                        "content": "责令涉事学生在全校大会当众检讨",
+                        "label": "B"
+                    },
+                    {
+                        "content": "开展心理疏导，传授学生救己途径",
+                        "label": "C",
+                        "right": true
+                    },
+                    {
+                        "content": "联合家庭学校对问题女生进行重点帮教",
+                        "label": "D",
+                        "right": true
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "联合家庭学校对问题女生进行重点帮教",
+                        "label": "D",
+                        "right": true
+                    },
+                    "option_2": {
+                        "content": "责令涉事学生在全校大会当众检讨",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "开展心理疏导，传授学生救己途径",
+                        "label": "C",
+                        "right": true
+                    },
+                    "option_1": {
+                        "content": "进入校园开展法治宣传教育讲座",
+                        "label": "A",
+                        "right": true
+                    }
+                },
+                "labelText": "群众工作能力",
+                "labelsArray_text": "群众工作能力",
+                "examPointName": "群众工作能力",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444988,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929149,
+            "level": 66,
+            "subjectDo": {
+                "id": 929149,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"B\",\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>下图是某地公安机关受理治安案件的情况，下列说法正确的是（    ）。</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/6cf18201dbcd95cd33f002be29d54b47\"></img></p>",
+                "opt": "[{\"content\": \"扰乱公共秩序行为的治安案件呈下降趋势\", \"label\": \"A\"}, {\"content\": \"侵犯人身财产权利行为的治安案件呈上升趋势\", \"label\": \"B\"}, {\"content\": \"在四类案件中妨害社会管理行为的治安案件增长幅度最大\", \"label\": \"C\"}, {\"content\": \"2017年至2019年治安案件发案率总体呈上升趋势\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>A项错误，扰乱公共秩序行为的治安案件为图表第一列，在2019年58431较2018年50128有所上升。</p><p>B项正确，侵犯人身财产权利行为的治安案件为图表第三列，逐年上升。</p><p>C项错误，妨害社会管理行为增长幅度为<img src=\"https://img.xdtech.top/uploadFiles/image/new/2a1c867fcef81b998e99fc52b60a277a\" style=\"height:22px;margin-top:-3px;\"></img>，侵犯人身财产权利行为增长幅度为<img src=\"https://img.xdtech.top/uploadFiles/image/new/e0740349e2a05ec7c08b40d91d56a343\" style=\"height:22px;margin-top:-3px;\"></img>，因此在四类案件中妨害社会管理行为的治安案件增长幅度不是最大。</p><p>D项正确，2017年受理案件总数为259249件，2018年受理案件总数为243400件，2019年受理案件总数为266770件，在2018年下降后2019年再次攀升，总体并呈上升趋势。</p><p>本题为多选题，故正确答案为BD。</p>",
+                "optList": [
+                    {
+                        "content": "扰乱公共秩序行为的治安案件呈下降趋势",
+                        "label": "A"
+                    },
+                    {
+                        "content": "侵犯人身财产权利行为的治安案件呈上升趋势",
+                        "label": "B"
+                    },
+                    {
+                        "content": "在四类案件中妨害社会管理行为的治安案件增长幅度最大",
+                        "label": "C"
+                    },
+                    {
+                        "content": "2017年至2019年治安案件发案率总体呈上升趋势",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "扰乱公共秩序行为的治安案件呈下降趋势",
+                        "label": "A"
+                    },
+                    {
+                        "content": "侵犯人身财产权利行为的治安案件呈上升趋势",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "在四类案件中妨害社会管理行为的治安案件增长幅度最大",
+                        "label": "C"
+                    },
+                    {
+                        "content": "2017年至2019年治安案件发案率总体呈上升趋势",
+                        "label": "D",
+                        "right": true
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "2017年至2019年治安案件发案率总体呈上升趋势",
+                        "label": "D",
+                        "right": true
+                    },
+                    "option_2": {
+                        "content": "侵犯人身财产权利行为的治安案件呈上升趋势",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "在四类案件中妨害社会管理行为的治安案件增长幅度最大",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "扰乱公共秩序行为的治安案件呈下降趋势",
+                        "label": "A"
+                    }
+                },
+                "labelText": "公安情报信息工作能力",
+                "labelsArray_text": "公安情报信息工作能力",
+                "examPointName": "公安情报信息工作能力",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444989,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929150,
+            "level": 67,
+            "subjectDo": {
+                "id": 929150,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"A\",\"B\",\"D\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>公安机关在对一涉案团伙展开侦查时得知：该团伙涉及蓝剑公司（股东：张某、王某、李某）、志庆公司（股东：张某、赵某）、海文公司（股东：王某、刘某）、华创公司（股东：韩某）。其中，海文公司是华创公司的客户：赵某和韩某接触密切。需要进一步确认的信息有：李某和刘某曾共进晚餐，刘某与赵某曾有联系。下图是侦查员依据以上线索绘制的关系图，其中方框表示公司，圆圈表示人物，实线表示已确认的信息，虚线表示未确认信息。</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/9d1500a2cc647dce6bf3eba598657aa5\"></img></p><p>仔细观察上图，下列说法正确的有（    ）。</p>",
+                "opt": "[{\"content\": \"公司1是蓝剑公司\", \"label\": \"A\"}, {\"content\": \"公司2是志庆公司\", \"label\": \"B\"}, {\"content\": \"甲是王某、乙是刘某、丙是李某\", \"label\": \"C\"}, {\"content\": \"甲是王某、乙是李某、丙是刘某\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查情报信息工作能力。</p><p>A项正确，公司1股东为张某、甲和乙三人，则公司1是蓝剑公司。</p><p>B项正确，公司2股东为张某和赵某两人，则公司2是志庆公司。</p><p>关系图中赵某和丙之间存在未确认信息，而刘某与赵某曾有联系，则丙是刘某；关系图中丙和乙之间存在未确认信息，而丙是刘某，李某和刘某曾共进晚餐，则乙是李某；关系图中公司1（蓝剑公司）的股东为张某、甲和乙三人，乙是李某，则甲是王某。</p><p>所以C项错误，D项正确。</p><p>本题为多选题，故正确答案为ABD。</p>",
+                "optList": [
+                    {
+                        "content": "公司1是蓝剑公司",
+                        "label": "A"
+                    },
+                    {
+                        "content": "公司2是志庆公司",
+                        "label": "B"
+                    },
+                    {
+                        "content": "甲是王某、乙是刘某、丙是李某",
+                        "label": "C"
+                    },
+                    {
+                        "content": "甲是王某、乙是李某、丙是刘某",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "公司1是蓝剑公司",
+                        "label": "A",
+                        "right": true
+                    },
+                    {
+                        "content": "公司2是志庆公司",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "甲是王某、乙是刘某、丙是李某",
+                        "label": "C"
+                    },
+                    {
+                        "content": "甲是王某、乙是李某、丙是刘某",
+                        "label": "D",
+                        "right": true
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "甲是王某、乙是李某、丙是刘某",
+                        "label": "D",
+                        "right": true
+                    },
+                    "option_2": {
+                        "content": "公司2是志庆公司",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "甲是王某、乙是刘某、丙是李某",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "公司1是蓝剑公司",
+                        "label": "A",
+                        "right": true
+                    }
+                },
+                "labelText": "公安情报信息工作能力",
+                "labelsArray_text": "公安情报信息工作能力",
+                "examPointName": "公安情报信息工作能力",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444990,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929151,
+            "level": 68,
+            "subjectDo": {
+                "id": 929151,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"A\",\"C\"]",
+                "label": "39878",
+                "hasMaterial": 0,
+                "content": "<p>春节期间，某市老城区派出所根据辖区重点区域分布和治安状况，组织开展治安巡逻防控工作，派出所能抽调参加巡逻防控任务的警力有10人，可以配备自行车、摩托车和汽车，以下较为合理的巡逻方式有（    ）。</p>",
+                "opt": "[{\"content\": \"<p><img src=\\\"https://img.xdtech.top/uploadFiles/image/20200908/2b2f84591d1130e4853fc7694070fe0d\\\"></img></p>\", \"label\": \"A\"}, {\"content\": \"<p><img src=\\\"https://img.xdtech.top/uploadFiles/image/20200908/e9ad780d532e5726e967415ddda6c7dd\\\"></img></p>\", \"label\": \"B\"}, {\"content\": \"<p><img src=\\\"https://img.xdtech.top/uploadFiles/image/20200908/365ec47c0e324252adc904346cea4174\\\"></img></p>\", \"label\": \"C\"}, {\"content\": \"<p><img src=\\\"https://img.xdtech.top/uploadFiles/image/20200908/32c87d2c94cb367af6595146a2c7b8d5\\\"></img></p>\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查公安勤务能力。</p><p>A项正确，本题中辖区为“某市老城区派出所”，老城区通常交通不便，徒步巡逻、自行车巡逻和摩托车巡逻可以适应全地形需求。</p><p>B项错误，老城区汽车不宜通行，不宜配备太多的汽车巡逻，并且缺少自行车巡逻。</p><p>C项正确，派出所能抽调参加巡逻防控任务的警力有10人，可以采用人车结合巡逻。</p><p>D项错误，老城区巡逻必须有徒步巡逻，不能全用车辆巡逻。</p><p>本题为多选题，故正确答案为AC。</p>",
+                "optList": [
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/2b2f84591d1130e4853fc7694070fe0d\"></img></p>",
+                        "label": "A"
+                    },
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/e9ad780d532e5726e967415ddda6c7dd\"></img></p>",
+                        "label": "B"
+                    },
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/365ec47c0e324252adc904346cea4174\"></img></p>",
+                        "label": "C"
+                    },
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/32c87d2c94cb367af6595146a2c7b8d5\"></img></p>",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/2b2f84591d1130e4853fc7694070fe0d\"></img></p>",
+                        "label": "A",
+                        "right": true
+                    },
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/e9ad780d532e5726e967415ddda6c7dd\"></img></p>",
+                        "label": "B"
+                    },
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/365ec47c0e324252adc904346cea4174\"></img></p>",
+                        "label": "C",
+                        "right": true
+                    },
+                    {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/32c87d2c94cb367af6595146a2c7b8d5\"></img></p>",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/32c87d2c94cb367af6595146a2c7b8d5\"></img></p>",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/e9ad780d532e5726e967415ddda6c7dd\"></img></p>",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/365ec47c0e324252adc904346cea4174\"></img></p>",
+                        "label": "C",
+                        "right": true
+                    },
+                    "option_1": {
+                        "content": "<p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/2b2f84591d1130e4853fc7694070fe0d\"></img></p>",
+                        "label": "A",
+                        "right": true
+                    }
+                },
+                "labelText": "警务查缉战术",
+                "labelsArray_text": "警务查缉战术",
+                "examPointName": "警务查缉战术",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444991,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929152,
+            "level": 69,
+            "subjectDo": {
+                "id": 929152,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"A\",\"B\",\"C\"]",
+                "label": "39878",
+                "material": "",
+                "hasMaterial": 0,
+                "content": "<p>何某在协助公安机关办案过程中个人信息流露，经常接到威胁电话，何某请求公安机关对其进行人身保护。公安机关经核实后应当采取的保护性措施有（    ）。</p>",
+                "opt": "[{\"label\":\"A\",\"content\":\"禁止特定的人员接触何某\"},{\"label\":\"B\",\"content\":\"对何某及住宅采取专门性保护措施\"},{\"label\":\"C\",\"content\":\"根据何某的请求，可以变更其姓名\"},{\"label\":\"D\",\"content\":\"重新安排何某的住所和工作单位\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p style=\"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 32px; word-break: break-word; color: rgb(60, 70, 79); white-space: normal; background-color: rgb(255, 255, 255);\">本题考查刑事执法依据。</p><p style=\"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 32px; word-break: break-word; color: rgb(60, 70, 79); white-space: normal; background-color: rgb(255, 255, 255);\">A、B、C项正确，《公安机关办理刑事案件程序规定》第七十五条规定：“对危害国家安全犯罪、恐怖活动犯罪、黑社会性质的组织犯罪、毒品犯罪等案件，证人、鉴定人、被害人因在侦查过程中作证，本人或者其近亲属的人身安全面临危险的，公安机关应当采取以下一项或者多项保护措施：</p><p style=\"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 32px; word-break: break-word; color: rgb(60, 70, 79); white-space: normal; background-color: rgb(255, 255, 255);\">(一)不公开真实姓名、住址、通讯方式和工作单位等个人信息;</p><p style=\"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 32px; word-break: break-word; color: rgb(60, 70, 79); white-space: normal; background-color: rgb(255, 255, 255);\">(二)禁止特定的人员接触被保护人;</p><p style=\"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 32px; word-break: break-word; color: rgb(60, 70, 79); white-space: normal; background-color: rgb(255, 255, 255);\">(三)对被保护人的人身和住宅采取专门性保护措施;</p><p style=\"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 32px; word-break: break-word; color: rgb(60, 70, 79); white-space: normal; background-color: rgb(255, 255, 255);\">(四)将被保护人带到安全场所保护;</p><p style=\"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 32px; word-break: break-word; color: rgb(60, 70, 79); white-space: normal; background-color: rgb(255, 255, 255);\">(五)变更被保护人的住所和姓名;</p><p style=\"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 32px; word-break: break-word; color: rgb(60, 70, 79); white-space: normal; background-color: rgb(255, 255, 255);\">(六)其他必要的保护措施。</p><p style=\"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 32px; word-break: break-word; color: rgb(60, 70, 79); white-space: normal; background-color: rgb(255, 255, 255);\">证人、鉴定人、被害人认为因在侦查过程中作证，本人或者其近亲属的人身安全面临危险，向公安机关请求予以保护，公安机关经审查认为符合前款规定的条件，确有必要采取保护措施的，应当采取上述一项或者多项保护措施。</p><p style=\"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 32px; word-break: break-word; color: rgb(60, 70, 79); white-space: normal; background-color: rgb(255, 255, 255);\">公安机关依法采取保护措施，可以要求有关单位和个人配合。</p><p style=\"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 32px; word-break: break-word; color: rgb(60, 70, 79); white-space: normal; background-color: rgb(255, 255, 255);\">案件移送审查起诉时，应当将采取保护措施的相关情况一并移交人民检察院。”</p><p style=\"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 32px; word-break: break-word; color: rgb(60, 70, 79); white-space: normal; background-color: rgb(255, 255, 255);\">D项错误，重新安排何某的住处和工作单位不符合《中华人民共和国刑事诉讼法》相关规定。</p><p style=\"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: 32px; word-break: break-word; color: rgb(60, 70, 79); white-space: normal; background-color: rgb(255, 255, 255);\">本题为多选题，故正确答案为ABC。</p><p><br/></p>",
+                "optList": [
+                    {
+                        "label": "A",
+                        "content": "禁止特定的人员接触何某"
+                    },
+                    {
+                        "label": "B",
+                        "content": "对何某及住宅采取专门性保护措施"
+                    },
+                    {
+                        "label": "C",
+                        "content": "根据何某的请求，可以变更其姓名"
+                    },
+                    {
+                        "label": "D",
+                        "content": "重新安排何某的住所和工作单位"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "label": "A",
+                        "content": "禁止特定的人员接触何某",
+                        "right": true
+                    },
+                    {
+                        "label": "B",
+                        "content": "对何某及住宅采取专门性保护措施",
+                        "right": true
+                    },
+                    {
+                        "label": "C",
+                        "content": "根据何某的请求，可以变更其姓名",
+                        "right": true
+                    },
+                    {
+                        "label": "D",
+                        "content": "重新安排何某的住所和工作单位"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "label": "D",
+                        "content": "重新安排何某的住所和工作单位"
+                    },
+                    "option_2": {
+                        "label": "B",
+                        "content": "对何某及住宅采取专门性保护措施",
+                        "right": true
+                    },
+                    "option_3": {
+                        "label": "C",
+                        "content": "根据何某的请求，可以变更其姓名",
+                        "right": true
+                    },
+                    "option_1": {
+                        "label": "A",
+                        "content": "禁止特定的人员接触何某",
+                        "right": true
+                    }
+                },
+                "labelText": "刑事诉讼法",
+                "labelsArray_text": "刑事诉讼法",
+                "examPointName": "刑事诉讼法",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444992,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929153,
+            "level": 70,
+            "subjectDo": {
+                "id": 929153,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"A\",\"B\"]",
+                "label": "39878",
+                "material": "<p>某日，Y市公安局民警郑某、段某在巡逻时发现公安部A级通缉犯周某正驾车逃离，两名民警遂驾车追捕。途中，民警的车辆出现故障，此时恰遇市民冯某开车路过，民警拦住冯某，征用了他的车辆追捕逃犯，为阻拦嫌疑人周某的车辆，民警郑某驾驶车辆撞上周某车辆侧面，致使冯某车辆受损。</p>",
+                "hasMaterial": 1,
+                "content": "<p>关于民警使用冯某车辆的说法正确的有（    ）。</p>",
+                "opt": "[{\"label\":\"A\",\"content\":\"可以优先使用冯某的车辆\"},{\"label\":\"B\",\"content\":\"Y市公安局应当赔偿冯某的车辆损失\"},{\"label\":\"C\",\"content\":\"<p>Y市公安局赔偿后，可以向民警郑某追偿</p>\"},{\"label\":\"D\",\"content\":\"应当由民警郑某赔偿冯某的车辆损失费用\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查人民警察法。</p><p>A项正确，《人民警察法》第十三条规定：“公安机关的人民警察因履行职责的紧急需要，经出示相应证件，可以优先乘坐公共交通工具，遇交通阻碍时，优先通行。公安机关因侦查犯罪的需要，必要时，按照国家有关规定，可以优先使用机关、团体、企业事业组织和个人的交通工具、通信工具、场地和建筑物，用后应当及时归还，并支付适当费用；造成损失的，应当赔偿。”题目中民警郑某、段某在追捕逃犯过程中征用市民冯某车辆符合法律规定。</p><p>B项正确，《人民警察法》第十三条规定：“公安机关的人民警察因履行职责的紧急需要，经出示相应证件，可以优先乘坐公共交通工具，遇交通阻碍时，优先通行。公安机关因侦查犯罪的需要，必要时，按照国家有关规定，可以优先使用机关、团体、企业事业组织和个人的交通工具、通信工具、场地和建筑物，用后应当及时归还，并支付适当费用；造成损失的，应当赔偿。”赔偿义务机关为民警郑某、段某所属公安机关。</p><p>C项错误，《中华人民共和国国家赔偿法》第十六条规定：“赔偿义务机关赔偿损失后，应当责令有故意或者重大过失的工作人员或者受委托的组织或者个人承担部分或者全部赔偿费用。”民警郑某、段某依法因公务征用车辆，不应对损失进行追偿。</p><p>D项错误，《公安机关维护民警执法权威工作规定》第十四条规定：“民警按照法定条件和程序履行职责、行使职权，对公民、法人或者其他组织合法权益造成损害的，民警个人不承担法律责任，由其所属公安机关按照国家有关规定对造成的损害给予补偿。”本题中应由民警所属机关进行赔偿，民警不负赔偿责任。</p><p>本题为多选题，故正确答案为AB。</p>",
+                "optList": [
+                    {
+                        "label": "A",
+                        "content": "可以优先使用冯某的车辆"
+                    },
+                    {
+                        "label": "B",
+                        "content": "Y市公安局应当赔偿冯某的车辆损失"
+                    },
+                    {
+                        "label": "C",
+                        "content": "<p>Y市公安局赔偿后，可以向民警郑某追偿</p>"
+                    },
+                    {
+                        "label": "D",
+                        "content": "应当由民警郑某赔偿冯某的车辆损失费用"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "label": "A",
+                        "content": "可以优先使用冯某的车辆",
+                        "right": true
+                    },
+                    {
+                        "label": "B",
+                        "content": "Y市公安局应当赔偿冯某的车辆损失",
+                        "right": true
+                    },
+                    {
+                        "label": "C",
+                        "content": "<p>Y市公安局赔偿后，可以向民警郑某追偿</p>"
+                    },
+                    {
+                        "label": "D",
+                        "content": "应当由民警郑某赔偿冯某的车辆损失费用"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "label": "D",
+                        "content": "应当由民警郑某赔偿冯某的车辆损失费用"
+                    },
+                    "option_2": {
+                        "label": "B",
+                        "content": "Y市公安局应当赔偿冯某的车辆损失",
+                        "right": true
+                    },
+                    "option_3": {
+                        "label": "C",
+                        "content": "<p>Y市公安局赔偿后，可以向民警郑某追偿</p>"
+                    },
+                    "option_1": {
+                        "label": "A",
+                        "content": "可以优先使用冯某的车辆",
+                        "right": true
+                    }
+                },
+                "labelText": "人民警察法基础知识",
+                "labelsArray_text": "人民警察法基础知识",
+                "examPointName": "人民警察法基础知识",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444993,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929154,
+            "level": 71,
+            "subjectDo": {
+                "id": 929154,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"A\",\"B\"]",
+                "label": "39878",
+                "material": "<p>某日，Y市公安局民警郑某、段某在巡逻时发现公安部A级通缉犯周某正驾车逃离，两名民警遂驾车追捕。途中，民警的车辆出现故障，此时恰遇市民冯某开车路过，民警拦住冯某，征用了他的车辆追捕逃犯，为阻拦嫌疑人周某的车辆，民警郑某驾驶车辆撞上周某车辆侧面，致使冯某车辆受损。</p>",
+                "hasMaterial": 1,
+                "content": "<p>犯罪嫌疑人周某弃车至光明街道，因周某挟持人质拒捕，为了顺利抓捕周某，Y市公安局下列做法正确的有（    ）。</p>",
+                "opt": "[{\"content\": \"决定在光明街道区域内限制人员、车辆通行或者停留\", \"label\": \"A\"}, {\"content\": \"必要时，可以对光明街道实行交通管制\", \"label\": \"B\"}, {\"content\": \"经同级人民政府批准后，可以对光明街道实行现场管制\", \"label\": \"C\"}, {\"content\": \"经Y市公安局所在的省公安厅批准后，可以对光明街道实行现场管制\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查人民警察法。</p><p>A、B项正确，《人民警察法》第十五条规定：“县级以上人民政府公安机关，为预防和制止严重危害社会治安秩序的行为，可以在一定的区域和时间，限制人员、车辆的通行或者停留，必要时可以实行交通管制。公安机关的人民警察依照前款规定，可以采取相应的交通管制措施。”犯罪嫌疑人周某挟持人质，严重危害社会治安秩序，因此Y市公安局可以在光明街道区域内限制人员、车辆通行或者停留，必要时可以实行交通管制。</p><p>C、D项错误，《人民警察法》第十七条规定：“县级以上人民政府公安机关，经上级公安机关和同级人民政府批准，对严重危害社会治安秩序的突发事件，可以根据情况实行现场管制。公安机关的人民警察依照前款规定，可以采取必要手段强行驱散，并对拒不服从的人员强行带离现场或者立即予以拘留。”Y市公安局要经过所在的省公安厅和同级人民政府批准后，可以对光明街道实行现场管制。</p><p>本题为多选题，故正确答案为AB。</p>",
+                "optList": [
+                    {
+                        "content": "决定在光明街道区域内限制人员、车辆通行或者停留",
+                        "label": "A"
+                    },
+                    {
+                        "content": "必要时，可以对光明街道实行交通管制",
+                        "label": "B"
+                    },
+                    {
+                        "content": "经同级人民政府批准后，可以对光明街道实行现场管制",
+                        "label": "C"
+                    },
+                    {
+                        "content": "经Y市公安局所在的省公安厅批准后，可以对光明街道实行现场管制",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "决定在光明街道区域内限制人员、车辆通行或者停留",
+                        "label": "A",
+                        "right": true
+                    },
+                    {
+                        "content": "必要时，可以对光明街道实行交通管制",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "经同级人民政府批准后，可以对光明街道实行现场管制",
+                        "label": "C"
+                    },
+                    {
+                        "content": "经Y市公安局所在的省公安厅批准后，可以对光明街道实行现场管制",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "经Y市公安局所在的省公安厅批准后，可以对光明街道实行现场管制",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "必要时，可以对光明街道实行交通管制",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "经同级人民政府批准后，可以对光明街道实行现场管制",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "决定在光明街道区域内限制人员、车辆通行或者停留",
+                        "label": "A",
+                        "right": true
+                    }
+                },
+                "labelText": "人民警察法基础知识",
+                "labelsArray_text": "人民警察法基础知识",
+                "examPointName": "人民警察法基础知识",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444994,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929155,
+            "level": 72,
+            "subjectDo": {
+                "id": 929155,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"C\"]",
+                "label": "39878",
+                "material": "<p>某日，Y市公安局民警郑某、段某在巡逻时发现公安部A级通缉犯周某正驾车逃离，两名民警遂驾车追捕。途中，民警的车辆出现故障，此时恰遇市民冯某开车路过，民警拦住冯某，征用了他的车辆追捕逃犯，为阻拦嫌疑人周某的车辆，民警郑某驾驶车辆撞上周某车辆侧面，致使冯某车辆受损。</p>",
+                "hasMaterial": 1,
+                "content": "<p>Y市E区公安分局某派出所民警钱某下班回家路上，正好看到周某从小区出来，钱某见状上前对周某实施抓捕，致钱某负伤。下列说法正确的是（    ）。</p>",
+                "opt": "[{\"content\": \"钱某可以不履行职责\", \"label\": \"A\"}, {\"content\": \"钱某的行为属于滥用职权\", \"label\": \"B\"}, {\"content\": \"钱某的行为属于履行职责\", \"label\": \"C\"}, {\"content\": \"钱某的行为属于见义勇为\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查人民警察法。</p><p>《人民警察法》第十九条规定：“人民警察在非工作时间，遇有其职责范围内的紧急情况，应当履行职责。”本题中，民警钱某下班属于非工作时间，发现公安部A级通缉犯周某，上前对周某实施抓捕，属于遇有其职责范围内的紧急情况，所以民警钱某应当履行职责。</p><p>故正确答案为C。</p>",
+                "optList": [
+                    {
+                        "content": "钱某可以不履行职责",
+                        "label": "A"
+                    },
+                    {
+                        "content": "钱某的行为属于滥用职权",
+                        "label": "B"
+                    },
+                    {
+                        "content": "钱某的行为属于履行职责",
+                        "label": "C"
+                    },
+                    {
+                        "content": "钱某的行为属于见义勇为",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "钱某可以不履行职责",
+                        "label": "A"
+                    },
+                    {
+                        "content": "钱某的行为属于滥用职权",
+                        "label": "B"
+                    },
+                    {
+                        "content": "钱某的行为属于履行职责",
+                        "label": "C"
+                    },
+                    {
+                        "content": "钱某的行为属于见义勇为",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "C",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "钱某的行为属于见义勇为",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "钱某的行为属于滥用职权",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "钱某的行为属于履行职责",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "钱某可以不履行职责",
+                        "label": "A"
+                    }
+                },
+                "labelText": "人民警察法基础知识",
+                "labelsArray_text": "人民警察法基础知识",
+                "examPointName": "人民警察法基础知识",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444995,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929156,
+            "level": 73,
+            "subjectDo": {
+                "id": 929156,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"A\"]",
+                "label": "39878",
+                "material": "<p>某日，Y市公安局民警郑某、段某在巡逻时发现公安部A级通缉犯周某正驾车逃离，两名民警遂驾车追捕。途中，民警的车辆出现故障，此时恰遇市民冯某开车路过，民警拦住冯某，征用了他的车辆追捕逃犯，为阻拦嫌疑人周某的车辆，民警郑某驾驶车辆撞上周某车辆侧面，致使冯某车辆受损。</p>",
+                "hasMaterial": 1,
+                "content": "<p>公安部通缉令载明，周某跨省持枪抢劫作案5起，造成11人死亡。周某因其持枪拒捕被民警当场击毙后，公安机关对上述案件应当做的是（    ）。</p>",
+                "opt": "[{\"content\": \"撤销案件\", \"label\": \"A\"}, {\"content\": \"移送起诉\", \"label\": \"B\"}, {\"content\": \"继续侦查\", \"label\": \"C\"}, {\"content\": \"宣告无罪\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查刑事执法依据。</p><p>《刑事诉讼法》第十六条规定：“有下列情形之一的，不追究刑事责任，已经追究的，应当撤销案件，或者不起诉，或者终止审理，或者宣告无罪：（一）情节显著轻微、危害不大，不认为是犯罪的；（二）犯罪已过追诉时效期限的；（三）经特赦令免除刑罚的；（四）依照刑法告诉才处理的犯罪，没有告诉或者撤回告诉的；（五）犯罪嫌疑人、被告人死亡的；（六）其他法律规定免予追究刑事责任的。本案中，属于侦查阶段犯罪嫌疑人死亡，故应当撤销案件。”</p><p>故正确答案为A。</p>",
+                "optList": [
+                    {
+                        "content": "撤销案件",
+                        "label": "A"
+                    },
+                    {
+                        "content": "移送起诉",
+                        "label": "B"
+                    },
+                    {
+                        "content": "继续侦查",
+                        "label": "C"
+                    },
+                    {
+                        "content": "宣告无罪",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "撤销案件",
+                        "label": "A"
+                    },
+                    {
+                        "content": "移送起诉",
+                        "label": "B"
+                    },
+                    {
+                        "content": "继续侦查",
+                        "label": "C"
+                    },
+                    {
+                        "content": "宣告无罪",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "A",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "宣告无罪",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "移送起诉",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "继续侦查",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "撤销案件",
+                        "label": "A"
+                    }
+                },
+                "labelText": "刑事诉讼法",
+                "labelsArray_text": "刑事诉讼法",
+                "examPointName": "刑事诉讼法",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444996,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929157,
+            "level": 74,
+            "subjectDo": {
+                "id": 929157,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"D\"]",
+                "label": "39878",
+                "material": "<p>2019年9月3日中午，王某与朋友相约在彭川市金安县旺达广场吃饭。王某酒后走出饭店，觉得迎面走来的李某不顺眼，上前随意殴打李某，被巡逻民警发现后，将王某带至派出所，王某在派出所继续大吵大闹发酒疯，1小时后才酒醒。民警随后开展调查取证工作，时间顺序如下：</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/9250ddfb19631224afcdc790bb4955c8\"></img></p>",
+                "hasMaterial": 1,
+                "content": "<p>如果你是本案的办案民警，王某酒醒后，你和民警胡某对王某进行询问，询问查证时间最迟不得超过（    ）。</p>",
+                "opt": "[{\"content\": \"9月3日22：10\", \"label\": \"A\"}, {\"content\": \"9月3日23：30\", \"label\": \"B\"}, {\"content\": \"9月4日14：10\", \"label\": \"C\"}, {\"content\": \"9月4日15：30\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查行政执法依据。</p><p>《公安机关办理行政案件程序规定》第五十八条规定：“违法嫌疑人在醉酒状态中，对本人有危险或者对他人的人身、财产或者公共安全有威胁的，可以对其采取保护性措施约束至酒醒，也可以通知其家属、亲友或者所属单位将其领回看管，必要时，应当送医院醒酒。对行为举止失控的醉酒人，可以使用约束带或者警绳等进行约束，但是不得使用手铐、脚镣等警械。 约束过程中，应当指定专人严加看护。确认醉酒人酒醒后，应当立即解除约束，并进行询问。约束时间不计算在询问查证时间内。”因此应该从9月3日15:30王某酒醒时开始计算询问查证的时间，至迟不超过二十四小时，也就是到9月4日15:30。</p><p>故正确答案为D。</p>",
+                "optList": [
+                    {
+                        "content": "9月3日22：10",
+                        "label": "A"
+                    },
+                    {
+                        "content": "9月3日23：30",
+                        "label": "B"
+                    },
+                    {
+                        "content": "9月4日14：10",
+                        "label": "C"
+                    },
+                    {
+                        "content": "9月4日15：30",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "9月3日22：10",
+                        "label": "A"
+                    },
+                    {
+                        "content": "9月3日23：30",
+                        "label": "B"
+                    },
+                    {
+                        "content": "9月4日14：10",
+                        "label": "C"
+                    },
+                    {
+                        "content": "9月4日15：30",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "D",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "9月4日15：30",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "9月3日23：30",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "9月4日14：10",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "9月3日22：10",
+                        "label": "A"
+                    }
+                },
+                "labelText": "行政案件程序规定",
+                "labelsArray_text": "行政案件程序规定",
+                "examPointName": "行政案件程序规定",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444997,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929158,
+            "level": 75,
+            "subjectDo": {
+                "id": 929158,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"A\",\"B\",\"D\"]",
+                "label": "39878",
+                "material": "<p>2019年9月3日中午，王某与朋友相约在彭川市金安县旺达广场吃饭。王某酒后走出饭店，觉得迎面走来的李某不顺眼，上前随意殴打李某，被巡逻民警发现后，将王某带至派出所，王某在派出所继续大吵大闹发酒疯，1小时后才酒醒。民警随后开展调查取证工作，时间顺序如下：</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/9250ddfb19631224afcdc790bb4955c8\"></img></p>",
+                "hasMaterial": 1,
+                "content": "<p>根据上述信息，民警在办案中存在的问题有（    ）。</p>",
+                "opt": "[{\"content\": \"①\", \"label\": \"A\"}, {\"content\": \"②\", \"label\": \"B\"}, {\"content\": \"③\", \"label\": \"C\"}, {\"content\": \"④\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查行政执法依据。</p><p>A项错误，《公安机关办理行政案件程序规定》第五十八条第一款规定：“违法嫌疑人在醉酒状态中，对本人有危险或者对他人的人身、财产或者公共安全有威胁的，可以对其采取保护性措施约束至酒醒，也可以通知其家属、亲友或者所属单位将其领回看管，必要时，应当送医院醒酒。对行为举止失控的醉酒人，可以使用约束带或者警绳等进行约束，但是不得使用手铐、脚镣等警械。”对于醉酒的人不适用手铐，应该使用警束带或者警绳。</p><p>B项错误，根据《公安机关执法细则》规定，要求被侵害人、证人或者其他与案件有关的人到公安机关提供证言的，应当采用通知形式，不得传唤。</p><p>C项正确，《公安机关办理行政案件程序规定》第五十二条第一款的规定：“公安机关进行询问、辨认、检查、勘验，实施行政强制措施等调查取证工作时，人民警察不得少于二人，并表明执法身份。”询问违法行为人应当最少两名警察。</p><p>D项错误，《公安机关办理行政案件程序规定》第七十二条的规定：“询问违法嫌疑人、被侵害人或者其他证人，应当个别进行。”询问证人也应当分开进行。</p><p>本题为多选题，故正确答案为ABD。</p>",
+                "optList": [
+                    {
+                        "content": "①",
+                        "label": "A"
+                    },
+                    {
+                        "content": "②",
+                        "label": "B"
+                    },
+                    {
+                        "content": "③",
+                        "label": "C"
+                    },
+                    {
+                        "content": "④",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "①",
+                        "label": "A",
+                        "right": true
+                    },
+                    {
+                        "content": "②",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "③",
+                        "label": "C"
+                    },
+                    {
+                        "content": "④",
+                        "label": "D",
+                        "right": true
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "④",
+                        "label": "D",
+                        "right": true
+                    },
+                    "option_2": {
+                        "content": "②",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "③",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "①",
+                        "label": "A",
+                        "right": true
+                    }
+                },
+                "labelText": "行政案件程序规定",
+                "labelsArray_text": "行政案件程序规定",
+                "examPointName": "行政案件程序规定",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444998,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929159,
+            "level": 76,
+            "subjectDo": {
+                "id": 929159,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"B\"]",
+                "label": "39878",
+                "material": "<p>2019年9月3日中午，王某与朋友相约在彭川市金安县旺达广场吃饭。王某酒后走出饭店，觉得迎面走来的李某不顺眼，上前随意殴打李某，被巡逻民警发现后，将王某带至派出所，王某在派出所继续大吵大闹发酒疯，1小时后才酒醒。民警随后开展调查取证工作，时间顺序如下：</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/9250ddfb19631224afcdc790bb4955c8\"></img></p>",
+                "hasMaterial": 1,
+                "content": "<p>2019年1月3日，李某经伤情鉴定为轻伤于是派出所将此案立为刑事案件进行侦察，本案立为刑事案件后，下列说法正确的是（    ）。</p>",
+                "opt": "[{\"content\": \"王某的行为构成寻衅滋事罪，可以适用刑事和解程序\", \"label\": \"A\"}, {\"content\": \"王某的行为构成寻衅滋事罪，不可以适用刑事和解程序\", \"label\": \"B\"}, {\"content\": \"王某的行为构成故意伤害罪，可以适用刑事和解程序\", \"label\": \"C\"}, {\"content\": \"王某的行为构成故意伤害罪，不可以适用刑事和解程序\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查刑法。</p><p>CD项错误。《中华人民共和国刑法》第二百三十四条规定：“故意伤害他人身体的，处三年以下有期徒刑、拘役或者管制。犯前款罪，致人重伤的，处三年以上十年以下有期徒刑；致人死亡或者以特别残忍手段致人重伤造成严重残疾的，处十年以上有期徒刑、无期徒刑或者死刑。本法另有规定的，依照规定。” 又因《中华人民共和国刑法》第二百九十三条规定：“有下列寻衅滋事行为之一，破坏社会秩序的，处五年以下有期徒刑、拘役或者管制： （一）随意殴打他人，情节恶劣的；（二）追逐、拦截、辱骂、恐吓他人，情节恶劣的；（三）强拿硬要或者任意损毁、占用公私财物，情节严重的；（四）在公共场所起哄闹事，造成公共场所秩序严重混乱的。 纠集他人多次实施前款行为，严重破坏社会秩序的，处五年以上十年以下有期徒刑，可以并处罚金。” 王某醉酒后，因看李某不顺眼，随意殴打李某并致李某轻伤，属于寻衅滋事罪中随意殴打他人，情节恶劣的情形。所以王某的行为构成寻衅滋事罪。</p><p>A项错误，B项正确。《中华人民共和国刑事诉讼法》第二百八十八条规定：“下列公诉案件，犯罪嫌疑人、被告人真诚悔罪，通过向被害人赔偿损失、赔礼道歉等方式获得被害人谅解，被害人自愿和解的，双方当事人可以和解：（一）因民间纠纷引起，涉嫌刑法分则第四章、第五章规定的犯罪案件，可能判处三年有期徒刑以下刑罚的； （二）除渎职犯罪以外的可能判处七年有期徒刑以下刑罚的过失犯罪案件。 犯罪嫌疑人、被告人在五年以内曾经故意犯罪的，不适用本章规定的程序。王某的寻衅滋事罪行为属于刑法第六章妨害社会管理秩序罪，不属于刑事和解规定的几种情况，所以不可以适用于刑事和解程序。</p><p>故正确答案为B。</p>",
+                "optList": [
+                    {
+                        "content": "王某的行为构成寻衅滋事罪，可以适用刑事和解程序",
+                        "label": "A"
+                    },
+                    {
+                        "content": "王某的行为构成寻衅滋事罪，不可以适用刑事和解程序",
+                        "label": "B"
+                    },
+                    {
+                        "content": "王某的行为构成故意伤害罪，可以适用刑事和解程序",
+                        "label": "C"
+                    },
+                    {
+                        "content": "王某的行为构成故意伤害罪，不可以适用刑事和解程序",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "王某的行为构成寻衅滋事罪，可以适用刑事和解程序",
+                        "label": "A"
+                    },
+                    {
+                        "content": "王某的行为构成寻衅滋事罪，不可以适用刑事和解程序",
+                        "label": "B"
+                    },
+                    {
+                        "content": "王某的行为构成故意伤害罪，可以适用刑事和解程序",
+                        "label": "C"
+                    },
+                    {
+                        "content": "王某的行为构成故意伤害罪，不可以适用刑事和解程序",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "B",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "王某的行为构成故意伤害罪，不可以适用刑事和解程序",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "王某的行为构成寻衅滋事罪，不可以适用刑事和解程序",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "王某的行为构成故意伤害罪，可以适用刑事和解程序",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "王某的行为构成寻衅滋事罪，可以适用刑事和解程序",
+                        "label": "A"
+                    }
+                },
+                "labelText": "刑法",
+                "labelsArray_text": "刑法",
+                "examPointName": "刑法",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 444999,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929160,
+            "level": 77,
+            "subjectDo": {
+                "id": 929160,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"C\"]",
+                "label": "39878",
+                "material": "<p>2019年9月3日中午，王某与朋友相约在彭川市金安县旺达广场吃饭。王某酒后走出饭店，觉得迎面走来的李某不顺眼，上前随意殴打李某，被巡逻民警发现后，将王某带至派出所，王某在派出所继续大吵大闹发酒疯，1小时后才酒醒。民警随后开展调查取证工作，时间顺序如下：</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/9250ddfb19631224afcdc790bb4955c8\"></img></p>",
+                "hasMaterial": 1,
+                "content": "<p>侦查终结后，民警胡某整理装订好卷宗，井制作卷宗目录。下列说法正确的是（    ）。</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/219bf33a84458c90984f0867cdbab5bb\"></img></p>",
+                "opt": "[{\"content\": \"证明王某有罪的证据只有王某的询问笔录和讯问笔录\", \"label\": \"A\"}, {\"content\": \"证明王某有罪的证据只有鉴定意见和王某的讯问笔录\", \"label\": \"B\"}, {\"content\": \"证明王某有罪的证据有鉴定意见、询问笔录和讯问笔录\", \"label\": \"C\"}, {\"content\": \"李某、王某的询问笔录及王某的讯问笔录都是有罪证据\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查刑事执法依据。</p><p>《公安机关办理刑事案件程序规定(2012修正) 》 第五十六条规定：“可以用于证明案件事实的材料，都是证据。证据包括：（一）物证；（二）书证；（三）证人证言；（四）被害人陈述；（五）犯罪嫌疑人、被告人供述和辩解；（六）鉴定意见；（七）勘验、检查、侦查实验、搜查、查封、扣押、提取、辨认等笔录；（八）视听资料、电子数据。”分析题干可知证明王某有罪的证据有李某询问笔录、刘某1询问笔录和刘某2询问笔录、伤情鉴定意见、王某的询问笔录。故C项正确，A、B、D项错误。</p><p>故正确答案为C。</p>",
+                "optList": [
+                    {
+                        "content": "证明王某有罪的证据只有王某的询问笔录和讯问笔录",
+                        "label": "A"
+                    },
+                    {
+                        "content": "证明王某有罪的证据只有鉴定意见和王某的讯问笔录",
+                        "label": "B"
+                    },
+                    {
+                        "content": "证明王某有罪的证据有鉴定意见、询问笔录和讯问笔录",
+                        "label": "C"
+                    },
+                    {
+                        "content": "李某、王某的询问笔录及王某的讯问笔录都是有罪证据",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "证明王某有罪的证据只有王某的询问笔录和讯问笔录",
+                        "label": "A"
+                    },
+                    {
+                        "content": "证明王某有罪的证据只有鉴定意见和王某的讯问笔录",
+                        "label": "B"
+                    },
+                    {
+                        "content": "证明王某有罪的证据有鉴定意见、询问笔录和讯问笔录",
+                        "label": "C"
+                    },
+                    {
+                        "content": "李某、王某的询问笔录及王某的讯问笔录都是有罪证据",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "C",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "李某、王某的询问笔录及王某的讯问笔录都是有罪证据",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "证明王某有罪的证据只有鉴定意见和王某的讯问笔录",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "证明王某有罪的证据有鉴定意见、询问笔录和讯问笔录",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "证明王某有罪的证据只有王某的询问笔录和讯问笔录",
+                        "label": "A"
+                    }
+                },
+                "labelText": "刑事案件程序规定",
+                "labelsArray_text": "刑事案件程序规定",
+                "examPointName": "刑事案件程序规定",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445000,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929161,
+            "level": 78,
+            "subjectDo": {
+                "id": 929161,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"A\"]",
+                "label": "39878",
+                "material": "<p>2020年5月，某市一新建小区，开发商准备在小区内建造垃圾转运站，消息在小区业主微信群中传开，已经有300多人入群，业主反应激烈，多人在群里发言：“垃圾异味对低楼层有严重影响”、“一楼门市没法做生意”、“小区房价会受到影响”等。业主以建设垃圾转运站没有写入购房合同，属于欺骗行为为由，谋划5月12日到开发商售楼处讨要说法。小刘是负责该小区的社区民警，通过到小区走访，了解到上述相关信息。</p>",
+                "hasMaterial": 1,
+                "content": "<p>小刘回到派出所后，立即展开工作，下列选项中，小刘首先做的是（    ）。</p>",
+                "opt": "[{\"content\": \"通过熟识的业主加入到业主微信群，深入了解情况\", \"label\": \"A\"}, {\"content\": \"谋划可能协调的群众力量组建劝导小组\", \"label\": \"B\"}, {\"content\": \"电话联系街道办事处、居委会，通报相关情况\", \"label\": \"C\"}, {\"content\": \"向所长汇报，编辑情报信息线索，及时上报\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查情报信息工作能力。</p><p>社区民警了解到不稳定因素后，第一时间应该深入一线，了解第一手资料，掌握时间发生的起因经过，做好分析研判，将问题妥善化解。故本题小刘首先应该做的是掌握第一手信息，进入业主微信群，深入了解信息核实情况。</p><p>故正确答案为A。</p>",
+                "optList": [
+                    {
+                        "content": "通过熟识的业主加入到业主微信群，深入了解情况",
+                        "label": "A"
+                    },
+                    {
+                        "content": "谋划可能协调的群众力量组建劝导小组",
+                        "label": "B"
+                    },
+                    {
+                        "content": "电话联系街道办事处、居委会，通报相关情况",
+                        "label": "C"
+                    },
+                    {
+                        "content": "向所长汇报，编辑情报信息线索，及时上报",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "通过熟识的业主加入到业主微信群，深入了解情况",
+                        "label": "A"
+                    },
+                    {
+                        "content": "谋划可能协调的群众力量组建劝导小组",
+                        "label": "B"
+                    },
+                    {
+                        "content": "电话联系街道办事处、居委会，通报相关情况",
+                        "label": "C"
+                    },
+                    {
+                        "content": "向所长汇报，编辑情报信息线索，及时上报",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "A",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "向所长汇报，编辑情报信息线索，及时上报",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "谋划可能协调的群众力量组建劝导小组",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "电话联系街道办事处、居委会，通报相关情况",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "通过熟识的业主加入到业主微信群，深入了解情况",
+                        "label": "A"
+                    }
+                },
+                "labelText": "公安情报信息工作能力",
+                "labelsArray_text": "公安情报信息工作能力",
+                "examPointName": "公安情报信息工作能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445001,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929162,
+            "level": 79,
+            "subjectDo": {
+                "id": 929162,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"A\",\"B\",\"C\",\"D\"]",
+                "label": "39878",
+                "material": "<p>2020年5月，某市一新建小区，开发商准备在小区内建造垃圾转运站，消息在小区业主微信群中传开，已经有300多人入群，业主反应激烈，多人在群里发言：“垃圾异味对低楼层有严重影响”、“一楼门市没法做生意”、“小区房价会受到影响”等。业主以建设垃圾转运站没有写入购房合同，属于欺骗行为为由，谋划5月12日到开发商售楼处讨要说法。小刘是负责该小区的社区民警，通过到小区走访，了解到上述相关信息。</p>",
+                "hasMaterial": 1,
+                "content": "<p>派出所与街道办事处、居委会开展会商，决定迅即联络协调有关单位，组织动员可依靠的力量，小刘的工作忙了起来，下列工作恰当的有（    ）。</p>",
+                "opt": "[{\"content\": \"与城市规划部门联系，了解该小区规划情况\", \"label\": \"A\"}, {\"content\": \"与开发商联系，核实小区垃圾转运站建设所引发的问题\", \"label\": \"B\"}, {\"content\": \"指导辖区治安保卫委员会，发挥业主中的治安保卫积极分子作用\", \"label\": \"C\"}, {\"content\": \"再次深入小区，广泛走访，深入细致地做疏导工作\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查群众工作能力。</p><p>公安机关组织动员群众的任务主要包括打击、防范、建设、管理等方面。本题中，公安机关要充分发挥能动性，积极组织动员群众工作，面对社区居民与开发商的矛盾，防范因矛盾恶化引发的群体性事件，维护社区治安秩序，协调群众关系，为此社区民警小刘可以向城市规划部门、开发商等部门了解核实垃圾站建设情况，可以组织动员社区群众力量，指导辖区治安保卫委员会，发挥业主中的治安保卫作用。</p><p>故ABCD全部正确。</p>",
+                "optList": [
+                    {
+                        "content": "与城市规划部门联系，了解该小区规划情况",
+                        "label": "A"
+                    },
+                    {
+                        "content": "与开发商联系，核实小区垃圾转运站建设所引发的问题",
+                        "label": "B"
+                    },
+                    {
+                        "content": "指导辖区治安保卫委员会，发挥业主中的治安保卫积极分子作用",
+                        "label": "C"
+                    },
+                    {
+                        "content": "再次深入小区，广泛走访，深入细致地做疏导工作",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "与城市规划部门联系，了解该小区规划情况",
+                        "label": "A",
+                        "right": true
+                    },
+                    {
+                        "content": "与开发商联系，核实小区垃圾转运站建设所引发的问题",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "指导辖区治安保卫委员会，发挥业主中的治安保卫积极分子作用",
+                        "label": "C",
+                        "right": true
+                    },
+                    {
+                        "content": "再次深入小区，广泛走访，深入细致地做疏导工作",
+                        "label": "D",
+                        "right": true
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "再次深入小区，广泛走访，深入细致地做疏导工作",
+                        "label": "D",
+                        "right": true
+                    },
+                    "option_2": {
+                        "content": "与开发商联系，核实小区垃圾转运站建设所引发的问题",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "指导辖区治安保卫委员会，发挥业主中的治安保卫积极分子作用",
+                        "label": "C",
+                        "right": true
+                    },
+                    "option_1": {
+                        "content": "与城市规划部门联系，了解该小区规划情况",
+                        "label": "A",
+                        "right": true
+                    }
+                },
+                "labelText": "群众工作能力",
+                "labelsArray_text": "群众工作能力",
+                "examPointName": "群众工作能力",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445002,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929163,
+            "level": 80,
+            "subjectDo": {
+                "id": 929163,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"A\",\"B\",\"C\"]",
+                "label": "39878",
+                "material": "<p>2020年5月，某市一新建小区，开发商准备在小区内建造垃圾转运站，消息在小区业主微信群中传开，已经有300多人入群，业主反应激烈，多人在群里发言：“垃圾异味对低楼层有严重影响”、“一楼门市没法做生意”、“小区房价会受到影响”等。业主以建设垃圾转运站没有写入购房合同，属于欺骗行为为由，谋划5月12日到开发商售楼处讨要说法。小刘是负责该小区的社区民警，通过到小区走访，了解到上述相关信息。</p>",
+                "hasMaterial": 1,
+                "content": "<p>针对开发商在售楼阶段隐瞒垃圾转运站规划，居民刚刚入住，尚未成立业主委员会的情况，小刘开展了广泛深入的宣传教育工作。下列工作中符合“枫桥经验”中“三治合一”的做法有（    ）。</p>",
+                "opt": "[{\"content\": \"向开发商宣传社会公德，强化企业道德观念\", \"label\": \"A\"}, {\"content\": \"向业主宣传法律法规，增强公民法律意识\", \"label\": \"B\"}, {\"content\": \"指导建立业主委员会，规范物业公司管理\", \"label\": \"C\"}, {\"content\": \"建立社区警务室，管理小区保安\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查群众工作能力。</p><p>新时代“枫桥经验”主要内容是在开展社会治理中实行“五个坚持”，即坚持党建引领，坚持人民主体，坚持“三治融合”，坚持“四防并举”，坚持共建共享。坚持自治、法治、德治“三治融合”是新时代“枫桥经验”的主要路径。</p><p>A项正确，向开发商宣传社会公德，强化企业道德观念，是“德治”的体现，符合题意，当选。</p><p>B项正确，向业主宣传法律法规，增强公民法律意识，是“法治”的体现，符合题意，当选。</p><p>C项正确，指导建立业主委员会，规范物业公司管理，是“自治”的体现，符合题意，当选。</p><p>D项错误，建立社区警务室，管理小区保安，不属于“三治合一”的内容，排除。</p><p>故正确答案为ABC。</p>",
+                "optList": [
+                    {
+                        "content": "向开发商宣传社会公德，强化企业道德观念",
+                        "label": "A"
+                    },
+                    {
+                        "content": "向业主宣传法律法规，增强公民法律意识",
+                        "label": "B"
+                    },
+                    {
+                        "content": "指导建立业主委员会，规范物业公司管理",
+                        "label": "C"
+                    },
+                    {
+                        "content": "建立社区警务室，管理小区保安",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "向开发商宣传社会公德，强化企业道德观念",
+                        "label": "A",
+                        "right": true
+                    },
+                    {
+                        "content": "向业主宣传法律法规，增强公民法律意识",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "指导建立业主委员会，规范物业公司管理",
+                        "label": "C",
+                        "right": true
+                    },
+                    {
+                        "content": "建立社区警务室，管理小区保安",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "建立社区警务室，管理小区保安",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "向业主宣传法律法规，增强公民法律意识",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "指导建立业主委员会，规范物业公司管理",
+                        "label": "C",
+                        "right": true
+                    },
+                    "option_1": {
+                        "content": "向开发商宣传社会公德，强化企业道德观念",
+                        "label": "A",
+                        "right": true
+                    }
+                },
+                "labelText": "群众工作能力",
+                "labelsArray_text": "群众工作能力",
+                "examPointName": "群众工作能力",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445003,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929164,
+            "level": 81,
+            "subjectDo": {
+                "id": 929164,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"D\"]",
+                "label": "39878",
+                "material": "<p>2020年5月，某市一新建小区，开发商准备在小区内建造垃圾转运站，消息在小区业主微信群中传开，已经有300多人入群，业主反应激烈，多人在群里发言：“垃圾异味对低楼层有严重影响”、“一楼门市没法做生意”、“小区房价会受到影响”等。业主以建设垃圾转运站没有写入购房合同，属于欺骗行为为由，谋划5月12日到开发商售楼处讨要说法。小刘是负责该小区的社区民警，通过到小区走访，了解到上述相关信息。</p>",
+                "hasMaterial": 1,
+                "content": "<p>在多方努力下，小区垃圾转运站问题得到妥善解决，小刘的工作得到了派出所领导和业主的广泛认可，反映出小刘最根本的职业品质是（    ）。</p>",
+                "opt": "[{\"content\": \"注重情报信息搜集\", \"label\": \"A\"}, {\"content\": \"注重多方沟通协调\", \"label\": \"B\"}, {\"content\": \"注重广泛宣传教育\", \"label\": \"C\"}, {\"content\": \"注重践行为民服务\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查职业道德与纪律要求</p><p>题中小刘通过搜集信息、沟通协调、多方宣传教育等一系列工作，最终使垃圾转运站问题得到了妥善解决，并得到了群众的满意广泛认可，这一做法均体现了小刘作为人民警察热诚服务、情系民生的职业道德要求。 </p><p>故正确答案为D。</p>",
+                "optList": [
+                    {
+                        "content": "注重情报信息搜集",
+                        "label": "A"
+                    },
+                    {
+                        "content": "注重多方沟通协调",
+                        "label": "B"
+                    },
+                    {
+                        "content": "注重广泛宣传教育",
+                        "label": "C"
+                    },
+                    {
+                        "content": "注重践行为民服务",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "注重情报信息搜集",
+                        "label": "A"
+                    },
+                    {
+                        "content": "注重多方沟通协调",
+                        "label": "B"
+                    },
+                    {
+                        "content": "注重广泛宣传教育",
+                        "label": "C"
+                    },
+                    {
+                        "content": "注重践行为民服务",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "D",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "注重践行为民服务",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "注重多方沟通协调",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "注重广泛宣传教育",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "注重情报信息搜集",
+                        "label": "A"
+                    }
+                },
+                "labelText": "职业道德和纪律要求",
+                "labelsArray_text": "职业道德和纪律要求",
+                "examPointName": "职业道德和纪律要求",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445004,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929165,
+            "level": 82,
+            "subjectDo": {
+                "id": 929165,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"A\"]",
+                "label": "39878",
+                "material": "<p>开展治安防范，化解邻里纠纷是社区民警的职责。2020年4月9日，景秀佳园小区9栋居民胡女士报警称：楼上张女士家的两个孩子，因为疫情影响没有上学，经常在家中打闹，胡女士家中的老父亲患有高血压、心脏病，对于楼上的声响颇为敏感。今天大早，楼上的孩子又开始闹腾，导致老父亲血压迅速飙升，她忍无可忍去找张女士理论，结果被张女士打了一耳光。社区民警小姜接警后，立即来到景秀佳园小区。</p>",
+                "hasMaterial": 1,
+                "content": "<p>小姜了解到：胡女士一大早去找张女士理论，张女士认为胡女士没有戴口罩唾沫横飞，情急之下打了胡女士耳光，小姜认为此事属于邻里纠纷，决定尽力化解矛盾，小姜的以下工作步骤：①主持调解②征求双方调解意见③达成调解协议④查明事件情况，正确的顺序应该是（    ）。</p>",
+                "opt": "[{\"content\": \"④②①③\", \"label\": \"A\"}, {\"content\": \"①④③②\", \"label\": \"B\"}, {\"content\": \"④①③②\", \"label\": \"C\"}, {\"content\": \"①④②③\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查行政执法依据。</p><p>根据《公安机关执法细则》第五十五章规定：“调解应1.进行调查取证。2.征求调解意愿。3.进行调解。4.制作《治安调解协议书》。”根据选项，正确的顺序应是④②①③。</p><p>故正确答案为A。</p>",
+                "optList": [
+                    {
+                        "content": "④②①③",
+                        "label": "A"
+                    },
+                    {
+                        "content": "①④③②",
+                        "label": "B"
+                    },
+                    {
+                        "content": "④①③②",
+                        "label": "C"
+                    },
+                    {
+                        "content": "①④②③",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "④②①③",
+                        "label": "A"
+                    },
+                    {
+                        "content": "①④③②",
+                        "label": "B"
+                    },
+                    {
+                        "content": "④①③②",
+                        "label": "C"
+                    },
+                    {
+                        "content": "①④②③",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "A",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "①④②③",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "①④③②",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "④①③②",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "④②①③",
+                        "label": "A"
+                    }
+                },
+                "labelText": "治安管理处罚法",
+                "labelsArray_text": "治安管理处罚法",
+                "examPointName": "治安管理处罚法",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445005,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929166,
+            "level": 83,
+            "subjectDo": {
+                "id": 929166,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"D\"]",
+                "label": "39878",
+                "material": "<p>开展治安防范，化解邻里纠纷是社区民警的职责。2020年4月9日，景秀佳园小区9栋居民胡女士报警称：楼上张女士家的两个孩子，因为疫情影响没有上学，经常在家中打闹，胡女士家中的老父亲患有高血压、心脏病，对于楼上的声响颇为敏感。今天大早，楼上的孩子又开始闹腾，导致老父亲血压迅速飙升，她忍无可忍去找张女士理论，结果被张女士打了一耳光。社区民警小姜接警后，立即来到景秀佳园小区。</p>",
+                "hasMaterial": 1,
+                "content": "<p>从胡女士家出来，小姜观察到进出景秀佳园小区的人员较多，小区没有实行封闭管理，对外来人员既没有登记，也没有测量体温，小区内电动自行车随意停放在楼道内并且私拉电线充电现象严重，针对以上情况分析，现阶段该小区存在的最突出风险是（    ）。</p>",
+                "opt": "[{\"content\": \"寻衅滋事的风险\", \"label\": \"A\"}, {\"content\": \"消防安全的风险\", \"label\": \"B\"}, {\"content\": \"发生盗窃案件的风险\", \"label\": \"C\"}, {\"content\": \"疫情防控的风险\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题主要考查本题考查情报信息工作能力。</p><p>A项错误，根据题目中所描述的情境，未体现出寻衅滋事的风险。</p><p>B项错误，虽然题目中提到该小区楼道内随意停放电动自行车且私拉电线充电现象严重，但当前属于疫情防控关键阶段，综合分析B项与D项相比较，D项更符合题意。</p><p>C项错误，进出该小区人员较多，可能存在发生盗窃案件风险，但不是最佳选项，因此不选。</p><p>D项正确，当前全国正处于疫情防控关键阶段，该小区进出人员较多，没有实行封闭管理，对外来人员既无人登记也没有测量体温，因此综合题目所给信息判断，疫情防控风险最为突出，因此当选。</p><p>故正确答案为D。</p>",
+                "optList": [
+                    {
+                        "content": "寻衅滋事的风险",
+                        "label": "A"
+                    },
+                    {
+                        "content": "消防安全的风险",
+                        "label": "B"
+                    },
+                    {
+                        "content": "发生盗窃案件的风险",
+                        "label": "C"
+                    },
+                    {
+                        "content": "疫情防控的风险",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "寻衅滋事的风险",
+                        "label": "A"
+                    },
+                    {
+                        "content": "消防安全的风险",
+                        "label": "B"
+                    },
+                    {
+                        "content": "发生盗窃案件的风险",
+                        "label": "C"
+                    },
+                    {
+                        "content": "疫情防控的风险",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "D",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "疫情防控的风险",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "消防安全的风险",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "发生盗窃案件的风险",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "寻衅滋事的风险",
+                        "label": "A"
+                    }
+                },
+                "labelText": "公安情报信息工作能力",
+                "labelsArray_text": "公安情报信息工作能力",
+                "examPointName": "公安情报信息工作能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445006,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929167,
+            "level": 84,
+            "subjectDo": {
+                "id": 929167,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"C\"]",
+                "label": "39878",
+                "material": "<p>开展治安防范，化解邻里纠纷是社区民警的职责。2020年4月9日，景秀佳园小区9栋居民胡女士报警称：楼上张女士家的两个孩子，因为疫情影响没有上学，经常在家中打闹，胡女士家中的老父亲患有高血压、心脏病，对于楼上的声响颇为敏感。今天大早，楼上的孩子又开始闹腾，导致老父亲血压迅速飙升，她忍无可忍去找张女士理论，结果被张女士打了一耳光。社区民警小姜接警后，立即来到景秀佳园小区。</p>",
+                "hasMaterial": 1,
+                "content": "<p>受疫情影响，小区街面商铺经营出现了各种情况，对此，小姜应调查的重点是（    ）。</p>",
+                "opt": "[{\"content\": \"尚未复工复产关门歇业的\", \"label\": \"A\"}, {\"content\": \"继续经营人员情况无变化的\", \"label\": \"B\"}, {\"content\": \"经营人员变化较大的\", \"label\": \"C\"}, {\"content\": \"处在停业状态正在办理转让招租的\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查情报信息工作能力。</p><p>治安调查也称治安防范调查，是治安管理的基本措施之一，是对社会治安状况的全面调查，包括：核实社区信息；调查各种案件线索，发现可疑的人、事、物；对案发单位、当事人以及相关人员及时进行回访，调查了解案件的最新线索，征求意见和建议；调查群众的“急”和“难”，并尽力提供帮助。</p><p>ABD项错误，受疫情影响，商铺经营出现了各种情况，但是尚未复工复产关门歇业的商铺、继续经营人员情况无变化的、处在停业状态正在办理转让招租的商铺这三种情况商铺中经营人员没变化或者变化不大，存在隐患的可能性很小调查意义不大，因此不是调查重点。</p><p>C项正确，经营人员变化较大的商铺出现可疑的人、事、物的可能性较大，应作为重点调查对象。</p><p>故正确答案为C。</p>",
+                "optList": [
+                    {
+                        "content": "尚未复工复产关门歇业的",
+                        "label": "A"
+                    },
+                    {
+                        "content": "继续经营人员情况无变化的",
+                        "label": "B"
+                    },
+                    {
+                        "content": "经营人员变化较大的",
+                        "label": "C"
+                    },
+                    {
+                        "content": "处在停业状态正在办理转让招租的",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "尚未复工复产关门歇业的",
+                        "label": "A"
+                    },
+                    {
+                        "content": "继续经营人员情况无变化的",
+                        "label": "B"
+                    },
+                    {
+                        "content": "经营人员变化较大的",
+                        "label": "C"
+                    },
+                    {
+                        "content": "处在停业状态正在办理转让招租的",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "C",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "处在停业状态正在办理转让招租的",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "继续经营人员情况无变化的",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "经营人员变化较大的",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "尚未复工复产关门歇业的",
+                        "label": "A"
+                    }
+                },
+                "labelText": "公安情报信息工作能力",
+                "labelsArray_text": "公安情报信息工作能力",
+                "examPointName": "公安情报信息工作能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445007,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929168,
+            "level": 85,
+            "subjectDo": {
+                "id": 929168,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"A\",\"B\",\"D\"]",
+                "label": "39878",
+                "material": "<p>开展治安防范，化解邻里纠纷是社区民警的职责。2020年4月9日，景秀佳园小区9栋居民胡女士报警称：楼上张女士家的两个孩子，因为疫情影响没有上学，经常在家中打闹，胡女士家中的老父亲患有高血压、心脏病，对于楼上的声响颇为敏感。今天大早，楼上的孩子又开始闹腾，导致老父亲血压迅速飙升，她忍无可忍去找张女士理论，结果被张女士打了一耳光。社区民警小姜接警后，立即来到景秀佳园小区。</p>",
+                "hasMaterial": 1,
+                "content": "<p>在景秀佳园小区租房的流动人口较多，近段时期以来辖区内盗窃案件发案居高不下。为了防范此类案件的发生，小姜应该做好的工作有（    ）。</p>",
+                "opt": "[{\"content\": \"督促小区完善安全防范制度\", \"label\": \"A\"}, {\"content\": \"动员志愿者开展巡逻，看护\", \"label\": \"B\"}, {\"content\": \"要求小区住户加装防盗门窗\", \"label\": \"C\"}, {\"content\": \"广泛开展防盗法制宣传教育\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查群众工作能力。</p><p>A项正确，督促小区完善安全防范制度有利于治安防范工作的开展，能有效降低盗窃案件发案率。</p><p>B项正确，动员志愿者开展巡逻、看护属于群众工作中组织动员群众的一种方式，能够更好的维护小区治安，降低案件发案率。</p><p>C项错误，做好治安防范是设区民警的职责，小姜可以建议居民安装防盗网，但不能“要求”。</p><p>D项正确，立足社区开展防盗法制教育能进一步提高社区民众的防盗意识和法治观念，有利于社区居民参与群防群治工作，降低案件发案率。</p><p>故正确答案为ABD。</p>",
+                "optList": [
+                    {
+                        "content": "督促小区完善安全防范制度",
+                        "label": "A"
+                    },
+                    {
+                        "content": "动员志愿者开展巡逻，看护",
+                        "label": "B"
+                    },
+                    {
+                        "content": "要求小区住户加装防盗门窗",
+                        "label": "C"
+                    },
+                    {
+                        "content": "广泛开展防盗法制宣传教育",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "督促小区完善安全防范制度",
+                        "label": "A",
+                        "right": true
+                    },
+                    {
+                        "content": "动员志愿者开展巡逻，看护",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "要求小区住户加装防盗门窗",
+                        "label": "C"
+                    },
+                    {
+                        "content": "广泛开展防盗法制宣传教育",
+                        "label": "D",
+                        "right": true
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "广泛开展防盗法制宣传教育",
+                        "label": "D",
+                        "right": true
+                    },
+                    "option_2": {
+                        "content": "动员志愿者开展巡逻，看护",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "要求小区住户加装防盗门窗",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "督促小区完善安全防范制度",
+                        "label": "A",
+                        "right": true
+                    }
+                },
+                "labelText": "群众工作能力",
+                "labelsArray_text": "群众工作能力",
+                "examPointName": "群众工作能力",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445008,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929169,
+            "level": 86,
+            "subjectDo": {
+                "id": 929169,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"C\"]",
+                "label": "39878",
+                "material": "<p>近年来，S市公安机关深化公安工作改革，实施数据与技术“双下沉”，不断强化基层派出所“三队一室”建设。新入警的小杨被充实到该市东城区派出所综合情报指挥室。凭借扎实的学识和饱满的工作热情，小杨针对派出所辖区位于城乡结合部，外来人口多、人员结构复杂，发案率较高、社会治安治理难度较大的特点，认为应该抓住时机，加强数据分析工作，提高巡逻防控，打击犯罪等工作效率。小杨梳理出滞留本辖区的某类前科人员共193人，针对前科人员的“活动区域”进行分类统计（如图所示）。</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/12e196062a05ead178c6464c85db06d7\"></img></p>",
+                "hasMaterial": 1,
+                "content": "<p>结合图上的数据进行初步分析，下列选项正确的是（    ）。</p>",
+                "opt": "[{\"content\": \"<p>商业区前科人员活动数量最多，占整体<img src=\\\"https://img.xdtech.top/uploadFiles/image/new/9e0ed61b2b72bc7fafd0e65eed817d2c\\\" style=\\\"height:22px;margin-top:-3px;\\\"></img>以上</p>\", \"label\": \"A\"}, {\"content\": \"<p>商业区前科人员活动数量最多，所以发案最多</p>\", \"label\": \"B\"}, {\"content\": \"<p>在住宅区活动的前科人员43人，占整体<img src=\\\"https://img.xdtech.top/uploadFiles/image/new/2f10fcf3167279e372ecca8e49b0a935\\\" style=\\\"height:22px;margin-top:-3px;\\\"></img></p>\", \"label\": \"C\"}, {\"content\": \"<p>校区活动的前科人员最少，数据分析时可直接忽略</p>\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查公安工作。</p><p>A项错误，商业区前科人员活动数量占整体比例为<img src=\"https://img.xdtech.top/uploadFiles/image/new/6219ca446f5ffdcef6c737bc2baa6781\" style=\"height:22px;margin-top:-3px;\"></img>，不到<img src=\"https://img.xdtech.top/uploadFiles/image/new/9e0ed61b2b72bc7fafd0e65eed817d2c\" style=\"height:22px;margin-top:-3px;\"></img>。</p><p>B项错误，根据图表数据得不到商业区前科人员活动数量多则发案最多的结论。</p><p>C项正确，住宅区活动的前科人员为43人，整体总数为193，住宅区活动的前科人员占整体比例为<img src=\"https://img.xdtech.top/uploadFiles/image/new/2f10fcf3167279e372ecca8e49b0a935\" style=\"height:22px;margin-top:-3px;\"></img>。</p><p>D项错误，校区活动的前科人员最少，但是仍然有，加强数据分析工作是为了更好的预防犯罪和打击犯罪，只要有就不能够忽略。</p><p>故正确答案为C。</p>",
+                "optList": [
+                    {
+                        "content": "<p>商业区前科人员活动数量最多，占整体<img src=\"https://img.xdtech.top/uploadFiles/image/new/9e0ed61b2b72bc7fafd0e65eed817d2c\" style=\"height:22px;margin-top:-3px;\"></img>以上</p>",
+                        "label": "A"
+                    },
+                    {
+                        "content": "<p>商业区前科人员活动数量最多，所以发案最多</p>",
+                        "label": "B"
+                    },
+                    {
+                        "content": "<p>在住宅区活动的前科人员43人，占整体<img src=\"https://img.xdtech.top/uploadFiles/image/new/2f10fcf3167279e372ecca8e49b0a935\" style=\"height:22px;margin-top:-3px;\"></img></p>",
+                        "label": "C"
+                    },
+                    {
+                        "content": "<p>校区活动的前科人员最少，数据分析时可直接忽略</p>",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "<p>商业区前科人员活动数量最多，占整体<img src=\"https://img.xdtech.top/uploadFiles/image/new/9e0ed61b2b72bc7fafd0e65eed817d2c\" style=\"height:22px;margin-top:-3px;\"></img>以上</p>",
+                        "label": "A"
+                    },
+                    {
+                        "content": "<p>商业区前科人员活动数量最多，所以发案最多</p>",
+                        "label": "B"
+                    },
+                    {
+                        "content": "<p>在住宅区活动的前科人员43人，占整体<img src=\"https://img.xdtech.top/uploadFiles/image/new/2f10fcf3167279e372ecca8e49b0a935\" style=\"height:22px;margin-top:-3px;\"></img></p>",
+                        "label": "C"
+                    },
+                    {
+                        "content": "<p>校区活动的前科人员最少，数据分析时可直接忽略</p>",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "C",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "<p>校区活动的前科人员最少，数据分析时可直接忽略</p>",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "<p>商业区前科人员活动数量最多，所以发案最多</p>",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "<p>在住宅区活动的前科人员43人，占整体<img src=\"https://img.xdtech.top/uploadFiles/image/new/2f10fcf3167279e372ecca8e49b0a935\" style=\"height:22px;margin-top:-3px;\"></img></p>",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "<p>商业区前科人员活动数量最多，占整体<img src=\"https://img.xdtech.top/uploadFiles/image/new/9e0ed61b2b72bc7fafd0e65eed817d2c\" style=\"height:22px;margin-top:-3px;\"></img>以上</p>",
+                        "label": "A"
+                    }
+                },
+                "labelText": "公安情报信息工作能力",
+                "labelsArray_text": "公安情报信息工作能力",
+                "examPointName": "公安情报信息工作能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445009,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929170,
+            "level": 87,
+            "subjectDo": {
+                "id": 929170,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"A\",\"C\"]",
+                "label": "39878",
+                "material": "<p>近年来，S市公安机关深化公安工作改革，实施数据与技术“双下沉”，不断强化基层派出所“三队一室”建设。新入警的小杨被充实到该市东城区派出所综合情报指挥室。凭借扎实的学识和饱满的工作热情，小杨针对派出所辖区位于城乡结合部，外来人口多、人员结构复杂，发案率较高、社会治安治理难度较大的特点，认为应该抓住时机，加强数据分析工作，提高巡逻防控，打击犯罪等工作效率。小杨梳理出滞留本辖区的某类前科人员共193人，针对前科人员的“活动区域”进行分类统计（如图所示）。</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/12e196062a05ead178c6464c85db06d7\"></img></p>",
+                "hasMaterial": 1,
+                "content": "<p>小杨在市公安局相关部门的技术支持下通过预测模型对数据进行深入分析，得到预测结果为：犯罪人数11人，未犯罪人数182人。经过一段时间的工作发现：实际犯罪的人数是10人，未犯罪人数是183人，具体分布如下表所示：</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/d9c47ff6d5d277c510ea334df962062c\"></img></p><p>对该预测模型进行评判，以下选项正确的有（    ）。</p>",
+                "opt": "[{\"content\": \"<p>预测出犯罪的人中实际也犯罪的人所占比例为<img src=\\\"https://img.xdtech.top/uploadFiles/image/new/9edc7da0adb3faa5d0a6039d0f3ecd54\\\" style=\\\"height:22px;margin-top:-3px;\\\"></img></p>\", \"label\": \"A\"}, {\"content\": \"<p>预测出犯罪的人中实际也犯罪的人所占比例为<img src=\\\"https://img.xdtech.top/uploadFiles/image/new/64ddcabf0411bb7d79c1151fb347940d\\\" style=\\\"height:22px;margin-top:-3px;\\\"></img></p>\", \"label\": \"B\"}, {\"content\": \"<p>实际犯罪的人中预测出犯罪的人所占比例为<img src=\\\"https://img.xdtech.top/uploadFiles/image/new/64ddcabf0411bb7d79c1151fb347940d\\\" style=\\\"height:22px;margin-top:-3px;\\\"></img></p>\", \"label\": \"C\"}, {\"content\": \"<p>实际犯罪的人中预测出犯罪的人所占比例为<img src=\\\"https://img.xdtech.top/uploadFiles/image/new/9edc7da0adb3faa5d0a6039d0f3ecd54\\\" style=\\\"height:22px;margin-top:-3px;\\\"></img></p>\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查情报信息工作能力。</p><p>A项正确，从表格数据可知，预测出的犯罪人数共11人，其中实际也犯罪的人数为8人，所占的比例为<img src=\"https://img.xdtech.top/uploadFiles/image/new/ff9eb88508a614c13d9073625fb1d37c\" style=\"height:22px;margin-top:-3px;\"></img>。</p><p>B项错误，从表格数据可知，<img src=\"https://img.xdtech.top/uploadFiles/image/new/b378f44f52bce1fde42d313967e707aa\" style=\"height:22px;margin-top:-3px;\"></img></p><p><img src=\"https://img.xdtech.top/uploadFiles/image/new/7a69019da2f1c0973926154532db04c0\" style=\"height:22px;margin-top:-3px;\"></img>。</p><p>C项正确，从表格数据可知，实际犯罪人数为10人，而预测犯罪人数为8人，所占比例为<img src=\"https://img.xdtech.top/uploadFiles/image/new/59d3d6eded74b7c43e0d5cdb10c70ded\" style=\"height:22px;margin-top:-3px;\"></img>。</p><p>D项错误，从表格数据可知，实际犯罪人数为10人，而预测犯罪人数为8人，所占比例应为<img src=\"https://img.xdtech.top/uploadFiles/image/new/59d3d6eded74b7c43e0d5cdb10c70ded\" style=\"height:22px;margin-top:-3px;\"></img>。</p><p>本题为多选题，故正确答案为AC。</p>",
+                "optList": [
+                    {
+                        "content": "<p>预测出犯罪的人中实际也犯罪的人所占比例为<img src=\"https://img.xdtech.top/uploadFiles/image/new/9edc7da0adb3faa5d0a6039d0f3ecd54\" style=\"height:22px;margin-top:-3px;\"></img></p>",
+                        "label": "A"
+                    },
+                    {
+                        "content": "<p>预测出犯罪的人中实际也犯罪的人所占比例为<img src=\"https://img.xdtech.top/uploadFiles/image/new/64ddcabf0411bb7d79c1151fb347940d\" style=\"height:22px;margin-top:-3px;\"></img></p>",
+                        "label": "B"
+                    },
+                    {
+                        "content": "<p>实际犯罪的人中预测出犯罪的人所占比例为<img src=\"https://img.xdtech.top/uploadFiles/image/new/64ddcabf0411bb7d79c1151fb347940d\" style=\"height:22px;margin-top:-3px;\"></img></p>",
+                        "label": "C"
+                    },
+                    {
+                        "content": "<p>实际犯罪的人中预测出犯罪的人所占比例为<img src=\"https://img.xdtech.top/uploadFiles/image/new/9edc7da0adb3faa5d0a6039d0f3ecd54\" style=\"height:22px;margin-top:-3px;\"></img></p>",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "<p>预测出犯罪的人中实际也犯罪的人所占比例为<img src=\"https://img.xdtech.top/uploadFiles/image/new/9edc7da0adb3faa5d0a6039d0f3ecd54\" style=\"height:22px;margin-top:-3px;\"></img></p>",
+                        "label": "A",
+                        "right": true
+                    },
+                    {
+                        "content": "<p>预测出犯罪的人中实际也犯罪的人所占比例为<img src=\"https://img.xdtech.top/uploadFiles/image/new/64ddcabf0411bb7d79c1151fb347940d\" style=\"height:22px;margin-top:-3px;\"></img></p>",
+                        "label": "B"
+                    },
+                    {
+                        "content": "<p>实际犯罪的人中预测出犯罪的人所占比例为<img src=\"https://img.xdtech.top/uploadFiles/image/new/64ddcabf0411bb7d79c1151fb347940d\" style=\"height:22px;margin-top:-3px;\"></img></p>",
+                        "label": "C",
+                        "right": true
+                    },
+                    {
+                        "content": "<p>实际犯罪的人中预测出犯罪的人所占比例为<img src=\"https://img.xdtech.top/uploadFiles/image/new/9edc7da0adb3faa5d0a6039d0f3ecd54\" style=\"height:22px;margin-top:-3px;\"></img></p>",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "<p>实际犯罪的人中预测出犯罪的人所占比例为<img src=\"https://img.xdtech.top/uploadFiles/image/new/9edc7da0adb3faa5d0a6039d0f3ecd54\" style=\"height:22px;margin-top:-3px;\"></img></p>",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "<p>预测出犯罪的人中实际也犯罪的人所占比例为<img src=\"https://img.xdtech.top/uploadFiles/image/new/64ddcabf0411bb7d79c1151fb347940d\" style=\"height:22px;margin-top:-3px;\"></img></p>",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "<p>实际犯罪的人中预测出犯罪的人所占比例为<img src=\"https://img.xdtech.top/uploadFiles/image/new/64ddcabf0411bb7d79c1151fb347940d\" style=\"height:22px;margin-top:-3px;\"></img></p>",
+                        "label": "C",
+                        "right": true
+                    },
+                    "option_1": {
+                        "content": "<p>预测出犯罪的人中实际也犯罪的人所占比例为<img src=\"https://img.xdtech.top/uploadFiles/image/new/9edc7da0adb3faa5d0a6039d0f3ecd54\" style=\"height:22px;margin-top:-3px;\"></img></p>",
+                        "label": "A",
+                        "right": true
+                    }
+                },
+                "labelText": "公安情报信息工作能力",
+                "labelsArray_text": "公安情报信息工作能力",
+                "examPointName": "公安情报信息工作能力",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445010,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929171,
+            "level": 88,
+            "subjectDo": {
+                "id": 929171,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"B\"]",
+                "label": "39878",
+                "material": "<p>近年来，S市公安机关深化公安工作改革，实施数据与技术“双下沉”，不断强化基层派出所“三队一室”建设。新入警的小杨被充实到该市东城区派出所综合情报指挥室。凭借扎实的学识和饱满的工作热情，小杨针对派出所辖区位于城乡结合部，外来人口多、人员结构复杂，发案率较高、社会治安治理难度较大的特点，认为应该抓住时机，加强数据分析工作，提高巡逻防控，打击犯罪等工作效率。小杨梳理出滞留本辖区的某类前科人员共193人，针对前科人员的“活动区域”进行分类统计（如图所示）。</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/12e196062a05ead178c6464c85db06d7\"></img></p>",
+                "hasMaterial": 1,
+                "content": "<p>小杨进一步挖掘数据，对人员要素，时间要素、空间要素等多维数据拓展分析，梳理本辖区重点区域、重点人群、重点时间的特征，向派出所领导汇报了研判意见。以下分析研判结果恰当的是（    ）。</p>",
+                "opt": "[{\"content\": \"判断贾某是近期一起抢劫案的犯罪嫌疑人，建议对其进行抓捕\", \"label\": \"A\"}, {\"content\": \"辅助巡逻民警规划巡逻时间和线路，实现精准巡逻\", \"label\": \"B\"}, {\"content\": \"对重点人员进行拉网式排查，对其进行告诫\", \"label\": \"C\"}, {\"content\": \"对商业区经营场所进行安全检查\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查情报信息工作能力。</p><p>A项错误，判明贾某是犯罪嫌疑人应交由刑警队或者办案部门进行进一步侦查，核实清楚后才能申请抓捕程序，选项小杨的做法超出综合情报指挥室工作范围，研判信息即可。</p><p>B项正确，通过研判精准制作巡逻线路既能节省警力又能有效预防犯罪发生。</p><p>C项错误，对重点人员的日常管控应该是隐秘的，无案件不需要浪费过多警力排查，对重点人员可以谈心交流感化教育，对未涉事人员不能进行告诫。</p><p>D项错误，对商业区进行安全检查是派出所日常工作，不是研判结果。</p><p>故正确答案为B。</p>",
+                "optList": [
+                    {
+                        "content": "判断贾某是近期一起抢劫案的犯罪嫌疑人，建议对其进行抓捕",
+                        "label": "A"
+                    },
+                    {
+                        "content": "辅助巡逻民警规划巡逻时间和线路，实现精准巡逻",
+                        "label": "B"
+                    },
+                    {
+                        "content": "对重点人员进行拉网式排查，对其进行告诫",
+                        "label": "C"
+                    },
+                    {
+                        "content": "对商业区经营场所进行安全检查",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "判断贾某是近期一起抢劫案的犯罪嫌疑人，建议对其进行抓捕",
+                        "label": "A"
+                    },
+                    {
+                        "content": "辅助巡逻民警规划巡逻时间和线路，实现精准巡逻",
+                        "label": "B"
+                    },
+                    {
+                        "content": "对重点人员进行拉网式排查，对其进行告诫",
+                        "label": "C"
+                    },
+                    {
+                        "content": "对商业区经营场所进行安全检查",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "B",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "对商业区经营场所进行安全检查",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "辅助巡逻民警规划巡逻时间和线路，实现精准巡逻",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "对重点人员进行拉网式排查，对其进行告诫",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "判断贾某是近期一起抢劫案的犯罪嫌疑人，建议对其进行抓捕",
+                        "label": "A"
+                    }
+                },
+                "labelText": "公安情报信息工作能力",
+                "labelsArray_text": "公安情报信息工作能力",
+                "examPointName": "公安情报信息工作能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445011,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929172,
+            "level": 89,
+            "subjectDo": {
+                "id": 929172,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"A\"]",
+                "label": "39878",
+                "material": "<p>2020年春节前后，面对突如其来的新冠肺炎疫情，在以习近平总书记为核心的党中央坚强领导下，全国上下万众一心，众志成城，打响了疫情防控的总体战，阻击战。为了有效预防、及时控制和消除突发公共卫生危机事件的危害，保障公众安全。维护正常的社会秩序，各地党委政府统一领导，组织卫健、公安、街道等单位部门开展联防联控，共同应对疫情。</p>",
+                "hasMaterial": 1,
+                "content": "<p>某省人民政府宣布进入公共卫生事件I级响应后，全省公安机关立即动员，取消休假，全力投入疫情防控阻击战。下列防控措施中不恰当的是（    ）。</p>",
+                "opt": "[{\"content\": \"各级公安机关均启动了应急预案，对疫情防控进行总体安排部署\", \"label\": \"A\"}, {\"content\": \"公安机关基层及实战一线部门协同卫健委、街道等部门单位，在有关场所、道路设点，查验过往人员身份，测量过往人员体温\", \"label\": \"B\"}, {\"content\": \"一些地方公安机关在联防联控中，对拒绝疫情管控且有对抗或者暴力行为的当事人，采取强制隔离的措施\", \"label\": \"C\"}, {\"content\": \"有些地方公安机关在联防联控中，封锁了有关场所、道路，关闭或限制使用了易受疫情影响的场所\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查应急处突能力。</p><p>A项错误，根据《中华人民共和国突发事件应对法》第四十四条规定；“发布三级、四级警报，宣布进入预警期后，县级以上地方各级人民政府应当根据即将发生的突发事件的特点和可能造成的危害，采取下列措施： </p><p>（一）启动应急预案； </p><p>（二）责令有关部门、专业机构、监测网点和负有特定职责的人员及时收集、报告有关信息，向社会公布反映突发事件信息的渠道，加强对突发事件发生、发展情况的监测、预报和预警工作； </p><p>（三）组织有关部门和机构、专业技术人员、有关专家学者，随时对突发事件信息进行分析评估，预测发生突发事件可能性的大小、影响范围和强度以及可能发生的突发事件的级别； </p><p>（四）定时向社会发布与公众有关的突发事件预测信息和分析评估结果，并对相关信息的报道工作进行管理； </p><p>（五）及时按照有关规定向社会发布可能受到突发事件危害的警告，宣传避免、减轻危害的常识，公布咨询电话。”</p><p>根据第四十五条规定：“发布一级、二级警报，宣布进入预警期后，县级以上地方各级人民政府除采取本法第四十四条规定的措施外，还应当针对即将发生的突发事件的特点和可能造成的危害，采取下列一项或者多项措施......”因此启动应急预案的主体应该是县级以上人民政府而非公安机关。</p><p>B项正确，公安机关在抗击疫情时临危受命在有关场所、道路设点，查验过往人员身份，测量过往人员体温，是公安机关职责。</p><p>C项正确，《突发事件应对法》第五十条规定：“社会安全事件发生后，组织处置工作的人民政府应当立即组织有关部门并由公安机关针对事件的性质和特点，依照有关法律、行政法规和国家其他有关规定，采取下列一项或者多项应急处置措施：（一）强制隔离使用器械相互对抗或者以暴力行为参与冲突的当事人，妥善解决现场纠纷和争端，控制事态发展；……严重危害社会治安秩序的事件发生时，公安机关应当立即依法出动警力，根据现场情况依法采取相应的强制性措施，尽快使社会秩序恢复正常”。</p><p>D项正确，《中华人民共和国突发事件应对法》第五十条规定：“社会安全事件发生后，组织处置工作的人民政府应当立即组织有关部门并由公安机关针对事件的性质和特点，依照有关法律、行政法规和国家其他有关规定，采取下列一项或者多项应急处置措施：……（三）封锁有关场所、道路，查验现场人员的身份证件，限制有关公共场所内的活动；”因此公安机关可以启动相应应急措施。</p><p>本题为选非题，故正确答案为A。</p>",
+                "optList": [
+                    {
+                        "content": "各级公安机关均启动了应急预案，对疫情防控进行总体安排部署",
+                        "label": "A"
+                    },
+                    {
+                        "content": "公安机关基层及实战一线部门协同卫健委、街道等部门单位，在有关场所、道路设点，查验过往人员身份，测量过往人员体温",
+                        "label": "B"
+                    },
+                    {
+                        "content": "一些地方公安机关在联防联控中，对拒绝疫情管控且有对抗或者暴力行为的当事人，采取强制隔离的措施",
+                        "label": "C"
+                    },
+                    {
+                        "content": "有些地方公安机关在联防联控中，封锁了有关场所、道路，关闭或限制使用了易受疫情影响的场所",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "各级公安机关均启动了应急预案，对疫情防控进行总体安排部署",
+                        "label": "A"
+                    },
+                    {
+                        "content": "公安机关基层及实战一线部门协同卫健委、街道等部门单位，在有关场所、道路设点，查验过往人员身份，测量过往人员体温",
+                        "label": "B"
+                    },
+                    {
+                        "content": "一些地方公安机关在联防联控中，对拒绝疫情管控且有对抗或者暴力行为的当事人，采取强制隔离的措施",
+                        "label": "C"
+                    },
+                    {
+                        "content": "有些地方公安机关在联防联控中，封锁了有关场所、道路，关闭或限制使用了易受疫情影响的场所",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "A",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "有些地方公安机关在联防联控中，封锁了有关场所、道路，关闭或限制使用了易受疫情影响的场所",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "公安机关基层及实战一线部门协同卫健委、街道等部门单位，在有关场所、道路设点，查验过往人员身份，测量过往人员体温",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "一些地方公安机关在联防联控中，对拒绝疫情管控且有对抗或者暴力行为的当事人，采取强制隔离的措施",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "各级公安机关均启动了应急预案，对疫情防控进行总体安排部署",
+                        "label": "A"
+                    }
+                },
+                "labelText": "应急处突能力",
+                "labelsArray_text": "应急处突能力",
+                "examPointName": "应急处突能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445012,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929173,
+            "level": 90,
+            "subjectDo": {
+                "id": 929173,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"B\",\"C\",\"D\"]",
+                "label": "39878",
+                "material": "<p>2020年春节前后，面对突如其来的新冠肺炎疫情，在以习近平总书记为核心的党中央坚强领导下，全国上下万众一心，众志成城，打响了疫情防控的总体战，阻击战。为了有效预防、及时控制和消除突发公共卫生危机事件的危害，保障公众安全。维护正常的社会秩序，各地党委政府统一领导，组织卫健、公安、街道等单位部门开展联防联控，共同应对疫情。</p>",
+                "hasMaterial": 1,
+                "content": "<p>2020年2月至3月，新冠肺炎疫情骤然攀升，来自全国各地的医疗志愿队陆续奔赴武汉，火神山、雷神山医院拔地而起，快递小哥冒着严寒奔走穿梭，人民警察加班加点，日以继夜……结合下列表格进行判断，针对民警超负荷工作状态，下列选项恰当的有（    ）。</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/28a5c44b16733e49713791ba3a2dd4dd\"></img></p>",
+                "opt": "[{\"content\": \"进入休整时期，轮流换班倒休\", \"label\": \"A\"}, {\"content\": \"科学安排班次，调整工作强度\", \"label\": \"B\"}, {\"content\": \"开展心理辅导，消除紧张情绪\", \"label\": \"C\"}, {\"content\": \"提高补贴待遇，强化奖惩激励\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查公安基本理论。</p><p>A项错误，题干中讲到新冠肺炎疫情骤然攀升，因此人民警察不应该进入休整时期，而是应该在党委政府的统一领导下，积极会同其他部门投入到疫情防控工作中，但是要科学合理安排班次，轮流换班倒休，保障人民警察队伍的战斗力；</p><p>B项正确，科学安排班次，争取给予民警更多的休息时间，调整工作强度，避免过劳损失，比如解决期和恢复期可以多安排民警休息；</p><p>C项正确，心理健康是做好防疫工作的重要保障，消除紧张情绪才能冷静投入工作；</p><p>D项正确，警务保障方面可以提高战时补贴，增加战时奖励，提升民警工作积极性。</p><p>本题为多选题，故正确答案为BCD。</p>",
+                "optList": [
+                    {
+                        "content": "进入休整时期，轮流换班倒休",
+                        "label": "A"
+                    },
+                    {
+                        "content": "科学安排班次，调整工作强度",
+                        "label": "B"
+                    },
+                    {
+                        "content": "开展心理辅导，消除紧张情绪",
+                        "label": "C"
+                    },
+                    {
+                        "content": "提高补贴待遇，强化奖惩激励",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "进入休整时期，轮流换班倒休",
+                        "label": "A"
+                    },
+                    {
+                        "content": "科学安排班次，调整工作强度",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "开展心理辅导，消除紧张情绪",
+                        "label": "C",
+                        "right": true
+                    },
+                    {
+                        "content": "提高补贴待遇，强化奖惩激励",
+                        "label": "D",
+                        "right": true
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "提高补贴待遇，强化奖惩激励",
+                        "label": "D",
+                        "right": true
+                    },
+                    "option_2": {
+                        "content": "科学安排班次，调整工作强度",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "开展心理辅导，消除紧张情绪",
+                        "label": "C",
+                        "right": true
+                    },
+                    "option_1": {
+                        "content": "进入休整时期，轮流换班倒休",
+                        "label": "A"
+                    }
+                },
+                "labelText": "政治素质",
+                "labelsArray_text": "政治素质",
+                "examPointName": "政治素质",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445013,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929174,
+            "level": 91,
+            "subjectDo": {
+                "id": 929174,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"D\"]",
+                "label": "39878",
+                "material": "<p>2020年春节前后，面对突如其来的新冠肺炎疫情，在以习近平总书记为核心的党中央坚强领导下，全国上下万众一心，众志成城，打响了疫情防控的总体战，阻击战。为了有效预防、及时控制和消除突发公共卫生危机事件的危害，保障公众安全。维护正常的社会秩序，各地党委政府统一领导，组织卫健、公安、街道等单位部门开展联防联控，共同应对疫情。</p>",
+                "hasMaterial": 1,
+                "content": "<p>2020年4月，新冠肺炎疫情防控进入常态化阶段，公安机关疫情防控的任务有了新的变化，下列选项中公安机关恰当的做法是（    ）。</p>",
+                "opt": "[{\"content\": \"围绕防范疫情反弹、扩散，将来自中/高风险地区的人员进行集中隔离\", \"label\": \"A\"}, {\"content\": \"围绕防范盗、抢案件反弹，开展打击“两抢一盗”专项活动\", \"label\": \"B\"}, {\"content\": \"围绕“常态”、“长效”，建立完善疫情防控组织体系，强化组织领导\", \"label\": \"C\"}, {\"content\": \"围绕“六稳”、“六保”，将维护治安秩序作为重点任务，助力复工复产\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查公安时政。</p><p>本题提到防控任务“新变化”，因而要找到新冠肺炎疫情防控进入常态化阶段的新任务。</p><p>A项错误，对人员进行集中隔离是卫健部门的任务，公安机关协助执行。</p><p>B项错误，打击“两抢一盗”专项活动是公安机关日常任务，而不是疫情防控常态化阶段的任务。</p><p>C项错误，建立完善疫情防控体系是政府的工作，公安机关负责执行。</p><p>D项正确，疫情过后围绕“六稳”、“六保”助力复工复产，是公安机关作为政府机构应该完成的新任务。</p><p>故正确答案为D。</p>",
+                "optList": [
+                    {
+                        "content": "围绕防范疫情反弹、扩散，将来自中/高风险地区的人员进行集中隔离",
+                        "label": "A"
+                    },
+                    {
+                        "content": "围绕防范盗、抢案件反弹，开展打击“两抢一盗”专项活动",
+                        "label": "B"
+                    },
+                    {
+                        "content": "围绕“常态”、“长效”，建立完善疫情防控组织体系，强化组织领导",
+                        "label": "C"
+                    },
+                    {
+                        "content": "围绕“六稳”、“六保”，将维护治安秩序作为重点任务，助力复工复产",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "围绕防范疫情反弹、扩散，将来自中/高风险地区的人员进行集中隔离",
+                        "label": "A"
+                    },
+                    {
+                        "content": "围绕防范盗、抢案件反弹，开展打击“两抢一盗”专项活动",
+                        "label": "B"
+                    },
+                    {
+                        "content": "围绕“常态”、“长效”，建立完善疫情防控组织体系，强化组织领导",
+                        "label": "C"
+                    },
+                    {
+                        "content": "围绕“六稳”、“六保”，将维护治安秩序作为重点任务，助力复工复产",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "D",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "围绕“六稳”、“六保”，将维护治安秩序作为重点任务，助力复工复产",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "围绕防范盗、抢案件反弹，开展打击“两抢一盗”专项活动",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "围绕“常态”、“长效”，建立完善疫情防控组织体系，强化组织领导",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "围绕防范疫情反弹、扩散，将来自中/高风险地区的人员进行集中隔离",
+                        "label": "A"
+                    }
+                },
+                "labelText": "政治常识",
+                "labelsArray_text": "政治常识",
+                "examPointName": "政治常识",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445014,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929175,
+            "level": 92,
+            "subjectDo": {
+                "id": 929175,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"B\"]",
+                "label": "39878",
+                "material": "<p>在2020年全国两会上，全国人大代表杨宝玲建议，应在进一步加强规范市场管理的同时因地制宜，释放出“地摊经济”的最大活力。某地政府受其启发，开放了政府东广场供市民摆摊经营，开放时间为每天19：00至22：00政府东广场位于市政府东侧，如图所示。</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/7f8c27657c2b505476b30c2bf7e55ceb\"></img></p><p>某地公安机关启动应急预案，对广场及周边部署了巡逻警力和备勤警力，随时应对突发情况。</p>",
+                "hasMaterial": 1,
+                "content": "<p>兴华路派出所按照上级部署的任务，安排民警小张和小王负责喷泉广场周边的巡逻。下列选项中恰当的是（    ）。</p>",
+                "opt": "[{\"content\": \"小张和小王商量，吃完晚饭后，19：00准时在东广场南部通道会合\", \"label\": \"A\"}, {\"content\": \"19：00，小张和小王准时到达了东广场，并沿喷泉广场周边道路开展巡逻\", \"label\": \"B\"}, {\"content\": \"19：45，小张和小王发现有人卖管制刀具，小张将当事人带回派出所，遂立即返回\", \"label\": \"C\"}, {\"content\": \"21：45，小张和小王看到喷泉广场摆摊人员陆续撒摊，人员已不多，遂下班回家\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查公安勤务能力。</p><p>A项错误，地摊开放时间是开放时间为每天19：00至22：00政府东广场位于市政府东侧，二人19：00在东广场南部通道会合，距离东广场还有一定距离，巡逻不及时，而且应当一起从单位前往巡逻点而不是定时定点会合。</p><p>B项正确，巡逻时间和地点方式都可以有效防控危险发生，符合巡逻规范。</p><p>C项错误，发现有人卖管制刀具需要带回处理，可以找值班民警前往带回，二人不能脱离广场。</p><p>D项错误，看到喷泉广场摆摊人员陆续撒摊，应该等全部群众离去之后再下班，并且应该回单位归还巡逻警用物资，做好巡逻日志等。</p><p>故正确答案为B。</p>",
+                "optList": [
+                    {
+                        "content": "小张和小王商量，吃完晚饭后，19：00准时在东广场南部通道会合",
+                        "label": "A"
+                    },
+                    {
+                        "content": "19：00，小张和小王准时到达了东广场，并沿喷泉广场周边道路开展巡逻",
+                        "label": "B"
+                    },
+                    {
+                        "content": "19：45，小张和小王发现有人卖管制刀具，小张将当事人带回派出所，遂立即返回",
+                        "label": "C"
+                    },
+                    {
+                        "content": "21：45，小张和小王看到喷泉广场摆摊人员陆续撒摊，人员已不多，遂下班回家",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "小张和小王商量，吃完晚饭后，19：00准时在东广场南部通道会合",
+                        "label": "A"
+                    },
+                    {
+                        "content": "19：00，小张和小王准时到达了东广场，并沿喷泉广场周边道路开展巡逻",
+                        "label": "B"
+                    },
+                    {
+                        "content": "19：45，小张和小王发现有人卖管制刀具，小张将当事人带回派出所，遂立即返回",
+                        "label": "C"
+                    },
+                    {
+                        "content": "21：45，小张和小王看到喷泉广场摆摊人员陆续撒摊，人员已不多，遂下班回家",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "B",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "21：45，小张和小王看到喷泉广场摆摊人员陆续撒摊，人员已不多，遂下班回家",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "19：00，小张和小王准时到达了东广场，并沿喷泉广场周边道路开展巡逻",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "19：45，小张和小王发现有人卖管制刀具，小张将当事人带回派出所，遂立即返回",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "小张和小王商量，吃完晚饭后，19：00准时在东广场南部通道会合",
+                        "label": "A"
+                    }
+                },
+                "labelText": "公安勤务能力",
+                "labelsArray_text": "公安勤务能力",
+                "examPointName": "公安勤务能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445015,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929176,
+            "level": 93,
+            "subjectDo": {
+                "id": 929176,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"A\",\"B\",\"D\"]",
+                "label": "39878",
+                "material": "<p>在2020年全国两会上，全国人大代表杨宝玲建议，应在进一步加强规范市场管理的同时因地制宜，释放出“地摊经济”的最大活力。某地政府受其启发，开放了政府东广场供市民摆摊经营，开放时间为每天19：00至22：00政府东广场位于市政府东侧，如图所示。</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/7f8c27657c2b505476b30c2bf7e55ceb\"></img></p><p>某地公安机关启动应急预案，对广场及周边部署了巡逻警力和备勤警力，随时应对突发情况。</p>",
+                "hasMaterial": 1,
+                "content": "<p>19：30，小张和小王在东广场巡逻时发现，南部通道停车场停车位已满，遂立即采取了以下措施，下列选项中恰当的有（    ）。</p>",
+                "opt": "[{\"content\": \"将车辆拥堵情况立即报告指挥中心\", \"label\": \"A\"}, {\"content\": \"在广场南路和南部通道交叉口协助交警，疏导过往车辆\", \"label\": \"B\"}, {\"content\": \"对即将停靠路边的车辆驾驶员进行制止和警示教育\", \"label\": \"C\"}, {\"content\": \"在交通秩序恢复后，返回喷泉广场周边道路继续巡逻\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查公安勤务能力。</p><p>A项正确，发现问题应当及时报告指挥中心，由指挥中心进行各警种协调疏通。</p><p>B项正确，《城市人民警察巡逻规定》：“第四条人民警察在巡逻执勤中履行以下职责：……（七）维护交通秩序；”，巡逻警察应该协助交警疏导交通。</p><p>C项错误，对即将停靠路边的车辆驾驶员无法判断其是否违法，因此不能进行制止和警示教育，可有序疏导交通。</p><p>D项正确，在交通秩序恢复后，返回喷泉广场周边道路继续巡逻，是二位巡逻民警的职责。</p><p>本题为多选题，故正确答案为ABD。</p>",
+                "optList": [
+                    {
+                        "content": "将车辆拥堵情况立即报告指挥中心",
+                        "label": "A"
+                    },
+                    {
+                        "content": "在广场南路和南部通道交叉口协助交警，疏导过往车辆",
+                        "label": "B"
+                    },
+                    {
+                        "content": "对即将停靠路边的车辆驾驶员进行制止和警示教育",
+                        "label": "C"
+                    },
+                    {
+                        "content": "在交通秩序恢复后，返回喷泉广场周边道路继续巡逻",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "将车辆拥堵情况立即报告指挥中心",
+                        "label": "A",
+                        "right": true
+                    },
+                    {
+                        "content": "在广场南路和南部通道交叉口协助交警，疏导过往车辆",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "对即将停靠路边的车辆驾驶员进行制止和警示教育",
+                        "label": "C"
+                    },
+                    {
+                        "content": "在交通秩序恢复后，返回喷泉广场周边道路继续巡逻",
+                        "label": "D",
+                        "right": true
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "在交通秩序恢复后，返回喷泉广场周边道路继续巡逻",
+                        "label": "D",
+                        "right": true
+                    },
+                    "option_2": {
+                        "content": "在广场南路和南部通道交叉口协助交警，疏导过往车辆",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "对即将停靠路边的车辆驾驶员进行制止和警示教育",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "将车辆拥堵情况立即报告指挥中心",
+                        "label": "A",
+                        "right": true
+                    }
+                },
+                "labelText": "公安勤务能力",
+                "labelsArray_text": "公安勤务能力",
+                "examPointName": "公安勤务能力",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445016,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929177,
+            "level": 94,
+            "subjectDo": {
+                "id": 929177,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"D\"]",
+                "label": "39878",
+                "material": "<p>在2020年全国两会上，全国人大代表杨宝玲建议，应在进一步加强规范市场管理的同时因地制宜，释放出“地摊经济”的最大活力。某地政府受其启发，开放了政府东广场供市民摆摊经营，开放时间为每天19：00至22：00政府东广场位于市政府东侧，如图所示。</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/7f8c27657c2b505476b30c2bf7e55ceb\"></img></p><p>某地公安机关启动应急预案，对广场及周边部署了巡逻警力和备勤警力，随时应对突发情况。</p>",
+                "hasMaterial": 1,
+                "content": "<p>20：45在一个卖“袁大头”银元摊位上，买卖双方发生纠纷，小张和小王在劝解过程中发现，摊位上的大多数“袁大头”银元有假货的嫌疑，针对买家指证卖家诈骗并要求公安机关处理的情况，下列选项中恰当的是（    ）。</p>",
+                "opt": "[{\"content\": \"责令卖家退钱给买家\", \"label\": \"A\"}, {\"content\": \"劝双方各退一步，和气生财\", \"label\": \"B\"}, {\"content\": \"将当事人带离现场继续调查\", \"label\": \"C\"}, {\"content\": \"口头传唤卖家到派出所接受调查\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查行政案件办理能力。</p><p>A项错误，卖家退钱给买家属于民事纠纷，公安机关无权干涉和管辖。</p><p>B项错误，针对买家指控卖家银元有假货嫌疑并且要求公安机关处理，公安机关应该及时调查取证进行处理，而不是使其双方和解。</p><p>C项错误，公安机关现场发现卖家涉嫌销售假货，公安机关应该将卖家带至公安机关进行进一步调查，带离现场表述不准确。</p><p>D项正确，根据《治安管理处罚法》第八十二条需要传唤违反治安管理行为人接受调查的，经公安机关办案部门负责人批准，使用传唤证传唤。对现场发现的违反治安管理行为人，人民警察经出示工作证件，可以口头传唤，但应当在询问笔录中注明。公安机关现场发现卖家涉嫌销售假货，可以口头传唤至派出所接受调查。</p><p>故正确答案为D。</p>",
+                "optList": [
+                    {
+                        "content": "责令卖家退钱给买家",
+                        "label": "A"
+                    },
+                    {
+                        "content": "劝双方各退一步，和气生财",
+                        "label": "B"
+                    },
+                    {
+                        "content": "将当事人带离现场继续调查",
+                        "label": "C"
+                    },
+                    {
+                        "content": "口头传唤卖家到派出所接受调查",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "责令卖家退钱给买家",
+                        "label": "A"
+                    },
+                    {
+                        "content": "劝双方各退一步，和气生财",
+                        "label": "B"
+                    },
+                    {
+                        "content": "将当事人带离现场继续调查",
+                        "label": "C"
+                    },
+                    {
+                        "content": "口头传唤卖家到派出所接受调查",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "D",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "口头传唤卖家到派出所接受调查",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "劝双方各退一步，和气生财",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "将当事人带离现场继续调查",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "责令卖家退钱给买家",
+                        "label": "A"
+                    }
+                },
+                "labelText": "治安行政管理与服务能力",
+                "labelsArray_text": "治安行政管理与服务能力",
+                "examPointName": "治安行政管理与服务能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445017,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929178,
+            "level": 95,
+            "subjectDo": {
+                "id": 929178,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"D\"]",
+                "label": "39878",
+                "material": "<p>在2020年全国两会上，全国人大代表杨宝玲建议，应在进一步加强规范市场管理的同时因地制宜，释放出“地摊经济”的最大活力。某地政府受其启发，开放了政府东广场供市民摆摊经营，开放时间为每天19：00至22：00政府东广场位于市政府东侧，如图所示。</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/7f8c27657c2b505476b30c2bf7e55ceb\"></img></p><p>某地公安机关启动应急预案，对广场及周边部署了巡逻警力和备勤警力，随时应对突发情况。</p>",
+                "hasMaterial": 1,
+                "content": "<p>东广场夜市开放前两天，在20：00到21：00的时间段，广场上喷泉开放，摆摊地段人员众多，发生纠纷和盗窃的警情急剧上升，小张和小王已经应接不暇，针对这种情况，下列选项中不恰当的是（    ）。</p>",
+                "opt": "[{\"content\": \"及时向所领导汇报，请求增派警力\", \"label\": \"A\"}, {\"content\": \"加强巡逻中的宣传教育，提示群众保管好自己的财物\", \"label\": \"B\"}, {\"content\": \"向政府及有关部门建议，暂时调整喷泉开放时间，实现市场与休闲人员的错峰\", \"label\": \"C\"}, {\"content\": \"要求城管部门规范摊位，发放摊位牌证，禁止无证摆摊\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查行政管理能力。</p><p>A项正确，警力不足时应该首先向领导汇报，请求增派警力支援。</p><p>B项正确，公安机关开展宣传教育活动，一是为了提高群众重视程度，防患于未然；二是为了震慑小偷，减少偷盗行为发生。</p><p>C项正确，调整开放时间，实现市场与休闲人员错峰有利于从根本上减少广场人流量，保障广场营造良好治安秩序，减少纠纷和盗窃警情发生。</p><p>D项错误，公安机关和城管是两个独立行政机关，不存在上下级关系。因此，公安机关无权要求城管部门。</p><p>故正确答案为D。</p>",
+                "optList": [
+                    {
+                        "content": "及时向所领导汇报，请求增派警力",
+                        "label": "A"
+                    },
+                    {
+                        "content": "加强巡逻中的宣传教育，提示群众保管好自己的财物",
+                        "label": "B"
+                    },
+                    {
+                        "content": "向政府及有关部门建议，暂时调整喷泉开放时间，实现市场与休闲人员的错峰",
+                        "label": "C"
+                    },
+                    {
+                        "content": "要求城管部门规范摊位，发放摊位牌证，禁止无证摆摊",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "及时向所领导汇报，请求增派警力",
+                        "label": "A"
+                    },
+                    {
+                        "content": "加强巡逻中的宣传教育，提示群众保管好自己的财物",
+                        "label": "B"
+                    },
+                    {
+                        "content": "向政府及有关部门建议，暂时调整喷泉开放时间，实现市场与休闲人员的错峰",
+                        "label": "C"
+                    },
+                    {
+                        "content": "要求城管部门规范摊位，发放摊位牌证，禁止无证摆摊",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "D",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "要求城管部门规范摊位，发放摊位牌证，禁止无证摆摊",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "加强巡逻中的宣传教育，提示群众保管好自己的财物",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "向政府及有关部门建议，暂时调整喷泉开放时间，实现市场与休闲人员的错峰",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "及时向所领导汇报，请求增派警力",
+                        "label": "A"
+                    }
+                },
+                "labelText": "治安行政管理与服务能力",
+                "labelsArray_text": "治安行政管理与服务能力",
+                "examPointName": "治安行政管理与服务能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445018,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929179,
+            "level": 96,
+            "subjectDo": {
+                "id": 929179,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"D\"]",
+                "label": "39878",
+                "material": "<p>2019年10月，民警老张和小刘接到一起纠纷警情后，迅速赶到现场。在劝解双方纠纷过程中，小刘发现当事人李某的电动自行车上有橇痕，便问其故，李某当场解释不清。于是，老张和小刘便将李某带回派出所维续调查。一到派出所，李某便提出要上厕所，小刘便紧随其后。听到一声微弱的金属碰撞声音后。小刘机敏地冲进厕所，快速将李某拉开，并从马桶里捞出一把轿车钥匙。老张和小刘连续奋战一天，围绕李某开展调查分析，如图。</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/403f8f2b1a75a5243c1f2c7467361edd\"></img></p>",
+                "hasMaterial": 1,
+                "content": "<p>针对李某当场不能说明电动自行车上撬痕的情况，老张和小刘将李某带至派出所继续调查的措施是（    ）。</p>",
+                "opt": "[{\"content\": \"拘传\", \"label\": \"A\"}, {\"content\": \"刑事拘留\", \"label\": \"B\"}, {\"content\": \"传唤\", \"label\": \"C\"}, {\"content\": \"继续盘问\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查公安勤务能力。</p><p>A项错误，拘传是指侦查机关对未被羁押的犯罪嫌疑人强制其到案接受讯问的一种刑事强制措施。民警老张和小刘未强制李某到案接受讯问。</p><p>B项错误，公安机关的刑事拘留是公安机关在侦查过程中，遇到法定的紧急情况时，对于现行犯或者重大嫌疑分子所采取的临时剥夺其人身自由的强制方法。题目中的表述并非紧急情况，而且民警老张和小刘未对李某采取强制方法。</p><p>C项错误，治安（行政）传唤的适用对象，是在办理治安（行政）案件中，针对特定的违反治安管理行为人（或违法嫌疑人）。刑事传唤的适用对象，是在办理刑事案件中，针对特定的不需要逮捕、拘留的犯罪嫌疑人。以上两类传唤的适用对象一般是对违法犯罪嫌疑人已经了解清楚，而李某当场不能说明情况，因此不是传唤。</p><p>D项正确，《公安机关适用继续盘问规定》第八条规定：“对有违法犯罪嫌疑的人员当场盘问、检查后，不能排除其违法犯罪嫌疑，且具有下列情形之一的，人民警察可以将其带至公安机关继续盘问：（一）被害人、证人控告或者指认其有犯罪行为的；（二）有正在实施违反治安管理或者犯罪行为嫌疑的；（三）有违反治安管理或者犯罪嫌疑且身份不明的；（四）携带的物品可能是违反治安管理或者犯罪的赃物的。” 李某当场解释不清电动自行车上的橇痕，有实施违反治安管理或者犯罪行为的嫌疑，因此民警老张和小刘可以将李某带至派出所继续盘问。</p><p>故正确答案为D。</p>",
+                "optList": [
+                    {
+                        "content": "拘传",
+                        "label": "A"
+                    },
+                    {
+                        "content": "刑事拘留",
+                        "label": "B"
+                    },
+                    {
+                        "content": "传唤",
+                        "label": "C"
+                    },
+                    {
+                        "content": "继续盘问",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "拘传",
+                        "label": "A"
+                    },
+                    {
+                        "content": "刑事拘留",
+                        "label": "B"
+                    },
+                    {
+                        "content": "传唤",
+                        "label": "C"
+                    },
+                    {
+                        "content": "继续盘问",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "D",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "继续盘问",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "刑事拘留",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "传唤",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "拘传",
+                        "label": "A"
+                    }
+                },
+                "labelText": "公安勤务能力",
+                "labelsArray_text": "公安勤务能力",
+                "examPointName": "公安勤务能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445019,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929180,
+            "level": 97,
+            "subjectDo": {
+                "id": 929180,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"A\"]",
+                "label": "39878",
+                "material": "<p>2019年10月，民警老张和小刘接到一起纠纷警情后，迅速赶到现场。在劝解双方纠纷过程中，小刘发现当事人李某的电动自行车上有橇痕，便问其故，李某当场解释不清。于是，老张和小刘便将李某带回派出所维续调查。一到派出所，李某便提出要上厕所，小刘便紧随其后。听到一声微弱的金属碰撞声音后。小刘机敏地冲进厕所，快速将李某拉开，并从马桶里捞出一把轿车钥匙。老张和小刘连续奋战一天，围绕李某开展调查分析，如图。</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/403f8f2b1a75a5243c1f2c7467361edd\"></img></p>",
+                "hasMaterial": 1,
+                "content": "<p>针对李某将轿车钥匙偷扔掉，以及拒不回答有关轿车钥匙和轿车问题的情况，下列选项中恰当的判断是（    ）。</p>",
+                "opt": "[{\"content\": \"通过对李某的行为分析，判断李某有重大作案嫌疑\", \"label\": \"A\"}, {\"content\": \"先针对李某盗窃电动自行车立案，轿车钥匙和轿车问题立案后再查\", \"label\": \"B\"}, {\"content\": \"情况特殊，向派出所所长申请延长调查时间\", \"label\": \"C\"}, {\"content\": \"根据李某盗窃电动自行车的嫌疑，推断李某的轿车钥匙与盗窃轿车有关\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查刑事执法依据。</p><p>A项正确，李某先是不能说明电动自行车上的橇痕情况，而且又偷偷将轿车钥匙扔掉，其行为非常可疑，公安机关可判断李某有重大作案嫌疑。</p><p>B项错误，根据《公安机关办理刑事案件程序规定》第一百七十五条规定：“公安机关接受案件后，经审查，认为有犯罪事实需要追究刑事责任，且属于自己管辖的，经县级以上公安机关负责人批准，予以立案。”本题中尚未确定轿车要钥匙是否与李某盗窃轿车有关，不符合立案条件。</p><p>C项错误，公安机关还未开展调查，要等初查后结合案件情况再决定是否需要延长调查时间。</p><p>D项错误，李某盗窃电动自行车的行为与其是否盗窃轿车之间没有必然的联系，不能凭主观臆想凭空推测，无法得出李某的轿车钥匙与盗窃轿车有关。</p><p>故正确答案为A。</p>",
+                "optList": [
+                    {
+                        "content": "通过对李某的行为分析，判断李某有重大作案嫌疑",
+                        "label": "A"
+                    },
+                    {
+                        "content": "先针对李某盗窃电动自行车立案，轿车钥匙和轿车问题立案后再查",
+                        "label": "B"
+                    },
+                    {
+                        "content": "情况特殊，向派出所所长申请延长调查时间",
+                        "label": "C"
+                    },
+                    {
+                        "content": "根据李某盗窃电动自行车的嫌疑，推断李某的轿车钥匙与盗窃轿车有关",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "通过对李某的行为分析，判断李某有重大作案嫌疑",
+                        "label": "A"
+                    },
+                    {
+                        "content": "先针对李某盗窃电动自行车立案，轿车钥匙和轿车问题立案后再查",
+                        "label": "B"
+                    },
+                    {
+                        "content": "情况特殊，向派出所所长申请延长调查时间",
+                        "label": "C"
+                    },
+                    {
+                        "content": "根据李某盗窃电动自行车的嫌疑，推断李某的轿车钥匙与盗窃轿车有关",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "A",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "根据李某盗窃电动自行车的嫌疑，推断李某的轿车钥匙与盗窃轿车有关",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "先针对李某盗窃电动自行车立案，轿车钥匙和轿车问题立案后再查",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "情况特殊，向派出所所长申请延长调查时间",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "通过对李某的行为分析，判断李某有重大作案嫌疑",
+                        "label": "A"
+                    }
+                },
+                "labelText": "未分类",
+                "labelsArray_text": "未分类",
+                "examPointName": "未分类",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445020,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929181,
+            "level": 98,
+            "subjectDo": {
+                "id": 929181,
+                "agencyId": 5,
+                "type": 2,
+                "typeId": 2,
+                "correctAnswer": "[\"A\",\"B\",\"C\",\"D\"]",
+                "label": "39878",
+                "material": "<p>2019年10月，民警老张和小刘接到一起纠纷警情后，迅速赶到现场。在劝解双方纠纷过程中，小刘发现当事人李某的电动自行车上有橇痕，便问其故，李某当场解释不清。于是，老张和小刘便将李某带回派出所维续调查。一到派出所，李某便提出要上厕所，小刘便紧随其后。听到一声微弱的金属碰撞声音后。小刘机敏地冲进厕所，快速将李某拉开，并从马桶里捞出一把轿车钥匙。老张和小刘连续奋战一天，围绕李某开展调查分析，如图。</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/403f8f2b1a75a5243c1f2c7467361edd\"></img></p>",
+                "hasMaterial": 1,
+                "content": "<p>老张和小刘通过对李某生活轨迹的调查，在李某住宅附近找到与该钥匙相匹配的一辆黑色轿车，下列检查方法恰当的有（    ）。</p>",
+                "opt": "[{\"content\": \"在车辆外围进行观察，确保周边环境安全后保持适当距离观察车内情况\", \"label\": \"A\"}, {\"content\": \"老张在车辆外围进行警戒，小刘用钥匙打开车锁\", \"label\": \"B\"}, {\"content\": \"老张在车辆外围进行警戒，小刘轻轻打开车辆后备箱\", \"label\": \"C\"}, {\"content\": \"老张和小刘对车辆检查出来的物品逐一登记并拍照\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查公安勤务能力。</p><p>A项正确，检查车辆时，应观察车辆外观、锁具和内部装置；再检查车载货物和车内物品。因此，观察车辆外围后，确保周边环境安全后再观察车内情况，当选。</p><p>B项正确，检查应当由一个主查，其他人员负责警戒，防止被盘查人或者同伙的袭击。因此，老张在车辆外围进行警戒，小刘用钥匙打开车锁，当选。</p><p>C项正确，检查应当由一个主查，其他人员负责警戒，防止被盘查人或者同伙的袭击。因此，老张在车辆外围惊醒警戒，小刘轻轻打开车辆后备箱，当选。</p><p>D项正确，物品检查时，应有序拿起，原样放回，应当逐一登记并拍照。对违禁品，应当会同在场见证人和物品持有人查点清楚，当场开列清单，予以扣押或者收缴，当选。</p><p>故正确答案为ABCD。</p>",
+                "optList": [
+                    {
+                        "content": "在车辆外围进行观察，确保周边环境安全后保持适当距离观察车内情况",
+                        "label": "A"
+                    },
+                    {
+                        "content": "老张在车辆外围进行警戒，小刘用钥匙打开车锁",
+                        "label": "B"
+                    },
+                    {
+                        "content": "老张在车辆外围进行警戒，小刘轻轻打开车辆后备箱",
+                        "label": "C"
+                    },
+                    {
+                        "content": "老张和小刘对车辆检查出来的物品逐一登记并拍照",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "在车辆外围进行观察，确保周边环境安全后保持适当距离观察车内情况",
+                        "label": "A",
+                        "right": true
+                    },
+                    {
+                        "content": "老张在车辆外围进行警戒，小刘用钥匙打开车锁",
+                        "label": "B",
+                        "right": true
+                    },
+                    {
+                        "content": "老张在车辆外围进行警戒，小刘轻轻打开车辆后备箱",
+                        "label": "C",
+                        "right": true
+                    },
+                    {
+                        "content": "老张和小刘对车辆检查出来的物品逐一登记并拍照",
+                        "label": "D",
+                        "right": true
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "老张和小刘对车辆检查出来的物品逐一登记并拍照",
+                        "label": "D",
+                        "right": true
+                    },
+                    "option_2": {
+                        "content": "老张在车辆外围进行警戒，小刘用钥匙打开车锁",
+                        "label": "B",
+                        "right": true
+                    },
+                    "option_3": {
+                        "content": "老张在车辆外围进行警戒，小刘轻轻打开车辆后备箱",
+                        "label": "C",
+                        "right": true
+                    },
+                    "option_1": {
+                        "content": "在车辆外围进行观察，确保周边环境安全后保持适当距离观察车内情况",
+                        "label": "A",
+                        "right": true
+                    }
+                },
+                "labelText": "公安勤务能力",
+                "labelsArray_text": "公安勤务能力",
+                "examPointName": "公安勤务能力",
+                "typeName": "多选题",
+                "typeRule": 1,
+                "inputModel": 1
+            }
+        },
+        {
+            "id": 445021,
+            "createTime": 1599543440,
+            "realId": 4602,
+            "subjectId": 929182,
+            "level": 99,
+            "subjectDo": {
+                "id": 929182,
+                "agencyId": 5,
+                "type": 1,
+                "typeId": 1,
+                "correctAnswer": "[\"B\"]",
+                "label": "39878",
+                "material": "<p>2019年10月，民警老张和小刘接到一起纠纷警情后，迅速赶到现场。在劝解双方纠纷过程中，小刘发现当事人李某的电动自行车上有橇痕，便问其故，李某当场解释不清。于是，老张和小刘便将李某带回派出所维续调查。一到派出所，李某便提出要上厕所，小刘便紧随其后。听到一声微弱的金属碰撞声音后。小刘机敏地冲进厕所，快速将李某拉开，并从马桶里捞出一把轿车钥匙。老张和小刘连续奋战一天，围绕李某开展调查分析，如图。</p><p><img src=\"https://img.xdtech.top/uploadFiles/image/20200908/403f8f2b1a75a5243c1f2c7467361edd\"></img></p>",
+                "hasMaterial": 1,
+                "content": "<p>通过对该轿车的检查，缴获冰毒3kg，从而破获了一起贩毒大案，民警小刘因此荣立了个人二等功，下列事迹中最能反映小刘业务能力的是（    ）。</p>",
+                "opt": "[{\"content\": \"耐心细致的调解和化解矛盾纠纷\", \"label\": \"A\"}, {\"content\": \"善于捕提犯罪嫌疑人留下的蛛丝马迹和各种疑点\", \"label\": \"B\"}, {\"content\": \"夜以继日，不怕脏、不怕累\", \"label\": \"C\"}, {\"content\": \"小案、大案都不放过，工作认真负责\", \"label\": \"D\"}]",
+                "hasEnMaterial": 0,
+                "analysis": "<p>本题考查公安勤务能力。</p><p>A项错误，虽然本案为纠纷警情，但是题干是对该轿车的检查，因此与耐心细致调解和化解矛盾纠纷无关，排除。</p><p>B项正确，通过对车辆的检查，缴获冰毒，破获贩毒大案，体现了小刘善于捕提犯罪嫌疑人留下的蛛丝马迹和各种疑点，题干表述为最能反映小刘业务能力的选项，当选。</p><p>C项错误，小刘虽然连续奋战一天，但是题干侧重对破获贩毒答案体现的业务能力，因此夜以继日，不怕脏、不怕累，表述不正确，排除。</p><p>D项错误，小案、大案都不放过，工作认真负责的业务能力，在题干中有所体现，但是题干表述为最能反映小刘业务能力的选项，排除。</p><p>故正确答案为B。</p>",
+                "optList": [
+                    {
+                        "content": "耐心细致的调解和化解矛盾纠纷",
+                        "label": "A"
+                    },
+                    {
+                        "content": "善于捕提犯罪嫌疑人留下的蛛丝马迹和各种疑点",
+                        "label": "B"
+                    },
+                    {
+                        "content": "夜以继日，不怕脏、不怕累",
+                        "label": "C"
+                    },
+                    {
+                        "content": "小案、大案都不放过，工作认真负责",
+                        "label": "D"
+                    }
+                ],
+                "optListInfo": [
+                    {
+                        "content": "耐心细致的调解和化解矛盾纠纷",
+                        "label": "A"
+                    },
+                    {
+                        "content": "善于捕提犯罪嫌疑人留下的蛛丝马迹和各种疑点",
+                        "label": "B"
+                    },
+                    {
+                        "content": "夜以继日，不怕脏、不怕累",
+                        "label": "C"
+                    },
+                    {
+                        "content": "小案、大案都不放过，工作认真负责",
+                        "label": "D"
+                    }
+                ],
+                "detailedCategoryLabelId": 5,
+                "singleRight": "B",
+                "labelsArray": 39878,
+                "optionCount": 4,
+                "optionsObj": {
+                    "option_4": {
+                        "content": "小案、大案都不放过，工作认真负责",
+                        "label": "D"
+                    },
+                    "option_2": {
+                        "content": "善于捕提犯罪嫌疑人留下的蛛丝马迹和各种疑点",
+                        "label": "B"
+                    },
+                    "option_3": {
+                        "content": "夜以继日，不怕脏、不怕累",
+                        "label": "C"
+                    },
+                    "option_1": {
+                        "content": "耐心细致的调解和化解矛盾纠纷",
+                        "label": "A"
+                    }
+                },
+                "labelText": "公安勤务能力",
+                "labelsArray_text": "公安勤务能力",
+                "examPointName": "公安勤务能力",
+                "typeName": "单选题",
+                "typeRule": 0,
+                "inputModel": 1
+            }
+        }
+    ],
+    "isExportEmptyDivInCommonExport": 0,
+    "innerCompoundStructure4Export": {}
+}]

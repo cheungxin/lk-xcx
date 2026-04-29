@@ -1,0 +1,165 @@
+<!-- 学习统计页 -->
+<view class="stats-page">
+  <t-navbar title="学习统计" left-arrow fixed bind:go-back="handleBack" />
+
+  <scroll-view scroll-y style="margin-top: {{navBarHeight}}px; height: calc(100vh - {{navBarHeight}}px);">
+    <view class="stats-content">
+
+      <!-- 概览数据 -->
+      <view class="overview-card">
+        <view class="overview-grid">
+          <view class="overview-item">
+            <text class="overview-item__value">{{overview.totalQuestions}}</text>
+            <text class="overview-item__label">累计做题</text>
+          </view>
+          <view class="overview-divider"></view>
+          <view class="overview-item">
+            <text class="overview-item__value">{{overview.correctRate}}%</text>
+            <text class="overview-item__label">正确率</text>
+          </view>
+          <view class="overview-divider"></view>
+          <view class="overview-item">
+            <text class="overview-item__value">{{overview.continueDays}}</text>
+            <text class="overview-item__label">连续天数</text>
+          </view>
+          <view class="overview-divider"></view>
+          <view class="overview-item">
+            <text class="overview-item__value">{{overview.todayQuestions}}</text>
+            <text class="overview-item__label">今日做题</text>
+          </view>
+        </view>
+      </view>
+
+      <!-- 每日做题趋势 -->
+      <view class="chart-card">
+        <view class="chart-card__header">
+          <text class="chart-card__title">每日做题趋势</text>
+          <text class="chart-card__subtitle">近7天</text>
+        </view>
+        <view class="bar-chart">
+          <view class="bar-chart__bars">
+            <view class="bar-group" wx:for="{{dailyData}}" wx:key="day">
+              <view class="bar-stack">
+                <view class="bar bar--correct" style="height: {{dailyMax > 0 ? (item.correct / dailyMax * 100) : 0}}%;"></view>
+                <view class="bar bar--wrong" style="height: {{dailyMax > 0 ? ((item.count - item.correct) / dailyMax * 100) : 0}}%;"></view>
+              </view>
+              <text class="bar-group__label">{{item.day}}</text>
+              <text class="bar-group__count">{{item.count}}</text>
+            </view>
+          </view>
+        </view>
+        <view class="chart-legend">
+          <view class="chart-legend__item">
+            <view class="chart-legend__dot" style="background: #00A870;"></view>
+            <text>正确</text>
+          </view>
+          <view class="chart-legend__item">
+            <view class="chart-legend__dot" style="background: #E34D59;"></view>
+            <text>错误</text>
+          </view>
+        </view>
+      </view>
+
+      <!-- 科目正确率 -->
+      <view class="chart-card">
+        <view class="chart-card__header">
+          <text class="chart-card__title">各科目正确率</text>
+        </view>
+        <view class="subject-list">
+          <view class="subject-item" wx:for="{{subjectData}}" wx:key="name">
+            <view class="subject-item__left">
+              <view class="subject-item__dot" style="background: {{item.color}};"></view>
+              <text class="subject-item__name">{{item.name}}</text>
+              <text class="subject-item__total">({{item.total}}题)</text>
+            </view>
+            <view class="subject-item__right">
+              <view class="subject-bar-wrap">
+                <view class="subject-bar" style="width: {{item.accuracy}}%; background: {{item.color}};"></view>
+              </view>
+              <text class="subject-item__pct" style="color: {{item.color}};">{{item.accuracy}}%</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <!-- 题型分布 -->
+      <view class="chart-card">
+        <view class="chart-card__header">
+          <text class="chart-card__title">题型分布</text>
+        </view>
+        <view class="type-distribution">
+          <!-- 环形进度用CSS实现 -->
+          <view class="donut-chart">
+            <view class="donut-chart__center">
+              <text class="donut-chart__total">{{overview.totalQuestions}}</text>
+              <text class="donut-chart__label">总题数</text>
+            </view>
+          </view>
+          <view class="type-list">
+            <view class="type-item" wx:for="{{typeData}}" wx:key="name">
+              <view class="type-item__dot type-item__dot--{{index}}"></view>
+              <text class="type-item__name">{{item.name}}</text>
+              <text class="type-item__count">{{item.count}}题</text>
+              <text class="type-item__pct">{{item.percent}}%</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <!-- 薄弱环节 -->
+      <view class="chart-card">
+        <view class="chart-card__header">
+          <text class="chart-card__title">薄弱环节</text>
+          <t-tag theme="danger" variant="light" size="small">需加强</t-tag>
+        </view>
+        <view class="weak-list">
+          <view class="weak-item" wx:for="{{weakPoints}}" wx:key="name">
+            <view class="weak-item__info">
+              <text class="weak-item__name">{{item.name}}</text>
+              <text class="weak-item__total">{{item.total}}题</text>
+            </view>
+            <view class="weak-item__right">
+              <view class="weak-bar-wrap">
+                <view class="weak-bar" style="width: {{item.accuracy}}%;"></view>
+              </view>
+              <text class="weak-item__pct">{{item.accuracy}}%</text>
+            </view>
+          </view>
+        </view>
+        <view class="weak-tip">
+          <t-icon name="info-circle" size="28rpx" color="#FFB020" />
+          <text class="weak-tip__text">建议优先练习薄弱知识点，针对性提升</text>
+        </view>
+      </view>
+
+      <!-- 学习时长统计 -->
+      <view class="chart-card">
+        <view class="chart-card__header">
+          <text class="chart-card__title">学习统计</text>
+        </view>
+        <view class="study-stats">
+          <view class="study-stat-item">
+            <view class="study-stat-item__icon" style="background: #EEF3FF;">
+              <t-icon name="time" size="40rpx" color="#1664FF" />
+            </view>
+            <view class="study-stat-item__info">
+              <text class="study-stat-item__value">{{overview.totalTime}}</text>
+              <text class="study-stat-item__label">累计学习时长</text>
+            </view>
+          </view>
+          <view class="study-stat-item">
+            <view class="study-stat-item__icon" style="background: #E6FFF5;">
+              <t-icon name="calendar" size="40rpx" color="#00A870" />
+            </view>
+            <view class="study-stat-item__info">
+              <text class="study-stat-item__value">{{overview.totalDays}}天</text>
+              <text class="study-stat-item__label">累计学习天数</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="bottom-spacer"></view>
+    </view>
+  </scroll-view>
+</view>

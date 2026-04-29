@@ -1,0 +1,45 @@
+<navigation bgColor="#50C000" isHome="{{true}}" navigationColor="white">
+  <text slot="content">数资速算</text>
+</navigation>
+<view class="page-container" style="padding-top:{{navigationBarHeight}}px">
+  <van-sticky offset-top="{{ navigationBarHeight }}">
+    <van-cell icon="filter-o" title="出题数量" is-link value="{{problemsNumber?problemsNumber:'请选择题目数量'}}" bind:click="getPopup" arrow-direction="down" />
+  </van-sticky>
+  <van-popup show="{{ isSetNumber }}" round closeable position="bottom" custom-style="height: 20%" bind:close="onClosePopup">
+    <view class="numbers-selection">
+      <view class="numbers-item {{problemsNumber==item ? 'active' : ''}}" wx:for="{{numberList}}" wx:for-index="index" wx:key="index" data-idx="{{index}}" bindtap="selectNumber">
+        {{item}}
+      </view>
+    </view>
+  </van-popup>
+  <view class="plate-container" wx:key="directory" wx:for="{{directorys}}">
+    <view class="content-title">
+      <view class="title-label"></view>
+      <view class="title-text">{{item.firstsort}}</view>
+    </view>
+    <view class="content-container">
+      <view class="arithmetic-lists">
+        <view class="arithmetic-item" wx:for="{{item.items}}" wx:for-item="subItem" wx:key="directoryItem" 
+        data-unique-id="{{subItem.uniqueId}}"
+        data-first-serial="{{item.serial}}"
+        data-first-sort="{{item.firstsort}}" 
+        data-second-serial="{{subItem.serial}}"
+       data-second-sort="{{subItem.secondsort}}" 
+       data-function-type="{{subItem.functionType}}"
+        bindtap="goCalculatePage">
+          {{subItem.secondsort}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- <view class="choose-fixed-btn">
+     题量选择
+  </view> -->
+</view>
+
+<view class="history-cart-box" style="left: {{historyPosLeft}}px; top: {{historyPosTop}}px"  catchtouchmove="dragCart">
+    <view class="cart" bindtap="goHistory"> 
+        <view class="iconfont icon-clock-o cart-info"></view>
+        <view class="history-title">分析报告</view>
+    </view>
+</view>

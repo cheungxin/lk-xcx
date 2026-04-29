@@ -1,0 +1,118 @@
+<page-meta page-style="{{(showFormulas || showDraftSheet) ? 'overflow: hidden; height: 100vh;' : ''}}" />
+<!-- 数资数算答题页 -->
+<view class="math-page">
+  <t-navbar title="数资数算" left-arrow fixed bind:go-back="handleBack" />
+
+  <!-- 顶部栏 -->
+  <view class="math-top-bar" style="margin-top: {{navBarHeight}}px;">
+    <view class="timer-box">
+      <t-icon name="time" size="30rpx" color="#86909C" />
+      <text class="timer-text">{{timerText}}</text>
+    </view>
+    <text class="progress-text">{{currentIndex + 1}}/{{totalQuestions}}</text>
+    <view class="tool-btns">
+      <view class="tool-btn" bindtap="handleShowFormulas">
+        <t-icon name="browse" size="32rpx" color="#1664FF" />
+        <text>公式</text>
+      </view>
+      <view class="tool-btn" bindtap="handleOpenDraft">
+        <t-icon name="edit" size="32rpx" color="#1664FF" />
+        <text>草稿</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 题目区域 -->
+  <scroll-view scroll-y class="math-scroll">
+    <view class="math-container">
+      <view class="math-header">
+        <t-tag theme="primary" variant="light">{{questions[currentIndex].type}}</t-tag>
+        <text class="math-num">第{{currentIndex + 1}}题</text>
+      </view>
+
+      <!-- 表格提示（资料分析题） -->
+      <view class="table-hint" wx:if="{{questions[currentIndex].hasTable}}">
+        <view class="table-hint__icon">
+          <t-icon name="chart-bar" size="28rpx" color="#1664FF" />
+        </view>
+        <text class="table-hint__text">本题含数据表格，请仔细阅读题干中的数据</text>
+      </view>
+
+      <text class="math-stem">{{questions[currentIndex].stem}}</text>
+
+      <!-- 公式提示 -->
+      <view class="formula-hint" wx:if="{{questions[currentIndex].formula}}">
+        <t-icon name="lightbulb" size="24rpx" color="#FFB020" />
+        <text class="formula-hint__text">可用公式：{{questions[currentIndex].formula}}</text>
+      </view>
+
+      <view class="math-options">
+        <view
+          wx:for="{{questions[currentIndex].options}}"
+          wx:for-item="option"
+          wx:key="id"
+          class="math-option {{selectedAnswer === option.id ? (isCorrect ? 'math-option--correct' : 'math-option--wrong') : ''}} {{submitted && option.id === questions[currentIndex].correctAnswer && selectedAnswer !== option.id ? 'math-option--correct' : ''}}"
+          data-id="{{option.id}}"
+          bindtap="handleOptionTap"
+        >
+          <view class="math-option__letter {{selectedAnswer === option.id ? (isCorrect ? 'math-option__letter--correct' : 'math-option__letter--wrong') : ''}} {{submitted && option.id === questions[currentIndex].correctAnswer ? 'math-option__letter--correct' : ''}}">
+            {{option.id}}
+          </view>
+          <text class="math-option__text">{{option.text}}</text>
+          <t-icon wx:if="{{submitted && option.id === questions[currentIndex].correctAnswer}}" name="check-circle-filled" color="#00A870" size="40rpx" class="math-option__icon" />
+          <t-icon wx:elif="{{selectedAnswer === option.id && !isCorrect}}" name="close-circle-filled" color="#E34D59" size="40rpx" class="math-option__icon" />
+        </view>
+      </view>
+
+      <!-- 解析 -->
+      <view class="math-analysis" wx:if="{{submitted}}">
+        <view class="math-analysis__header">
+          <text class="math-analysis__title">解析</text>
+        </view>
+        <view class="math-analysis__body">
+          <text class="math-analysis__text">{{questions[currentIndex].explanation}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <!-- 底部操作栏 -->
+  <view class="math-bottom">
+    <t-button theme="light" size="medium" icon="chevron-left" bindtap="handlePrev">上一题</t-button>
+    <t-button theme="light" size="medium" icon="chevron-right" bindtap="handleNext">下一题</t-button>
+  </view>
+
+  <!-- 公式参考弹窗 -->
+  <t-popup visible="{{showFormulas}}" placement="bottom" bind:visible-change="handleFormulasChange">
+    <view class="formula-popup">
+      <view class="formula-popup__header">
+        <text class="formula-popup__title">常用公式参考</text>
+        <t-icon name="close" size="40rpx" color="#86909C" bindtap="handleCloseFormulas" />
+      </view>
+      <scroll-view scroll-y style="max-height: 60vh;">
+        <view class="formula-list">
+          <view class="formula-category" wx:for="{{formulas}}" wx:key="category">
+            <view class="formula-category__header" data-category="{{item.category}}" bindtap="handleToggleFormula">
+              <t-icon name="chevron-right" size="28rpx" color="#4E5969" style="transform: rotate({{expandedFormula === item.category ? '90deg' : '0'}}); transition: transform 0.2s;" />
+              <text class="formula-category__name">{{item.category}}</text>
+            </view>
+            <view class="formula-category__body" wx:if="{{expandedFormula === item.category}}">
+              <text class="formula-item" wx:for="{{item.items}}" wx:for-item="formula" wx:key="*this">{{formula}}</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </t-popup>
+
+  <draft-sheet
+    id="draftSheet"
+    sceneKey="{{draftSceneKey}}"
+    showTrigger="{{false}}"
+    themeMode="{{themeMode}}"
+    title="数资草稿纸"
+    placeholder="适合列式、算比例、画辅助线，切题后也会保留。"
+    bind:open="handleDraftOpenState"
+    bind:close="handleDraftCloseState"
+  />
+</view>

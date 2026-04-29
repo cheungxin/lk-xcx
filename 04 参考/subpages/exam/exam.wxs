@@ -1,0 +1,93 @@
+
+/* 从数组中找questionNumber相同的项 然后判断数组中是否有userAnswerOption这个值且不为空  有返回true 没有返回fasle */
+function findQuestionOption(array, questionNumber, userAnswerOption) {
+    for (var i = 0; i < array.length; i++) {
+        var item = array[i];
+        if (item.questionNumber === questionNumber && item.userAnswerOption === userAnswerOption && item.userAnswerOption !== '') {
+          return true;
+        }
+      }
+      return false; 
+} 
+
+function fontSizeSet(fontSizeType) {
+   if(fontSizeType===1){
+     return  'type-small'; 
+   }else if(fontSizeType === 4){
+    return 'type-large'
+   }else if(fontSizeType === 3){
+    return 'type-bigger'
+   }else{
+    return 'type-normal'   
+   }
+
+} 
+
+function isShowImage(nowIdx,idx,url){
+  if( idx >= nowIdx - 5 && idx <= nowIdx + 5 ){
+     if(url){
+       return true;
+     }else{
+       return false; 
+     }
+  }else{
+    return false;
+  }
+}
+
+// 题型映射（1单选 2多选 3判断）
+function getQuestionTypeText(type) {
+  if (type === 1) return '单选题';
+  if (type === 2) return '多选题';
+  if (type === 3) return '判断题';
+  if (type === 4) return '不定项';
+  return '';
+}
+
+// 判断题图标类名（A→对号，B→叉号）
+function judgeIconClass(optionVal) {
+  return optionVal === 'A' ? 'icon-success' : 'icon-cross';
+}
+
+// 判断题文本（A→正确，B→错误）
+function judgeText(optionVal) {
+  return optionVal === 'A' ? '正确' : '错误';
+}
+
+// 多选题选中检查（userAnswerOption 为 'A,B,C'）
+function findMultipleOption(sheetLists, questionNumber, optionValue) {
+  if (!sheetLists || sheetLists.length === 0) return false;
+  for (var i = 0; i < sheetLists.length; i++) {
+    var sheet = sheetLists[i];
+    if (sheet.questionNumber === questionNumber) {
+      var ua = sheet.userAnswerOption;
+      if (!ua || ua === '') return false;
+      var arr = ua.split(',');
+      for (var j = 0; j < arr.length; j++) {
+        if (arr[j] === optionValue) return true;
+      }
+      return false;
+    }
+  }
+  return false;
+}
+
+// 统一判断某选项是否已选中（按题型分发）
+function isOptionAnswered(sheetLists, questionNumber, optionValue, questionChoiceType) {
+  if (questionChoiceType === 2 || questionChoiceType === 4) {
+    return findMultipleOption(sheetLists, questionNumber, optionValue);
+  }
+  return findQuestionOption(sheetLists, questionNumber, optionValue);
+}
+
+module.exports = {
+  findQuestionOption:findQuestionOption,
+  fontSizeSet:fontSizeSet,
+  isShowImage:isShowImage,
+  // 新增导出：题型映射与判断题辅助、多选选中检查与统一判定
+  getQuestionTypeText:getQuestionTypeText,
+  judgeIconClass:judgeIconClass,
+  judgeText:judgeText,
+  findMultipleOption:findMultipleOption,
+  isOptionAnswered:isOptionAnswered
+}

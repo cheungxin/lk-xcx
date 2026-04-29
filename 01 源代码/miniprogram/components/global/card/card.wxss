@@ -1,0 +1,37 @@
+/* 全局组件 - 通用卡片 */
+
+.card {
+  background: #FFFFFF;
+  box-sizing: border-box;
+  transition: transform 0.15s ease;
+}
+
+.card--clickable:active {
+  transform: scale(0.98);
+}
+
+.card--shadow {
+  box-shadow: 0 4rpx 24rpx rgba(0, 0, 0, 0.04);
+}
+
+.card__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+.card__title {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #1A1A2E;
+}
+
+.card__subtitle {
+  font-size: 24rpx;
+  color: #9AA3B2;
+}
+
+.card__body {
+  width: 100%;
+}

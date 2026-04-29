@@ -1,0 +1,388 @@
+<page-meta page-style="{{(showMaterial || showMorePopup || showAnswerCard || showFontSizeSelector || showDraftSheet) ? (themeMode === 'dark' ? 'background-color: #1a1a1a; overflow: hidden; height: 100vh;' : 'background-color: #f5f5f5; overflow: hidden; height: 100vh;') : (themeMode === 'dark' ? 'background-color: #1a1a1a;' : 'background-color: #f5f5f5;')}}" />
+<view class="page {{themeMode === 'dark' ? 'theme-dark' : 'theme-light'}} {{(showMaterial || showMorePopup || showAnswerCard || showFontSizeSelector || showDraftSheet) ? 'page--locked' : ''}}" style="--font-scale: {{fontSizeScale}};">
+  <t-navbar
+    title="{{pageTitle}}"
+    left-arrow
+    fixed
+    style="{{themeTokens.navbarStyle}}"
+    bind:go-back="handleGoBack"
+  />
+
+  <view class="top-control-bar" style="margin-top: {{navBarHeight}}px;">
+    <view class="top-summary">
+      <view wx:if="{{!isReadonly}}" class="summary-chip timer-box">
+        <t-icon name="time" size="28rpx" color="{{themeTokens.iconSecondary}}" />
+        <text class="timer-text">{{timerText}}</text>
+      </view>
+
+      <view class="summary-chip question-progress">
+        <t-icon name="assignment" size="26rpx" color="{{themeTokens.iconSecondary}}" />
+        <text class="progress-text">{{practiceState.currentIndex}}</text>
+        <text class="progress-total">/ {{practiceState.totalQuestions}}</text>
+      </view>
+    </view>
+
+    <view wx:if="{{!isReadonly}}" class="top-actions">
+      <view class="mode-switch" wx:if="{{practiceType !== 'exam'}}">
+        <view
+          class="mode-switch__item {{practiceDisplayMode === 'answer' ? 'mode-switch__item--active' : ''}}"
+          data-mode="answer"
+          bindtap="handleDisplayModeSwitch"
+        >
+          <text>答题</text>
+        </view>
+        <view
+          class="mode-switch__item {{practiceDisplayMode === 'analysis' ? 'mode-switch__item--active' : ''}}"
+          data-mode="analysis"
+          bindtap="handleDisplayModeSwitch"
+        >
+          <text>解析</text>
+        </view>
+      </view>
+
+      <view class="top-icon-btn" bindtap="handleShowMore">
+        <t-icon name="ellipsis" size="32rpx" color="{{themeTokens.iconTertiary}}" />
+      </view>
+    </view>
+  </view>
+
+  <view class="progress-track">
+    <view
+      class="progress-track__fill"
+      style="width: {{practiceState.totalQuestions ? practiceState.currentIndex / practiceState.totalQuestions * 100 : 0}}%;"
+    ></view>
+  </view>
+
+  <view wx:if="{{isReadonly}}" class="analysis-toolbar">
+    <view class="analysis-toolbar__head">
+      <view class="analysis-toolbar__summary">
+        <text class="analysis-toolbar__title">{{analysisScopeName || pageTitle}}</text>
+        <text class="analysis-toolbar__desc">
+          {{analysisScopeName ? ('当前仅展示“' + analysisScopeName + '”相关题目') : '当前展示本次作答的解析结果'}}
+        </text>
+      </view>
+      <view wx:if="{{analysisScopeName}}" class="analysis-toolbar__action" bindtap="handleReadonlySectionReset">
+        <text class="analysis-toolbar__action-text">查看全部考点</text>
+      </view>
+    </view>
+
+    <view class="analysis-filter-tabs">
+      <view
+        class="analysis-filter-tab {{analysisFilterType === 'all' ? 'analysis-filter-tab--active' : ''}}"
+        data-type="all"
+        bindtap="handleReadonlyFilterChange"
+      >
+        <text>全部</text>
+      </view>
+      <view
+        class="analysis-filter-tab {{analysisFilterType === 'wrong' ? 'analysis-filter-tab--active' : ''}}"
+        data-type="wrong"
+        bindtap="handleReadonlyFilterChange"
+      >
+        <text>错题</text>
+      </view>
+      <view
+        class="analysis-filter-tab {{analysisFilterType === 'correct' ? 'analysis-filter-tab--active' : ''}}"
+        data-type="correct"
+        bindtap="handleReadonlyFilterChange"
+      >
+        <text>正确</text>
+      </view>
+      <view
+        class="analysis-filter-tab {{analysisFilterType === 'unanswered' ? 'analysis-filter-tab--active' : ''}}"
+        data-type="unanswered"
+        bindtap="handleReadonlyFilterChange"
+      >
+        <text>未答</text>
+      </view>
+    </view>
+  </view>
+
+
+  <swiper
+    class="question-swiper"
+    current="{{practiceState.currentIndex - 1}}"
+    bindchange="handleSwiperChange"
+    vertical="{{false}}"
+  >
+    <swiper-item wx:for="{{practiceState.questions}}" wx:for-index="questionIndex" wx:key="id">
+      <scroll-view scroll-y class="question-scroll">
+        <view class="question-container">
+          <view
+            class="material-section"
+            wx:if="{{item.material || item.materialImage}}"
+            bindtap="handleShowMaterial"
+            data-index="{{questionIndex}}"
+          >
+            <view class="material-tag">
+              <t-icon name="file-text" size="28rpx" color="{{themeTokens.iconPrimary}}" />
+              <text class="material-tag-text">{{item.materialTitle || '给定材料'}}</text>
+            </view>
+            <view class="material-preview">
+              <view class="material-preview__content">
+                <text class="material-text" wx:if="{{item.material}}">{{item.materialPreview || item.material}}</text>
+                <view class="material-preview__image-box" wx:if="{{item.materialImage}}">
+                  <image class="material-preview__image" src="{{item.materialImage}}" mode="aspectFill" />
+                </view>
+              </view>
+              <t-icon name="chevron-right" size="32rpx" color="{{themeTokens.iconQuaternary}}" />
+            </view>
+          </view>
+
+          <view class="question-header">
+            <view class="question-meta">
+              <text class="question-index">第 {{item.displayIndex || questionIndex + 1}} 题</text>
+              <t-tag class="question-type-tag" theme="primary" variant="light">{{item.type}}</t-tag>
+              <t-tag wx:if="{{item.section}}" class="section-tag" variant="outline" theme="default">{{item.section}}</t-tag>
+            </view>
+            <text class="question-stem">{{item.stem}}</text>
+            <image
+              wx:if="{{item.questionImage}}"
+              class="question-image"
+              src="{{item.questionImage}}"
+              mode="widthFix"
+            />
+          </view>
+
+          <view class="options-list">
+            <view
+              class="option-item {{option.isSelected ? 'option-item--selected' : ''}} {{option.isCorrectOption ? 'option-item--correct' : ''}} {{option.isWrongSelection ? 'option-item--wrong' : ''}} {{practiceState.answerSheet[questionIndex].confirmed ? 'option-item--locked' : ''}}"
+              wx:for="{{item.options}}"
+              wx:for-item="option"
+              wx:for-index="optionIndex"
+              wx:key="id"
+              data-question-index="{{questionIndex}}"
+              data-id="{{option.id}}"
+              bindtap="handleOptionTap"
+            >
+              <view class="option-letter {{option.isSelected ? 'option-letter--selected' : ''}} {{option.isCorrectOption ? 'option-letter--correct' : ''}} {{option.isWrongSelection ? 'option-letter--wrong' : ''}}">{{option.id}}</view>
+
+              <view class="option-body">
+                <text class="option-content" wx:if="{{option.text}}">{{option.text}}</text>
+                <image
+                  wx:if="{{option.image}}"
+                  class="option-image {{option.text ? 'option-image--with-text' : ''}}"
+                  src="{{option.image}}"
+                  mode="widthFix"
+                />
+              </view>
+
+              <t-icon
+                wx:if="{{option.isCorrectOption}}"
+                name="check-circle-filled"
+                color="#00A870"
+                size="40rpx"
+                class="option-icon"
+              />
+              <t-icon
+                wx:elif="{{option.isWrongSelection}}"
+                name="close-circle-filled"
+                color="#E34D59"
+                size="40rpx"
+                class="option-icon"
+              />
+            </view>
+          </view>
+
+          <view class="analysis-section" wx:if="{{item.analysisVisible}}">
+            <view class="analysis-header">
+              <view class="analysis-title">试题解析</view>
+            </view>
+            <view class="analysis-content">
+              <view class="answer-row">
+                <text class="answer-label">正确答案</text>
+                <text class="answer-val correct">{{item.correctAnswerText}}</text>
+                <text class="answer-label answer-label--gap">您的答案</text>
+                <text class="answer-val {{practiceState.answerSheet[questionIndex].status === 'correct' ? 'correct' : 'wrong'}}">{{practiceState.answerSheet[questionIndex].userAnswerText || '未作答'}}</text>
+              </view>
+              <view class="explanation-text">{{item.explanation}}</view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+
+  <t-popup
+    visible="{{showMaterial}}"
+    placement="bottom"
+    preventScrollThrough="{{false}}"
+    bind:visible-change="handleMaterialChange"
+  >
+    <view class="material-popup" style="height: {{materialPopupHeight}}px;">
+      <view class="material-popup-header">
+        <text class="material-popup-title">{{currentMaterial.title || '给定材料'}}</text>
+        <t-icon
+          name="close"
+          size="40rpx"
+          color="{{themeTokens.iconSecondary}}"
+          bindtap="handleCloseMaterial"
+        />
+      </view>
+      <scroll-view
+        scroll-y
+        enhanced="{{true}}"
+        show-scrollbar="{{false}}"
+        enable-flex="{{true}}"
+        scroll-top="{{materialScrollTop}}"
+        class="material-popup-content"
+      >
+        <view class="material-popup-body">
+          <image
+            wx:if="{{currentMaterial.image}}"
+            class="material-image"
+            src="{{currentMaterial.image}}"
+            mode="widthFix"
+          />
+          <text wx:if="{{currentMaterial.text}}" class="material-full-text">{{currentMaterial.text}}</text>
+        </view>
+      </scroll-view>
+    </view>
+  </t-popup>
+  <!-- 底部操作栏 -->
+  <view class="bottom-bar">
+    <view class="bottom-bar__panel">
+      <view class="secondary-btn secondary-btn--nav {{practiceState.currentIndex <= 1 ? 'secondary-btn--disabled' : ''}}" bindtap="handlePrev">
+        <t-icon name="chevron-left" size="32rpx" color="{{themeTokens.iconSecondary}}" />
+        <text class="secondary-btn__text">上题</text>
+      </view>
+
+      <view class="secondary-btn secondary-btn--nav {{practiceState.currentIndex >= practiceState.totalQuestions ? 'secondary-btn--disabled' : ''}}" bindtap="handleNext">
+        <text class="secondary-btn__text">下题</text>
+        <t-icon name="chevron-right" size="32rpx" color="{{themeTokens.iconSecondary}}" />
+      </view>
+
+      <view class="secondary-btn secondary-btn--tool secondary-btn--card" bindtap="handleOpenAnswerCard">
+        <t-icon name="view-module" size="32rpx" color="{{themeTokens.iconPrimary}}" />
+        <text class="secondary-btn__text secondary-btn__text--focus">题卡</text>
+      </view>
+
+      <view wx:if="{{!isReadonly}}" class="secondary-btn secondary-btn--tool" bindtap="handleOpenDraft">
+        <t-icon name="edit" size="32rpx" color="{{themeTokens.iconSecondary}}" />
+        <text class="secondary-btn__text">草稿</text>
+      </view>
+
+      <view
+        wx:if="{{practiceDisplayMode === 'analysis' && !isReadonly}}"
+        class="primary-btn primary-btn--confirm {{practiceState.answerSheet[practiceState.currentIndex - 1].confirmed ? 'primary-btn--confirmed-done' : ''}} {{practiceState.answerSheet[practiceState.currentIndex - 1].status === 'correct' ? 'primary-btn--confirm-correct' : (practiceState.answerSheet[practiceState.currentIndex - 1].status === 'wrong' ? 'primary-btn--confirm-wrong' : '')}}"
+        bindtap="handleConfirmAnswer"
+      >
+        <t-icon
+          name="{{practiceState.answerSheet[practiceState.currentIndex - 1].confirmed ? (practiceState.answerSheet[practiceState.currentIndex - 1].status === 'correct' ? 'check-circle-filled' : 'close-circle-filled') : 'check-circle'}}"
+          size="30rpx"
+          color="{{practiceState.answerSheet[practiceState.currentIndex - 1].confirmed ? (practiceState.answerSheet[practiceState.currentIndex - 1].status === 'correct' ? '#00A870' : '#E34D59') : themeTokens.iconPrimary}}"
+        />
+        <text class="primary-btn__text primary-btn__text--confirm">{{practiceState.answerSheet[practiceState.currentIndex - 1].confirmed ? '已确认' : '确认'}}</text>
+      </view>
+
+      <view class="primary-btn primary-btn--submit {{isReadonly ? 'primary-btn--back' : ''}}" bindtap="handleFinish">
+        <text class="primary-btn__text primary-btn__text--submit">{{isReadonly ? '返回' : '交卷'}}</text>
+      </view>
+    </view>
+  </view>
+  <t-popup visible="{{showMorePopup}}" placement="bottom" bind:visible-change="handlePopupChange">
+    <view class="more-popup">
+      <view class="more-header">
+        <text class="more-title">更多操作</text>
+        <t-icon
+          name="close"
+          size="40rpx"
+          color="{{themeTokens.iconSecondary}}"
+          class="close-icon"
+          bindtap="handleCloseMore"
+        />
+      </view>
+
+      <view class="practice-brief" wx:if="{{practiceState.paperTitle}}">
+        <text class="practice-brief__label">当前练习</text>
+        <text class="practice-brief__title">{{practiceState.paperTitle}}</text>
+        <view class="practice-brief__meta">
+          <view class="practice-brief__chip">进度 {{practiceState.currentIndex}} / {{practiceState.totalQuestions}}</view>
+          <view class="practice-brief__chip">用时 {{timerText}}</view>
+          <view class="practice-brief__chip">已作答 {{practiceState.answeredCount}} 题</view>
+        </view>
+      </view>
+
+      <view class="more-actions">
+        <view
+          class="more-action-row"
+          bindtap="handleOpenDraft"
+        >
+          <view class="more-action-left">
+            <t-icon name="edit" size="32rpx" color="{{themeTokens.iconPrimary}}" />
+            <text class="more-action-text">草稿纸</text>
+          </view>
+          <t-icon name="chevron-right" size="32rpx" color="{{themeTokens.iconQuaternary}}" />
+        </view>
+        <view class="more-action-row" bindtap="handleMark">
+          <view class="more-action-left">
+            <t-icon name="flag" size="32rpx" color="{{practiceState.answerSheet[practiceState.currentIndex - 1].marked ? themeTokens.markActive : themeTokens.iconPrimary}}" />
+            <text class="more-action-text">{{practiceState.answerSheet[practiceState.currentIndex - 1].marked ? '取消标记' : '标记本题'}}</text>
+          </view>
+          <text class="more-action-value">{{practiceState.answerSheet[practiceState.currentIndex - 1].marked ? '已标记' : '未标记'}}</text>
+        </view>
+        <view class="more-action-row" bindtap="handleCollect">
+          <view class="more-action-left">
+            <t-icon name="star" size="32rpx" color="{{practiceState.questions[practiceState.currentIndex - 1].collected ? themeTokens.collectActive : themeTokens.iconPrimary}}" />
+            <text class="more-action-text">{{practiceState.questions[practiceState.currentIndex - 1].collected ? '取消收藏' : '收藏本题'}}</text>
+          </view>
+          <text class="more-action-value">{{practiceState.questions[practiceState.currentIndex - 1].collected ? '已收藏' : '未收藏'}}</text>
+        </view>
+        <view class="more-action-row" bindtap="handleRestart">
+          <view class="more-action-left">
+            <t-icon name="refresh" size="32rpx" color="{{themeTokens.iconPrimary}}" />
+            <text class="more-action-text">重新开始</text>
+          </view>
+          <t-icon name="chevron-right" size="32rpx" color="{{themeTokens.iconQuaternary}}" />
+        </view>
+        <view class="more-action-row" bindtap="handleFontSize">
+          <view class="more-action-left">
+            <t-icon name="format-horizontal-align-center" size="32rpx" color="{{themeTokens.iconPrimary}}" />
+            <text class="more-action-text">字体大小</text>
+          </view>
+          <text class="more-action-value">{{fontSizeLabel}}</text>
+          <t-icon name="chevron-right" size="32rpx" color="{{themeTokens.iconQuaternary}}" />
+        </view>
+        <view class="more-action-row" bindtap="handleTheme">
+          <view class="more-action-left">
+            <t-icon name="{{themeTokens.modeIcon}}" size="32rpx" color="{{themeTokens.iconPrimary}}" />
+            <text class="more-action-text">日间/夜间</text>
+          </view>
+          <text class="more-action-value">{{themeTokens.modeLabel}}</text>
+          <t-icon name="chevron-right" size="32rpx" color="{{themeTokens.iconQuaternary}}" />
+        </view>
+      </view>
+    </view>
+  </t-popup>
+
+  <t-popup visible="{{showAnswerCard}}" placement="bottom" bind:visible-change="handleAnswerCardChange">
+    <answer-card
+      answerSheet="{{practiceState.answerSheet}}"
+      totalQuestions="{{practiceState.totalQuestions}}"
+      currentIndex="{{practiceState.currentIndex}}"
+      paperTitle="{{practiceState.paperTitle}}"
+      themeMode="{{themeMode}}"
+      showSubmit="{{!isReadonly}}"
+      submitLabel="{{isReadonly ? '关闭' : '交卷'}}"
+      bind:close="handleCloseAnswerCard"
+      bind:select="handleSelectQuestion"
+      bind:submit="handleFinish"
+    />
+  </t-popup>
+
+  <draft-sheet
+    id="draftSheet"
+    sceneKey="{{draftSceneKey}}"
+    showTrigger="{{false}}"
+    themeMode="{{themeMode}}"
+    bind:open="handleDraftOpen"
+    bind:close="handleDraftClose"
+  />
+
+  <font-size-selector
+    visible="{{showFontSizeSelector}}"
+    currentSize="{{fontSize}}"
+    bind:close="handleCloseFontSize"
+    bind:select="handleFontSizeSelect"
+  />
+</view>

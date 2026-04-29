@@ -1,0 +1,16 @@
+<!--
+  全局组件 - 通用卡片
+-->
+<view
+  class="card {{clickable ? 'card--clickable' : ''}} {{shadow ? 'card--shadow' : ''}}"
+  style="border-radius: {{radius}}; padding: {{padding}}; margin: {{margin}}; background: {{bgColor}};"
+  bindtap="onTap"
+>
+  <view wx:if="{{title}}" class="card__header">
+    <text class="card__title">{{title}}</text>
+    <text wx:if="{{subtitle}}" class="card__subtitle">{{subtitle}}</text>
+  </view>
+  <view class="card__body">
+    <slot></slot>
+  </view>
+</view>

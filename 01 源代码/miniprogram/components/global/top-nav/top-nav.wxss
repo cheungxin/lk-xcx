@@ -1,0 +1,65 @@
+/* 全局组件 - 顶部导航栏 */
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  align-items: flex-end;
+  transition: background 0.3s ease;
+}
+
+.top-nav--transparent {
+  background: transparent !important;
+}
+
+.top-nav__bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 16rpx;
+  box-sizing: border-box;
+}
+
+.top-nav__left {
+  width: 80rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.top-nav__center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.top-nav__title {
+  font-size: 32rpx;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 400rpx;
+}
+
+.top-nav__right {
+  width: 80rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.top-nav__action {
+  font-size: 26rpx;
+  font-weight: 500;
+}
+
+.top-nav__placeholder {
+  width: 44rpx;
+}

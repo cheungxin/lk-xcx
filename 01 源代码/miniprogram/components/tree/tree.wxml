@@ -1,0 +1,20 @@
+<view class="tree-container">
+  <block wx:if="{{tree && tree.length > 0}}">
+    <block wx:for="{{tree}}" wx:key="index">
+      <view class="tree-root">
+        <tree-node
+          treeNodes="{{[item]}}"
+          expandAll="{{expandAll}}"
+          page="{{page}}"
+          selectable="{{selectable}}"
+          selectedIds="{{selectedIds}}"
+          bind:goAnalysis="handleGoAnalysis"
+          bind:select="handleSelect"
+        ></tree-node>
+      </view>
+    </block>
+  </block>
+  <view wx:else class="tree-empty-state">
+    <text class="empty-text">暂无练习分类数据</text>
+  </view>
+</view>

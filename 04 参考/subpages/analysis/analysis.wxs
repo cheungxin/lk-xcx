@@ -1,0 +1,106 @@
+// 题型文本
+function getQuestionTypeText(choiceType) {
+  if (choiceType === 1) return '单选题';
+  if (choiceType === 2) return '多选题';
+  if (choiceType === 3) return '判断题';
+  if (choiceType === 4) return '不定项';
+  return '';
+}
+
+// 判断题图标与文案
+function judgeIconClass(letter) {
+  return letter === 'A' ? 'icon-success' : 'icon-cross';
+}
+function judgeText(letter) {
+  return letter === 'A' ? '正确' : '错误';
+}
+
+// 将答案字符串标准化为有序数组
+function normalizeToArray(str) {
+  if (!str) return [];
+  var parts = str.split(',');
+  var arr = [];
+  for (var i = 0; i < parts.length; i++) {
+    var p = parts[i];
+    if (p) {
+      // WXS 对正则支持有限，使用手动去空白
+      var s = '';
+      for (var j = 0; j < p.length; j++) {
+        var ch = p.charAt(j);
+        if (ch !== ' ' && ch !== '\t' && ch !== '\n' && ch !== '\r') {
+          s += ch;
+        }
+      }
+      if (s) arr.push(s);
+    }
+  }
+  // 简单冒泡排序保证顺序一致
+  for (var a = 0; a < arr.length; a++) {
+    for (var b = a + 1; b < arr.length; b++) {
+      if (arr[a] > arr[b]) {
+        var t = arr[a];
+        arr[a] = arr[b];
+        arr[b] = t;
+      }
+    }
+  }
+  return arr;
+}
+
+// 是否选中了某个选项字母
+function isSelected(userAnswer, letter) {
+  var ua = normalizeToArray(userAnswer);
+  for (var i = 0; i < ua.length; i++) {
+    if (ua[i] === letter) return true;
+  }
+  return false;
+}
+
+// 某个字母是否是正确答案集合的一员
+function isCorrectLetter(correctAnswer, letter) {
+  var ca = normalizeToArray(correctAnswer);
+  for (var i = 0; i < ca.length; i++) {
+    if (ca[i] === letter) return true;
+  }
+  return false;
+}
+
+// 选项状态：仅高亮用户选择，正确为 'correct'；错误为 'incorrect'；未选为 'normal'
+function optionClass(userAnswer, correctAnswer, letter) {
+  if (!userAnswer) return 'normal';
+  var selected = isSelected(userAnswer, letter);
+  if (!selected) return 'normal';
+  return isCorrectLetter(correctAnswer, letter) ? 'correct' : 'incorrect';
+}
+
+
+  function fontSizeSet(font_size_type) {
+    if(font_size_type===1){
+      return  'type-small'; 
+    }else if(font_size_type === 4){
+     return 'type-large'
+    }else if(font_size_type === 3){
+     return 'type-bigger'
+    }else{
+     return 'type-normal'   
+    } 
+ } 
+
+ // 优化后的图片显示控制函数
+ function isShowImage(nowIdx, idx, url) {
+ // 检查URL是否存在
+ if (!url) return false; 
+ // 扩大范围到 ±10，与条件渲染保持一致
+ return idx >= nowIdx - 10 && idx <= nowIdx + 10;
+ }
+  
+  
+
+ module.exports = {
+  getQuestionTypeText:getQuestionTypeText,
+  judgeIconClass:judgeIconClass,
+  judgeText:judgeText,
+  optionClass:optionClass,
+  fontSizeSet:fontSizeSet,
+  isShowImage:isShowImage
+}

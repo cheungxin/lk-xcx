@@ -1,0 +1,50 @@
+<!-- 收藏题目列表页 -->
+<t-navbar 
+  title="{{categoryName}} ({{questions.length}})"
+  left-arrow
+  fixed
+  bind:go-back="handleBack"
+/>
+
+<view class="page-container" style="padding-top: {{navigationBarHeight}}px;">
+  <!-- 题目列表 -->
+  <view class="question-list" wx:if="{{questions.length > 0}}">
+    <view 
+      class="question-card" 
+      wx:for="{{questions}}" 
+      wx:key="id" 
+      bindtap="handleQuestionTap" 
+      data-id="{{item.id}}"
+    >
+      <view class="card-header">
+        <t-tag theme="primary" variant="light-outline" size="small" class="type-tag">
+          {{item.type || '单选题'}}
+        </t-tag>
+        <text class="add-time">{{item.addedAt || '刚刚'}}</text>
+      </view>
+      
+      <view class="card-content">
+        <text class="stem-text">{{item.stem}}</text>
+      </view>
+      
+      <view class="card-footer">
+        <view class="fav-info">
+          <t-icon name="heart-filled" size="32rpx" color="#FF5A5A" />
+          <text class="fav-text">已收藏</text>
+        </view>
+        <view class="action-hint">
+          <text>点击查看详情</text>
+          <t-icon name="chevron-right" size="32rpx" color="#95A0B3" />
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 空状态 -->
+  <view class="empty-wrapper" wx:else>
+    <t-empty 
+      icon="heart" 
+      description="该分类下暂无收藏题目" 
+    />
+  </view>
+</view>

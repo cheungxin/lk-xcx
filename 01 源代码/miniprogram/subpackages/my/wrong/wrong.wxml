@@ -1,0 +1,105 @@
+<!-- my 分包 - 错题本页 -->
+<t-navbar 
+  title="线上错题"
+  left-arrow
+  fixed
+  bind:go-back="onBack"
+>
+  <view slot="right" class="nav-right">
+    <view class="nav-icon" bindtap="onDownloadTap">
+      <t-icon name="download" size="44rpx" color="#2F3442" />
+    </view>
+    <view class="nav-icon" bindtap="onMoreTap">
+      <t-icon name="ellipsis" size="44rpx" color="#2F3442" />
+    </view>
+  </view>
+</t-navbar>
+
+<view class="page-container" style="padding-top:{{navigationBarHeight}}px;">
+  <!-- 标签页 -->
+  <view class="tabs-container">
+    <t-tabs 
+      value="{{activeTab}}" 
+      bind:change="onTabChange"
+      theme="line"
+      space-evenly="{{false}}"
+    >
+      <t-tab-panel label="知识点" value="knowledge" />
+      <t-tab-panel label="试卷" value="papers" />
+    </t-tabs>
+  </view>
+
+  <!-- 筛选器 -->
+  <view class="filter-container">
+    <t-dropdown-menu>
+      <t-dropdown-item 
+        options="{{categoryOptions}}" 
+        value="{{categoryValue}}"
+        data-key="category"
+        bind:change="onFilterChange"
+      />
+      <t-dropdown-item 
+        options="{{statusOptions}}" 
+        value="{{statusValue}}"
+        data-key="status"
+        bind:change="onFilterChange"
+      />
+      <t-dropdown-item 
+        options="{{sortOptions}}" 
+        value="{{sortValue}}"
+        data-key="sort"
+        bind:change="onFilterChange"
+      />
+    </t-dropdown-menu>
+  </view>
+
+  <!-- 内容区域 -->
+  <view class="content-container">
+    <!-- 知识点标签页 -->
+    <view class="tab-content" wx:if="{{activeTab === 'knowledge'}}">
+      <view class="category-list">
+        <view 
+          class="category-item" 
+          wx:for="{{knowledgeCategories}}" 
+          wx:key="id"
+        >
+          <view class="category-main" bindtap="onCategoryTap" data-id="{{item.id}}">
+            <view class="category-left">
+              <view class="category-icon {{item.expanded ? 'expanded' : ''}}">
+                <t-icon name="{{item.expanded ? 'remove' : 'add'}}" size="32rpx" color="#FFFFFF" />
+              </view>
+              <text class="category-name">{{item.name}}</text>
+            </view>
+            <view class="category-right">
+              <text class="category-count">{{item.count}}</text>
+              <view class="category-arrow">
+                <t-icon name="chevron-right" size="32rpx" color="#95A0B3" />
+              </view>
+            </view>
+          </view>
+          <view class="category-edit" catchtap="onEditTap" data-id="{{item.id}}">
+            <t-icon name="edit" size="32rpx" color="#4B74FF" />
+          </view>
+        </view>
+      </view>
+
+      <!-- 空状态 -->
+      <view class="empty-state" wx:if="{{knowledgeCategories.length === 0}}">
+        <view class="empty-icon">
+          <t-icon name="error-circle" size="200rpx" color="#D3E3FD" />
+        </view>
+        <text class="empty-text">还没有试卷哦~</text>
+      </view>
+    </view>
+
+    <!-- 试卷标签页 -->
+    <view class="tab-content" wx:if="{{activeTab === 'papers'}}">
+      <view class="empty-state">
+        <view class="empty-icon">
+          <t-icon name="file-copy" size="200rpx" color="#D3E3FD" />
+        </view>
+        <text class="empty-text">还没有试卷哦~</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "t-icon": "tdesign-miniprogram/icon/icon",
+    "tabbar": "../../components/tabbar/tabbar"
+  }
+}

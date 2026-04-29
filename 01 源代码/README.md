@@ -349,6 +349,3 @@ MIT License
 ---
 
 **Happy Coding! 🎉**
-
-
-npm install @amap/amap-jsapi-loader

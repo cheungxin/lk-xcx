@@ -1,0 +1,421 @@
+<view class="page" style="padding-top: {{statusBarHeight}}px;">
+  <view class="page-aura page-aura--top"></view>
+  <view class="page-aura page-aura--side"></view>
+  <view class="page-contianer">
+    <view class="hero-shell">
+      <view class="hero-head" style="height: {{titleBarHeight}}px;">
+        <view class="hero-filter-row" style="margin-top: 0;">
+          <view class="hero-filter" bindtap="onExamTypeTap">
+            <text class="hero-filter__label">{{selectedExamType}}</text>
+            <t-icon name="chevron-down" size="20rpx" color="#5C6475" />
+          </view>
+          <view class="hero-filter hero-filter--ghost" bindtap="onRegionTap">
+            <text class="hero-filter__label">{{selectedRegion}}</text>
+            <t-icon name="chevron-down" size="20rpx" color="#5C6475" />
+          </view>
+        </view>
+        <view class="hero-ai" bindtap="onAiTap">
+          <t-icon name="chat" size="24rpx" color="#6573ec" />
+          <text class="hero-ai__text">AI问答</text>
+        </view>
+      </view>
+      <view class="hero-banner">
+        <swiper class="hero-banner__swiper" current="{{bannerCurrent}}" autoplay interval="5000" duration="500" circular bindchange="onBannerChange">
+          <swiper-item wx:for="{{swiperList}}" wx:key="id" data-index="{{index}}" bindtap="handleBannerTap">
+            <image class="hero-banner__image" src="{{item.image}}" mode="aspectFill" lazy-load />
+            <view class="hero-banner__overlay" wx:if="{{item.title}}">
+              <text class="hero-banner__overlay-text">{{item.title}}</text>
+            </view>
+          </swiper-item>
+        </swiper>
+        <view class="hero-banner__indicators">
+          <view wx:for="{{swiperList}}" wx:key="id" class="hero-banner__dot {{bannerCurrent === index ? 'hero-banner__dot--active' : ''}}"></view>
+        </view>
+      </view>
+      <view class="subject-strip">
+        <view class="subject-tabs">
+          <view wx:for="{{visibleSubjectTabs}}" wx:key="id" class="subject-tab {{selectedSubjectId === item.id ? 'subject-tab--active' : ''}}" data-id="{{item.id}}" bindtap="onSubjectTabChange">
+            <text class="subject-tab__label">{{item.name}}</text>
+            <view class="subject-tab__indicator" wx:if="{{selectedSubjectId === item.id}}"></view>
+          </view>
+        </view>
+        <view class="subject-actions">
+          <view class="search-pill" bindtap="onSearchTap">
+            <t-icon name="search" size="36rpx" color="#8b96a9" />
+            <text class="search-pill__text">搜题</text>
+          </view>
+          <view class="manage-pill" bindtap="openDisplayPopup">
+            <view class="manage-trigger">
+              <view class="manage-trigger__line"></view>
+              <view class="manage-trigger__line manage-trigger__line--short"></view>
+              <view class="manage-trigger__line"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="quick-rail">
+      <view class="quick-rail__list">
+        <view class="quick-rail__item" wx:for="{{quickEntryList}}" wx:key="id" data-action="{{item.id}}" bindtap="onQuickEntryTap">
+          <view class="quick-rail__box">
+            <view class="quick-rail__icon" style="background: {{item.gradient}};">
+              <t-icon name="{{item.icon}}" size="48rpx" color="#FFFFFF" />
+            </view>
+          </view>
+          <text class="quick-rail__title">{{item.title}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="content-panel">
+      <view class="content-panel__header">
+        <view class="mode-shelf {{contentMode === 'practice' ? 'mode-shelf--practice' : 'mode-shelf--exam'}}">
+          <view class="mode-tab {{contentMode === 'practice' ? 'mode-tab--active' : ''}}" bindtap="onPracticeModeTap">
+            <text class="mode-tab__text">专项练习</text>
+            <view class="config-chip" wx:if="{{contentMode === 'practice' && selectedSubjectId !== 'shenlun'}}" catchtap="openQuestionSettings">
+              <view class="config-chip__dot"></view>
+              <text>自定义</text>
+              <t-icon name="chevron-right" size="18rpx" color="#5A6EFF" />
+            </view>
+          </view>
+          <view class="mode-tab {{contentMode === 'exam' ? 'mode-tab--active' : ''}}" bindtap="onExamModeSectionTap">
+            <text class="mode-tab__text">{{examModeTabLabel}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="content-panel__summary">
+        <view class="summary-pill">
+          <text>{{selectedExamType}} · {{selectedRegion}}</text>
+        </view>
+        <view class="summary-pill">
+          <text>当前科目 {{currentSubjectLabel}}</text>
+        </view>
+        <view class="summary-pill" wx:if="{{contentMode === 'exam'}}">
+          <text>次数 1</text>
+        </view>
+      </view>
+      <view wx:if="{{contentMode === 'practice'}}">
+        <tree treeNodes="{{practiceCategories}}" expandAll="{{false}}" page="index" bind:goAnalysis="onTreeNodeTap" />
+      </view>
+      <view wx:else class="exam-shell">
+        <view class="mode-switch">
+          <view class="mode-switch__list">
+            <view class="mode-card {{selectedExamModeId === item.id ? 'mode-card--active' : ''}}" wx:for="{{examModeCards}}" wx:key="id" data-id="{{item.id}}" bindtap="onExamModeCardTap" style="background: {{item.bgColor}}; color: {{item.textColor}};">
+              {{item.name}}
+            </view>
+          </view>
+        </view>
+        <view wx:if="{{selectedExamModeId !== 'full'}}">
+          <view class="exam-setup-card">
+            <view class="exam-setup-card__head">
+              <view class="exam-setup-card__main">
+                <text class="exam-setup-card__label">{{selectedCategoryIds.length ? '已切换为自定义考点' : '默认智能配题'}}</text>
+                <text class="exam-setup-card__title">{{selectedCategoryIds.length ? examSelectedCategorySummary : examAutoSummary}}</text>
+              </view>
+              <view class="exam-setup-card__action" bindtap="toggleExamCategorySelector">
+                <text>{{showExamCategorySelector ? '收起考点' : '自定义考点'}}</text>
+                <t-icon name="{{showExamCategorySelector ? 'chevron-up' : 'chevron-down'}}" size="22rpx" color="#5A6EFF" />
+              </view>
+            </view>
+            <view class="exam-setup-card__meta">
+              <view class="exam-setup-card__chip">{{selectedExamModeId === 'special' ? '专项组卷' : '混合组卷'}}</view>
+              <view class="exam-setup-card__chip">默认{{questionSettings.totalCount}}题</view>
+              <view class="exam-setup-card__chip">{{questionSettings.durationText}}</view>
+            </view>
+            <view wx:if="{{selectedCategoryIds.length}}" class="exam-setup-card__footer" bindtap="resetExamCategorySelection">
+              <text class="exam-setup-card__footer-text">恢复系统分配</text>
+            </view>
+          </view>
+          <view wx:if="{{showExamCategorySelector}}" class="cell-card exam-category-card">
+            <tree treeNodes="{{examCategoryList}}" expandAll="{{false}}" selectable="{{true}}" selectedIds="{{selectedCategoryIds}}" bind:select="onTreeNodeSelect" />
+          </view>
+        </view>
+        <view wx:else class="cell-card">
+          <t-cell wx:for="{{fullExamPapers}}" wx:key="id" class="home-cell" title="{{item.title}}" description="共{{item.questionCount}}题  总时长{{item.duration}}分钟" hover data-id="{{item.id}}" bind:tap="onFullExamPaperTap">
+            <view slot="left-icon" class="paper-marker">
+              <view class="paper-marker__bar {{item.selected ? 'paper-marker__bar--active' : ''}}"></view>
+            </view>
+            <view slot="right-icon" class="select-indicator">
+              <t-icon
+                class="select-indicator__icon"
+                name="{{item.selected ? 'check-circle-filled' : 'circle'}}"
+                size="36rpx"
+                color="{{item.selected ? '#4B74FF' : '#D7DDE8'}}"
+              />
+            </view>
+          </t-cell>
+        </view>
+        <view class="exam-action">
+          <t-button block size="large" theme="primary" disabled="{{!examReady}}" bind:tap="handleStartExam">
+            {{examActionLabel}}
+          </t-button>
+          <text class="exam-action__notice" bindtap="handleExamNotice">
+            {{examNoticeLabel}}
+          </text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <t-popup visible="{{showExamTypePopup}}" placement="bottom" bind:visible-change="onExamTypePopupChange">
+    <view class="sheet sheet--exam">
+      <view class="sheet__header">
+        <view>
+          <text class="sheet__title">选择类型</text>
+          <text class="sheet__subtitle">选择考试类型</text>
+        </view>
+        <view class="sheet__close" bindtap="closeExamTypePopup">
+          <t-icon name="close" size="30rpx" color="#7F8797" />
+        </view>
+      </view>
+      <view class="display-tag-list">
+        <view class="display-tag {{selectedExamType === item.name ? 'display-tag--active' : ''}}" wx:for="{{examTypes}}" wx:key="id" data-id="{{item.id}}" bindtap="onSelectExamType">
+          <view class="display-tag__check {{selectedExamType === item.name ? 'display-tag__check--active' : ''}}">
+            <t-icon wx:if="{{selectedExamType === item.name}}" name="check" size="28rpx" color="#FFFFFF" />
+          </view>
+          <text>{{item.name}}</text>
+        </view>
+      </view>
+      <t-button block size="large" theme="primary" bind:tap="closeExamTypePopup">完成</t-button>
+    </view>
+  </t-popup>
+  <t-popup visible="{{showRegionPopup}}" placement="bottom" bind:visible-change="onRegionPopupChange">
+    <view class="sheet sheet--region">
+      <view class="sheet__header">
+        <view>
+          <text class="sheet__title">选择地区</text>
+          <text class="sheet__subtitle">选择考试地区</text>
+        </view>
+        <view class="sheet__close" bindtap="closeRegionPopup">
+          <t-icon name="close" size="30rpx" color="#7F8797" />
+        </view>
+      </view>
+      <view class="display-tag-list">
+        <view class="display-tag {{selectedRegion === item ? 'display-tag--active' : ''}}" wx:for="{{currentRegions}}" wx:key="*this" data-region="{{item}}" bindtap="onSelectRegion">
+          <view class="display-tag__check {{selectedRegion === item ? 'display-tag__check--active' : ''}}">
+            <t-icon wx:if="{{selectedRegion === item}}" name="check" size="28rpx" color="#FFFFFF" />
+          </view>
+          <text>{{item}}</text>
+        </view>
+      </view>
+      <t-button block size="large" theme="primary" bind:tap="closeRegionPopup">完成</t-button>
+    </view>
+  </t-popup>
+  <t-popup visible="{{showDisplayPopup}}" placement="bottom" bind:visible-change="onDisplayPopupChange">
+    <view class="sheet sheet--display">
+      <view class="sheet__header">
+        <view>
+          <text class="sheet__title">显示科目</text>
+          <text class="sheet__subtitle">点击切换首页展示的科目</text>
+        </view>
+        <view class="sheet__close" bindtap="closeDisplayPopup">
+          <t-icon name="close" size="30rpx" color="#7F8797" />
+        </view>
+      </view>
+      <view class="display-tag-list">
+        <view class="display-tag" wx:for="{{displaySubjectList}}" wx:key="id" data-id="{{item.id}}" bindtap="onDisplaySubjectToggle">
+          <view class="display-tag__close {{item.enabled ? 'display-tag__close--active' : ''}}">
+            {{item.enabled ? '×' : '+'}}
+          </view>
+          <text>{{item.name}}</text>
+        </view>
+      </view>
+      <t-button block size="large" theme="primary" bind:tap="closeDisplayPopup">完成</t-button>
+    </view>
+  </t-popup>
+  <t-popup visible="{{showPracticeSettings}}" placement="bottom" bind:visible-change="onPracticePopupChange">
+    <view class="sheet">
+      <view class="sheet__header">
+        <text class="sheet-link" bindtap="resetPracticeSettings">清空重做</text>
+        <text class="sheet__title sheet__title--center">刷题设置</text>
+        <view class="sheet__close" bindtap="closePracticePopup">
+          <t-icon name="close" size="30rpx" color="#7F8797" />
+        </view>
+      </view>
+      <!-- Removed individual knowledge point card to keep settings generic -->
+      <view class="setting-block">
+        <text class="setting-block__title">出题数量</text>
+        <view class="slider-value">{{practiceSettings.questionCount}}题</view>
+        <slider min="{{practiceSettings.min}}" max="{{practiceSettings.max}}" value="{{practiceSettings.questionCount}}" activeColor="#4B74FF" backgroundColor="#E8ECF4" bindchange="onPracticeCountChange" />
+        <view class="setting-range">
+          <text>{{practiceSettings.min}}题</text>
+          <text>{{practiceSettings.max}}题</text>
+        </view>
+      </view>
+      <view class="setting-block" wx:if="{{selectedSubjectId !== 'shenlun'}}">
+        <text class="setting-block__title">出题年份</text>
+        <text class="setting-block__hint">设置年份后，试题数量可能会少于出题数量</text>
+        <view class="option-row">
+          <view class="option-pill {{practiceSettings.year === item.id ? 'option-pill--active' : ''}}" wx:for="{{practiceSettings.yearOptions}}" wx:key="id" data-id="{{item.id}}" bindtap="onPracticeYearSelect">
+            <text>{{item.label}}</text>
+            <view wx:if="{{practiceSettings.year === item.id}}" class="option-pill__check">✓</view>
+          </view>
+        </view>
+      </view>
+      <view class="setting-block" wx:if="{{selectedSubjectId !== 'shenlun'}}">
+        <text class="setting-block__title">试题难度</text>
+        <view class="option-row">
+          <view class="option-pill {{practiceSettings.difficulty === item.id ? 'option-pill--active' : ''}}" wx:for="{{practiceSettings.difficultyOptions}}" wx:key="id" data-id="{{item.id}}" bindtap="onPracticeDifficultySelect">
+            <text>{{item.label}}</text>
+            <view wx:if="{{practiceSettings.difficulty === item.id}}" class="option-pill__check">
+              ✓
+            </view>
+          </view>
+        </view>
+      </view>
+      <t-button block size="large" theme="primary" bind:tap="closePracticePopup">
+        完成
+      </t-button>
+    </view>
+  </t-popup>
+  <t-popup visible="{{showQuestionSettings}}" placement="bottom" bind:visible-change="onQuestionPopupChange">
+    <view class="sheet sheet--question">
+      <view class="sheet__header">
+        <view></view>
+        <text class="sheet__title sheet__title--center">出题设置</text>
+        <view class="sheet__close" bindtap="closeQuestionPopup">
+          <t-icon name="close" size="30rpx" color="#7F8797" />
+        </view>
+      </view>
+      <scroll-view scroll-y class="sheet__body sheet__body--question" enhanced show-scrollbar="{{false}}">
+        <view class="sheet__scroll-inner">
+        <view class="quick-start-card">
+          <text class="quick-start-card__label">{{selectedCategoryIds.length ? '已选考点' : '系统智能配题'}}</text>
+          <text class="quick-start-card__title">{{selectedCategoryIds.length ? examSelectedCategorySummary : examAutoSummary}}</text>
+          <view class="quick-start-card__chips">
+            <view class="quick-start-card__chip">{{selectedExamModeId === 'special' ? '专项考试' : '混合考试'}}</view>
+            <view class="quick-start-card__chip">{{questionSettings.durationText}}</view>
+            <view class="quick-start-card__chip">{{questionSettings.mode === 'manual' ? questionSettings.manualTotalCount : (questionSettings.autoTotalCount || questionSettings.totalCount)}}题</view>
+          </view>
+        </view>
+
+        <view class="setting-block">
+          <text class="setting-block__title">做题时间</text>
+          <view class="duration-slider-card">
+            <view class="duration-slider-card__header">
+              <text class="duration-slider-card__value">{{questionSettings.durationText}}</text>
+              <text class="duration-slider-card__hint">{{questionSettings.durationHint}}</text>
+            </view>
+            <t-slider
+              value="{{questionSettings.duration}}"
+              min="{{questionSettings.durationMin}}"
+              max="{{questionSettings.durationMax}}"
+              step="{{questionSettings.durationStep}}"
+              theme="capsule"
+              bind:change="onQuestionDurationSliderChange"
+            />
+            <view class="duration-slider-card__scale">
+              <text class="duration-slider-card__scale-item duration-slider-card__scale-item--wide">不限时</text>
+              <text class="duration-slider-card__scale-item">20</text>
+              <text class="duration-slider-card__scale-item">40</text>
+              <text class="duration-slider-card__scale-item">60</text>
+              <text class="duration-slider-card__scale-item">80</text>
+              <text class="duration-slider-card__scale-item">100</text>
+              <text class="duration-slider-card__scale-item">120</text>
+            </view>
+          </view>
+        </view>
+
+        <view class="setting-block" wx:if="{{canUseManualQuestionMode}}">
+          <text class="setting-block__title">出题方式</text>
+          <text class="setting-block__hint">想快速开始就用系统分配，需要精细调整时再切到手动。</text>
+          <view class="option-row">
+            <view class="option-pill {{questionSettings.mode === 'auto' ? 'option-pill--active' : ''}}" data-mode="auto" bindtap="onQuestionModeChange">
+              <text>系统分配</text>
+              <view wx:if="{{questionSettings.mode === 'auto'}}" class="option-pill__check">✓</view>
+            </view>
+            <view class="option-pill {{questionSettings.mode === 'manual' ? 'option-pill--active' : ''}}" data-mode="manual" bindtap="onQuestionModeChange">
+              <text>手动调整</text>
+              <view wx:if="{{questionSettings.mode === 'manual'}}" class="option-pill__check">✓</view>
+            </view>
+          </view>
+        </view>
+
+        <view class="setting-block" wx:if="{{questionSettings.mode !== 'manual'}}">
+          <text class="setting-block__title">总题数</text>
+          <view class="count-preset-row">
+            <view class="count-pill {{questionSettings.totalCount === item ? 'count-pill--active' : ''}}" wx:for="{{questionSettings.countOptions}}" wx:key="*this" data-value="{{item}}" bindtap="onQuestionTotalCountSelect">
+              <text>{{item}}题</text>
+              <view wx:if="{{questionSettings.totalCount === item}}" class="option-pill__check">✓</view>
+            </view>
+          </view>
+        </view>
+
+        <view class="smart-preview-card" wx:if="{{questionSettings.mode !== 'manual'}}">
+          <view class="smart-preview-card__header">
+            <text class="smart-preview-card__title">系统预计这样配题</text>
+            <text class="smart-preview-card__desc">不想细调时直接开始就行</text>
+          </view>
+          <view class="smart-preview-grid">
+            <view class="smart-preview-item" wx:for="{{questionSettings.previewConfigs}}" wx:key="id">
+              <text class="smart-preview-item__name">{{item.name}}</text>
+              <text class="smart-preview-item__count">{{item.count}}题</text>
+            </view>
+          </view>
+        </view>
+
+        <view wx:if="{{questionSettings.mode === 'manual'}}">
+          <view class="setting-block">
+            <text class="setting-block__title">按考点调整题量</text>
+            <text class="setting-block__hint">这里只展示你刚刚选中的考点，每次按 5 题增减，操作会更直接。</text>
+          </view>
+          <view class="manual-config-list">
+            <view class="manual-config-row" wx:for="{{questionSettings.manualConfigs}}" wx:key="id">
+              <view class="manual-config-row__main">
+                <text class="manual-config-row__title">{{item.name}}</text>
+                <text class="manual-config-row__meta">每次调整 {{questionSettings.step}} 题</text>
+              </view>
+              <view class="manual-stepper">
+                <view class="manual-stepper__btn" data-id="{{item.id}}" data-action="minus" bindtap="onQuestionManualCountAdjust">
+                  <text>-</text>
+                </view>
+                <text class="manual-stepper__value">{{item.count}}题</text>
+                <view class="manual-stepper__btn" data-id="{{item.id}}" data-action="plus" bindtap="onQuestionManualCountAdjust">
+                  <text>+</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="manual-total-card">
+            <text class="manual-total-card__label">总题数</text>
+            <text class="manual-total-card__value">{{questionSettings.manualTotalCount}}题</text>
+          </view>
+        </view>
+        </view>
+      </scroll-view>
+      <view class="sheet__footer sheet__footer--question">
+        <t-button block size="large" theme="primary" bind:tap="handleConfirmExam">
+          {{examActionLabel}}
+        </t-button>
+      </view>
+    </view>
+  </t-popup>
+  <t-popup visible="{{showExamNotice}}" placement="center" bind:visible-change="onExamNoticePopupChange">
+    <view class="notice-dialog">
+      <view class="notice-dialog__header">
+        <text class="notice-dialog__title">{{examNoticeLabel}}</text>
+      </view>
+      <view class="notice-dialog__content">
+        <view wx:if="{{selectedSubjectId === 'shenlun'}}">
+          <view class="notice-item">1、申论限时训练提交后将进入参考答案页，不做自动判分。</view>
+          <view class="notice-item">2、当前训练默认按单题题型限时练习，请先选择一个具体题型。</view>
+          <view class="notice-item">3、建议先独立完成作答，再对照评分要点进行自我校正。</view>
+        </view>
+        <view wx:else>
+          <view class="notice-item">1、考试一旦开始，不可暂停。</view>
+          <view class="notice-item" wx:if="{{selectedExamModeId === 'full'}}">2、全套考试会按所选试卷的原始题量和时长生成。</view>
+          <view class="notice-item" wx:else>2、默认支持系统智能配题，想细调时再展开自定义考点即可。</view>
+          <view class="notice-item" wx:if="{{selectedExamModeId === 'full'}}">3、进入后将按整套试卷流程作答，请确认当前试卷后再开始。</view>
+          <view class="notice-item" wx:else>3、开始前可设置做题时间和题量，进入后会按当前配置生成试卷。</view>
+        </view>
+      </view>
+      <t-button block size="large" theme="primary" t-class="notice-dialog__btn" bind:tap="confirmExamNotice">
+        我知道了
+      </t-button>
+      <view class="notice-dialog__footer" bindtap="toggleDontShowNoticeAgain">
+        <view class="notice-checkbox {{dontShowNoticeAgain ? 'notice-checkbox--active' : ''}}">
+          <t-icon wx:if="{{dontShowNoticeAgain}}" name="check" size="20rpx" color="#FFFFFF" />
+        </view>
+        <text class="notice-footer-text">不再提示</text>
+      </view>
+    </view>
+  </t-popup>
+</view>

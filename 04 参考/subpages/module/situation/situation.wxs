@@ -1,0 +1,16 @@
+var getAnswerText = function(isCorrect) {
+    var correctness = ''
+    if(isCorrect === 1){
+        correctness= 'correct'
+    }
+    else if(isCorrect === 0){
+        correctness = 'incorrect'
+    }else{
+        correctness = 'not-answer'
+    }  
+    return correctness   
+  } 
+
+  module.exports = {
+    getAnswerText: getAnswerText
+  }

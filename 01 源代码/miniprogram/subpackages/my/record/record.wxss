@@ -1,0 +1,159 @@
+/* 学习记录页 */
+.record-page {
+  min-height: 100vh;
+  background: #f7f8fa;
+}
+
+.filter-bar {
+  background: #ffffff;
+  border-bottom: 1rpx solid #e5e6eb;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.record-scroll {
+  position: relative;
+}
+
+.record-content {
+  padding: 0 32rpx 32rpx;
+}
+
+/* ============ 日期头 ============ */
+.date-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24rpx 32rpx 16rpx;
+}
+
+.date-header__left {
+  display: flex;
+  align-items: baseline;
+  gap: 12rpx;
+}
+
+.date-header__date {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #1d2129;
+}
+
+.date-header__weekday {
+  font-size: 24rpx;
+  color: #86909c;
+}
+
+.date-header__summary {
+  display: flex;
+  gap: 16rpx;
+}
+
+.date-header__stat {
+  font-size: 22rpx;
+  color: #86909c;
+}
+
+/* ============ 时间线 ============ */
+.timeline {
+  position: relative;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 24rpx;
+}
+
+
+
+/* ============ 记录卡片 ============ */
+.record-card {
+  background: #ffffff;
+  border-radius: 16rpx;
+  padding: 24rpx;
+}
+
+.record-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12rpx;
+}
+
+.record-card__time {
+  font-size: 24rpx;
+  color: #86909c;
+}
+
+.record-card__title {
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #1d2129;
+  display: block;
+  margin-bottom: 16rpx;
+  line-height: 1.5;
+}
+
+.record-card__stats {
+  display: flex;
+  align-items: center;
+  gap: 20rpx;
+  margin-bottom: 12rpx;
+}
+
+.record-stat {
+  display: flex;
+  align-items: center;
+  gap: 6rpx;
+  font-size: 24rpx;
+  color: #4e5969;
+}
+
+.record-accuracy {
+  font-size: 24rpx;
+  font-weight: 700;
+}
+
+.record-accuracy--good {
+  color: #00A870;
+}
+
+.record-accuracy--bad {
+  color: #E34D59;
+}
+
+.record-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12rpx;
+  border-top: 1rpx solid #f2f3f5;
+  font-size: 22rpx;
+  color: #86909c;
+}
+
+.record-card__footer-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 6rpx;
+}
+
+/* ============ 空状态 ============ */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120rpx 0;
+}
+
+.empty-state__text {
+  font-size: 28rpx;
+  color: #86909c;
+  margin-top: 24rpx;
+}
+
+.bottom-spacer {
+  height: 60rpx;
+}

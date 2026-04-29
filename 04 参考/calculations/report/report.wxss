@@ -1,0 +1,150 @@
+page{
+    background-color:var(--page-pure-gary);
+}
+.page-container{
+    width:100vw; 
+    padding-top:60rpx; 
+}  
+.content-container{ 
+   width:720rpx;
+   margin:0 auto;
+   background-color:var(--white);
+   padding:30rpx 0rpx;
+   border-radius:20rpx;
+}
+
+.content-container:first-child{
+    margin-bottom: 50rpx;
+}
+
+.content-title{
+    display: flex;
+    align-items: center;
+    padding-left:20rpx;
+    height:80rpx;
+}
+.title-label{
+    width: 8rpx;
+    height:24rpx;
+    background: #00C667;
+    border-radius: 8px;
+    margin-right:20rpx;
+} 
+.title-text{
+    font-size:30rpx;
+    font-weight: 500;
+    color: var(--text-color-primary);
+}
+.score-container{
+    width: 680rpx;
+    margin: 0 auto;
+}
+ 
+.scores-devider{
+    width:1rpx;
+    height: 90rpx;
+    background-color:var(--light-blue-gray);
+}
+ 
+ 
+.score-info{
+    width: 660rpx; 
+    color:var(--text-color-primary);
+    margin:15rpx auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.score-info .info-label{
+    font-size: 26rpx;
+}
+.score-info  .info-text{
+    font-size: 26rpx;
+}
+
+
+ 
+.accurate{
+    display: flex;
+    align-items:center;
+    padding-left: 50rpx;
+}
+.accurate-label{
+    display: flex;
+    flex-direction: column;
+}
+.rate-title{
+    width:122rpx;
+    height: 46rpx;
+    margin-right:20rpx; 
+    margin-top:20rpx;
+}  
+.van-circle__text{
+    font-size: 40rpx !important;
+    color: var(--soot-gray) !important; 
+}
+
+
+
+.score-diliver-line{
+    width: 680rpx;
+    height:1rpx;
+    background-color:var(--page-pure-gary);
+    margin:20rpx auto;
+}
+
+
+ 
+.bottom-button{
+    width:100%;
+    position: fixed;
+    bottom:0;
+    left:0;
+    z-index: 2; 
+}
+.color-gray{
+    color: var(--soot-gray);
+}
+.van-nav-bar--fixed{
+    z-index:99 !important;
+}
+ 
+.detail-container{
+    width:680rpx;
+    margin: 0 auto;
+    background-color:#f3f5f9 ;
+    border-radius: 20rpx;
+    display: flex;
+}
+.detail-info{
+    width: 220rpx; 
+    text-align: center;
+    padding:50rpx 0;
+}
+.detail-info .info-label{
+     font-size: 26rpx;
+}
+.detail-info .info-text{
+    font-size: 42rpx;
+    font-weight: bold;
+    margin-top: 20rpx;
+}
+.ture-color{
+    color: var(--color-primary);
+}
+.wrong-color{
+    color: var(--color-CY4);
+}
+.time-color{
+    color: var(--soot-gray);
+}
+
+
+@media screen and (min-device-width: 768px) {
+    .van-circle__text{
+        font-size: 40px !important; 
+    }
+    .page-container{ 
+        padding-bottom:180px; 
+    } 
+}

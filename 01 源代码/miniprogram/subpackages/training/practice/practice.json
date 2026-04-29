@@ -1,0 +1,13 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-icon": "tdesign-miniprogram/icon/icon",
+    "t-tag": "tdesign-miniprogram/tag/tag",
+    "t-navbar": "tdesign-miniprogram/navbar/navbar",
+    "t-popup": "tdesign-miniprogram/popup/popup",
+    "answer-card": "../../../components/answer-card/answer-card",
+    "draft-sheet": "../../../components/global/draft-sheet/draft-sheet",
+    "font-size-selector": "../../../components/global/font-size-selector/font-size-selector"
+  }
+}

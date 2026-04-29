@@ -1,0 +1,250 @@
+/* 背诵Tab页样式 */
+
+.page {
+  min-height: 100vh;
+  background: #F5F7FA;
+  position: relative;
+}
+
+.page-aura {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 400rpx;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.page-aura--top {
+  background: linear-gradient(180deg, #F3E8FF 0%, #F5F7FA 100%);
+}
+
+.page-scroll {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.page-header {
+  padding: 32rpx 32rpx 24rpx;
+}
+
+.page-header__title {
+  display: flex;
+  align-items: center;
+  font-size: 40rpx;
+  font-weight: 700;
+  color: #1A1A2E;
+  margin-bottom: 8rpx;
+}
+
+.page-header__icon {
+  margin-right: 12rpx;
+  font-size: 36rpx;
+}
+
+.page-header__desc {
+  font-size: 26rpx;
+  color: #7F8C8D;
+  margin-left: 48rpx;
+}
+
+/* 进度卡片 */
+.progress-card {
+  margin: 0 32rpx 24rpx;
+  padding: 28rpx;
+  background: #FFFFFF;
+  border-radius: 24rpx;
+  box-shadow: 0 4rpx 24rpx rgba(0, 0, 0, 0.04);
+}
+
+.progress-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16rpx;
+}
+
+.progress-card__title {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #1A1A2E;
+}
+
+.progress-card__count {
+  font-size: 26rpx;
+  color: #1664FF;
+  font-weight: 500;
+}
+
+.progress-card__bar {
+  height: 12rpx;
+  background: #E8ECF4;
+  border-radius: 6rpx;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+
+.progress-card__fill {
+  height: 100%;
+  background: linear-gradient(90deg, #1664FF, #4B74FF);
+  border-radius: 6rpx;
+  transition: width 0.6s ease;
+}
+
+.progress-card__actions {
+  display: flex;
+  gap: 16rpx;
+}
+
+.progress-card__btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16rpx;
+  border-radius: 12rpx;
+  background: #FAFBFD;
+  font-size: 24rpx;
+  color: #5C6475;
+  gap: 8rpx;
+}
+
+.progress-card__btn:active {
+  background: #EEF2FF;
+}
+
+/* 统计行 */
+.stats-row {
+  margin: 0 32rpx 24rpx;
+  display: flex;
+  background: #FFFFFF;
+  border-radius: 24rpx;
+  padding: 28rpx;
+  box-shadow: 0 4rpx 24rpx rgba(0, 0, 0, 0.04);
+}
+
+.stat-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-item__num {
+  font-size: 40rpx;
+  font-weight: 700;
+  color: #00A870;
+  margin-bottom: 4rpx;
+}
+
+.stat-item__num--orange {
+  color: #ED7B2F;
+}
+
+.stat-item__num--blue {
+  color: #4B74FF;
+}
+
+.stat-item__label {
+  font-size: 22rpx;
+  color: #9AA3B2;
+}
+
+/* 分区 */
+.section {
+  margin: 0 32rpx 24rpx;
+  background: #FFFFFF;
+  border-radius: 24rpx;
+  padding: 28rpx;
+  box-shadow: 0 4rpx 24rpx rgba(0, 0, 0, 0.04);
+}
+
+.section__header {
+  margin-bottom: 20rpx;
+}
+
+.section__title {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #1A1A2E;
+}
+
+/* 分类列表 */
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+}
+
+.category-card {
+  display: flex;
+  align-items: center;
+  padding: 16rpx;
+  border-radius: 16rpx;
+  background: #FAFBFD;
+  transition: background 0.2s;
+}
+
+.category-card:active {
+  background: #EEF2FF;
+}
+
+.category-card__icon {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20rpx;
+  flex-shrink: 0;
+}
+
+.category-card__info {
+  flex: 1;
+}
+
+.category-card__name {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #1A1A2E;
+  display: block;
+  margin-bottom: 4rpx;
+}
+
+.category-card__desc {
+  font-size: 22rpx;
+  color: #9AA3B2;
+}
+
+.category-card__right {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+  flex-shrink: 0;
+}
+
+.category-card__count {
+  font-size: 22rpx;
+  color: #9AA3B2;
+}
+
+/* 提示 */
+.tip-card {
+  margin: 0 32rpx 32rpx;
+  padding: 20rpx 24rpx;
+  background: #F3E8FF;
+  border-radius: 16rpx;
+  display: flex;
+  align-items: flex-start;
+}
+
+.tip-card__text {
+  font-size: 22rpx;
+  color: #8B5CF6;
+  margin-left: 12rpx;
+  line-height: 1.5;
+}

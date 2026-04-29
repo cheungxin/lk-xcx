@@ -1,0 +1,73 @@
+<view class="tree-node">
+  <block wx:for="{{tree}}" wx:key="index">
+    <view class="tree-item-wrap">
+      <view class="tree-item {{item.open ? 'item-open' : 'item-close'}} {{selectable ? 'item-selectable' : ''}}" bindtap="onItemTap" data-index="{{index}}" data-item="{{item}}">
+        <!-- Expand/collapse icon section -->
+        <view class="tree-item-icon" wx:if="{{item.hasChildren}}" catchtap="isOpen" data-index="{{index}}">
+          <view class="node-toggle {{item.open ? 'node-toggle--open' : 'node-toggle--close'}}">
+            <view class="node-toggle__icon"></view>
+          </view>
+        </view>
+        <view class="tree-item-icon" wx:else>
+           <view class="node-dot"></view>
+        </view>
+        
+        <!-- Node content section -->
+        <view class="tree-item-content">
+          <view class="item-title">{{item.examPoint || item.name || '未分类'}}</view>
+          <view class="item-desc" wx:if="{{item.answerDesc}}">{{item.answerDesc}}</view>
+        </view>
+        
+        <!-- Navigation entry (Arrow icon) or Selection indicator (Circle) -->
+        <view class="tree-item-entry">
+          <block wx:if="{{selectable}}">
+            <t-icon
+              class="select-icon"
+              name="{{item.selected ? 'check-circle-filled' : 'circle'}}"
+              size="40rpx"
+              color="{{item.selected ? '#4B74FF' : '#D7DDE8'}}"
+            />
+          </block>
+          <block wx:else>
+            <view class="navigation-entry" catchtap="noop">
+              <t-link
+                wx:if="{{item.entryNavigatorProps && item.entryNavigatorProps.url}}"
+                theme="default"
+                size="small"
+                suffixIcon="chevron-right"
+                underline="{{false}}"
+                navigatorProps="{{item.entryNavigatorProps}}"
+                t-class="navigation-entry__link"
+                t-class-suffix-icon="navigation-entry__link-icon"
+              />
+              <view class="navigation-entry__fallback" wx:else>
+                <t-icon name="chevron-right" size="36rpx" color="#8b96a9" />
+              </view>
+              <!-- Continue Practice tooltip -->
+              <view class="floating-continue-tooltip" wx:if="{{item.isLastPracticed}}">
+                <view class="floating-continue-tooltip__arrow"></view>
+                <text>继续做题</text>
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+      
+      <!-- Separator line (hidden when node is open) -->
+      <view class="tree-item-line" hidden="{{item.open}}"></view>
+      
+      <!-- Recursive child rendering -->
+      <view wx:if="{{item.hasChildren && item.open}}" class="children-level">
+        <tree-node 
+          treeNodes="{{item.children}}" 
+          expandAll="{{expandAll}}" 
+          page="{{page}}" 
+          selectable="{{selectable}}"
+          selectedIds="{{selectedIds}}"
+          bind:goAnalysis="tapNode"
+          bind:select="tapSelect"
+        ></tree-node>
+      </view>
+    </view>
+  </block>
+</view>

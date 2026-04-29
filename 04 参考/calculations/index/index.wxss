@@ -1,0 +1,105 @@
+ .page-container{
+    min-height: 100vh;
+    padding-bottom: 80rpx;
+    background-color:var(--page-background-color); 
+ }
+
+ .plate-container{
+    width: 740rpx;
+    margin: 20rpx auto;
+    background-color:var(--white);
+    border-radius:20rpx;
+ }
+ .content-title{
+    display: flex;
+    align-items: center;
+    padding-left:20rpx;
+    height:80rpx;
+}
+.title-label{
+    width: 8rpx;
+    height:24rpx;
+    background: #00C667;
+    border-radius: 8px;
+    margin-right:20rpx;
+} 
+.title-text{
+    font-size:30rpx;
+    font-weight: 500;
+    color: var(--text-color-primary);
+}
+.arithmetic-lists{
+    width: 720rpx;
+    margin: 10rpx auto;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); /* 定义三列，每列宽度相等 */
+    grid-gap: 10rpx; /* 设置间隔为 10rpx */
+} 
+.arithmetic-item{
+    min-width: 200rpx;
+    padding:5rpx;
+    height: 80rpx;
+    background-color:#f3f5f7;
+    border-radius: 10rpx;
+    text-align: center;
+    line-height:80rpx;
+    font-size: 24rpx; 
+    margin-bottom: 20rpx; 
+    /* 其他样式不变 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.arithmetic-item:first-child{
+    margin-left: 0;
+}
+
+.numbers-selection{
+    width: 720rpx;
+    display: flex;
+    padding-top: 100rpx;
+    margin: 0 auto;
+}
+.numbers-item{
+    width: 150rpx;
+    height: 72rpx;
+    background-color:#f3f5f7;
+    border-radius: 5rpx;
+    line-height: 72rpx;
+    text-align: center;
+    margin: auto 10rpx;
+    color: var(--soot-gray);
+    font-size: 26rpx;
+}
+.numbers-item.active{
+    background-color:#50C000;
+    color: #ffffff;
+}
+
+.history-cart-box{
+    position: fixed;  
+    z-index: 2;
+    width:60rpx;
+    padding:20rpx 10rpx;
+    border-radius: 12rpx;
+    background-color:var(--color-bigttree);
+  }
+  .cart{
+    width:60rpx;
+    height:80rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cart-info {
+    color: #fff;
+  }
+  .cart .iconfont{
+    font-size: 34rpx;
+  }
+  .history-title{
+    width: 48rpx;
+    color: #ffffff;
+    font-size: 24rpx;
+  }
+  

@@ -1,0 +1,4 @@
+<!-- 页面组件 - 题号矩阵 -->
+<view class="question-grid">
+  <view class="placeholder">题号矩阵</view>
+</view>

@@ -1,0 +1,103 @@
+<navigation bgColor="#fff" isReturn="{{true}}" bind:goBack="getBack" navigationColor="dark">
+    <view slot="content" class="navigation-content" style="width:{{navigationWidth}}px">
+        <text>数资速算</text>
+    </view>
+</navigation>
+<view class="page">
+    <view style="height:{{navigationBarHeight}}px" ></view>
+    <view class="exam-infomation">
+        <view class="topic-display-info">
+            <view class="topic-number">
+                <text class="text-index">{{nowQuestionIndex+1}}</text>
+                /
+                <text>{{questionLists.length}}</text>
+            </view>
+            <view class="topic-timer">
+                <text class="iconfont icon-clock"></text>
+                <text class="timer-text">{{answerTime}}</text>
+            </view>
+            <view class="topic-edit" bindtap="makeDraft" data-index="{{nowQuestionIndex}}">
+                <text class="iconfont icon-edit"></text>
+            </view>
+        </view>
+    </view>
+    <view class="topic-types">
+        <text class="topic-level topic-one-level">{{firstSortName}}</text>
+        <text class="topic-type-level-icon iconfont icon-arrow"></text>
+        <text class="topic-level topic-second-level">{{secondSortName}}</text>
+    </view>
+    <!-- 页面滚动 -->
+    <swiper class="topic-view" bindchange="switchNext" current="{{nowQuestionIndex}}" style="height:calc({{screenHeight - navigationBarHeight}}px  - 550rpx);">
+        <swiper-item class="item-box" wx:for="{{questionLists}}" wx:key="index" wx:for-index="index" data-item="{{item}}">
+            <view class="topic-item" style="height:calc({{screenHeight - navigationBarHeight}}px  - 550rpx);">
+                <!-- 常规 -->
+                <view class="topic-item-container" wx:if="{{item.isNormal}}">
+                    <view class="topic-item-wrap">
+                        <view class="topic-content">{{ item.question }}</view>
+                        <view class="topic-answer">
+                            <view class="topic-input">{{item.userAnswer}}</view>
+                        </view>
+                    </view>
+                </view>
+                 <!-- 常规 -->
+                <view class="topic-item-container" wx:if="{{item.isAuxiliary}}">
+                    <view class="topic-item-wrap">
+                        <view class="topic-content">{{ item.question }}</view> 
+                    </view>
+                    <view class="topic-item-wrap auxiliary">
+                        <view class="topic-answer-auxiliary" >
+                            {{item.auxiliaryText}}
+                        </view>
+                        <view class="topic-answer">
+                            <view class="topic-input">{{item.userAnswer}}</view>
+                        </view>
+                    </view>
+                </view>
+                <!-- 分数运算内容 -->
+                <view class="topic-item-container" wx:if="{{item.fractional}}">
+                    <view class="topic-item-wrap">
+                        <view class="topic-content-division">
+                            <view class="numerator">{{ item.numerator }}</view>
+                            <view class="division-sign"></view>
+                            <view class="denominator">{{ item.denominator }}</view>
+                        </view>
+                        <view class="multiplying-term" wx:if="{{item.multiplyingTerm}}">
+                            <text class="multiply">X</text>
+                            <text>{{item.multiplyingTerm}}</text>
+                        </view>
+                        <view class="topic-equal-sign">=</view>
+                        <view class="topic-answer" wx:if="{{!item.anotherLine}}">
+                            <view class="topic-input">{{item.userAnswer}}</view>
+                        </view>
+                    </view>
+                    <view class="topic-item-wrap auxiliary" wx:if="{{item.anotherLine}}">
+                        <view class="topic-answer-auxiliary" >
+                            {{item.auxiliaryText}}
+                        </view>
+                        <view class="topic-answer">
+                            <view class="topic-input">{{item.userAnswer}}</view>
+                        </view>
+                    </view>
+                </view>
+                <!-- 特殊记忆 -->
+                <view class="topic-item-container" wx:if="{{item.isSpecialFraction}}">
+                    <view class="topic-item-wrap">
+                          <view class="topic-content">{{ item.question }}</view>
+                        <view class="topic-content-division">
+                            <view class="numerator">1</view>
+                            <view class="division-sign special-fraction"></view>
+                            <view class="denominator">
+                                <view class="topic-answer" wx:if="{{!item.anotherLine}}">
+                            <view class="topic-input">{{item.userAnswer}}</view>
+                        </view>
+                            </view>
+                        </view> 
+                    </view> 
+                </view>
+            </view>
+        </swiper-item>
+    </swiper>
+</view>
+<draft isDraft="{{isDraft}}" isClearDraft="{{isClearDraft}}"></draft>
+<!-- 数字键盘 -->
+<keyboard numberString="{{nowUserAnswer}}" bind:tapKey="inputAnswer" bind:tapSubmit="submitAnwser" bind:tapNext="keyboardNext"></keyboard>

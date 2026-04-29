@@ -1,0 +1,4 @@
+<!-- 页面组件 - 题目组件 -->
+<view class="question-item">
+  <view class="placeholder">题目组件</view>
+</view>

@@ -1,0 +1,85 @@
+<view class="daily-page">
+  <navigation-bar title="申论每日一练" />
+
+  <scroll-view scroll-y class="daily-scroll">
+    <view class="daily-content">
+      <view class="summary-card">
+        <view class="summary-card__item">
+          <text class="summary-card__value">{{streak}}</text>
+          <text class="summary-card__label">连续打卡</text>
+        </view>
+        <view class="summary-card__divider"></view>
+        <view class="summary-card__item">
+          <text class="summary-card__value">{{totalDone}}</text>
+          <text class="summary-card__label">累计完成</text>
+        </view>
+        <view class="summary-card__status {{todayDone ? 'summary-card__status--done' : ''}}">
+          {{todayDone ? '今日已完成' : '今日待完成'}}
+        </view>
+      </view>
+
+      <view class="calendar-card">
+        <view class="calendar-card__header">
+          <view class="calendar-card__action" bindtap="handlePrevMonth">
+            <t-icon name="chevron-left" size="32rpx" color="#5F6B7F" />
+          </view>
+          <text class="calendar-card__title">{{calendarYear}}年{{calendarMonth}}月</text>
+          <view class="calendar-card__action" bindtap="handleNextMonth">
+            <t-icon name="chevron-right" size="32rpx" color="#5F6B7F" />
+          </view>
+        </view>
+
+        <view class="calendar-week">
+          <text wx:for="{{weekLabels}}" wx:key="*this" class="calendar-week__item">{{item}}</text>
+        </view>
+
+        <view class="calendar-grid">
+          <view
+            wx:for="{{calendarDays}}"
+            wx:key="index"
+            class="calendar-day {{item.isCurrentMonth ? '' : 'calendar-day--ghost'}} {{item.isToday ? 'calendar-day--today' : ''}} {{item.status === 'done' ? 'calendar-day--done' : ''}} {{selectedPreviewDate === item.date ? 'calendar-day--selected' : ''}}"
+            data-date="{{item.date}}"
+            data-status="{{item.status}}"
+            bindtap="handleCalendarDayTap"
+          >
+            <text class="calendar-day__text">{{item.day}}</text>
+            <view wx:if="{{item.status === 'done'}}" class="calendar-day__dot"></view>
+          </view>
+        </view>
+      </view>
+
+      <view wx:if="{{previewQuestion}}" class="preview-card">
+        <view class="preview-card__header">
+          <view>
+            <text class="preview-card__title">
+              {{selectedPreviewDate === todayDate ? '今日题目预览' : (selectedPreviewDate + ' 题目预览')}}
+            </text>
+            <text class="preview-card__subtitle">每日随机 1 道主观题，完成后可查看参考答案</text>
+          </view>
+          <t-tag theme="{{selectedPreviewDate === todayDate ? 'primary' : 'default'}}" variant="light">
+            {{selectedPreviewDate === todayDate ? '今日' : '历史'}}
+          </t-tag>
+        </view>
+
+        <view class="preview-hero">
+          <view class="preview-hero__meta">
+            <t-tag theme="primary" variant="light">{{previewQuestion.typeName}}</t-tag>
+            <t-tag wx:if="{{previewQuestion.wordLimit}}" variant="light">
+              {{previewQuestion.wordLimit}}字以内
+            </t-tag>
+            <t-tag wx:if="{{previewQuestion.source}}" variant="light">{{previewQuestion.source}}</t-tag>
+          </view>
+          <text class="preview-hero__title">{{previewQuestion.title}}</text>
+          <text class="preview-hero__material">{{previewQuestion.materialTitle}}</text>
+          <text class="preview-hero__question">{{previewQuestion.questionText}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view class="daily-footer">
+    <t-button theme="primary" size="large" block bindtap="handlePrimaryAction">
+      {{actionText}}
+    </t-button>
+  </view>
+</view>

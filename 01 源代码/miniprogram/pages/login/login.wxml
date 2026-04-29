@@ -1,0 +1,69 @@
+<!--
+  登录页面 - 微信手机号授权登录
+-->
+<view class="page">
+  <!-- 自定义导航栏 -->
+  <navigation-bar
+    title="{{navBarTitle}}"
+    background="{{navBarBackground}}"
+    color="{{navBarColor}}"
+    showBack="{{true}}"
+    showHome="{{true}}"
+    bind:back="handleNavBack"
+    bind:home="handleNavHome"
+  />
+
+  <!-- 页面内容 -->
+  <view class="login-container">
+    <!-- Logo 区域 -->
+    <view class="logo-section">
+      <view class="logo-icon">🎓</view>
+      <view class="logo-title">欢迎使用</view>
+      <view class="logo-subtitle">公考刷题小程序</view>
+    </view>
+
+    <!-- 登录说明 -->
+    <view class="login-desc">
+      <text class="desc-text">为了给您提供更好的服务</text>
+      <text class="desc-text">请授权手机号完成登录</text>
+    </view>
+
+    <!-- 手机号授权按钮 -->
+    <view class="auth-section">
+      <button
+        class="auth-button"
+        open-type="getPhoneNumber"
+        bindgetphonenumber="getPhoneNumber"
+        disabled="{{isLoading}}"
+      >
+        <view class="auth-button-content">
+          <text class="auth-icon">📱</text>
+          <text class="auth-text">{{isLoading ? '登录中...' : '手机号快捷登录'}}</text>
+        </view>
+      </button>
+
+      <!-- 微信一键登录（可选） -->
+      <view class="wechat-login" bindtap="handleWechatLogin" wx:if="{{false}}">
+        <text class="wechat-text">微信一键登录</text>
+      </view>
+    </view>
+
+    <!-- 用户协议 -->
+    <view class="agreement-section">
+      <text class="agreement-text">登录即表示同意</text>
+      <text class="agreement-link">《用户协议》</text>
+      <text class="agreement-text">和</text>
+      <text class="agreement-link">《隐私政策》</text>
+    </view>
+
+    <!-- 说明区域 -->
+    <view class="tips-section">
+      <view class="tips-title">💡 温馨提示</view>
+      <view class="tips-content">
+        <view class="tip-item">• 首次登录需要授权手机号</view>
+        <view class="tip-item">• 您的手机号仅用于登录验证</view>
+        <view class="tip-item">• 我们会严格保护您的隐私信息</view>
+      </view>
+    </view>
+  </view>
+</view>

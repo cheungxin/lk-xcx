@@ -1,0 +1,85 @@
+{
+    "miniprogramRoot": "miniprogram/",
+    "cloudfunctionRoot": "cloudfunctions/",
+    "setting": {
+        "urlCheck": true,
+        "es6": true,
+        "enhance": true,
+        "postcss": true,
+        "preloadBackgroundData": false,
+        "minified": true,
+        "newFeature": true,
+        "coverView": true,
+        "nodeModules": false,
+        "autoAudits": false,
+        "showShadowRootInWxmlPanel": true,
+        "scopeDataCheck": false,
+        "uglifyFileName": false,
+        "checkInvalidKey": true,
+        "checkSiteMap": true,
+        "uploadWithSourceMap": true,
+        "compileHotReLoad": false,
+        "lazyloadPlaceholderEnable": false,
+        "useMultiFrameRuntime": true,
+        "babelSetting": {
+            "ignore": [],
+            "disablePlugins": [],
+            "outputPath": ""
+        },
+        "enableEngineNative": false,
+        "useIsolateContext": true,
+        "userConfirmedBundleSwitch": false,
+        "packNpmManually": true,
+        "packNpmRelationList": [
+            {
+                "packageJsonPath": "./package.json",
+                "miniprogramNpmDistDir": "./miniprogram/"
+            }
+        ],
+        "minifyWXSS": true,
+        "disableUseStrict": false,
+        "showES6CompileOption": false,
+        "useCompilerPlugins": false,
+        "minifyWXML": true,
+        "condition": false,
+        "ignoreUploadUnusedFiles": true,
+        "compileWorklet": false,
+        "localPlugins": false,
+        "swc": false,
+        "disableSWC": true
+    },
+    "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
+    "condition": {},
+    "srcMiniprogramRoot": "miniprogram/",
+    "compileType": "miniprogram",
+    "editorSetting": {
+        "tabIndent": "insertSpaces",
+        "tabSize": 4
+    },
+    "simulatorPluginLibVersion": {},
+    "packOptions": {
+        "ignore": [
+            {
+                "value": "node_modules",
+                "type": "folder"
+            },
+            {
+                "value": ".gitignore",
+                "type": "file"
+            },
+            {
+                "value": "README.md",
+                "type": "file"
+            },
+            {
+                "value": "package-lock.json",
+                "type": "file"
+            }
+        ],
+        "include": []
+    },
+    "appid": "wx10b8b4e979e90bc8",
+    "projectname": "lk-xcx",
+    "description": "微信小程序基座模板 - 基于 Skyline 渲染引擎",
+    "libVersion": "3.8.12"
+}

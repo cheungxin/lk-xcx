@@ -1,0 +1,108 @@
+<view class="page">
+  <view class="page-aura page-aura--top"></view>
+  
+  <scroll-view
+    class="page-scroll"
+    scroll-y
+    enhanced
+    show-scrollbar="{{false}}"
+    style="padding-top: {{safeTop}}px; padding-bottom: {{tabBarHeight}}rpx;"
+  >
+    <!-- 页面头部 -->
+    <view class="page-header">
+      <view class="page-header__title">
+        <text class="page-header__icon">⚡</text>
+        <text>快练模式</text>
+      </view>
+      <text class="page-header__desc">随机抽题，快速刷题，高效提升</text>
+    </view>
+
+    <!-- 题数选择 -->
+    <view class="count-section">
+      <text class="count-section__label">每次题数</text>
+      <view class="count-list">
+        <view
+          class="count-pill {{selectedCount === item ? 'count-pill--active' : ''}}"
+          wx:for="{{countOptions}}"
+          wx:key="*this"
+          data-count="{{item}}"
+          bindtap="onCountTap"
+        >
+          {{item}}题
+        </view>
+      </view>
+    </view>
+
+    <!-- 开始全部快练 -->
+    <view class="start-card" bindtap="onStartAll">
+      <view class="start-card__bg"></view>
+      <view class="start-card__content">
+        <view class="start-card__icon">
+          <t-icon name="play-circle" size="64rpx" color="#FFFFFF" />
+        </view>
+        <view class="start-card__info">
+          <text class="start-card__title">开始快练</text>
+          <text class="start-card__desc">随机抽取 {{selectedCount}} 道题</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 科目分类 -->
+    <view class="section">
+      <view class="section__header">
+        <text class="section__title">按科目快练</text>
+      </view>
+      <view class="category-grid">
+        <view
+          class="category-card"
+          wx:for="{{categories}}"
+          wx:key="id"
+          data-id="{{item.id}}"
+          bindtap="onCategoryTap"
+        >
+          <view class="category-card__icon" style="background: {{item.bgColor}};">
+            <t-icon name="{{item.icon}}" size="48rpx" color="{{item.iconColor}}" />
+          </view>
+          <text class="category-card__name">{{item.name}}</text>
+          <text class="category-card__count">{{item.count}}题</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 最近练习 -->
+    <view class="section" wx:if="{{recentList.length > 0}}">
+      <view class="section__header">
+        <text class="section__title">最近练习</text>
+      </view>
+      <view class="recent-list">
+        <view
+          class="recent-item"
+          wx:for="{{recentList}}"
+          wx:key="id"
+          data-id="{{item.id}}"
+          bindtap="onRecentTap"
+        >
+          <view class="recent-item__info">
+            <text class="recent-item__title">{{item.title}}</text>
+            <view class="recent-item__meta">
+              <text>{{item.count}}题</text>
+              <text class="recent-item__dot">·</text>
+              <text>{{item.time}}</text>
+            </view>
+          </view>
+          <view class="recent-item__accuracy" style="color: {{item.accuracy >= '60%' ? '#00A870' : '#E34D59'}};">
+            {{item.accuracy}}
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 快练提示 -->
+    <view class="tip-card">
+      <t-icon name="info-circle" size="32rpx" color="#ED7B2F" />
+      <text class="tip-card__text">快练模式下答完即出解析，适合碎片化时间刷题</text>
+    </view>
+  </scroll-view>
+
+  <tabbar selected="{{2}}" />
+</view>

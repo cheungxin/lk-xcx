@@ -1,0 +1,74 @@
+<view class="expression-page">
+  <navigation-bar title="规范表述" />
+
+  <scroll-view scroll-y class="expression-scroll">
+    <view class="expression-content">
+      <view class="search-card">
+        <t-icon name="search" size="34rpx" color="#8A95A8" />
+        <input
+          class="search-card__input"
+          value="{{searchKeyword}}"
+          placeholder="搜索题型框架、句式模板、常用表达"
+          placeholder-class="search-card__placeholder"
+          confirm-type="search"
+          bindinput="handleSearchInput"
+        />
+      </view>
+
+      <scroll-view scroll-x class="type-scroll" enable-flex>
+        <view class="type-list">
+          <view
+            wx:for="{{types}}"
+            wx:key="id"
+            class="type-pill {{activeType === item.id ? 'type-pill--active' : ''}}"
+            data-type="{{item.id}}"
+            bindtap="handleTypeTap"
+          >
+            {{item.name}}
+          </view>
+        </view>
+      </scroll-view>
+
+      <view wx:if="{{groupedExpressions.length}}">
+        <view wx:for="{{groupedExpressions}}" wx:key="category" class="group-card">
+          <text class="group-card__title">{{item.category}}</text>
+
+          <view wx:for="{{item.items}}" wx:key="id" class="expression-card">
+            <view class="expression-card__header" bindtap="handleToggleItem" data-id="{{item.id}}">
+              <view class="expression-card__main">
+                <text class="expression-card__title">{{item.title}}</text>
+                <view class="expression-card__tags">
+                  <t-tag wx:for="{{item.tags}}" wx:key="*this" variant="light">{{item}}</t-tag>
+                </view>
+              </view>
+              <t-icon
+                name="{{item.expanded ? 'chevron-up' : 'chevron-down'}}"
+                size="30rpx"
+                color="#7F8DA1"
+              />
+            </view>
+
+            <view wx:if="{{item.expanded}}" class="expression-card__body">
+              <text class="expression-card__content">{{item.content}}</text>
+
+              <view wx:if="{{item.example}}" class="example-box">
+                <text class="example-box__label">示例</text>
+                <text class="example-box__content">{{item.example}}</text>
+              </view>
+
+              <view class="copy-link" data-id="{{item.id}}" bindtap="handleCopy">
+                <t-icon name="file" size="28rpx" color="#1664FF" />
+                <text>复制内容</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view wx:else class="empty-state">
+        <t-icon name="search" size="56rpx" color="#C7D1E0" />
+        <text class="empty-state__text">当前筛选条件下暂无内容</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>

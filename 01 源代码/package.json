@@ -1,0 +1,30 @@
+{
+  "name": "lk-xcx",
+  "version": "1.0.0",
+  "description": "微信小程序基座模板 - 基于 Skyline 渲染引擎",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wechat",
+    "miniprogram",
+    "skyline",
+    "template"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "tdesign-miniprogram": "^1.13.0"
+  },
+  "devDependencies": {},
+  "comment": "TDesign 组件库集成说明",
+  "_tdesign": {
+    "description": "如需使用 TDesign 组件库，请按以下步骤操作：",
+    "step1": "1. 安装依赖：npm install tdesign-miniprogram --save",
+    "step2": "2. 在 app.json 中全局注册组件（参考 app.json 中的注释）",
+    "step3": "3. 在 app.wxss 中引入样式（参考 app.wxss 中的注释）",
+    "step4": "4. 在页面中使用 TDesign 组件",
+    "documentation": "https://tdesign.tencent.com/miniprogram/overview"
+  }
+}

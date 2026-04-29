@@ -1,0 +1,4 @@
+<!-- community 分包 - 社群首页 -->
+<view class="community-index-page">
+  <view class="placeholder">社群首页</view>
+</view>

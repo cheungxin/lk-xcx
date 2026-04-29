@@ -1,0 +1,7 @@
+{
+  "navigationStyle":"custom", 
+    "usingComponents": {
+      "draft":"../module/draft/draft",
+      "keyboard":"../module/keyboard-num/keyboard-num"
+    }
+}

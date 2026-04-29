@@ -1,0 +1,65 @@
+<navigation bgColor="#50C000" isHome="{{true}}" navigationColor="white">
+  <text slot="content">数资报告</text>
+</navigation>
+<view class="page-container" style="padding-top:{{navigationBarHeight}}px">
+    <view class="page-part">
+            <view class="part-title-container">
+                <view class="content-title">
+                    <view class="title-label"></view>
+                    <view class="title-text">速算刷题量</view>
+                </view>
+                <view class="part-sub-text">个人刷题总量及正答率</view>
+            </view>
+            <view class="part-data">
+              <van-field label="总刷题数量 " readonly input-align="left">
+                        <view slot="input">
+                            <text class="data-number">{{total_answer_number||'无数据'}}</text>
+                        </view>
+                    </van-field>
+               <van-field label="正确个数" readonly input-align="left">
+                        <view slot="input">
+                            <text class="data-number">{{total_correct_number||'无数据'}}</text>
+                        </view>
+                    </van-field>     
+                    <van-field label="总正确率" readonly input-align="left">
+                        <view slot="input">
+                            <text class="data-number">{{total_correct_rate}}%</text>
+                        </view>
+                  </van-field>
+            </view>   
+    </view>   
+    
+    <view class="page-part">
+       <view class="part-title-container">
+                <view class="content-title">
+                    <view class="title-label"></view>
+                    <view class="title-text">速算报告</view>
+                </view>
+                <view class="part-sub-text">个人刷题总量及正答率</view>
+            </view>
+            <view class="part-canvas-wrap">
+                    <ec-canvas id="individual-correct-rate" canvas-id="mychart-bar" ec="{{ canvasOptions}}"></ec-canvas>
+            </view>
+    </view>
+     
+    <view class="page-part">
+            <view class="part-title-container">
+                <view class="content-title">
+                    <view class="title-label"></view>
+                    <view class="title-text">速算刷题平均用时</view>
+                </view>
+                <view class="part-sub-text">个人刷题量及用时</view>
+            </view>
+            <view class="part-data">
+              <van-cell   wx:for="{{useTimeData}}" wx:key="usetime" readonly  value="{{item.average_time}}">
+                <view slot="title">
+                    <view class="van-cell-text">{{item.second_sort}}</view> 
+                </view>
+                <view  slot="label" class="data-label">
+                    {{item.second_sort}}
+                </view> 
+               </van-cell > 
+            </view>   
+    </view>  
+
+</view>

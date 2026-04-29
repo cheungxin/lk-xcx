@@ -1,0 +1,35 @@
+/* 全局组件 - 浮窗按钮 */
+
+.fab {
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fab:active {
+  transform: scale(0.92);
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.12);
+}
+
+.fab--right-bottom {
+  right: 32rpx;
+}
+
+.fab--left-bottom {
+  left: 32rpx;
+}
+
+.fab__text {
+  font-size: 20rpx;
+  color: #FFFFFF;
+  margin-top: 2rpx;
+  font-weight: 500;
+}

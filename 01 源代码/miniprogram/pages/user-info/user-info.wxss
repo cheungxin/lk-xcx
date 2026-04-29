@@ -1,0 +1,125 @@
+/* 个人信息编辑页面样式 */
+
+.page {
+  min-height: 100vh;
+  background: #f3f7fd;
+}
+
+.page-content {
+  padding-top: 100rpx;
+  padding-bottom: 40rpx;
+}
+
+/* 信息区块 */
+.info-section {
+  margin: 24rpx 24rpx;
+  border-radius: 24rpx;
+  background: #FFFFFF;
+  overflow: hidden;
+  box-shadow: 0 8rpx 32rpx rgba(42, 77, 145, 0.04);
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32rpx 28rpx;
+  border-bottom: 1rpx solid #F1F4F9;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-item--column {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info-label {
+  font-size: 28rpx;
+  color: #2F3442;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.info-input {
+  flex: 1;
+  text-align: right;
+  font-size: 28rpx;
+  color: #2F3442;
+  padding-left: 24rpx;
+}
+
+/* 头像按钮 */
+.avatar-button {
+  position: relative;
+  width: 120rpx;
+  height: 120rpx;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  border-radius: 50%;
+  overflow: visible;
+}
+
+.avatar-button::after {
+  border: none;
+}
+
+.avatar-image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  border: 4rpx solid #F5F7FA;
+}
+
+.avatar-edit-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4B74FF 0%, #6B92FF 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4rpx 12rpx rgba(75, 116, 255, 0.3);
+}
+
+/* 手机号显示 */
+.phone-display {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+}
+
+.phone-text {
+  font-size: 28rpx;
+  color: #2F3442;
+}
+
+/* 文本域 */
+.info-textarea {
+  width: 100%;
+  min-height: 160rpx;
+  margin-top: 16rpx;
+  padding: 20rpx;
+  border-radius: 12rpx;
+  background: #F5F7FA;
+  font-size: 26rpx;
+  color: #2F3442;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+/* 操作按钮区域 */
+.action-section {
+  margin: 24rpx 24rpx;
+}
+
+.action-section:last-child {
+  margin-top: 48rpx;
+}

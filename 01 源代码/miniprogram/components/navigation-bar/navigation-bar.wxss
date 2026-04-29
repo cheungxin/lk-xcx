@@ -1,0 +1,137 @@
+/**
+ * 自定义导航栏样式
+ * 适配 Skyline 渲染引擎
+ */
+
+/* 导航栏容器 */
+.navigation-bar {
+  position: relative;
+  width: 100%;
+}
+
+/* 占位元素 */
+.navigation-bar__placeholder {
+  width: 100%;
+  visibility: hidden;
+}
+
+/* 固定定位的导航栏 */
+.navigation-bar__fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* 状态栏占位 */
+.navigation-bar__status-bar {
+  width: 100%;
+}
+
+/* 导航栏内容区 */
+.navigation-bar__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  position: relative;
+}
+
+/* 左侧区域 */
+.navigation-bar__left {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  min-width: 80px;
+}
+
+/* 中间标题区域 */
+.navigation-bar__center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  overflow: hidden;
+}
+
+/* 标题文字 */
+.navigation-bar__title {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+/* 右侧区域 */
+.navigation-bar__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  min-width: 80px;
+}
+
+/* 按钮 */
+.navigation-bar__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.navigation-bar__button:active {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* 图标 */
+.navigation-bar__icon {
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 返回图标 */
+.navigation-bar__icon--back {
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-right: 10px solid currentColor;
+  background: none;
+}
+
+/* 首页图标 */
+.navigation-bar__icon--home {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border: 2px solid currentColor;
+  border-top: none;
+  background: none;
+}
+
+.navigation-bar__icon--home::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 10px solid currentColor;
+}

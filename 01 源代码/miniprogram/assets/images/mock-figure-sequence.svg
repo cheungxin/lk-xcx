@@ -1,0 +1,23 @@
+<svg width="720" height="280" viewBox="0 0 720 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="280" rx="24" fill="#F7FAFF"/>
+  <rect x="36" y="36" width="132" height="208" rx="20" fill="white" stroke="#D7E4FF" stroke-width="4"/>
+  <rect x="204" y="36" width="132" height="208" rx="20" fill="white" stroke="#D7E4FF" stroke-width="4"/>
+  <rect x="372" y="36" width="132" height="208" rx="20" fill="white" stroke="#D7E4FF" stroke-width="4"/>
+  <rect x="540" y="36" width="144" height="208" rx="20" fill="#EEF4FF" stroke="#5A8BFF" stroke-width="4" stroke-dasharray="10 8"/>
+
+  <path d="M102 86L74 138H130L102 86Z" fill="#5A8BFF"/>
+
+  <path d="M252 82L224 134H280L252 82Z" fill="#5A8BFF"/>
+  <path d="M288 148L260 200H316L288 148Z" fill="#9AB7FF"/>
+
+  <path d="M420 78L392 130H448L420 78Z" fill="#5A8BFF"/>
+  <path d="M392 146L364 198H420L392 146Z" fill="#9AB7FF"/>
+  <path d="M448 146L420 198H476L448 146Z" fill="#C8D7FF"/>
+
+  <text x="612" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="72" font-weight="700" fill="#5A8BFF">?</text>
+
+  <text x="102" y="228" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#6B7280">1</text>
+  <text x="270" y="228" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#6B7280">2</text>
+  <text x="438" y="228" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#6B7280">3</text>
+  <text x="612" y="228" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#6B7280">?</text>
+</svg>

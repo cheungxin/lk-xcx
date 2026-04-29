@@ -1,0 +1,115 @@
+function checkAnswer(wrongLists, questionNumber, isCorrect, questionOption) { 
+  for (var i = 0; i < wrongLists.length; i++) {
+    var item = wrongLists[i];
+    if (item.questionNumber === questionNumber) {
+      if (!item.isAnswered) {
+        // 多选未确认时，显示临时选中态
+        if (item.pendingOptions) {
+          var arr = item.pendingOptions.split(',');
+          for (var j = 0; j < arr.length; j++) {
+            if (arr[j] === questionOption) {
+              return 'pending';
+            }
+          }
+        }
+        return 'normal';
+      }
+      // 已作答时显示正确/错误样式
+      // 检查用户是否选择了当前选项
+      var userSelected = false;
+      if (item.questionOptionUser) {
+        var userOptions = item.questionOptionUser.split(',');
+        for (var k = 0; k < userOptions.length; k++) {
+          if (userOptions[k] === questionOption) {
+            userSelected = true;
+            break;
+          }
+        }
+      }
+      
+      if (isCorrect === 1) {
+        // 正确选项：总是显示绿色
+        return 'correct';
+      } else if (userSelected) {
+        // 用户选择了错误选项：显示红色
+        return 'incorrect';
+      }
+    }
+  }
+  return 'normal';
+} 
+
+function userOption(answerLists, questionNumber,correct_answer){
+ for (var k = 0; k < answerLists.length;k++) {
+  var item = answerLists[k];
+  if(item.questionNumber === questionNumber){ 
+   if(item.questionOption === correct_answer ){
+    return {
+      isCorrect:'correct',
+      questionOption:item.questionOption
+    };
+   }else{  
+    return {
+    isCorrect:'incorrect',
+    questionOption:item.questionOption
+   }; 
+  }
+  } 
+ }
+}
+
+
+function fontSizeSet(font_size_type) {
+ if(font_size_type===1){
+   return  'type-small'; 
+ }else if(font_size_type === 4){
+  return 'type-large'
+ }else if(font_size_type === 3){
+  return 'type-bigger'
+ }else{
+  return 'type-normal'   
+ }
+
+} 
+
+function isShowImage(now_idx,idx,url){
+if( idx >= now_idx - 5 && idx <= now_idx + 5 ){
+  if(url){
+    return true;
+  }else{
+    return false; 
+  }
+}else{
+ return false;
+}
+} 
+
+function brush(wrongLists, questionNumber) {
+  for (var k = 0; k < wrongLists.length; k++) {
+    var item = wrongLists[k];
+    if (item.questionNumber === questionNumber) {
+      if (item.isAnswered) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  }
+  return false;
+}
+
+function getQuestionTypeText(choiceType) {
+  if (choiceType === 1) return '单选题';
+  if (choiceType === 2) return '多选题';
+  if (choiceType === 3) return '判断题';
+  if (choiceType === 4) return '不定项';
+  return '';
+}
+module.exports = {
+checkAnswer:checkAnswer, 
+fontSizeSet:fontSizeSet,
+userOption:userOption,
+isShowImage:isShowImage,
+brush:brush,
+getQuestionTypeText:getQuestionTypeText
+}

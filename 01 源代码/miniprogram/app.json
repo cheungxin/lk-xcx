@@ -1,0 +1,99 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/profile/profile",
+    "pages/login/login",
+    "pages/user-info/user-info"
+  ],
+  "subPackages": [
+    {
+      "root": "subpackages/training",
+      "name": "training",
+      "pages": [
+        "exam/exam",
+        "quick/quick",
+        "practice/practice",
+        "answer-card/answer-card",
+        "analysis/analysis",
+        "math/math",
+        "daily/daily",
+        "exam-report/exam-report",
+        "question-detail/question-detail",
+        "shenlun/shenlun",
+        "shenlun-result/shenlun-result",
+        "daily-shenlun/daily-shenlun",
+        "hotspot/hotspot",
+        "expression/expression"
+      ]
+    },
+    {
+      "root": "subpackages/my",
+      "name": "my",
+      "pages": [
+        "review/review",
+        "stats/stats",
+        "favorite/favorite",
+        "wrong/wrong",
+        "wrong-list/wrong-list",
+        "favorite-list/favorite-list",
+        "record/record",
+        "settings/settings"
+      ]
+    },
+    {
+      "root": "subpackages/course",
+      "name": "course",
+      "pages": [
+        "list/list",
+        "detail/detail",
+        "play/play"
+      ]
+    },
+    {
+      "root": "subpackages/community",
+      "name": "community",
+      "pages": [
+        "index/index",
+        "detail/detail",
+        "publish/publish"
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/index/index": {
+      "network": "all",
+      "packages": [
+        "training",
+        "my"
+      ]
+    }
+  },
+  "tabBar": {
+    "color": "#8D97A8",
+    "selectedColor": "#1664FF",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "\u9996\u9875",
+        "iconPath": "assets/tabbar/home.png",
+        "selectedIconPath": "assets/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "\u6211\u7684",
+        "iconPath": "assets/tabbar/profile.png",
+        "selectedIconPath": "assets/tabbar/profile-active.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1664FF",
+    "navigationBarTitleText": "\u5237\u9898\u5c0f\u7a0b\u5e8f",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

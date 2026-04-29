@@ -1,0 +1,57 @@
+<view class="exam-page">
+  <t-navbar title="估分模考" left-arrow fixed bind:go-back="handleGoHome" />
+
+  <view style="margin-top: {{navBarHeight}}px;">
+    <view class="select-hero">
+      <view class="select-hero__icon">
+        <t-icon name="assignment" size="64rpx" color="#1664FF" />
+      </view>
+      <text class="select-hero__title">选择模拟试卷</text>
+      <text class="select-hero__desc">做题过程已统一复用练习页，后续改一处即可同步到考试场景</text>
+    </view>
+
+    <view class="paper-list">
+      <view
+        class="paper-card"
+        wx:for="{{papers}}"
+        wx:key="id"
+        data-index="{{index}}"
+        bindtap="handleSelectPaper"
+      >
+        <view class="paper-card__top">
+          <t-tag theme="primary" variant="light">{{item.subject || '行测'}}</t-tag>
+          <t-tag variant="light">{{item.difficulty || 'medium'}}</t-tag>
+        </view>
+
+        <text class="paper-card__name">{{item.name || item.title}}</text>
+
+        <view class="paper-card__info">
+          <view class="paper-card__meta">
+            <t-icon name="file-text" size="28rpx" color="#86909C" />
+            <text>{{item.questionCount || item.totalQuestions || 0}}题</text>
+          </view>
+          <view class="paper-card__meta">
+            <t-icon name="time" size="28rpx" color="#86909C" />
+            <text>{{item.totalDuration || item.duration || 0}}分钟</text>
+          </view>
+        </view>
+
+        <view class="paper-card__footer">
+          <view class="paper-card__sections">
+            <text
+              wx:for="{{item.sections}}"
+              wx:for-item="sec"
+              wx:key="name"
+              class="paper-card__section-tag"
+            >
+              {{sec.name}}
+            </text>
+          </view>
+          <t-icon name="chevron-right" size="36rpx" color="#C9CDD4" />
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <tabbar selected="{{1}}" />
+</view>

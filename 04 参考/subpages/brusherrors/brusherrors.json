@@ -1,0 +1,10 @@
+{ 
+  "navigationStyle":"custom", 
+  "usingComponents": {  
+    "van-skeleton": "@vant/weapp/skeleton/index",
+    "van-sticky": "@vant/weapp/sticky/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "answer-situation":"../module/situation/situation",
+    "van-stepper": "@vant/weapp/stepper/index"
+  }
+}

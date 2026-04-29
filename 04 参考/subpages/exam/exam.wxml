@@ -1,0 +1,242 @@
+<!-- <van-nav-bar    left-arrow bind:click-left="onClickLeft" title="答题" fixed="true" safe-area-inset-top="false" border="{{false}}" /> -->
+<navigation bgColor="#fff" isHome="{{true}}" navigationColor="dark">
+    <text slot="content">答题</text>
+</navigation>
+<!--页面加载数据钱显示骨架屏-->
+<van-skeleton title avatar-shape="squre" title-width="40%" row="30" round row-width="{{skecleton}}"	 loading="{{ loading }}"></van-skeleton>
+<!--wxs-->
+<wxs src="./exam.wxs" module="tools" /> 
+<view style="height:{{navigationBarHeight}}px"></view>
+<van-sticky offset-top="{{navigationBarHeight}}" wx:if="{{!loading}}"> 
+ <view class="model-container">
+    <view class="model-btn-wrapper">
+      <view class="model-btn {{mode==='A'?'model-btn-active':'model-btn-normal'}}" data-mode="A" bindtap="modelSwitch">题目选项</view>
+      <view class="model-btn {{mode==='B'?'model-btn-active':'model-btn-normal'}}" data-mode="B" bindtap="modelSwitch">纯选项</view>
+    </view> 
+</view>  
+<view class="exam-infomation">
+	 <view class="topic-display-info" wx:if="{{mode==='A'}}"> 
+	  <view class="topic-number">
+		  <text class="text-index font-t9">{{nowQuestionIndex+1}}</text> / <text>{{questionLists.length}}</text>
+	   </view>   
+	   <view class="topic-timer"> 
+		 <text class="iconfont icon-clock"></text>
+		 <text class="timer-text"> {{answerTime}}  </text>  
+	</view> 
+	 <view class="topic-favorite" bindtap="collect" data-index="{{nowQuestionIndex}}">
+		<text class="iconfont {{questionLists[nowQuestionIndex].isCollected?'icon-star':'icon-star-o'}} "></text>
+	 </view>	 
+ </view> 
+  <view class="topic-display-info" wx:if="{{mode==='B'}}">    
+      <view class="pure-topic-name">
+        <text>{{examName}} </text>
+     </view>
+	   <view class="topic-timer"> 
+		 <text class="iconfont icon-clock"></text>
+		 <text class="timer-text"> {{answerTime}}  </text>  
+	</view> 
+	 <view class="pure-submit {{isSubmitting ? 'submit-disabled' : ''}}" bindtap="submitAnwser"> {{isSubmitting ? '提交中...' : '提交'}} </view>	 
+ </view>
+</view>
+</van-sticky> 
+
+<!-- 题目及选项模式（正常模式） --> 
+<view class="page-section-A" wx:if="{{mode==='A' && !loading}}"> 
+	<!-- 页面滚动 -->
+	<swiper
+		class="topic-view"
+		direction="horizontal"
+		bindchange="switchNext"
+		current="{{nowQuestionIndex}}"
+		duration="{{showSheet?0:250}}" 
+		auto-height="true"  
+		style="height:calc({{screenHeight}}px  - 100rpx - {{navigationBarHeight}}px - 36px - 70rpx);" 
+		>
+		<swiper-item
+		 class="item-box"
+		 wx:for="{{questionLists}}"
+		 wx:key="index"
+		 wx:for-index="index"
+		 data-item="{{item}}"
+		 id="swiper-item"  
+		 style="top:0rpx"
+		>
+		<!-- 条件渲染优化：只渲染当前题目和前后10题的完整内容 -->
+		<block wx:if="{{index == nowQuestionIndex || Math.abs(index - nowQuestionIndex) <= 10}}">
+	 <scroll-view scroll-y="{{true}}" style="height:100%">
+	    <view class="item-scroll-box">
+     	 <view class="topic-item"> 
+		       <view class="topic-material" wx:if="{{item.isHasMaterials===1}}">   
+                  <view class="material-content" hidden="{{ !collapsed }}">
+				     <text class="material-ellipsis first-indent {{tools.fontSizeSet(textSize)}}" > {{  item.materialContent  }}</text>
+					 <view class="qustion-image" wx:if="{{item.materialsImg}}">
+					      <image mode="widthFix"  src="{{item.materialsImg}}" 
+						  wx:if="{{ tools.isShowImage(nowQuestionIndex,index,item.materialsImg) }}"
+						  data-url="{{item.materialsImg}}" 
+						    bindtap="previewImage" 
+						  />
+				    </view>
+				 </view>  
+				 <view class="material-content" hidden="{{ collapsed }}">
+				     <text class="first-indent {{tools.fontSizeSet(textSize)}}" > {{  item.materialContent  }}</text>
+					 <view class="qustion-image" wx:if="{{item.materialsImg}}">
+					      <image mode="widthFix"  src="{{item.materialsImg}}"  
+						   data-url="{{item.materialsImg}}" 
+						    bindtap="previewImage" />
+				    </view>
+				 </view> 
+				  <view class="expend-btn" bindtap="toggleCollapse"> 
+					  <view wx:if="{{collapsed}}">展开材料 <text class="iconfont icon-arrow-down"></text></view>
+					  <view wx:else >收起材料 <text class="iconfont icon-arrow-up"></text></view>
+				  </view> 
+				 <van-divider dashed ></van-divider>
+			   </view> 
+				<view class="topic-content">
+				   <view class="question-difficulty">
+					{{item.questionDifficulty}} 
+				   </view>
+                   <view class="question-type" wx:if="{{item.questionChoiceType}}">
+                        {{ tools.getQuestionTypeText(item.questionChoiceType) }}
+                   </view>
+				   <view class="text">
+						 <text class="{{tools.fontSizeSet(textSize)}}" > {{  item.questionContent  }}</text>
+				   </view>
+				    <!-- <rich-text nodes="{{item.question_content}}"></rich-text> 富文本预留-->
+				</view>
+				<view class="qustion-image" wx:if="{{ tools.isShowImage(nowQuestionIndex,index,item.questionImage) }}">
+					<image mode="widthFix"  src="{{item.questionImage}}"   
+					 data-url="{{item.questionImage}}" 
+						    bindtap="previewImage"  />
+				</view>
+			</view>
+			<view class="option-cells">
+				<view class="options-box">
+                    <view
+                 class="option-cell {{ tools.isOptionAnswered(sheetLists,item.questionNumber,option.questionOption,item.questionChoiceType) && 'answered' }}"
+                 bindtap="selectOption"
+                 wx:for="{{item.optionList}}"
+                 wx:key="idx"
+                 wx:for-index="idx"
+                 wx:for-item="option"
+                 data-sequence-number="{{item.sequenceNumber}}"
+                 data-question-number="{{item.questionNumber}}"
+                  data-question-id="{{item.questionId}}"
+                 data-question-option="{{option.questionOption}}"
+                 data-is-correct="{{option.opIsCorrect}}"
+                 data-correct-answer="{{item.correctAnswer}}"
+                 data-score="{{item.score}}"
+                 data-testpoint1st="{{item.testpoint1st}}"
+                 data-testpoint2nd="{{item.testpoint2nd}}"
+                 data-testpoint3rd="{{item.testpoint3rd}}"
+                 data-testpoint4th="{{item.testpoint4th}}"
+                 data-testpoint5th="{{item.testpoint5th}}"
+                 data-exam-point="{{item.examPoint}}"
+                 data-question-choice-type="{{item.questionChoiceType}}"
+                >
+                <view class="option-wrap"> 
+                    <view  class="option-label">{{option.questionOption}}</view>
+                    <view class="option-content"> 
+                      <text  class="{{tools.fontSizeSet(textSize)}}">{{option.optionContent}}</text>
+                    </view>  
+                </view> 
+				</view>
+				</view>
+			</view>
+		</view>
+		</scroll-view>
+		</block>
+		<block wx:else>
+			<!-- 简化渲染其他题目 -->
+			<view class="question-placeholder" style="height:100%;display:flex;align-items:center;justify-content:center;"> 
+				<view class="loading-spinner">
+					<van-loading type="spinner" />
+				</view>
+			</view>
+		</block>
+		</swiper-item> 
+	</swiper>
+	<view class="tabbar"> 
+	<view
+	 class="tabbar-item font-t4 {{item.text==='交卷' && isSubmitting ? 'tabbar-disabled' : ''}}"
+	 wx:for="{{tabBar.list}}"
+	 wx:key="type"
+	 bindtap="switchTab"
+	 data-text="{{item.text}}"
+	 data-index="{{index}}"
+	>
+	    <view class="tabbar-item-icon">
+			<text class="iconfont {{item.text==='交卷' && isSubmitting ? 'icon-loading' : item.icon}}"></text>
+		</view> 
+		<view class="tabbar-item-text">
+           <text class="font-t1">{{item.text==='交卷' && isSubmitting ? '提交中' : item.text}}</text>
+		</view>  
+	</view>
+</view>
+</view> 
+
+<!--纯答题卡模式-->
+<view class="page-section-B" wx:if="{{mode==='B'}}"> 
+ <view class="pure-mode-item" wx:for="{{questionLists}}" wx:key="index"  
+		 wx:for-index="index">
+     <view class="pure-mode-number">{{item.sequenceNumber}}、</view>
+	   <view class="pure-options">  
+		<view class="pure-option-container {{ tools.isOptionAnswered(sheetLists,item.questionNumber,option.questionOption,item.questionChoiceType) && 'answered' }}" bindtap="selectOption"
+				 wx:for="{{item.optionList}}"
+				 wx:key="idx"
+				 wx:for-index="idx"
+				 wx:for-item="option"
+				 data-sequence-number="{{item.sequenceNumber}}"
+				 data-question-id="{{item.questionId}}"
+				 data-question-number="{{item.questionNumber}}"
+				 data-question-option="{{option.questionOption}}"
+				 data-is-correct="{{option.opIsCorrect}}"
+				 data-correct-answer="{{item.correctAnswer}}"
+				 data-score="{{item.score}}"
+				 data-testpoint1st="{{item.testpoint1st}}"
+				 data-testpoint2nd="{{item.testpoint2nd}}"
+				 data-testpoint3rd="{{item.testpoint3rd}}"
+				 data-testpoint4th="{{item.testpoint4th}}"
+				 data-testpoint5th="{{item.testpoint5th}}"
+				 data-exam-point="{{item.examPoint}}"
+				 data-question-choice-type="{{item.questionChoiceType}}"
+				 >
+			<view class="pure-option"> 
+			     <text class="option-letter">{{ option.questionOption }}</text> 
+			</view> 
+		</view>  
+		</view>
+		<view class="pure-slice-line"></view>
+		<view class="pure-btn" bindtap="goQuestionSerial"  data-sequence-number="{{index}}">
+			<text class="iconfont icon-edit"></text>
+		</view>
+     </view> 
+</view>
+
+<!--答题卡组件-->
+<answer-sheet
+ sheetLists="{{sheetLists}}"
+ showSheet="{{showSheet}}" 
+ bind:getQuestion="getQuestion" 
+ bind:onSubmit="submitAnwser"
+ examName="{{examName}}"
+ clientHeight="{{clientHeight}}"
+ isSubmitting="{{isSubmitting}}"
+/>
+
+<!--更多的弹出层-->
+<van-popup
+ show="{{ isMore }}"
+  closeable
+  round
+  close-icon="close"
+  position="bottom"
+  custom-style="height: 20%"
+  bind:close="onClose"
+> 
+<view class="more-container">
+	<view class="more-control-text">
+       <view class="control-title font-t8">文字大小设置</view>  
+	   <van-stepper value="{{ textSize }}" max="4" disable-input button-size="100rpx"	 bind:change="onChangeText" /> 
+	</view> 
+</view> 
+</van-popup>

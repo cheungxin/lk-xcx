@@ -1,0 +1,4 @@
+<!-- community 分包 - 话题详情页 -->
+<view class="community-detail-page">
+  <view class="placeholder">话题详情</view>
+</view>

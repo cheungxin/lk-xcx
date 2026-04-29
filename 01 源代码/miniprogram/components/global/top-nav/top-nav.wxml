@@ -1,0 +1,29 @@
+<!--
+  全局组件 - 顶部导航栏
+-->
+<view
+  class="top-nav {{transparent ? 'top-nav--transparent' : ''}}"
+  style="padding-top: {{statusBarHeight}}px; height: {{totalHeight}}px; background: {{transparent ? 'transparent' : bgColor}}; opacity: {{immersive ? 1 : 1}};"
+>
+  <view class="top-nav__bar" style="height: {{navBarHeight}}px;">
+    <!-- 返回按钮 -->
+    <view wx:if="{{showBack}}" class="top-nav__left" bindtap="onBack">
+      <t-icon name="chevron-left" size="44rpx" color="{{textColor}}" />
+    </view>
+    <view wx:else class="top-nav__left top-nav__placeholder"></view>
+
+    <!-- 标题 -->
+    <view class="top-nav__center">
+      <text class="top-nav__title" style="color: {{textColor}};">{{title}}</text>
+    </view>
+
+    <!-- 右侧操作区 -->
+    <view class="top-nav__right">
+      <view wx:if="{{actionText}}" class="top-nav__action" bindtap="onAction">
+        <text style="color: {{textColor}};">{{actionText}}</text>
+      </view>
+      <slot wx:else name="action" />
+      <view wx:if="{{!actionText}}" class="top-nav__placeholder"></view>
+    </view>
+  </view>
+</view>

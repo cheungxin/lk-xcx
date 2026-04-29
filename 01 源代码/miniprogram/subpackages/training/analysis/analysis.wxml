@@ -1,0 +1,309 @@
+<view class="page {{themeMode === 'dark' ? 'theme-dark' : 'theme-light'}}" style="--font-scale: {{fontSizeScale || 1.0}};">
+  <t-navbar
+    title="{{pageTitle}}"
+    left-arrow
+    fixed
+    style="{{themeTokens.navbarStyle}}"
+    bind:go-back="handleGoBack"
+  />
+
+  <!-- 顶部状态栏 -->
+  <view class="top-status-bar" style="margin-top: {{navBarHeight}}px;">
+    <view class="status-left">
+      <view class="progress-chip">
+        <t-icon name="assignment" size="28rpx" color="{{themeTokens.iconSecondary}}" />
+        <text class="current">{{currentIndex}}</text>
+        <text class="total">/ {{questions.length}}</text>
+      </view>
+      <view class="scope-chip" wx:if="{{analysisScopeName}}">
+        <text class="scope-text">{{analysisScopeName}}</text>
+        <t-icon name="close-circle-filled" size="28rpx" color="{{themeTokens.iconTertiary}}" bindtap="handleScopeReset" />
+      </view>
+    </view>
+    
+    <view class="status-right">
+      <!-- 根据是否是特定筛选进入来显示/隐藏过滤器 -->
+      <view class="filter-tabs" wx:if="{{!isScopedEntry}}">
+        <view
+          class="filter-tab {{analysisFilterType === 'all' ? 'active' : ''}}"
+          data-type="all"
+          bindtap="handleFilterChange"
+        >全部</view>
+        <view
+          class="filter-tab {{analysisFilterType === 'wrong' ? 'active' : ''}}"
+          data-type="wrong"
+          bindtap="handleFilterChange"
+        >错题</view>
+        <view
+          class="filter-tab {{analysisFilterType === 'correct' ? 'active' : ''}}"
+          data-type="correct"
+          bindtap="handleFilterChange"
+        >正确</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 进度条 -->
+  <view class="progress-track">
+    <view
+      class="progress-track__fill"
+      style="width: {{questions.length ? currentIndex / questions.length * 100 : 0}}%;"
+    ></view>
+  </view>
+
+  <!-- 题目主容器 -->
+  <swiper
+    wx:if="{{hasQuestions}}"
+    class="question-swiper"
+    current="{{currentIndex - 1}}"
+    bindchange="handleSwiperChange"
+    duration="300"
+  >
+    <swiper-item wx:for="{{questions}}" wx:key="id">
+      <scroll-view scroll-y class="question-scroll">
+        <view class="question-container">
+          <!-- 材料部分 -->
+          <view
+            class="material-section"
+            wx:if="{{item.material || item.materialImage}}"
+            bindtap="handleShowMaterial"
+            data-index="{{index}}"
+          >
+            <view class="material-tag">
+              <t-icon name="file-text" size="28rpx" color="{{themeTokens.iconPrimary}}" />
+              <text class="material-tag-text">{{item.materialTitle || '给定材料'}}</text>
+            </view>
+            <view class="material-preview">
+              <view class="material-preview__content">
+                <text class="material-text">{{item.materialPreview || item.material}}</text>
+              </view>
+              <t-icon name="chevron-right" size="32rpx" color="{{themeTokens.iconQuaternary}}" />
+            </view>
+          </view>
+
+          <!-- 题目头部 -->
+          <view class="question-header">
+            <view class="question-meta">
+              <text class="question-index">第 {{item.displayIndex || index + 1}} 题</text>
+              <t-tag class="question-type-tag" theme="primary" variant="light" size="extra-small">{{item.type}}</t-tag>
+              <t-tag wx:if="{{item.section}}" class="section-tag" variant="outline" theme="default" size="extra-small">{{item.section}}</t-tag>
+            </view>
+            <text class="question-stem">{{item.stem}}</text>
+            <image
+              wx:if="{{item.questionImage}}"
+              class="question-image"
+              src="{{item.questionImage}}"
+              mode="widthFix"
+            />
+          </view>
+
+          <!-- 选项列表 -->
+          <view class="options-list">
+            <view
+              class="option-item {{option.isCorrectOption ? 'option-item--correct' : ''}} {{option.isWrongSelection ? 'option-item--wrong' : ''}} {{option.isSelected && !option.isCorrectOption && !option.isWrongSelection ? 'option-item--selected' : ''}}"
+              wx:for="{{item.options}}"
+              wx:for-item="option"
+              wx:key="id"
+            >
+              <view class="option-letter {{option.isCorrectOption ? 'option-letter--correct' : ''}} {{option.isWrongSelection ? 'option-letter--wrong' : ''}} {{option.isSelected && !option.isCorrectOption && !option.isWrongSelection ? 'option-letter--selected' : ''}}">
+                {{option.id}}
+              </view>
+              <view class="option-body">
+                <text class="option-content" wx:if="{{option.text}}">{{option.text}}</text>
+                <image
+                  wx:if="{{option.image}}"
+                  class="option-image {{option.text ? 'option-image--with-text' : ''}}"
+                  src="{{option.image}}"
+                  mode="widthFix"
+                />
+              </view>
+              <t-icon
+                wx:if="{{option.isCorrectOption}}"
+                name="check-circle-filled"
+                color="#00A870"
+                size="40rpx"
+                class="option-icon"
+              />
+              <t-icon
+                wx:elif="{{option.isWrongSelection}}"
+                name="close-circle-filled"
+                color="#E34D59"
+                size="40rpx"
+                class="option-icon"
+              />
+            </view>
+          </view>
+
+          <!-- 解析板块 -->
+          <view class="analysis-section">
+            <view class="analysis-header">
+              <view class="analysis-title">试题解析</view>
+            </view>
+            <view class="analysis-content">
+              <view class="answer-row">
+                <text class="answer-label">正确答案</text>
+                <text class="answer-val correct">{{item.correctAnswerText}}</text>
+                <text class="answer-label answer-label--gap">您的答案</text>
+                <text class="answer-val {{item.answerStatus === 'correct' ? 'correct' : (item.answerStatus === 'wrong' ? 'wrong' : 'muted')}}">{{item.userAnswerText || '未作答'}}</text>
+              </view>
+              <view class="explanation-text">{{item.explanation || '暂无解析'}}</view>
+              <view class="knowledge-point" wx:if="{{item.knowledgePoint}}">
+                <t-icon name="bookmark" size="26rpx" color="{{themeTokens.iconTertiary}}" />
+                <text class="kp-text">{{item.knowledgePoint}}</text>
+              </view>
+              <view
+                class="question-meta-extra"
+                wx:if="{{item.questionScoreText || item.difficultyLabel || item.source || item.year}}"
+              >
+                <view class="question-meta-chip" wx:if="{{item.questionScoreText}}">
+                  <text class="question-meta-chip__label">分值</text>
+                  <text class="question-meta-chip__value">{{item.questionScoreText}}</text>
+                </view>
+                <view class="question-meta-chip" wx:if="{{item.difficultyLabel}}">
+                  <text class="question-meta-chip__label">难度</text>
+                  <text class="question-meta-chip__value">{{item.difficultyLabel}}</text>
+                </view>
+                <view class="question-meta-chip" wx:if="{{item.source}}">
+                  <text class="question-meta-chip__label">来源</text>
+                  <text class="question-meta-chip__value">{{item.source}}</text>
+                </view>
+                <view class="question-meta-chip" wx:if="{{item.year}}">
+                  <text class="question-meta-chip__label">年份</text>
+                  <text class="question-meta-chip__value">{{item.year}}</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+
+  <!-- 空状态 -->
+  <view wx:else class="analysis-empty" style="margin-top: {{navBarHeight}}px;">
+    <t-empty image="default" description="{{emptyDesc}}" />
+    <text class="analysis-empty__title">{{emptyTitle}}</text>
+  </view>
+
+  <!-- 底部导航栏 -->
+  <view class="bottom-bar" wx:if="{{hasQuestions}}">
+    <view class="bottom-bar__panel">
+      <view class="action-item {{currentIndex <= 1 ? 'action-item--disabled' : ''}}" bindtap="handlePrev" hover-class="action-item--hover" hover-stay-time="70">
+        <t-icon name="chevron-left" size="40rpx" color="{{themeTokens.iconSecondary}}" class="action-item__icon" />
+        <text class="action-item__text">上题</text>
+      </view>
+
+      <view class="action-item {{currentIndex >= questions.length ? 'action-item--disabled' : ''}}" bindtap="handleNext" hover-class="action-item--hover" hover-stay-time="70">
+        <t-icon name="chevron-right" size="40rpx" color="{{themeTokens.iconSecondary}}" class="action-item__icon" />
+        <text class="action-item__text">下题</text>
+      </view>
+
+      <view class="action-item {{showAnswerCard ? 'action-item--active' : ''}}" bindtap="handleOpenAnswerCard" hover-class="action-item--hover" hover-stay-time="70">
+        <t-icon name="view-module" size="40rpx" color="{{showAnswerCard ? themeTokens.iconPrimary : themeTokens.iconSecondary}}" class="action-item__icon" />
+        <text class="action-item__text {{showAnswerCard ? 'action-item__text--active' : ''}}">题卡</text>
+      </view>
+
+      <view class="action-item {{showMorePopup ? 'action-item--active' : ''}}" bindtap="handleMore" hover-class="action-item--hover" hover-stay-time="70">
+        <t-icon name="more" size="40rpx" color="{{showMorePopup ? themeTokens.iconPrimary : themeTokens.iconSecondary}}" class="action-item__icon" />
+        <text class="action-item__text {{showMorePopup ? 'action-item__text--active' : ''}}">更多</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 弹窗部分 -->
+  <t-popup
+    visible="{{showMaterial}}"
+    placement="bottom"
+    bind:visible-change="handleMaterialChange"
+  >
+    <view class="material-popup" style="height: {{materialPopupHeight}}px;">
+      <view class="material-popup-header">
+        <text class="material-popup-title">{{currentMaterial.title || '给定材料'}}</text>
+        <t-icon
+          name="close"
+          size="40rpx"
+          color="{{themeTokens.iconSecondary}}"
+          bindtap="handleCloseMaterial"
+        />
+      </view>
+      <scroll-view
+        scroll-y
+        class="material-popup-content"
+      >
+        <view class="material-popup-body">
+          <image
+            wx:if="{{currentMaterial.image}}"
+            class="material-image"
+            src="{{currentMaterial.image}}"
+            mode="widthFix"
+          />
+          <text wx:if="{{currentMaterial.text}}" class="material-full-text">{{currentMaterial.text}}</text>
+        </view>
+      </scroll-view>
+    </view>
+  </t-popup>
+
+  <t-popup visible="{{showAnswerCard}}" placement="bottom" bind:visible-change="handleAnswerCardChange">
+    <answer-card
+      answerSheet="{{answerSheet}}"
+      totalQuestions="{{questions.length}}"
+      currentIndex="{{currentIndex}}"
+      paperTitle="{{sourceTitle}}"
+      themeMode="{{themeMode}}"
+      showSubmit="{{false}}"
+      isAnalysis="{{true}}"
+      bind:close="handleCloseAnswerCard"
+      bind:select="handleSelectQuestion"
+    />
+  </t-popup>
+
+  <!-- 更多功能弹窗 -->
+  <t-popup visible="{{showMorePopup}}" placement="bottom" bind:visible-change="handlePopupChange">
+    <view class="more-popup-content">
+      <view class="more-popup-header">
+        <text class="more-popup-title">更多功能</text>
+        <t-icon name="close" size="40rpx" color="{{themeTokens.iconSecondary}}" bindtap="handlePopupChange" data-visible="{{false}}" />
+      </view>
+      <view class="more-actions">
+        <view class="more-action-row" bindtap="handleMark">
+          <view class="more-action-left">
+            <t-icon name="flag" size="32rpx" color="{{answerSheet[currentIndex - 1].marked ? themeTokens.markActive : themeTokens.iconPrimary}}" />
+            <text class="more-action-text">{{answerSheet[currentIndex - 1].marked ? '取消标记' : '标记本题'}}</text>
+          </view>
+          <text class="more-action-value">{{answerSheet[currentIndex - 1].marked ? '已标记' : '未标记'}}</text>
+        </view>
+        <view class="more-action-row" bindtap="handleCollect">
+          <view class="more-action-left">
+            <t-icon name="star" size="32rpx" color="{{questions[currentIndex - 1].collected ? themeTokens.collectActive : themeTokens.iconPrimary}}" />
+            <text class="more-action-text">{{questions[currentIndex - 1].collected ? '取消收藏' : '收藏本题'}}</text>
+          </view>
+          <text class="more-action-value">{{questions[currentIndex - 1].collected ? '已收藏' : '未收藏'}}</text>
+        </view>
+        <view class="more-action-row" bindtap="handleFontSize">
+          <view class="more-action-left">
+            <t-icon name="format-horizontal-align-center" size="32rpx" color="{{themeTokens.iconPrimary}}" />
+            <text class="more-action-text">字体大小</text>
+          </view>
+          <text class="more-action-value">{{fontSizeLabel}}</text>
+          <t-icon name="chevron-right" size="32rpx" color="{{themeTokens.iconQuaternary}}" />
+        </view>
+        <view class="more-action-row" bindtap="handleTheme">
+          <view class="more-action-left">
+            <t-icon name="{{themeMode === 'dark' ? 'sunny' : 'moon'}}" size="32rpx" color="{{themeTokens.iconPrimary}}" />
+            <text class="more-action-text">日间/夜间</text>
+          </view>
+          <text class="more-action-value">{{themeMode === 'dark' ? '夜间模式' : '日间模式'}}</text>
+          <t-icon name="chevron-right" size="32rpx" color="{{themeTokens.iconQuaternary}}" />
+        </view>
+      </view>
+    </view>
+  </t-popup>
+
+  <!-- 字体选择器 -->
+  <font-size-selector
+    visible="{{showFontSizeSelector}}"
+    currentFontSize="{{fontSize}}"
+    bind:select="handleFontSizeSelect"
+    bind:close="handleCloseFontSize"
+  />
+</view>

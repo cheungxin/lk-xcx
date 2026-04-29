@@ -1,0 +1,36 @@
+<wxs src="./situation.wxs" module="situation"></wxs>
+<view class="module-container" wx:if="{{showSituation}}">
+   <view class="module-content fadeInUpBig">
+	<view class="module-body">
+		  <view class="moddule-header">
+			 <view class="moddule-title">答题情况如下</view> 
+			 <view class="moddule-close" bindtap="quitSheetLists">
+				<text class="iconfont icon-cross"></text>
+			 </view>
+		  </view>
+		  <view class="divider"></view> 
+			<view class="moddule-info">
+				<view class="title-txt">
+					全部   {{answerLists.length}}
+				</view>
+				<view class="number-info">
+					<view class="done">正确</view>
+					<view class="wrong">错误</view>
+					<view class="undo">未做 </view> 
+				</view>
+			</view>
+	  <view class="module-section" style="height:calc( {{clientHeight}}px - 86rpx - 80rpx - 150rpx - 120rpx)"> 
+			<view class="cells-box">
+				<view class="cells-item-box" wx:for="{{answerLists}}" wx:key="sheet">
+					<view  class="cells-item {{situation.getAnswerText(item.isCorrect)}}" bindtap="clickQusetionSerial" data-idx="{{index}}">
+						<view>
+							<text> {{index+1}} </text>
+						</view>
+					</view>
+				</view>
+			</view> 
+	  </view> 
+	</view>
+  </view>	
+</view>
+

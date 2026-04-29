@@ -1,0 +1,226 @@
+<!-- 顶部导航栏 -->
+<t-navbar 
+  fixed="{{true}}"
+  wx:if="{{showNavbar}}"
+  left-arrow="{{false}}"
+  title="我的"
+/> 
+<view class="page" style="padding-top: {{navigationBarHeight}}px;">
+  <view class="page-aura page-aura--top"></view>
+  <view class="page-aura page-aura--side"></view>
+  <view class="page-content">
+    <!-- 用户信息卡片 -->
+    <view class="profile-header">
+      <view class="profile-header__bg"></view>
+      <view class="profile-header__content">
+        <view class="profile-header__main" bindtap="onUserTap">
+          <view class="profile-avatar">
+            <image
+              class="profile-avatar__image"
+              src="{{userInfo.avatarUrl}}"
+              mode="aspectFill"
+            />
+            <view class="profile-avatar__vip" wx:if="{{userInfo.isVip}}">
+              <t-icon name="crown" size="20rpx" color="#FFD700" />
+            </view>
+          </view>
+          <view class="profile-info">
+            <text class="profile-info__name">{{userInfo.nickName}}</text>
+            <text class="profile-info__desc">{{userInfo.desc}}</text>
+          </view>
+        </view>
+        <view class="profile-edit" catchtap="onEditProfile">
+          <t-icon name="edit" size="32rpx" color="rgba(255,255,255,0.9)" />
+        </view>
+      </view>
+    </view>
+
+    <!-- 练习数据统计 -->
+    <view class="stats-card">
+      <view class="stats-header">
+        <view class="stats-header__left">
+          <view class="stats-header__accent"></view>
+          <text class="stats-header__title">练习数据</text>
+        </view>
+        <view class="stats-header__right" bindtap="onStatsMore">
+          <text class="stats-header__more">查看全部</text>
+          <t-icon name="chevron-right" size="24rpx" color="#95A0B3" />
+        </view>
+      </view>
+      <view class="stats-grid">
+        <view class="stats-item">
+          <text class="stats-item__value">{{stats.totalQuestions}}</text>
+          <text class="stats-item__label">累计做题</text>
+        </view>
+        <view class="stats-divider"></view>
+        <view class="stats-item">
+          <text class="stats-item__value">{{stats.correctRate}}</text>
+          <text class="stats-item__label">正确率</text>
+        </view>
+        <view class="stats-divider"></view>
+        <view class="stats-item">
+          <text class="stats-item__value">{{stats.continueDays}}</text>
+          <text class="stats-item__label">连续天数</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 功能菜单列表 -->
+    <view class="menu-section">
+      <view class="menu-section__title">
+        <view class="menu-section__accent"></view>
+        <text>学习服务</text>
+      </view>
+      <view class="menu-card">
+        <t-cell
+          wx:for="{{learningMenuList}}"
+          wx:key="type"
+          description="{{item.description}}"
+          note="{{item.note || ''}}"
+          bordered="{{false}}"
+          hover
+          data-type="{{item.type}}"
+          bind:tap="onMenuTap"
+        >
+          <view slot="title" class="menu-title-wrap">
+            <text>{{item.title}}</text>
+            <t-badge wx:if="{{item.badge > 0}}" count="{{item.badge}}" max-count="99" />
+          </view>
+          <view slot="left-icon" class="menu-icon-wrap" style="background: {{item.iconBg}};">
+            <t-icon name="{{item.icon}}" size="36rpx" color="{{item.iconColor}}" />
+          </view>
+          <view slot="right-icon" class="menu-arrow-wrap">
+            <t-icon name="chevron-right" size="32rpx" color="#C9CDD4" />
+          </view>
+        </t-cell>
+      </view>
+    </view>
+
+    <view class="menu-section">
+      <view class="menu-section__title">
+        <view class="menu-section__accent"></view>
+        <text>其他</text>
+      </view>
+      <view class="menu-card">
+        <t-cell
+          wx:for="{{otherMenuList}}"
+          wx:key="type"
+          title="{{item.title}}"
+          bordered="{{false}}"
+          hover
+          data-type="{{item.type}}"
+          bind:tap="onMenuTap"
+        >
+          <view slot="left-icon" class="menu-icon-wrap" style="background: {{item.iconBg}};">
+            <t-icon name="{{item.icon}}" size="36rpx" color="{{item.iconColor}}" />
+          </view>
+          <view slot="right-icon" class="menu-arrow-wrap">
+            <t-icon name="chevron-right" size="32rpx" color="#C9CDD4" />
+          </view>
+        </t-cell>
+      </view>
+    </view>
+
+    <view class="profile-footer">
+      <text class="profile-footer__text">公考刷题小程序 v1.0.0</text>
+    </view>
+  </view>
+</view>
+
+<!-- 问题建议弹窗 -->
+<t-popup
+  visible="{{showFeedbackDialog}}"
+  placement="bottom"
+  bind:visible-change="onFeedbackDialogChange"
+>
+  <view class="feedback-dialog">
+    <view class="feedback-header">
+      <text class="feedback-title">问题·建议</text>
+      <view class="feedback-close" bindtap="closeFeedbackDialog">
+        <t-icon name="close" size="40rpx" color="#999" />
+      </view>
+    </view>
+
+    <view class="feedback-content">
+      <!-- 反馈类型 -->
+      <view class="feedback-type">
+        <text class="feedback-label">
+          <text class="feedback-required">*</text> 反馈类型
+        </text>
+        <view class="feedback-type-tabs">
+          <view 
+            class="feedback-type-tab {{feedbackType === 'online' ? 'active' : ''}}"
+            bindtap="onFeedbackTypeChange"
+            data-type="online"
+          >
+            在线答题
+          </view>
+          <view 
+            class="feedback-type-tab {{feedbackType === 'scan' ? 'active' : ''}}"
+            bindtap="onFeedbackTypeChange"
+            data-type="scan"
+          >
+            扫描答题
+          </view>
+          <view 
+            class="feedback-type-tab {{feedbackType === 'other' ? 'active' : ''}}"
+            bindtap="onFeedbackTypeChange"
+            data-type="other"
+          >
+            其他
+          </view>
+        </view>
+      </view>
+
+      <!-- 建议输入 -->
+      <view class="feedback-input-wrap">
+        <text class="feedback-label">建议</text>
+        <textarea
+          class="feedback-textarea"
+          placeholder="请写下您的问题，我们会快速处理反馈！如果您对产品有更好的想法、建议，也可随时告诉我们！非常期待与您互动哦！"
+          placeholder-class="feedback-placeholder"
+          maxlength="200"
+          value="{{feedbackContent}}"
+          bindinput="onFeedbackInput"
+        />
+        <text class="feedback-count">{{feedbackContent.length}}/200</text>
+      </view>
+
+      <!-- 图片补充 -->
+      <view class="feedback-images">
+        <text class="feedback-label">图片补充 ({{feedbackImages.length}}/4)</text>
+        <view class="feedback-images-list">
+          <view 
+            wx:for="{{feedbackImages}}" 
+            wx:key="index" 
+            class="feedback-image-item"
+          >
+            <image src="{{item}}" mode="aspectFill" class="feedback-image" />
+            <view class="feedback-image-delete" bindtap="deleteFeedbackImage" data-index="{{index}}">
+              <t-icon name="close" size="28rpx" color="#fff" />
+            </view>
+          </view>
+          <view 
+            wx:if="{{feedbackImages.length < 4}}" 
+            class="feedback-image-add"
+            bindtap="addFeedbackImage"
+          >
+            <t-icon name="add" size="48rpx" color="#C9CDD4" />
+          </view>
+        </view>
+      </view>
+
+      <!-- 提交按钮 -->
+      <view class="feedback-submit">
+        <t-button 
+          theme="primary" 
+          size="large" 
+          block
+          bindtap="submitFeedback"
+        >
+          提交
+        </t-button>
+      </view>
+    </view>
+  </view>
+</t-popup>

@@ -1,0 +1,219 @@
+/**
+ * app.wxss - 全局样式
+ */
+
+page {
+  --td-primary-color: #0052D9;
+  --td-success-color: #00A870;
+  --td-warning-color: #FF9800;
+  --td-error-color: #E34D59;
+  --td-gray-1: #F5F5F5;
+  --td-gray-2: #E5E5E5;
+  --td-gray-3: #C5C5C5;
+  --td-gray-4: #888888;
+  --td-gray-5: #666666;
+  --td-gray-6: #333333;
+  --td-text-primary: #333333;
+  --td-text-secondary: #666666;
+  --td-text-disabled: #C5C5C5;
+  --td-brand-color: #1664FF;
+}
+
+page {
+  background-color: #F5F6F8;
+  font-size: 28rpx;
+  line-height: 1.6;
+  color: #333333;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* 通用容器 */
+.container {
+  width: 100%;
+  padding: 24rpx;
+  box-sizing: border-box;
+}
+
+/* 通用卡片 */
+.card {
+  background-color: #ffffff;
+  border-radius: 16rpx;
+  padding: 24rpx;
+  margin-bottom: 24rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.06);
+}
+
+/* 通用按钮 */
+.btn {
+  padding: 24rpx 48rpx;
+  border-radius: 8rpx;
+  font-size: 32rpx;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #1664FF;
+  color: #ffffff;
+}
+
+.btn-default {
+  background-color: #ffffff;
+  color: #333333;
+  border: 1rpx solid #E5E5E5;
+}
+
+.btn-disabled {
+  opacity: 0.5;
+}
+
+/* 通用标题 */
+.title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333333;
+}
+
+.subtitle {
+  font-size: 24rpx;
+  color: #666666;
+}
+
+/* 通用分割线 */
+.divider {
+  height: 1rpx;
+  background-color: #E5E5E5;
+  margin: 24rpx 0;
+}
+
+/* 通用文本颜色 */
+.text-primary {
+  color: #333333;
+}
+
+.text-secondary {
+  color: #666666;
+}
+
+.text-disabled {
+  color: #C5C5C5;
+}
+
+.text-brand {
+  color: #1664FF;
+}
+
+.text-success {
+  color: #00A870;
+}
+
+.text-warning {
+  color: #FF9800;
+}
+
+.text-error {
+  color: #E34D59;
+}
+
+/* 通用标签 */
+.tag {
+  display: inline-block;
+  padding: 4rpx 12rpx;
+  border-radius: 4rpx;
+  font-size: 18rpx;
+}
+
+.tag-primary {
+  color: #1664FF;
+  background-color: rgba(22, 100, 255, 0.1);
+}
+
+.tag-success {
+  color: #00A870;
+  background-color: rgba(0, 168, 112, 0.1);
+}
+
+.tag-warning {
+  color: #FF9800;
+  background-color: rgba(255, 152, 0, 0.1);
+}
+
+.tag-error {
+  color: #E34D59;
+  background-color: rgba(227, 77, 89, 0.1);
+}
+
+/* flex布局工具类 */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 间距工具类 */
+.mt-16 {
+  margin-top: 16rpx;
+}
+
+.mt-24 {
+  margin-top: 24rpx;
+}
+
+.mb-16 {
+  margin-bottom: 16rpx;
+}
+
+.mb-24 {
+  margin-bottom: 24rpx;
+}
+
+/* 文字省略 */
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-ellipsis-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* 选择器指示器 */
+.select-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select-circle {
+  width: 34rpx;
+  height: 34rpx;
+  border-radius: 50%;
+  border: 2rpx solid #d7dde8;
+  background: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.select-circle--active {
+  border-color: #4b74ff;
+  background: linear-gradient(135deg, #4b74ff 0%, #7192ff 100%);
+  box-shadow: inset 0 0 0 8rpx #ffffff;
+}

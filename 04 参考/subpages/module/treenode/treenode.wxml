@@ -1,0 +1,33 @@
+<view wx:for="{{tree}}" wx:key="index" class="tree">
+   <view class="tree-item-wrap"> 
+    <view class="tree-item {{ (item.open) ? 'item-open':'item-close'}}">
+      <!-- 树形结构图标 -->
+      <view class="tree-item-icon" wx:if="{{item.children && item.children.length > 0}}"  bindtap="isOpen" data-index="{{index}}"> 
+        <text class="iconfont {{item.open ? 'icon-reduce' : 'icon-add'}}"></text>
+      </view>
+      <view class="tree-item-icon" wx:else> 
+      </view>
+       <!-- 树形结构文字内容 -->
+      <view class="tree-item-content" data-index="{{index}}" bindtap="isOpen" >
+        <view class="item-title">{{item.examPoint?item.examPoint:'未分类'}}</view>  
+        <view class="item-desc">{{item.answerDesc}}</view>
+      </view>  
+       <view class="tree-item-entry"  data-item="{{item}}" bindtap="goExamPoint">
+          <text class="iconfont icon-arrow"></text>
+       </view>
+    </view>
+     <!-- 树形结构分割线-->
+     <view class="tree-item-line" hidden="{{item.open}}"></view> 
+     <!--子节点-->
+    <tree-node
+      wx:if="{{item.children && item.children.length > 0 && item.open }}"
+      treeNodes='{{ item.children }}'  
+      expandAll="{{expandAll}}"
+      class="children-level"
+      page="{{page}}"
+      catch:goAnalysis="tapNode"
+    >
+    </tree-node>
+   </view> 
+  </view> 
+<!-- bindtap="isOpen" data-item="{{item}}" data-index="{{index}}" -->

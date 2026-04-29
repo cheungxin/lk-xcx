@@ -1,0 +1,59 @@
+.tree {
+    text-align: left;  
+  }
+  .tree-item-wrap{ 
+    display: flex;  
+    flex-direction: column; 
+  } 
+  .tree-item {  
+    width: 92%; 
+    margin:0 auto;
+    display: flex;  
+    align-items: center;
+    padding:25rpx 0;
+    margin-bottom:10rpx; 
+  }
+  .tree-item-icon{
+    width: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--icon-color-primary);
+  }  
+  .tree-item-icon .iconfont{
+    font-size: 52rpx;
+  }
+  .tree-item-content{
+    width: calc(100% - 10px); 
+    padding-left: 10px;
+  }
+  .item-title{
+    width: calc(100% - 50px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size:28rpx;
+    color: var(--text-color-primary);
+  } 
+  .item-desc{
+  font-size:22rpx;
+  color:var(--light-blue-gray);
+  margin-top:10rpx;
+  }  
+  .tree-item-line{
+    width: 90%;
+    margin:0 auto;
+    height: 1rpx;
+    background-color: var(--content-devider); 
+  }
+ .children-level .tree-item{
+     background-color:var(--page-background-color);
+     margin-bottom:5rpx; 
+     border-radius:16rpx;
+ }
+ .children-level .tree-item-line{
+    display: none;
+ } 
+.tree-item-entry{ 
+  color: var(--icon-color-primary);
+}

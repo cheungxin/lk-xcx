@@ -1,0 +1,167 @@
+<view class="report-page">
+  <t-navbar title="{{pageTitle}}" left-arrow fixed bind:go-back="handleGoBack" />
+
+  <scroll-view
+    wx:if="{{hasReport}}"
+    scroll-y
+    class="report-scroll"
+    style="margin-top: {{navBarHeight}}px;"
+  >
+    <view class="report-content">
+      <view class="report-hero">
+        <view class="report-hero__card">
+          <!-- 标题区域 -->
+          <view class="report-hero__header">
+            <view class="report-mode-tag">{{reportData.modeLabel}}</view>
+            <view class="report-paper-title">{{reportData.paperName}}</view>
+          </view>
+
+          <!-- 核心分值展示 -->
+          <view class="report-hero__main">
+            <view class="score-box">
+              <view class="score-box__val">
+                <text class="score-box__num">{{reportData.correctCount}}</text>
+                <text class="score-box__total">/{{reportData.totalQuestions}}</text>
+              </view>
+              <view class="score-box__label">答对题数</view>
+            </view>
+
+            <view class="hero-divider"></view>
+
+            <view class="hero-stats">
+              <view class="hero-stat-block">
+                <text class="hero-stat-block__val">{{reportData.accuracy}}</text>
+                <text class="hero-stat-block__label">正确率</text>
+              </view>
+              <view class="hero-stat-block">
+                <text class="hero-stat-block__val">{{reportData.totalTime}}</text>
+                <text class="hero-stat-block__label">练习用时</text>
+              </view>
+            </view>
+          </view>
+
+          <!-- 底部评价与操作 -->
+          <view class="report-hero__footer">
+            <view class="hero-headline">
+              <t-icon name="notification" size="32rpx" color="#1664FF" />
+              <text class="hero-headline__text">{{reportData.headline}}</text>
+            </view>
+            <view class="hero-retry-btn" bindtap="handleRetry">
+              <t-icon name="refresh" size="28rpx" />
+              <text>重做</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="report-card">
+        <view class="report-card__header">
+          <text class="report-card__title">练习情况</text>
+          <view class="report-card__link" bindtap="handleRetry">
+            <text class="report-card__link-text">再来一套</text>
+            <t-icon name="chevron-right" size="28rpx" color="#3B78FF" />
+          </view>
+        </view>
+
+        <view class="report-stats">
+          <view class="report-stat">
+            <text class="report-stat__label">一共</text>
+            <text class="report-stat__value">{{reportData.totalQuestions}}题</text>
+          </view>
+          <view class="report-stat report-stat--success">
+            <text class="report-stat__label">答对</text>
+            <text class="report-stat__value">{{reportData.correctCount}}题</text>
+          </view>
+          <view class="report-stat report-stat--danger">
+            <text class="report-stat__label">答错</text>
+            <text class="report-stat__value">{{reportData.wrongCount}}题</text>
+          </view>
+          <view class="report-stat report-stat--warning">
+            <text class="report-stat__label">未答</text>
+            <text class="report-stat__value">{{reportData.unanswered}}题</text>
+          </view>
+          <view class="report-stat report-stat--accent">
+            <text class="report-stat__label">正确率</text>
+            <text class="report-stat__value">{{reportData.accuracy}}</text>
+          </view>
+        </view>
+      </view>
+
+      <view
+        wx:if="{{reportData.knowledgeTree.length || reportData.sectionStats.length}}"
+        class="report-card report-card--section"
+      >
+        <view class="report-card__header report-card__header--stacked">
+          <text class="report-card__title">考点掌握</text>
+          <text class="report-card__desc">
+            {{reportData.knowledgeTree.length ? '点击末级考点可直接查看对应题目解析' : '点击对应板块可直接查看这部分题目解析'}}
+          </text>
+        </view>
+
+        <view wx:if="{{reportData.knowledgeTree.length}}" class="report-tree-shell">
+          <tree
+            treeNodes="{{reportData.knowledgeTree}}"
+            expandAll="{{false}}"
+            page="exam-report"
+            bind:goAnalysis="handleViewKnowledgeAnalysis"
+          />
+        </view>
+
+        <view wx:else class="section-list">
+          <view
+            wx:for="{{reportData.sectionStats}}"
+            wx:key="name"
+            class="section-item"
+            data-section="{{item.name}}"
+            bindtap="handleViewSectionAnalysis"
+          >
+            <view class="section-item__badge">
+              <text>{{index + 1}}</text>
+            </view>
+
+            <view class="section-item__body">
+              <view class="section-item__head">
+                <text class="section-item__name">{{item.name}}</text>
+                <view class="section-item__action">
+                  <text class="section-item__action-text">{{item.correct}} / {{item.total}}</text>
+                  <t-icon name="chevron-right" size="28rpx" color="#9CB1D9" />
+                </view>
+              </view>
+
+              <text class="section-item__meta">
+                共{{item.total}}题，答对{{item.correct}}题，正确率{{item.accuracy}}%
+              </text>
+
+              <view class="section-item__track">
+                <view class="section-item__bar" style="width: {{item.accuracy}}%;"></view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view wx:else class="report-empty" style="margin-top: {{navBarHeight}}px;">
+    <view class="report-empty__icon">
+      <t-icon name="assignment-error" size="72rpx" color="#B6C5E3" />
+    </view>
+    <text class="report-empty__title">{{pageTitle}}</text>
+    <text class="report-empty__desc">完成一次练习后，就可以在这里查看报告和题目解析。</text>
+    <view class="report-empty__button" bindtap="handleGoHome">
+      <text>返回首页</text>
+    </view>
+  </view>
+
+  <view wx:if="{{hasReport}}" class="report-footer">
+    <view class="report-footer__button report-footer__button--ghost" bindtap="handleViewAnalysis">
+      <text class="report-footer__button-text report-footer__button-text--ghost">全部解析</text>
+    </view>
+    <view
+      class="report-footer__button report-footer__button--primary {{reportData.wrongCount <= 0 ? 'report-footer__button--disabled' : ''}}"
+      bindtap="handleViewWrongAnalysis"
+    >
+      <text class="report-footer__button-text">错题解析</text>
+    </view>
+  </view>
+</view>

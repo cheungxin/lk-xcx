@@ -1,0 +1,262 @@
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.daily-page {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  background: #f5f7fb;
+  display: flex;
+  flex-direction: column;
+}
+
+.daily-scroll {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.daily-content {
+  padding: 24rpx 24rpx 180rpx;
+}
+
+.summary-card,
+.calendar-card,
+.preview-card {
+  background: #ffffff;
+  border-radius: 28rpx;
+  box-shadow: 0 14rpx 38rpx rgba(20, 56, 110, 0.06);
+}
+
+.summary-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36rpx 32rpx;
+  margin-bottom: 24rpx;
+  background: linear-gradient(135deg, #f2f7ff 0%, #ffffff 100%);
+}
+
+.summary-card__item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.summary-card__value {
+  font-size: 48rpx;
+  font-weight: 700;
+  color: #1664ff;
+}
+
+.summary-card__label {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #7b8798;
+}
+
+.summary-card__divider {
+  width: 2rpx;
+  height: 64rpx;
+  background: #edf1f7;
+}
+
+.summary-card__status {
+  position: absolute;
+  top: 24rpx;
+  right: 24rpx;
+  padding: 8rpx 18rpx;
+  border-radius: 999rpx;
+  background: #fff3e8;
+  color: #d46b08;
+  font-size: 22rpx;
+}
+
+.summary-card__status--done {
+  background: #e8f7ed;
+  color: #00a870;
+}
+
+.calendar-card {
+  padding: 30rpx 24rpx 24rpx;
+  margin-bottom: 24rpx;
+}
+
+.calendar-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24rpx;
+}
+
+.calendar-card__title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #243042;
+}
+
+.calendar-card__action {
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 18rpx;
+  background: #f4f7fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-week,
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 14rpx;
+}
+
+.calendar-week {
+  margin-bottom: 16rpx;
+}
+
+.calendar-week__item {
+  text-align: center;
+  font-size: 24rpx;
+  color: #9aa5b5;
+}
+
+.calendar-day {
+  min-height: 82rpx;
+  border-radius: 22rpx;
+  background: #f7f9fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #314056;
+}
+
+.calendar-day--ghost {
+  background: transparent;
+  color: #d5dbe4;
+}
+
+.calendar-day--today {
+  box-shadow: inset 0 0 0 2rpx #7ea8ff;
+}
+
+.calendar-day--done {
+  background: #edf4ff;
+  color: #1664ff;
+}
+
+.calendar-day--selected {
+  background: linear-gradient(135deg, #1664ff 0%, #4f8dff 100%);
+  color: #ffffff;
+}
+
+.calendar-day__text {
+  font-size: 28rpx;
+  font-weight: 500;
+}
+
+.calendar-day__dot {
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  margin-top: 8rpx;
+  background: currentColor;
+}
+
+.preview-card {
+  padding: 30rpx 24rpx;
+}
+
+.preview-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20rpx;
+  margin-bottom: 24rpx;
+}
+
+.preview-card__title {
+  display: block;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #243042;
+}
+
+.preview-card__subtitle {
+  display: block;
+  margin-top: 8rpx;
+  font-size: 22rpx;
+  color: #9aa5b5;
+}
+
+.preview-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.preview-item {
+  display: flex;
+  gap: 18rpx;
+  padding: 24rpx;
+  border-radius: 22rpx;
+  background: #f7f9fc;
+}
+
+.preview-item__index {
+  width: 52rpx;
+  height: 52rpx;
+  border-radius: 16rpx;
+  background: #1664ff;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26rpx;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.preview-item__body {
+  flex: 1;
+}
+
+.preview-item__meta {
+  display: flex;
+  gap: 12rpx;
+  flex-wrap: wrap;
+  margin-bottom: 14rpx;
+}
+
+.preview-item__stem {
+  font-size: 28rpx;
+  line-height: 1.6;
+  color: #354154;
+}
+
+.preview-empty {
+  padding: 60rpx 0 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18rpx;
+  font-size: 26rpx;
+  color: #9aa5b5;
+}
+
+.daily-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20rpx 24rpx calc(20rpx + env(safe-area-inset-bottom));
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 -12rpx 36rpx rgba(19, 40, 72, 0.08);
+}

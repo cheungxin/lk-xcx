@@ -1,0 +1,23 @@
+/* 树形结构容器 */
+.tree-container {
+  width: 100%;
+  background-color: #fff;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* 空状态样式 */
+.tree-empty-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80rpx 32rpx;
+  min-height: 300rpx;
+}
+
+.empty-text {
+  font-size: 28rpx;
+  color: #999;
+  text-align: center;
+}

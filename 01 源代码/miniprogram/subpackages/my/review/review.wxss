@@ -1,0 +1,267 @@
+/* 背诵页 */
+.review-page {
+  min-height: 100vh;
+  background: #f7f8fa;
+}
+
+/* ============ 搜索栏 ============ */
+.search-bar {
+  padding: 16rpx 32rpx;
+  background: #ffffff;
+}
+
+/* ============ 学习进度 ============ */
+.progress-section {
+  margin: 16rpx 32rpx;
+  background: #ffffff;
+  border-radius: 12rpx;
+  padding: 24rpx;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16rpx;
+}
+
+.progress-info__text {
+  font-size: 28rpx;
+  color: #1d2129;
+  font-weight: 500;
+}
+
+.progress-info__pct {
+  font-size: 26rpx;
+  color: #1664ff;
+  font-weight: 600;
+}
+
+.progress-bar-wrap {
+  height: 12rpx;
+  background: #f2f3f5;
+  border-radius: 6rpx;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #1664FF, #4B8FFF);
+  border-radius: 6rpx;
+  transition: width 0.3s ease;
+}
+
+/* ============ 分类标签 ============ */
+.category-scroll {
+  white-space: nowrap;
+  padding: 0 32rpx;
+}
+
+.category-list {
+  display: inline-flex;
+  gap: 16rpx;
+  padding: 16rpx 0;
+}
+
+.category-chip {
+  display: inline-flex;
+  padding: 12rpx 24rpx;
+  border-radius: 24rpx;
+  background: #ffffff;
+  font-size: 26rpx;
+  color: #4e5969;
+  border: 1rpx solid #e5e6eb;
+}
+
+.category-chip--active {
+  background: #1664ff;
+  color: #ffffff;
+  border-color: #1664ff;
+}
+
+/* ============ 知识点列表 ============ */
+.point-list {
+  padding: 0 32rpx;
+}
+
+.point-card {
+  background: #ffffff;
+  border-radius: 16rpx;
+  padding: 24rpx;
+  margin-bottom: 16rpx;
+}
+
+.point-card__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16rpx;
+}
+
+.point-card__status {
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  margin-right: 12rpx;
+  flex-shrink: 0;
+}
+
+.point-card__status--0 { background: #C9CDD4; }
+.point-card__status--1 { background: #FFB020; }
+.point-card__status--2 { background: #00A870; }
+
+.point-card__title {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #1d2129;
+}
+
+.point-card__keywords {
+  margin-bottom: 16rpx;
+}
+
+.point-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.point-card__action {
+  font-size: 24rpx;
+  color: #1664ff;
+}
+
+/* ============ 空状态 ============ */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120rpx 0;
+}
+
+.empty-state__text {
+  font-size: 28rpx;
+  color: #86909c;
+  margin-top: 24rpx;
+}
+
+/* ============ 背诵模式 ============ */
+.recite-mode {
+  min-height: 100vh;
+  background: #f7f8fa;
+}
+
+.recite-scroll {
+  position: relative;
+}
+
+.recite-container {
+  padding: 32rpx;
+}
+
+.recite-header {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  margin-bottom: 24rpx;
+}
+
+.recite-title {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #1d2129;
+}
+
+/* 翻转卡片 */
+.flip-card {
+  background: #ffffff;
+  border-radius: 20rpx;
+  min-height: 400rpx;
+  padding: 48rpx 32rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 32rpx;
+  box-shadow: 0 4rpx 24rpx rgba(0, 0, 0, 0.04);
+}
+
+.flip-card__front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flip-card__prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32rpx;
+}
+
+.flip-card__text {
+  font-size: 28rpx;
+  color: #86909c;
+  margin-top: 16rpx;
+}
+
+.flip-card__keywords {
+  padding: 24rpx;
+  background: #f7f8fa;
+  border-radius: 12rpx;
+}
+
+.flip-card__keywords-label {
+  font-size: 26rpx;
+  color: #86909c;
+}
+
+.flip-card__keywords-text {
+  font-size: 26rpx;
+  color: #1664ff;
+  font-weight: 500;
+}
+
+.flip-card__back {
+  display: flex;
+  flex-direction: column;
+}
+
+.flip-card__content {
+  font-size: 30rpx;
+  color: #1d2129;
+  line-height: 1.8;
+  margin-bottom: 32rpx;
+}
+
+.flip-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 操作按钮 */
+.recite-actions {
+  display: flex;
+  gap: 24rpx;
+  margin-bottom: 32rpx;
+}
+
+.recite-action-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rpx;
+  padding: 24rpx;
+  background: #ffffff;
+  border-radius: 16rpx;
+  font-size: 26rpx;
+  transition: all 0.2s;
+}
+
+.recite-action-btn--active {
+  background: #FFF8E6;
+}
+
+.recite-nav {
+  display: flex;
+  gap: 16rpx;
+}

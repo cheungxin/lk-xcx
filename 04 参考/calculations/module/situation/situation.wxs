@@ -1,0 +1,16 @@
+var getAnswerText = function(isCorrect) {
+    var correctness = ''
+    if(isCorrect === '正确'){
+        correctness= 'correct'
+    }
+    else if(isCorrect === '错误'){
+        correctness = 'incorrect'
+    }else{
+        correctness = 'not-answer'
+    }  
+    return correctness   
+  } 
+
+  module.exports = {
+    getAnswerText: getAnswerText
+  }

@@ -1,0 +1,413 @@
+/* 学习统计页 */
+.stats-page {
+  min-height: 100vh;
+  background: #f7f8fa;
+}
+
+.stats-content {
+  padding: 0 0 32rpx;
+}
+
+/* ============ 概览卡片 ============ */
+.overview-card {
+  margin: 0 32rpx;
+  background: linear-gradient(135deg, #1664FF 0%, #4B8FFF 100%);
+  border-radius: 20rpx;
+  padding: 40rpx 24rpx;
+}
+
+.overview-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.overview-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overview-item__value {
+  font-size: 44rpx;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.overview-item__label {
+  font-size: 24rpx;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 4rpx;
+}
+
+.overview-divider {
+  width: 1rpx;
+  height: 60rpx;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* ============ 图表卡片 ============ */
+.chart-card {
+  margin: 24rpx 32rpx 0;
+  background: #ffffff;
+  border-radius: 16rpx;
+  padding: 32rpx;
+}
+
+.chart-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28rpx;
+}
+
+.chart-card__title {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #1d2129;
+}
+
+.chart-card__subtitle {
+  font-size: 24rpx;
+  color: #86909c;
+}
+
+/* ============ 柱状图 ============ */
+.bar-chart__bars {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 300rpx;
+  padding: 0 16rpx;
+}
+
+.bar-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.bar-stack {
+  width: 56rpx;
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 8rpx 8rpx 0 0;
+  overflow: hidden;
+}
+
+.bar {
+  width: 100%;
+  transition: height 0.5s ease;
+}
+
+.bar--correct {
+  background: #00A870;
+}
+
+.bar--wrong {
+  background: #E34D59;
+}
+
+.bar-group__label {
+  font-size: 22rpx;
+  color: #86909c;
+  margin-top: 12rpx;
+}
+
+.bar-group__count {
+  font-size: 22rpx;
+  color: #4e5969;
+  font-weight: 600;
+  margin-top: 4rpx;
+}
+
+.chart-legend {
+  display: flex;
+  gap: 32rpx;
+  justify-content: center;
+  margin-top: 24rpx;
+}
+
+.chart-legend__item {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+  font-size: 24rpx;
+  color: #86909c;
+}
+
+.chart-legend__dot {
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 4rpx;
+}
+
+/* ============ 科目正确率 ============ */
+.subject-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
+}
+
+.subject-item__left {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12rpx;
+}
+
+.subject-item__dot {
+  width: 12rpx;
+  height: 12rpx;
+  border-radius: 50%;
+  margin-right: 12rpx;
+}
+
+.subject-item__name {
+  font-size: 28rpx;
+  color: #1d2129;
+  font-weight: 500;
+}
+
+.subject-item__total {
+  font-size: 24rpx;
+  color: #86909c;
+  margin-left: 8rpx;
+}
+
+.subject-item__right {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+}
+
+.subject-bar-wrap {
+  flex: 1;
+  height: 16rpx;
+  background: #f2f3f5;
+  border-radius: 8rpx;
+  overflow: hidden;
+}
+
+.subject-bar {
+  height: 100%;
+  border-radius: 8rpx;
+  transition: width 0.5s ease;
+}
+
+.subject-item__pct {
+  font-size: 28rpx;
+  font-weight: 700;
+  width: 72rpx;
+  text-align: right;
+}
+
+/* ============ 题型分布 ============ */
+.type-distribution {
+  display: flex;
+  align-items: center;
+  gap: 32rpx;
+}
+
+.donut-chart {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  background: conic-gradient(
+    #1664FF 0deg 299deg,
+    #FF6B00 299deg 335deg,
+    #00A870 335deg 360deg
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.donut-chart::before {
+  content: '';
+  position: absolute;
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.donut-chart__center {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donut-chart__total {
+  font-size: 28rpx;
+  font-weight: 800;
+  color: #1d2129;
+}
+
+.donut-chart__label {
+  font-size: 20rpx;
+  color: #86909c;
+}
+
+.type-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.type-item {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+}
+
+.type-item__dot {
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 4rpx;
+  flex-shrink: 0;
+}
+
+.type-item__dot--0 { background: #1664FF; }
+.type-item__dot--1 { background: #FF6B00; }
+.type-item__dot--2 { background: #00A870; }
+
+.type-item__name {
+  font-size: 28rpx;
+  color: #1d2129;
+  flex: 1;
+}
+
+.type-item__count {
+  font-size: 24rpx;
+  color: #86909c;
+}
+
+.type-item__pct {
+  font-size: 24rpx;
+  color: #1d2129;
+  font-weight: 600;
+  width: 56rpx;
+  text-align: right;
+}
+
+/* ============ 薄弱环节 ============ */
+.weak-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.weak-item__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8rpx;
+}
+
+.weak-item__name {
+  font-size: 28rpx;
+  color: #1d2129;
+  flex: 1;
+}
+
+.weak-item__total {
+  font-size: 24rpx;
+  color: #86909c;
+}
+
+.weak-item__right {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+}
+
+.weak-bar-wrap {
+  flex: 1;
+  height: 12rpx;
+  background: #f2f3f5;
+  border-radius: 6rpx;
+  overflow: hidden;
+}
+
+.weak-bar {
+  height: 100%;
+  background: #E34D59;
+  border-radius: 6rpx;
+  transition: width 0.5s ease;
+}
+
+.weak-item__pct {
+  font-size: 24rpx;
+  color: #E34D59;
+  font-weight: 600;
+  width: 56rpx;
+  text-align: right;
+}
+
+.weak-tip {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+  margin-top: 24rpx;
+  padding: 20rpx;
+  background: #FFF8E6;
+  border-radius: 12rpx;
+}
+
+.weak-tip__text {
+  font-size: 24rpx;
+  color: #B97A40;
+  line-height: 1.5;
+}
+
+/* ============ 学习时长 ============ */
+.study-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.study-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 20rpx;
+}
+
+.study-stat-item__icon {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 16rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.study-stat-item__info {
+  flex: 1;
+}
+
+.study-stat-item__value {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #1d2129;
+  display: block;
+}
+
+.study-stat-item__label {
+  font-size: 24rpx;
+  color: #86909c;
+  margin-top: 4rpx;
+  display: block;
+}
+
+.bottom-spacer {
+  height: 60rpx;
+}

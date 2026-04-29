@@ -1,0 +1,112 @@
+<view class="shenlun-page">
+  <t-navbar
+    title="{{pageTitle}}"
+    left-arrow
+    fixed
+    bind:go-back="handleGoBack"
+  />
+
+  <scroll-view scroll-y class="shenlun-scroll" style="margin-top: {{navBarHeight}}px;">
+    <view class="shenlun-content">
+      <view class="summary-card">
+        <view class="summary-card__main">
+          <text class="summary-card__eyebrow">
+            第 {{currentIndex + 1}} / {{totalQuestions}} 题
+          </text>
+          <text class="summary-card__title">{{currentQuestion ? currentQuestion.typeName : '申论题'}}</text>
+          <text class="summary-card__subtitle">
+            {{practiceType === 'daily' ? '今日主观题训练' : '主观题作答练习'}}
+          </text>
+        </view>
+        <view class="summary-card__timer">
+          <text class="summary-card__timer-label">已用时</text>
+          <text class="summary-card__timer-value">{{timerText}}</text>
+        </view>
+      </view>
+
+      <view wx:if="{{currentQuestion}}" class="material-card">
+        <view class="section-head">
+          <view>
+            <text class="section-head__title">{{currentQuestion.materialTitle || '给定材料'}}</text>
+            <text class="section-head__subtitle">先读材料，再围绕题干作答</text>
+          </view>
+          <view class="material-card__toggle" bindtap="toggleMaterial">
+            <text>{{materialCollapsed ? '展开' : '收起'}}</text>
+            <t-icon
+              name="{{materialCollapsed ? 'chevron-down' : 'chevron-up'}}"
+              size="28rpx"
+              color="#5F6B7F"
+            />
+          </view>
+        </view>
+
+        <view wx:if="{{!materialCollapsed}}" class="material-card__body">
+          <text class="material-card__text">{{currentQuestion.material}}</text>
+        </view>
+      </view>
+
+      <view wx:if="{{currentQuestion}}" class="question-card">
+        <view class="section-head">
+          <text class="section-head__title">题目要求</text>
+          <t-tag theme="primary" variant="light">{{currentQuestion.wordLimit}}字以内</t-tag>
+        </view>
+
+        <view class="question-card__meta">
+          <t-tag theme="default" variant="light">{{currentQuestion.typeName}}</t-tag>
+          <t-tag wx:if="{{currentQuestion.source}}" variant="light">{{currentQuestion.source}}</t-tag>
+          <t-tag wx:if="{{currentQuestion.year}}" variant="light">{{currentQuestion.year}}</t-tag>
+        </view>
+
+        <text class="question-card__title">{{currentQuestion.title}}</text>
+        <text class="question-card__text">{{currentQuestion.question}}</text>
+      </view>
+
+      <view wx:if="{{currentQuestion}}" class="answer-card">
+        <view class="section-head">
+          <text class="section-head__title">我的作答</text>
+          <text
+            class="answer-card__count {{currentWordCount > currentQuestion.wordLimit ? 'answer-card__count--danger' : ''}}"
+          >
+            {{currentWordCount}} / {{currentQuestion.wordLimit}}
+          </text>
+        </view>
+
+        <textarea
+          class="answer-card__textarea"
+          value="{{currentAnswer}}"
+          maxlength="-1"
+          auto-height
+          placeholder="请输入你的答案，建议先列提纲再整理成完整表述。"
+          placeholder-style="color: #B3BDCB;"
+          bindinput="onAnswerInput"
+        />
+
+        <view class="answer-card__tags">
+          <t-tag wx:for="{{currentQuestion.tags}}" wx:key="*this" variant="light">
+            {{item}}
+          </t-tag>
+        </view>
+      </view>
+
+      <view class="question-tabs">
+        <view
+          wx:for="{{questions}}"
+          wx:key="id"
+          class="question-tab {{currentIndex === index ? 'question-tab--active' : ''}} {{answers[index] ? 'question-tab--done' : ''}}"
+          data-index="{{index}}"
+          bindtap="handleQuestionTabTap"
+        >
+          <text class="question-tab__text">第{{index + 1}}题</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view class="shenlun-footer">
+    <view class="shenlun-footer__group">
+      <t-button theme="default" size="large" bindtap="handlePrev">上一题</t-button>
+      <t-button theme="default" size="large" bindtap="handleNext">下一题</t-button>
+    </view>
+    <t-button theme="primary" size="large" bindtap="handleFinish">提交答案</t-button>
+  </view>
+</view>

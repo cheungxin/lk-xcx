@@ -1,0 +1,72 @@
+<view class="page">
+  <t-navbar 
+    title="答题卡"
+    left-arrow
+    fixed
+    bind:go-back="handleGoBack"
+  />
+
+  <view class="header-card" style="margin-top: {{navBarHeight}}px;">
+    <text class="header-title">{{paperTitle}}</text>
+    <view class="header-stats">
+      <view class="stat-item">
+        <text class="stat-val">{{currentIndex}}</text>
+        <text class="stat-label">当前题号</text>
+      </view>
+      <view class="stat-divider"></view>
+      <view class="stat-item">
+        <text class="stat-val">{{answerSheet.length}}</text>
+        <text class="stat-label">总题数</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="card-container">
+    <view class="legend-row">
+      <view class="legend-item">
+        <view class="legend-dot legend-dot--current"></view>
+        <text>当前</text>
+      </view>
+      <view class="legend-item">
+        <view class="legend-dot legend-dot--correct"></view>
+        <text>正确</text>
+      </view>
+      <view class="legend-item">
+        <view class="legend-dot legend-dot--wrong"></view>
+        <text>错误</text>
+      </view>
+      <view class="legend-item">
+        <view class="legend-dot legend-dot--pending"></view>
+        <text>未答</text>
+      </view>
+      <view class="legend-item" wx:if="{{hasMarked}}">
+        <view class="legend-dot legend-dot--marked"></view>
+        <text>标记</text>
+      </view>
+    </view>
+
+    <scroll-view scroll-y class="grid-scroll">
+      <view class="sheet-grid" wx:if="{{answerSheet.length}}">
+        <view
+          class="sheet-item sheet-item--{{item.status}} {{item.marked ? 'sheet-item--marked' : ''}}"
+          wx:for="{{answerSheet}}"
+          wx:key="id"
+          data-index="{{item.index}}"
+          bindtap="handleSelectQuestion"
+        >
+          {{item.index}}
+          <view wx:if="{{item.marked}}" class="mark-badge"></view>
+        </view>
+      </view>
+      <view wx:else class="empty-state">
+        <t-icon name="info-circle" size="80rpx" color="#C9CDD4"/>
+        <text>暂无答题卡数据</text>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="bottom-bar">
+    <t-button theme="light" shape="round" block class="btn-half" bindtap="handleBackPractice">继续答题</t-button>
+    <t-button theme="primary" shape="round" block class="btn-half" bindtap="handleOpenAnalysis">查看解析</t-button>
+  </view>
+</view>

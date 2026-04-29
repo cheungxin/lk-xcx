@@ -1,0 +1,252 @@
+<page-meta page-style="{{(showAnswerCard || showDraftSheet) ? 'overflow: hidden; height: 100vh;' : ''}}" />
+<!-- 快练页 - 随机抽题快速练习 -->
+<view class="quick-page" style="padding-bottom: {{tabBarHeight}}rpx;">
+
+  <!-- 配置面板 -->
+  <view class="config-panel" wx:if="{{showConfig}}">
+    <t-navbar title="快练" left-arrow fixed bind:go-back="handleGoHome" />
+    <view style="margin-top: {{navBarHeight}}px;">
+
+      <!-- 快练说明 -->
+      <view class="config-hero">
+        <view class="config-hero__icon">
+          <t-icon name="lightning" size="64rpx" color="#FFB020" />
+        </view>
+        <text class="config-hero__title">随机快练</text>
+        <text class="config-hero__desc">系统随机抽取题目，快速检验学习成果</text>
+      </view>
+
+      <!-- 科目选择 -->
+      <view class="config-section">
+        <text class="config-section__title">选择科目</text>
+        <view class="category-grid">
+          <view
+            wx:for="{{categories}}"
+            wx:key="id"
+            class="category-tag {{selectedCategory === item.id ? 'category-tag--active' : ''}}"
+            data-id="{{item.id}}"
+            bindtap="onCategoryChange"
+          >
+            {{item.name}}
+          </view>
+        </view>
+      </view>
+
+      <!-- 题目数量 -->
+      <view class="config-section">
+        <text class="config-section__title">题目数量</text>
+        <view class="count-selector">
+          <view class="count-btn {{questionCount <= countOptions[0] ? 'count-btn--disabled' : ''}}" bindtap="onCountMinus">
+            <t-icon name="minus" size="36rpx" color="#4E5969" />
+          </view>
+          <text class="count-value">{{questionCount}} 题</text>
+          <view class="count-btn {{questionCount >= countOptions[countOptions.length-1] ? 'count-btn--disabled' : ''}}" bindtap="onCountPlus">
+            <t-icon name="add" size="36rpx" color="#4E5969" />
+          </view>
+        </view>
+        <view class="count-presets">
+          <view
+            wx:for="{{countOptions}}"
+            wx:key="*this"
+            class="count-preset {{questionCount === item ? 'count-preset--active' : ''}}"
+            data-value="{{item}}"
+            bindtap="onCategoryChange"
+          >
+            {{item}}题
+          </view>
+        </view>
+      </view>
+
+      <!-- 开始按钮 -->
+      <view class="start-btn-wrap">
+        <t-button theme="primary" size="large" block bindtap="handleStartPractice">
+          <t-icon name="play-circle" size="40rpx" color="#fff" style="margin-right: 12rpx;" />
+          开始快练
+        </t-button>
+      </view>
+    </view>
+  </view>
+
+  <!-- 答题界面 -->
+  <view class="practice-view" wx:if="{{isPracticing && !showResult}}">
+    <t-navbar title="快练" left-arrow fixed bind:go-back="handleFinish" />
+
+    <!-- 顶部信息栏 -->
+    <view class="practice-top-bar" style="margin-top: {{navBarHeight}}px;">
+      <view class="timer-box">
+        <t-icon name="time" size="30rpx" color="#86909C" />
+        <text class="timer-text">{{timerText}}</text>
+      </view>
+      <view class="progress-box" bindtap="handleOpenAnswerCard">
+        <text class="progress-text">{{currentIndex}}/{{totalQuestions}}</text>
+        <t-icon name="view-module" size="30rpx" color="#1664FF" />
+      </view>
+    </view>
+
+    <!-- 进度条 -->
+    <view class="progress-bar-wrap">
+      <view class="progress-bar" style="width: {{currentIndex / totalQuestions * 100}}%;"></view>
+    </view>
+
+    <!-- 题目区域 -->
+    <scroll-view scroll-y class="question-scroll">
+      <view class="question-container">
+        <view class="question-header">
+          <t-tag theme="primary" variant="light">{{questions[currentIndex - 1].type}}</t-tag>
+          <t-tag variant="light" style="margin-left: 12rpx;">{{questions[currentIndex - 1].category}}</t-tag>
+        </view>
+
+        <text class="question-stem">{{currentIndex}}. {{questions[currentIndex - 1].stem}}</text>
+
+        <view class="options-list">
+          <view
+            wx:for="{{questions[currentIndex - 1].options}}"
+            wx:for-item="option"
+            wx:key="id"
+            class="option-item {{selectedAnswer === option.id ? (isCorrect ? 'option-item--correct' : 'option-item--wrong') : ''}} {{!selectedAnswer && submitted ? '' : ''}} {{submitted && option.id === questions[currentIndex-1].correctAnswer && selectedAnswer !== option.id ? 'option-item--correct' : ''}}"
+            data-id="{{option.id}}"
+            bindtap="handleOptionTap"
+          >
+            <view class="option-letter {{selectedAnswer === option.id ? (isCorrect ? 'option-letter--correct' : 'option-letter--wrong') : ''}} {{submitted && option.id === questions[currentIndex-1].correctAnswer ? 'option-letter--correct' : ''}}">
+              {{option.id}}
+            </view>
+            <text class="option-text">{{option.text}}</text>
+            <t-icon wx:if="{{submitted && option.id === questions[currentIndex-1].correctAnswer}}" name="check-circle-filled" color="#00A870" size="40rpx" class="option-icon" />
+            <t-icon wx:elif="{{selectedAnswer === option.id && !isCorrect}}" name="close-circle-filled" color="#E34D59" size="40rpx" class="option-icon" />
+          </view>
+        </view>
+
+        <!-- 解析 -->
+        <view class="analysis-box" wx:if="{{submitted}}">
+          <view class="analysis-box__header">
+            <text class="analysis-box__title">解析</text>
+          </view>
+          <view class="analysis-box__content">
+            <view class="analysis-box__answer">
+              <text class="analysis-box__label">正确答案：</text>
+              <text class="analysis-box__val analysis-box__val--correct">{{questions[currentIndex - 1].correctAnswer}}</text>
+            </view>
+            <text class="analysis-box__text">{{questions[currentIndex - 1].explanation}}</text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+
+    <!-- 底部操作栏 -->
+    <view class="bottom-bar">
+      <view class="bottom-action" bindtap="handleOpenDraft">
+        <t-icon name="edit" size="40rpx" color="#4E5969" />
+        <text>草稿</text>
+      </view>
+      <view class="bottom-action" bindtap="handleOpenAnswerCard">
+        <t-icon name="view-module" size="40rpx" color="#4E5969" />
+        <text>答题卡</text>
+      </view>
+      <view class="bottom-action bottom-action--primary" bindtap="{{submitted ? 'handleNext' : ''}}">
+        <t-button theme="primary" size="medium" disabled="{{!submitted}}" block>
+          {{currentIndex >= totalQuestions ? '交卷' : '下一题'}}
+        </t-button>
+      </view>
+    </view>
+  </view>
+
+  <!-- 结果面板 -->
+  <view class="result-view" wx:if="{{showResult}}">
+    <t-navbar title="快练结果" left-arrow fixed bind:go-back="handleRestart" />
+    <scroll-view scroll-y class="result-scroll" style="margin-top: {{navBarHeight}}px;">
+      <view class="result-container">
+        <!-- 成绩卡片 -->
+        <view class="result-card">
+          <view class="result-card__circle {{resultData.accuracy > 60 ? 'result-card__circle--good' : 'result-card__circle--bad'}}">
+            <text class="result-card__accuracy">{{resultData.accuracy}}</text>
+            <text class="result-card__label">正确率</text>
+          </view>
+          <view class="result-card__stats">
+            <view class="result-stat">
+              <text class="result-stat__val result-stat__val--total">{{resultData.totalCount}}</text>
+              <text class="result-stat__label">总题数</text>
+            </view>
+            <view class="result-stat-divider"></view>
+            <view class="result-stat">
+              <text class="result-stat__val result-stat__val--correct">{{resultData.correctCount}}</text>
+              <text class="result-stat__label">答对</text>
+            </view>
+            <view class="result-stat-divider"></view>
+            <view class="result-stat">
+              <text class="result-stat__val result-stat__val--wrong">{{resultData.wrongCount}}</text>
+              <text class="result-stat__label">答错</text>
+            </view>
+            <view class="result-stat-divider"></view>
+            <view class="result-stat">
+              <text class="result-stat__val">{{resultData.totalTime}}</text>
+              <text class="result-stat__label">用时</text>
+            </view>
+          </view>
+        </view>
+
+        <!-- 分科统计 -->
+        <view class="breakdown-card">
+          <text class="breakdown-card__title">分科统计</text>
+          <view class="breakdown-list">
+            <view class="breakdown-item" wx:for="{{resultData.categoryBreakdown}}" wx:key="name">
+              <text class="breakdown-item__name">{{item.name}}</text>
+              <view class="breakdown-item__bar-wrap">
+                <view class="breakdown-item__bar" style="width: {{item.total > 0 ? (item.correct / item.total * 100) : 0}}%;"></view>
+              </view>
+              <text class="breakdown-item__text">{{item.correct}}/{{item.total}}</text>
+            </view>
+          </view>
+        </view>
+
+        <!-- 操作按钮 -->
+        <view class="result-actions">
+          <t-button theme="primary" size="large" block bindtap="handleRestart">
+            <t-icon name="refresh" size="40rpx" color="#fff" style="margin-right: 12rpx;" />
+            再来一轮
+          </t-button>
+          <t-button variant="outline" size="large" block bindtap="handleGoHome" style="margin-top: 24rpx;">
+            返回首页
+          </t-button>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- 答题卡弹窗 -->
+  <t-popup visible="{{showAnswerCard}}" placement="bottom" bind:visible-change="handleAnswerCardChange">
+    <view class="answer-card-popup">
+      <view class="answer-card-popup__header">
+        <text class="answer-card-popup__title">答题卡</text>
+        <t-icon name="close" size="40rpx" color="#86909C" bindtap="handleCloseAnswerCard" />
+      </view>
+      <view class="answer-card-popup__grid">
+        <view
+          wx:for="{{answerSheet}}"
+          wx:key="index"
+          class="ac-item ac-item--{{item.status}}"
+          data-index="{{item.index}}"
+          bindtap="handleSelectQuestion"
+        >
+          {{item.index}}
+        </view>
+      </view>
+      <view class="answer-card-popup__legend">
+        <view class="ac-legend"><view class="ac-legend__dot ac-legend__dot--correct"></view><text>正确</text></view>
+        <view class="ac-legend"><view class="ac-legend__dot ac-legend__dot--wrong"></view><text>错误</text></view>
+        <view class="ac-legend"><view class="ac-legend__dot ac-legend__dot--current"></view><text>当前</text></view>
+        <view class="ac-legend"><view class="ac-legend__dot ac-legend__dot--pending"></view><text>未答</text></view>
+      </view>
+    </view>
+  </t-popup>
+
+  <draft-sheet 
+    id="draftSheet"
+    sceneKey="{{draftSceneKey}}" 
+    themeMode="{{themeMode}}" 
+    showTrigger="{{false}}"
+    bind:open="handleDraftOpenState"
+    bind:close="handleDraftCloseState"
+  />
+
+  <tabbar selected="{{2}}" wx:if="{{showConfig}}" />
+</view>

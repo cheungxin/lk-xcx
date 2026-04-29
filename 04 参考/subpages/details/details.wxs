@@ -1,0 +1,102 @@
+/* isCorrect="正确"和数组中相同的questionNumber、questionOption  返回 'correct',isCorrect="错误"和数组中相同的questionNumber、questionOption   返回 'incorrect',其他的情况返回 'noraml' */
+ 
+function checkAnswer(questionOptionUser,isCorrect,questionOption) { 
+  // 检查用户是否选择了当前选项
+  var userSelected = false;
+  if (questionOptionUser) {
+    // 处理多选题情况：用户答案可能是逗号分隔的字符串（如 "A,C"）
+    if (questionOptionUser.indexOf(',') !== -1) {
+      var userOptions = questionOptionUser.split(',');
+      for (var i = 0; i < userOptions.length; i++) {
+        if (userOptions[i] === questionOption) {
+          userSelected = true;
+          break;
+        }
+      }
+    } else {
+      // 单选题情况：直接比较
+      userSelected = (questionOptionUser === questionOption);
+    }
+  }
+  
+  if (isCorrect === 1) {
+    // 正确选项：总是显示绿色
+    return 'correct';
+  } else if (userSelected) {
+    // 用户选择了错误选项：显示红色
+    return 'incorrect';
+  }
+  
+  return 'normal';
+} 
+
+function userOption(answerLists, questionNumber,correct_answer){
+ for (var k = 0; k < answerLists.length;k++) {
+  var item = answerLists[k];
+  if(item.questionNumber === questionNumber){ 
+   if(item.questionOption === correct_answer ){
+    return {
+      isCorrect:'correct',
+      questionOption:item.questionOption
+    };
+   }else{  
+    return {
+    isCorrect:'incorrect',
+    questionOption:item.questionOption
+   }; 
+  }
+  } 
+ }
+}
+
+
+function fontSizeSet(font_size_type) {
+ if(font_size_type===1){
+   return  'type-small'; 
+ }else if(font_size_type === 4){
+  return 'type-large'
+ }else if(font_size_type === 3){
+  return 'type-bigger'
+ }else{
+  return 'type-normal'   
+ }
+
+} 
+
+function isShowImage(now_idx,idx,url){
+if( idx >= now_idx - 5 && idx <= now_idx + 5 ){
+  if(url){
+    return true;
+  }else{
+    return false; 
+  }
+}else{
+ return false;
+}
+}
+
+/**
+ * 根据题型类型返回对应的文本
+ * @param {number} questionChoiceType - 题型类型 (1: 单选题, 2: 多选题, 3: 判断题)
+ * @returns {string} 题型文本
+ */
+function getQuestionTypeText(questionChoiceType) {
+  if (questionChoiceType === 1) {
+    return '单选题';
+  } else if (questionChoiceType === 2) {
+    return '多选题';
+  } else if (questionChoiceType === 3) {
+    return '判断题';
+  } else if (questionChoiceType === 4) {
+    return '不定项';
+  }
+  return '';
+}
+
+module.exports = {
+checkAnswer:checkAnswer, 
+fontSizeSet:fontSizeSet,
+userOption:userOption,
+isShowImage:isShowImage,
+getQuestionTypeText:getQuestionTypeText
+}

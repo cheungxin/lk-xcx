@@ -1,0 +1,186 @@
+<van-nav-bar    left-arrow bind:click-left="onClickLeft" title="{{title}}" fixed="true" safe-area-inset-top="false" border="{{false}}" />
+<view class="page-content" style="padding-top:{{navigationBarHeight}}px">
+    <view class="page-section">
+		<van-sticky> 
+         <view class="topic-header">
+				 <view class="topic-display-info analysis-display-info"> 
+					<view class="topic-number">
+						<text class="text-index">{{nowQuestionIndex+1}}</text> /<text >{{wrongLists.length}}</text>
+					</view>  
+					<view class="topic-favorite" bindtap="collect" data-index="{{nowQuestionIndex}}">
+		          <text class="iconfont {{isFavorite?'icon-star':'icon-star-o'}} "  wx:if="{{page==='wrongs'}}" ></text>
+	    </view> 
+		 </view>
+		  </view>
+      </van-sticky> 
+	<!-- 页面滚动 --> 
+		<swiper
+		class="topic-view"
+		direction="horizontal"
+		bindchange="switchNext"
+		current="{{nowQuestionIndex}}"
+		duration="{{showSituation?0:250}}" 
+		auto-height="true"  
+		style="height:calc( {{screenHeight}}px - {{navigationBarHeight}}px - 100rpx - 70rpx);"
+		>
+		<swiper-item
+		 class="item-box"
+		 wx:for="{{wrongLists}}"
+		 wx:key="index"
+		 wx:for-index="index"
+		 data-item="{{item}}"
+		 id="swiper-item"   
+		>
+		<scroll-view scroll-y="{{true}}" style="height:100%"> 
+	    <view class="item-scroll-box">
+              <view class="topic-item"> 
+				<view class="topic-material" wx:if="{{item.isHasMaterials===1}}">   
+                  <view class="material-content" hidden="{{ !collapsed }}">
+				     <text class="material-ellipsis first-indent {{tools.fontSizeSet(textSize)}}" > {{  item.materialContent  }}</text>
+					 <view class="qustion-image" wx:if="{{item.materialsImg}}">
+					      <image mode="widthFix"  src="{{item.materialsImg}}" 
+						  data-url="{{item.materialsImg}}" 
+						    bindtap="previewImage"   
+						  />
+				    </view>
+				 </view>  
+				 <view class="material-content" hidden="{{ collapsed }}">
+				     <text class="first-indent {{tools.fontSizeSet(textSize)}}" > {{  item.materialContent  }}</text>
+					 <view class="qustion-image" wx:if="{{item.materialsImg}}">
+					      <image mode="widthFix"  src="{{item.materialsImg}}"  
+						 data-url="{{item.materialsImg}}" 
+						    bindtap="previewImage"  
+						  />
+				    </view>
+				 </view> 
+				  <view class="expend-btn" bindtap="toggleCollapse"> 
+					  <view wx:if="{{collapsed}}">展开材料 <text class="iconfont icon-arrow-down"></text></view>
+					  <view wx:else >收起材料 <text class="iconfont icon-arrow-up"></text></view>
+				  </view> 
+				 <van-divider dashed ></van-divider>
+			   </view> 
+				<view class="topic-content">
+				   <view class="question-difficulty">
+				    	{{item.questionDifficulty}} 
+				   </view>
+                   <view class="question-type" wx:if="{{item.questionChoiceType}}">
+                        {{ tools.getQuestionTypeText(item.questionChoiceType) }}
+                   </view>
+				    	 <view class="text">
+						 <text class="{{tools.fontSizeSet(textSize)}}" > {{  item.questionContent  }}</text>
+				   </view>
+				</view>   
+				<view class="qustion-image" wx:if="{{ tools.isShowImage(nowQuestionIndex,index,item.questionImage) }}">
+					<image mode="widthFix"  src="{{item.questionImage}}"  
+					data-url="{{item.questionImage}}" 
+						    bindtap="previewImage" 
+					/>
+				</view>
+			</view>
+			<view class="option-cells">
+				<view
+				 class="option-cell {{tools.checkAnswer(wrongLists,item.questionNumber,option.opIsCorrect,option.questionOption)}}" 
+				 bindtap="chooseOption"
+				 wx:for="{{item.questOptionList}}"
+				 wx:key="idx"
+				 wx:for-index="idx"
+				 wx:for-item="option"
+				 data-question-index="{{item.questionIndex}}"
+				 data-question-number="{{option.questionNumber}}"
+				 data-question-option="{{option.questionOption}}"
+				 data-is-correct="{{option.opIsCorrect}}"
+				 data-correct-answer="{{item.questionAnswer}}"
+                 data-question-choice-type="{{item.questionChoiceType}}"
+				>   
+					<view class="option-label">{{option.questionOption}}</view>
+					<view class="option-content {{tools.fontSizeSet(textSize)}}"> 
+                      <text class="{{tools.fontSizeSet(textSize)}}" selectable="true"> {{option.optionContent}}  </text> 
+					</view>
+				</view>
+                <view class="confirm-box" wx:if="{{(item.questionChoiceType == 2 || item.questionChoiceType == 4) && !item.isAnswered}}">
+                    <view class="confirm-btn" bindtap="confirmMultiChoice" data-correct-answer="{{item.questionAnswer}}">确认</view>
+                </view>
+			</view>
+		</view>   
+		<view class="analysis-box" wx:if="{{tools.brush(wrongLists,item.questionNumber)}}">
+				<view class="analysis-title">
+				  <view class="title-label"></view><view class="title-text">题目解析</view>
+				</view>
+				<view class="analysis-answer">
+					<text class="correct-answer">正确答案：{{item.correctAnswer}}</text> 
+                    <text class="user-answer {{ item.isCorrect==1?'correct':(item.isCorrect==-1?'unselected':'incorrect') }}"> {{ item.isCorrect==-1?'您未选择答案':'您的选择： ' + item.questionOptionUser }}  </text>
+				</view>
+				<view class="analysis-bigdata" style="display:none;">
+                  <view class="all-rate">全站正确率：92%</view>|
+				  <view class="error-option">易错选项：C</view>
+				</view>
+				<view class="analysis-content">
+					<view class="analysis-content-tit">
+						解析： 
+					</view> 
+					<view class="letter-text-indent">
+                       <text class="{{tools.fontSizeSet(textSize)}}" selectable="true">{{item.questionParse}}</text> 
+					</view> 
+				</view> 
+				<view class="parse-image"  wx:if="{{ tools.isShowImage(nowQuestionIndex,index,item.questionParseImg) }}">	
+					<image mode="widthFix" src="{{item.questionParseImg}}" 
+					data-url="{{item.questionParseImg}}" 
+						    bindtap="previewImage" 
+					/>
+				</view>
+			</view> 
+		</scroll-view>
+		</swiper-item> 
+	</swiper>
+</view>
+ </view>  
+
+<!--答题卡组件-->
+<answer-situation 
+showSituation="{{showSituation}}" 
+answerLists="{{wrongLists}}" 
+correctNum="{{correctNum}}"
+questionAllNum="{{questionAllNum}}"
+bind:getQuestion="getQuestion" 
+ clientHeight="{{clientHeight}}"
+/>
+
+<!--更多的弹出层-->
+<van-popup
+ show="{{ isMore }}"
+  closeable
+  round
+  close-icon="close"
+  position="bottom"
+  custom-style="height: 20%"
+  bind:close="onClose"
+> 
+<view class="more-container">
+	<view class="more-control-text">
+       <view class="control-title font-t8">文字大小设置</view>  <van-stepper value="{{ fontSize }}" min="1" max="4" bind:change="onChangeText" /> 
+	</view> 
+</view> 
+</van-popup> 
+
+ <!--wxs-->
+<wxs src="./brusherrors.wxs" module="tools" /> 
+ 
+ <view class="tabbar"> 
+	<view
+	 class="tabbar-item font-t4"
+	 wx:for="{{tabBar.list}}"
+	 wx:key="type"
+	 bindtap="switchTab"
+	 data-text="{{item.text}}"
+	 data-index="{{index}}"
+	>
+	    <view class="tabbar-item-icon">
+			<text class="iconfont {{item.icon}}"></text>
+		</view> 
+		<view class="tabbar-item-text">
+           <text class="font-t1">{{item.text}}</text>
+		</view>  
+	</view>
+</view>
+
+ 

@@ -1,0 +1,180 @@
+/* my 分包 - 收藏页 */
+
+.favorite-page {
+  min-height: 100vh;
+  background: #F3F7FD;
+  padding-bottom: 160rpx;
+}
+
+/* 导航栏右侧 */
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64rpx;
+  height: 64rpx;
+}
+
+/* 标签页容器 */
+.tabs-container {
+  background: #FFFFFF;
+  padding: 0 24rpx;
+}
+
+/* TDesign Tabs 样式覆盖 */
+.tabs-container t-tabs {
+  --td-tab-nav-bg-color: #FFFFFF;
+  --td-tab-item-color: #72809A;
+  --td-tab-item-active-color: #4B74FF;
+  --td-tab-track-color: #4B74FF;
+  --td-tab-border-color: #EEF2F8;
+  --td-tab-item-font-size: 32rpx;
+  --td-tab-item-active-font-weight: 600;
+}
+
+/* 内容区域 */
+.content-container {
+  padding: 24rpx;
+}
+
+.tab-content {
+  min-height: 60vh;
+}
+
+/* 分类列表 */
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32rpx 24rpx;
+  background: #FFFFFF;
+  border-radius: 24rpx;
+  box-shadow: 0 4rpx 16rpx rgba(42, 77, 145, 0.04);
+  border: 1rpx solid rgba(238, 242, 248, 0.8);
+  transition: all 0.3s ease;
+}
+
+.category-item:active {
+  transform: scale(0.98);
+  box-shadow: 0 2rpx 8rpx rgba(42, 77, 145, 0.06);
+}
+
+.category-left {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  flex: 1;
+}
+
+.category-icon {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  background: #EEF3FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.category-icon.expanded {
+  background: #4B74FF;
+}
+
+.category-icon.expanded t-icon {
+  --td-icon-color: #FFFFFF !important;
+}
+
+.category-name {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #2F3442;
+}
+
+.category-right {
+  display: flex;
+  align-items: center;
+  gap: 24rpx;
+}
+
+.category-count {
+  font-size: 28rpx;
+  color: #72809A;
+  min-width: 40rpx;
+  text-align: right;
+}
+
+.category-edit {
+  width: 56rpx;
+  height: 56rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12rpx;
+  background: #F5F7FA;
+  transition: all 0.2s ease;
+}
+
+.category-edit:active {
+  background: #E8ECF2;
+}
+
+/* 空状态 */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120rpx 48rpx;
+}
+
+.empty-icon {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  background: #F5F8FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32rpx;
+}
+
+.empty-text {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #72809A;
+  margin-bottom: 16rpx;
+}
+
+.empty-desc {
+  font-size: 26rpx;
+  color: #95A0B3;
+}
+
+/* 底部操作栏 */
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24rpx;
+  background: #FFFFFF;
+  box-shadow: 0 -4rpx 16rpx rgba(42, 77, 145, 0.06);
+  z-index: 100;
+}
+
+.bottom-bar t-button {
+  --td-button-primary-bg-color: #4B74FF;
+  --td-button-primary-border-color: #4B74FF;
+  --td-button-primary-active-bg-color: #3A5FE6;
+  --td-button-primary-active-border-color: #3A5FE6;
+  --td-button-height: 96rpx;
+  --td-button-font-size: 32rpx;
+  --td-button-border-radius: 48rpx;
+}

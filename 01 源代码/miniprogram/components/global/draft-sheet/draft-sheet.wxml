@@ -1,0 +1,87 @@
+<!-- 触发按钮 -->
+<view
+  wx:if="{{sceneKey && showTrigger}}"
+  class="draft-sheet-trigger draft-sheet-trigger--{{themeMode === 'dark' ? 'dark' : 'light'}} {{hasContent ? 'draft-sheet-trigger--active' : ''}}"
+  style="right: {{rightOffset}}rpx; bottom: calc({{bottomOffset}}rpx + env(safe-area-inset-bottom));"
+  bindtap="handleOpen"
+>
+  <view class="draft-sheet-trigger__icon-wrap">
+    <t-icon
+      name="edit"
+      size="34rpx"
+      color="{{hasContent ? '#FF7D00' : (themeMode === 'dark' ? '#C7D2E3' : '#4E5969')}}"
+    />
+    <view wx:if="{{hasContent}}" class="draft-sheet-trigger__dot"></view>
+  </view>
+</view>
+
+<!-- 全屏草稿纸模式 -->
+<view 
+  wx:if="{{internalVisible}}" 
+  class="draft-sheet-fullscreen {{themeMode === 'dark' ? 'draft-sheet-fullscreen--dark' : 'draft-sheet-fullscreen--light'}}" 
+  style="--status-bar-height: {{statusBarHeight}}px;"
+>
+  <!-- 半透明遮罩背景 - 点击关闭 -->
+  <view 
+    class="draft-sheet-fullscreen__overlay"
+    bindtap="handleOverlayTap"
+  ></view>
+
+  <!-- 顶部工具栏 -->
+  <view class="draft-sheet-fullscreen__toolbar" catchtap="handleCatchTap">
+    <view class="draft-sheet-fullscreen__toolbar-left">
+      <view class="draft-sheet-fullscreen__tool-btn" bindtap="handleClose">
+        <t-icon name="close" size="44rpx" color="{{themeMode === 'dark' ? '#FFFFFF' : '#1D2129'}}" />
+      </view>
+    </view>
+
+    <view class="draft-sheet-fullscreen__toolbar-center">
+      <text class="draft-sheet-fullscreen__title">草稿纸</text>
+    </view>
+
+    <view class="draft-sheet-fullscreen__toolbar-right">
+      <view 
+        class="draft-sheet-fullscreen__tool-btn {{!canUndo ? 'draft-sheet-fullscreen__tool-btn--disabled' : ''}}" 
+        bindtap="handleUndo"
+      >
+        <t-icon name="rollback" size="44rpx" color="{{canUndo ? (themeMode === 'dark' ? '#FFFFFF' : '#1D2129') : '#C9CDD4'}}" />
+      </view>
+      <view 
+        class="draft-sheet-fullscreen__tool-btn {{!canRedo ? 'draft-sheet-fullscreen__tool-btn--disabled' : ''}}" 
+        bindtap="handleRedo"
+      >
+        <t-icon name="rollfront" size="44rpx" color="{{canRedo ? (themeMode === 'dark' ? '#FFFFFF' : '#1D2129') : '#C9CDD4'}}" />
+      </view>
+      <view 
+        class="draft-sheet-fullscreen__tool-btn {{!hasContent ? 'draft-sheet-fullscreen__tool-btn--disabled' : ''}}" 
+        bindtap="handleClear"
+      >
+        <t-icon name="delete" size="44rpx" color="{{hasContent ? (themeMode === 'dark' ? '#FFFFFF' : '#1D2129') : '#C9CDD4'}}" />
+      </view>
+    </view>
+  </view>
+
+  <!-- 画布区域 -->
+  <view
+    class="draft-sheet-fullscreen__canvas-wrap"
+    catchtouchstart="handleTouchStart"
+    catchtouchmove="handleTouchMove"
+    catchtouchend="handleTouchEnd"
+    catchtouchcancel="handleTouchCancel"
+  >
+    <view wx:if="{{showPlaceholder}}" class="draft-sheet-fullscreen__placeholder">
+      <t-icon name="gesture" size="96rpx" color="{{themeMode === 'dark' ? 'rgba(255,255,255,0.3)' : 'rgba(0,0,0,0.2)'}}" />
+      <text class="draft-sheet-fullscreen__placeholder-text">在屏幕上书写草稿</text>
+    </view>
+
+    <canvas
+      canvas-id="draft-canvas"
+      class="draft-sheet-fullscreen__canvas"
+      disable-scroll="{{true}}"
+      bindtouchstart="handleTouchStart"
+      bindtouchmove="handleTouchMove"
+      bindtouchend="handleTouchEnd"
+      bindtouchcancel="handleTouchCancel"
+    ></canvas>
+  </view>
+</view>

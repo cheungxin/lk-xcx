@@ -1,0 +1,162 @@
+<!-- 设置页 -->
+<view class="settings-page">
+  <t-navbar title="设置" left-arrow fixed bind:go-back="handleBack" />
+
+  <scroll-view scroll-y style="margin-top: {{navBarHeight}}px; height: calc(100vh - {{navBarHeight}}px);">
+    <view class="settings-content">
+
+      <!-- 账号信息 -->
+      <view class="section">
+        <view class="section-header">
+          <view class="section-header__accent"></view>
+          <text class="section-header__title">账号信息</text>
+        </view>
+        <view class="card">
+          <view class="user-info-card">
+            <image class="user-avatar" src="{{userInfo.avatarUrl || '/assets/images/avatar.png'}}" mode="aspectFill" />
+            <view class="user-info-detail">
+              <text class="user-name">{{userInfo.nickName}}</text>
+              <text class="user-phone" wx:if="{{isLogin}}">{{userInfo.phone || '已登录'}}</text>
+              <text class="user-phone" wx:else>未登录</text>
+            </view>
+            <t-icon name="chevron-right" size="36rpx" color="#C9CDD4" />
+          </view>
+        </view>
+      </view>
+
+      <!-- 答题设置 -->
+      <view class="section">
+        <view class="section-header">
+          <view class="section-header__accent"></view>
+          <text class="section-header__title">答题设置</text>
+        </view>
+        <view class="card">
+          <t-cell title="答后显示解析" bordered note="{{settings.autoShowAnalysis ? '已开启' : '已关闭'}}" hover>
+            <t-switch slot="right-icon" value="{{settings.autoShowAnalysis}}" data-key="autoShowAnalysis" bind:change="handleSwitchChange" />
+          </t-cell>
+          <t-cell title="自动下一题" bordered note="{{settings.autoNextQuestion ? '已开启' : '已关闭'}}" hover>
+            <t-switch slot="right-icon" value="{{settings.autoNextQuestion}}" data-key="autoNextQuestion" bind:change="handleSwitchChange" />
+          </t-cell>
+          <t-cell title="震动反馈" bordered note="{{settings.vibrationFeedback ? '已开启' : '已关闭'}}" hover>
+            <t-switch slot="right-icon" value="{{settings.vibrationFeedback}}" data-key="vibrationFeedback" bind:change="handleSwitchChange" />
+          </t-cell>
+          <t-cell title="字体大小" arrow hover bindtap="handleShowFontSize">
+            <text slot="note" class="cell-note">{{settings.fontSizeLabel}}</text>
+          </t-cell>
+          <t-cell title="默认题数" bordered>
+            <text slot="note" class="cell-note">{{settings.questionCount}}题</text>
+          </t-cell>
+        </view>
+      </view>
+
+      <!-- 通知设置 -->
+      <view class="section">
+        <view class="section-header">
+          <view class="section-header__accent"></view>
+          <text class="section-header__title">通知设置</text>
+        </view>
+        <view class="card">
+          <t-cell title="每日刷题提醒" bordered note="{{settings.dailyReminder ? '已开启' : '已关闭'}}" hover>
+            <t-switch slot="right-icon" value="{{settings.dailyReminder}}" data-key="dailyReminder" bind:change="handleSwitchChange" />
+          </t-cell>
+          <t-cell title="提醒时间" arrow hover bindtap="handleReminderTime">
+            <text slot="note" class="cell-note">{{settings.reminderTime}}</text>
+          </t-cell>
+        </view>
+      </view>
+
+      <!-- 其他设置 -->
+      <view class="section">
+        <view class="section-header">
+          <view class="section-header__accent"></view>
+          <text class="section-header__title">其他</text>
+        </view>
+        <view class="card">
+          <t-cell title="夜间模式" bordered note="{{settings.nightMode ? '已开启' : '已关闭'}}" hover>
+            <t-switch slot="right-icon" value="{{settings.nightMode}}" data-key="nightMode" bind:change="handleSwitchChange" />
+          </t-cell>
+          <t-cell title="视频自动播放" bordered note="{{settings.autoPlay ? '已开启' : '已关闭'}}" hover>
+            <t-switch slot="right-icon" value="{{settings.autoPlay}}" data-key="autoPlay" bind:change="handleSwitchChange" />
+          </t-cell>
+          <t-cell title="仅WiFi下下载" bordered note="{{settings.wifiOnly ? '已开启' : '已关闭'}}" hover>
+            <t-switch slot="right-icon" value="{{settings.wifiOnly}}" data-key="wifiOnly" bind:change="handleSwitchChange" />
+          </t-cell>
+          <t-cell title="清除缓存" arrow hover bindtap="handleClearCache">
+            <text slot="note" class="cell-note">{{settings.clearCache}}</text>
+          </t-cell>
+        </view>
+      </view>
+
+      <!-- 关于与帮助 -->
+      <view class="section">
+        <view class="section-header">
+          <view class="section-header__accent"></view>
+          <text class="section-header__title">关于</text>
+        </view>
+        <view class="card">
+          <t-cell title="帮助与反馈" arrow hover bindtap="handleHelp" />
+          <t-cell title="关于我们" arrow hover bindtap="handleAbout" />
+          <t-cell title="当前版本">
+            <text slot="note" class="cell-note">v1.0.0</text>
+          </t-cell>
+        </view>
+      </view>
+
+      <!-- 退出登录 -->
+      <view class="logout-section" wx:if="{{isLogin}}">
+        <t-button variant="outline" theme="danger" size="large" block bindtap="handleLogout">
+          退出登录
+        </t-button>
+      </view>
+
+      <view class="bottom-spacer"></view>
+    </view>
+  </scroll-view>
+
+  <!-- 字体大小选择弹窗 -->
+  <t-popup visible="{{showFontSizePicker}}" placement="bottom" bind:visible-change="handleFontSizePickerChange">
+    <view class="font-picker">
+      <view class="font-picker__header">
+        <text class="font-picker__title">选择字体大小</text>
+        <t-icon name="close" size="40rpx" color="#86909C" bindtap="handleCloseFontSizePicker" />
+      </view>
+      <view class="font-picker__options">
+        <view
+          wx:for="{{fontSizeOptions}}"
+          wx:key="id"
+          class="font-option {{settings.fontSize === item.id ? 'font-option--active' : ''}}"
+          data-index="{{index}}"
+          bindtap="handleFontSizeChange"
+        >
+          <text class="font-option__text" style="font-size: {{item.id === 'small' ? '28rpx' : item.id === 'large' ? '40rpx' : '34rpx'}};">Aa</text>
+          <text class="font-option__label">{{item.label}}</text>
+          <t-icon wx:if="{{settings.fontSize === item.id}}" name="check" size="36rpx" color="#1664FF" />
+        </view>
+      </view>
+    </view>
+  </t-popup>
+
+  <!-- 清除缓存确认 -->
+  <t-popup visible="{{showClearCacheConfirm}}" placement="center" bind:visible-change="handleClearCacheConfirmChange">
+    <view class="confirm-dialog">
+      <text class="confirm-dialog__title">确认清除缓存？</text>
+      <text class="confirm-dialog__desc">清除后图片等缓存数据将被删除，不影响您的学习记录</text>
+      <view class="confirm-dialog__btns">
+        <t-button theme="light" size="medium" bindtap="handleCloseClearCache">取消</t-button>
+        <t-button theme="danger" size="medium" bindtap="handleConfirmClearCache">确认清除</t-button>
+      </view>
+    </view>
+  </t-popup>
+
+  <!-- 退出登录确认 -->
+  <t-popup visible="{{showLogoutConfirm}}" placement="center" bind:visible-change="handleLogoutConfirmChange">
+    <view class="confirm-dialog">
+      <text class="confirm-dialog__title">确认退出登录？</text>
+      <text class="confirm-dialog__desc">退出后需要重新登录才能使用完整功能</text>
+      <view class="confirm-dialog__btns">
+        <t-button theme="light" size="medium" bindtap="handleCloseLogout">取消</t-button>
+        <t-button theme="danger" size="medium" bindtap="handleConfirmLogout">确认退出</t-button>
+      </view>
+    </view>
+  </t-popup>
+</view>

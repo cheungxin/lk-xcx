@@ -1,0 +1,16 @@
+# IDE & Tools
+.agents/
+.claude/
+.codebuddy/
+.kiro/
+.trae/
+.workbuddy/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Editor
+*.swp
+*.swo
+*~

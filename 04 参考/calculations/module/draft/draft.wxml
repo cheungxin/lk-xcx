@@ -1,0 +1,58 @@
+ <view hidden="{{isDraft}}" class="canvas-pop" style="top:calc({{navigationBarHeight}}px + 70rpx )">
+    <view class="closeable" bindtap="closeDraft"></view>
+    <view class="draft-container">
+      <canvas class="canvas" id="canvas" canvas-id="canvas" style="height:{{canvasHeight}}px" disable-scroll="true" bindtouchstart="canvasStart" bindtouchmove="canvasMove" bindtouchend="canvasEnd" bindtouchcancel="canvasEnd" binderror="canvasIdErrorCallback"></canvas>
+      <view class='operation-panel'>
+        <view class='pen-color'>
+          <view class='label'>颜色</view>
+          <view class='color-list'>
+            <view bindtap='selectColor' data-index="{{index}}" wx:for="{{penColor}}" wx:key="penColor" class='color-item {{colorIndex == index?"select-color":""}}' style='background:{{item}};'></view>
+          </view>
+        </view>
+        <view class='thickness'>
+          <view class='label'>粗细</view>
+          <view class='form-button thickness-item' data-index="0" bindtap='selectPen'>
+            <view class='xs {{thickness ==0 ? "pen-border":""}}' style='background: {{penColor[colorIndex]}}'></view>
+          </view>
+          <view class='form-button thickness-item' data-index="1" bindtap='selectPen'>
+            <view class='s {{thickness ==1 ? "pen-border":""}}' style='background: {{penColor[colorIndex]}}'></view>
+          </view>
+          <view class='form-button thickness-item' data-index="2" bindtap='selectPen'>
+            <view class='m {{thickness ==2 ? "pen-border":""}}' style='background: {{penColor[colorIndex]}}'></view>
+          </view>
+          <view class='form-button thickness-item' data-index="3" bindtap='selectPen'>
+            <view class='l {{thickness ==3 ? "pen-border":""}}' style='background: {{penColor[colorIndex]}}'></view>
+          </view>
+          <view class='form-button thickness-item' data-index="4" bindtap='selectPen'>
+            <view class='xl {{thickness ==4 ? "pen-border":""}}' style='background: {{penColor[colorIndex]}}'></view>
+          </view>
+           <view class='form-button thickness-item' data-index="5" bindtap='selectPen'>
+            <view class='xxl {{thickness ==5 ? "pen-border":""}}' style='background: {{penColor[colorIndex]}}'></view>
+          </view>
+           <view class='form-button thickness-item' data-index="6" bindtap='selectPen'>
+            <view class='xxxl {{thickness ==6 ? "pen-border":""}}' style='background: {{penColor[colorIndex]}}'></view>
+          </view>
+          <view class='form-button thickness-item' data-index="7" bindtap='selectPen'>
+            <view class='xxxxl {{thickness ==7 ? "pen-border":""}}' style='background: {{penColor[colorIndex]}}'></view>
+          </view>
+        </view>
+        <view class="tool-btns">
+          <view class="tool-button quite" bindtap="closeDraft">
+            <text class="iconfont icon-close"></text>
+            退出草稿
+          </view>
+          <view class="tool-button backup-up" bindtap="backDraw">
+            <text class="iconfont icon-revoke"></text>
+            回退
+          </view>
+          <view class="tool-button" bindtap="cleardraw">
+            <text class="iconfont icon-delete-o"></text>
+            清空
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+

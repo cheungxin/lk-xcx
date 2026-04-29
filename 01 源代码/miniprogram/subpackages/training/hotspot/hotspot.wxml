@@ -1,0 +1,95 @@
+<view class="hotspot-page">
+  <navigation-bar title="热点素材" />
+
+  <scroll-view scroll-y class="hotspot-scroll">
+    <view class="hotspot-content">
+      <scroll-view scroll-x class="tab-scroll" enable-flex>
+        <view class="tab-list">
+          <view
+            wx:for="{{tabs}}"
+            wx:key="*this"
+            class="tab-item {{activeTab === item ? 'tab-item--active' : ''}}"
+            data-tab="{{item}}"
+            bindtap="handleTabTap"
+          >
+            {{item}}
+          </view>
+        </view>
+      </scroll-view>
+
+      <view wx:for="{{hotspots}}" wx:key="id" class="hotspot-card">
+        <view class="hotspot-card__header">
+          <view class="hotspot-card__meta">
+            <t-tag theme="{{item.isHot ? 'danger' : 'primary'}}" variant="light">
+              {{item.tag}}
+            </t-tag>
+            <t-tag wx:if="{{item.isHot}}" theme="danger" variant="light">热点</t-tag>
+          </view>
+          <text class="hotspot-card__date">{{item.date}}</text>
+        </view>
+
+        <text class="hotspot-card__title">{{item.title}}</text>
+        <text class="hotspot-card__summary">{{item.summary}}</text>
+
+        <view class="hotspot-card__points">
+          <view wx:for="{{item.keyPoints}}" wx:key="index" class="point-pill">{{item}}</view>
+        </view>
+
+        <t-button theme="primary" size="large" bindtap="handleOpenDetail" data-id="{{item.id}}">
+          查看详情
+        </t-button>
+      </view>
+    </view>
+  </scroll-view>
+
+  <t-popup
+    visible="{{showDetail}}"
+    placement="bottom"
+    bind:visible-change="handlePopupChange"
+  >
+    <view class="detail-sheet">
+      <view class="detail-sheet__header">
+        <view>
+          <text class="detail-sheet__title">{{selectedHotspot.title}}</text>
+          <text class="detail-sheet__subtitle">{{selectedHotspot.tag}} · {{selectedHotspot.date}}</text>
+        </view>
+        <view class="detail-sheet__close" bindtap="handleCloseDetail">
+          <t-icon name="close" size="32rpx" color="#7F8797" />
+        </view>
+      </view>
+
+      <scroll-view scroll-y class="detail-scroll">
+        <view class="detail-block">
+          <text class="detail-block__title">背景材料</text>
+          <text class="detail-block__content">{{selectedHotspot.background}}</text>
+        </view>
+
+        <view class="detail-block">
+          <text class="detail-block__title">核心论点</text>
+          <view class="detail-list">
+            <view wx:for="{{selectedHotspot.keyPoints}}" wx:key="index" class="detail-list__item">
+              <view class="detail-list__dot"></view>
+              <text class="detail-list__text">{{item}}</text>
+            </view>
+          </view>
+        </view>
+
+        <view wx:if="{{selectedHotspot.quotations.length}}" class="detail-block">
+          <text class="detail-block__title">金句摘录</text>
+          <view wx:for="{{selectedHotspot.quotations}}" wx:key="index" class="quote-card">
+            <text class="quote-card__text">{{item.text}}</text>
+            <text class="quote-card__source">{{item.source}}</text>
+          </view>
+        </view>
+
+        <view wx:if="{{selectedHotspot.relatedTopics.length}}" class="detail-block">
+          <text class="detail-block__title">相关题目</text>
+          <view wx:for="{{selectedHotspot.relatedTopics}}" wx:key="index" class="detail-list__item">
+            <view class="detail-list__dot"></view>
+            <text class="detail-list__text">{{item}}</text>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>

@@ -1,0 +1,152 @@
+<!-- course 分包 - 课程详情页 -->
+<wxs module="util">
+  module.exports = {
+    formatCount: function(count) {
+      if (count > 10000) {
+        return (count / 10000).toFixed(1) + '万'
+      }
+      return count
+    }
+  }
+</wxs>
+
+<view class="course-detail-page">
+  <!-- 导航栏 -->
+  <view class="nav-placeholder" style="height: {{navBarHeight}}px;"></view>
+  <view class="nav-bar" style="padding-top: {{statusBarHeight}}px;">
+    <t-navbar title="课程详情" left-arrow bind:go-back="goBack" />
+  </view>
+
+  <scroll-view scroll-y class="detail-scroll" enhanced show-scrollbar="{{false}}">
+    <!-- 课程封面 -->
+    <view class="course-cover" style="background: linear-gradient(135deg, {{course.cover}}, {{course.cover}}dd);">
+      <view class="cover-content">
+        <t-icon name="play-circle" size="96rpx" color="#fff" />
+        <text class="cover-hint">点击播放预览</text>
+      </view>
+    </view>
+
+    <!-- 课程基本信息 -->
+    <view class="course-info">
+      <view class="course-title">{{course.title}}</view>
+      <view class="course-tags">
+        <t-tag theme="primary" variant="light" size="small">共{{course.chapterCount}}课时</t-tag>
+        <t-tag theme="primary" variant="light" size="small">{{course.totalHours}}小时</t-tag>
+      </view>
+      <view class="course-stats">
+        <view class="stat-item">
+          <t-icon name="star-filled" size="28rpx" color="#FFB800" />
+          <text class="stat-value">{{course.rating}}</text>
+          <text class="stat-label">评分</text>
+        </view>
+        <view class="stat-item">
+          <t-icon name="user" size="28rpx" color="#1664FF" />
+          <text class="stat-value">{{util.formatCount(course.studentCount)}}</text>
+          <text class="stat-label">学员</text>
+        </view>
+        <view class="stat-item">
+          <t-icon name="play-circle" size="28rpx" color="#4AD9A0" />
+          <text class="stat-value">{{util.formatCount(course.playCount)}}</text>
+          <text class="stat-label">播放</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="divider"></view>
+
+    <!-- 讲师信息 -->
+    <view class="section">
+      <view class="section-title">讲师</view>
+      <view class="teacher-info">
+        <view class="teacher-avatar" style="background: {{course.cover}};">
+          <t-icon name="user" size="36rpx" color="#fff" />
+        </view>
+        <view class="teacher-detail">
+          <text class="teacher-name">{{course.teacher}}</text>
+          <text class="teacher-desc">资深公务员考试培训讲师</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="divider"></view>
+
+    <!-- 课程介绍 -->
+    <view class="section">
+      <view class="section-title">课程介绍</view>
+      <view class="course-desc">
+        <text>{{course.desc}}</text>
+      </view>
+    </view>
+
+    <view class="divider"></view>
+
+    <!-- 课程目录 -->
+    <view class="section">
+      <view class="section-header">
+        <view class="section-title">课程目录</view>
+        <text class="section-count">共{{course.chapters.length}}章</text>
+      </view>
+      <view class="chapter-list">
+        <view 
+          class="chapter-item" 
+          wx:for="{{course.chapters}}" 
+          wx:key="id"
+        >
+          <view 
+            class="chapter-header" 
+            data-id="{{item.id}}" 
+            bindtap="toggleChapter"
+          >
+            <text class="chapter-title">{{item.title}}</text>
+            <text class="chapter-count">{{item.sections.length}}节</text>
+            <t-icon 
+              name="chevron-down" 
+              size="32rpx" 
+              color="#999"
+              style="transition: transform 0.3s; transform: rotate({{expandedChapters[item.id] ? 180 : 0}}deg);"
+            />
+          </view>
+          <view class="section-list" wx:if="{{expandedChapters[item.id]}}">
+            <view 
+              class="section-item" 
+              wx:for="{{item.sections}}" 
+              wx:for-item="section"
+              wx:key="id"
+              data-courseid="{{course.id}}"
+              data-sectionid="{{section.id}}"
+              bindtap="onSectionTap"
+            >
+              <view class="section-info">
+                <t-icon name="play-circle" size="32rpx" color="{{section.free ? '#1664FF' : '#999'}}" />
+                <text class="section-title">{{section.title}}</text>
+              </view>
+              <view class="section-meta">
+                <text class="free-tag" wx:if="{{section.free}}">免费</text>
+                <text class="section-duration">{{section.duration}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 底部占位 -->
+    <view style="height: 140rpx;"></view>
+  </scroll-view>
+
+  <!-- 底部固定栏 -->
+  <view class="bottom-bar">
+    <view class="action-btn" bindtap="onFavoriteTap">
+      <t-icon name="{{isFavorited ? 'heart-filled' : 'heart'}}" size="44rpx" color="{{isFavorited ? '#E74C3C' : '#666'}}" />
+      <text class="action-text">{{isFavorited ? '已收藏' : '收藏'}}</text>
+    </view>
+    <t-button 
+      theme="primary" 
+      block 
+      class="learn-btn"
+      bind:tap="onStartLearn"
+    >
+      {{course.price > 0 ? '¥' + course.price + ' 开始学习' : '免费学习'}}
+    </t-button>
+  </view>
+</view>

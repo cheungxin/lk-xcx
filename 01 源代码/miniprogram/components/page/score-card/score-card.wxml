@@ -1,0 +1,4 @@
+<!-- 页面组件 - 成绩统计 -->
+<view class="score-card">
+  <view class="placeholder">成绩统计</view>
+</view>

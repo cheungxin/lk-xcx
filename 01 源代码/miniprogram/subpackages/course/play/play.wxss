@@ -1,0 +1,188 @@
+.play-page {
+  min-height: 100vh;
+  background: #f7f8fa;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: transparent;
+}
+
+/* 视频播放区域 */
+.video-area {
+  background: #000;
+  padding-top: calc({{statusBarHeight}}px + 44px);
+}
+
+.video-placeholder {
+  height: 420rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+}
+
+.progress-bar {
+  padding: 20rpx 32rpx;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.progress-track {
+  height: 6rpx;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3rpx;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #1664FF;
+  border-radius: 3rpx;
+  transition: width 0.3s;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8rpx;
+}
+
+.time-current,
+.time-total {
+  font-size: 22rpx;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* 视频信息 */
+.video-info {
+  background: #fff;
+  padding: 32rpx;
+}
+
+.course-name {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.section-name {
+  font-size: 26rpx;
+  color: #666;
+  margin-top: 8rpx;
+}
+
+/* 控制栏 */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40rpx 64rpx;
+  background: #fff;
+  margin-top: 2rpx;
+}
+
+.control-btn {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+  font-size: 26rpx;
+  color: #333;
+  padding: 16rpx 24rpx;
+}
+
+.control-btn.disabled {
+  color: #ccc;
+}
+
+.play-btn {
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 50%;
+  background: #1664FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4rpx 16rpx rgba(22, 100, 255, 0.3);
+}
+
+/* 查看目录 */
+.catalog-btn {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  padding: 28rpx 32rpx;
+  background: #fff;
+  margin-top: 16rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+
+/* 目录弹窗 */
+.catalog-popup {
+  background: #fff;
+  border-radius: 32rpx 32rpx 0 0;
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32rpx;
+  border-bottom: 1rpx solid #f5f5f5;
+}
+
+.catalog-title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.catalog-scroll {
+  flex: 1;
+  padding: 16rpx 32rpx;
+  max-height: 50vh;
+}
+
+.catalog-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24rpx 0;
+  border-bottom: 1rpx solid #f8f8f8;
+}
+
+.catalog-item.active {
+  background: rgba(22, 100, 255, 0.04);
+  margin: 0 -32rpx;
+  padding: 24rpx 32rpx;
+  border-radius: 12rpx;
+}
+
+.catalog-item-info {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  flex: 1;
+}
+
+.catalog-item-title {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.catalog-item.active .catalog-item-title {
+  color: #1664FF;
+  font-weight: 600;
+}
+
+.catalog-item-duration {
+  font-size: 24rpx;
+  color: #999;
+}

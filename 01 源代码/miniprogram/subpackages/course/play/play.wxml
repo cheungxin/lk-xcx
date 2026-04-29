@@ -1,0 +1,86 @@
+<!-- course 分包 - 视频播放页 -->
+<view class="play-page">
+  <!-- 导航栏 -->
+  <view class="nav-bar" style="padding-top: {{statusBarHeight}}px;">
+    <t-navbar title="{{sectionTitle}}" left-arrow bind:go-back="goBack" />
+  </view>
+
+  <!-- 视频播放区域 -->
+  <view class="video-area">
+    <view class="video-placeholder">
+      <t-icon name="{{playing ? 'pause-circle' : 'play-circle'}}" size="120rpx" color="#fff" bindtap="onTogglePlay" />
+    </view>
+    <!-- 进度条 -->
+    <view class="progress-bar">
+      <view class="progress-track">
+        <view class="progress-fill" style="width: {{progress}}%;"></view>
+      </view>
+      <view class="progress-info">
+        <text class="time-current">{{formatTime(currentTime)}}</text>
+        <text class="time-total">{{formatTime(totalTime)}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 课程信息 -->
+  <view class="video-info">
+    <view class="course-name">{{courseTitle}}</view>
+    <view class="section-name">{{sectionTitle}}</view>
+  </view>
+
+  <!-- 控制栏 -->
+  <view class="controls">
+    <view class="control-btn {{hasPrev ? '' : 'disabled'}}" bindtap="onPrevSection">
+      <t-icon name="chevron-left" size="40rpx" color="{{hasPrev ? '#333' : '#ccc'}}" />
+      <text>上一节</text>
+    </view>
+    <view class="play-btn" bindtap="onTogglePlay">
+      <t-icon name="{{playing ? 'pause' : 'play'}}" size="52rpx" color="#fff" />
+    </view>
+    <view class="control-btn {{hasNext ? '' : 'disabled'}}" bindtap="onNextSection">
+      <text>下一节</text>
+      <t-icon name="chevron-right" size="40rpx" color="{{hasNext ? '#333' : '#ccc'}}" />
+    </view>
+  </view>
+
+  <!-- 查看目录按钮 -->
+  <view class="catalog-btn" bindtap="showCatalog">
+    <t-icon name="view-list" size="32rpx" color="#1664FF" />
+    <text>查看目录（{{currentIndex + 1}}/{{sections.length}}）</text>
+    <t-icon name="chevron-right" size="32rpx" color="#999" />
+  </view>
+
+  <!-- 课程目录弹窗 -->
+  <t-popup 
+    visible="{{showCatalog}}" 
+    placement="bottom" 
+    bind:visible-change="hideCatalog"
+    close-on-overlay-click
+  >
+    <view class="catalog-popup">
+      <view class="catalog-header">
+        <text class="catalog-title">课程目录</text>
+        <t-icon name="close" size="40rpx" color="#999" bindtap="hideCatalog" />
+      </view>
+      <scroll-view scroll-y class="catalog-scroll">
+        <view 
+          class="catalog-item {{currentIndex === index ? 'active' : ''}}"
+          wx:for="{{sections}}" 
+          wx:key="id"
+          data-index="{{index}}"
+          bindtap="onCatalogItemTap"
+        >
+          <view class="catalog-item-info">
+            <t-icon 
+              name="{{currentIndex === index ? 'play-circle-fill' : 'play-circle'}}" 
+              size="36rpx" 
+              color="{{currentIndex === index ? '#1664FF' : '#999'}}" 
+            />
+            <text class="catalog-item-title">{{item.title}}</text>
+          </view>
+          <text class="catalog-item-duration">{{item.duration}}</text>
+        </view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>

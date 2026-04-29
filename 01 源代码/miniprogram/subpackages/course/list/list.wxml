@@ -1,0 +1,88 @@
+<!-- course 分包 - 课程列表页 -->
+<wxs module="util">
+  module.exports = {
+    formatPlayCount: function(count) {
+      if (count > 10000) {
+        return (count / 10000).toFixed(1) + '万'
+      }
+      return count
+    }
+  }
+</wxs>
+
+<view class="course-list-page">
+  <!-- 自定义导航栏 -->
+  <view class="nav-placeholder" style="height: {{navBarHeight}}px;"></view>
+  <view class="nav-bar" style="padding-top: {{statusBarHeight}}px;">
+    <t-navbar title="课程" left-arrow bind:go-back="goBack" />
+  </view>
+
+  <!-- 搜索栏 -->
+  <view class="search-bar">
+    <t-search 
+      value="{{searchValue}}" 
+      placeholder="搜索课程、讲师" 
+      bind:change="onSearchChange"
+      bind:confirm="onSearch"
+      bind:clear="onSearchClear"
+      shape="round"
+    />
+  </view>
+
+  <!-- 分类Tab -->
+  <view class="tabs-wrapper">
+    <t-tabs value="{{currentTab}}" bind:change="onTabChange" t-class="custom-tabs">
+      <t-tab-panel wx:for="{{categories}}" wx:key="key" label="{{item.label}}" value="{{index}}" />
+    </t-tabs>
+  </view>
+
+  <!-- 课程列表 -->
+  <scroll-view scroll-y class="course-scroll" enhanced show-scrollbar="{{false}}">
+    <view class="course-list">
+      <view 
+        class="course-card" 
+        wx:for="{{filteredCourses}}" 
+        wx:key="id"
+        data-id="{{item.id}}"
+        bindtap="onCourseTap"
+      >
+        <!-- 封面 -->
+        <view class="course-cover" style="background-color: {{item.cover}};">
+          <view class="cover-placeholder">
+            <t-icon name="play-circle" size="56rpx" color="#fff" />
+          </view>
+          <!-- 标签 -->
+          <view class="course-tag" wx:if="{{item.tag}}">{{item.tag}}</view>
+          <!-- 课时数 -->
+          <view class="course-chapters">共{{item.chapterCount}}课时</view>
+        </view>
+        
+        <!-- 信息 -->
+        <view class="course-info">
+          <view class="course-title">{{item.title}}</view>
+          <view class="course-meta">
+            <text class="teacher-name">{{item.teacher}}</text>
+            <text class="play-count">{{util.formatPlayCount(item.playCount)}}次播放</text>
+          </view>
+          <view class="course-bottom">
+            <view class="course-price">
+              <text class="price-current" wx:if="{{item.price > 0}}">¥{{item.price}}</text>
+              <text class="price-free" wx:else>免费</text>
+              <text class="price-original" wx:if="{{item.originalPrice > item.price}}">¥{{item.originalPrice}}</text>
+            </view>
+            <view class="course-rating">
+              <t-icon name="star-filled" size="24rpx" color="#FFB800" />
+              <text>{{item.rating}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <!-- 空状态 -->
+      <view class="empty-state" wx:if="{{filteredCourses.length === 0}}">
+        <t-icon name="image" size="80rpx" color="#C0C4CC" />
+        <text class="empty-text">暂无相关课程</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>

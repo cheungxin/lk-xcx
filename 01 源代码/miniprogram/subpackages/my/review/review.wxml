@@ -1,0 +1,124 @@
+<!-- 背诵页 -->
+<view class="review-page" style="padding-bottom: {{tabBarHeight}}rpx;">
+
+  <!-- 知识列表模式 -->
+  <view wx:if="{{!isReciting}}">
+    <t-navbar title="背诵" fixed />
+    <view style="margin-top: {{navBarHeight}}px;">
+
+      <!-- 搜索栏 -->
+      <view class="search-bar">
+        <t-search placeholder="搜索知识点..." value="{{searchValue}}" bind:change="onSearch" shape="round" />
+      </view>
+
+      <!-- 学习进度 -->
+      <view class="progress-section">
+        <view class="progress-info">
+          <text class="progress-info__text">背诵进度</text>
+          <text class="progress-info__pct">{{memorizedCount}}/{{totalPoints}}</text>
+        </view>
+        <view class="progress-bar-wrap">
+          <view class="progress-bar" style="width: {{totalPoints > 0 ? (memorizedCount / totalPoints * 100) : 0}}%;"></view>
+        </view>
+      </view>
+
+      <!-- 分类标签 -->
+      <scroll-view scroll-x class="category-scroll">
+        <view class="category-list">
+          <view class="category-chip {{selectedCategory === 'all' ? 'category-chip--active' : ''}}" data-id="all" bindtap="handleCategoryTap">全部</view>
+          <view
+            wx:for="{{categories}}"
+            wx:key="id"
+            class="category-chip {{selectedCategory === item.id ? 'category-chip--active' : ''}}"
+            data-id="{{item.id}}"
+            bindtap="handleCategoryTap"
+          >
+            {{item.name}} ({{item.count}})
+          </view>
+        </view>
+      </scroll-view>
+
+      <!-- 知识点列表 -->
+      <view class="point-list">
+        <view class="point-card" wx:for="{{displayPoints}}" wx:key="id" data-index="{{index}}" bindtap="handleStartRecite">
+          <view class="point-card__header">
+            <view class="point-card__status point-card__status--{{item.mastery}}"></view>
+            <text class="point-card__title">{{item.title}}</text>
+          </view>
+          <view class="point-card__keywords">
+            <t-tag wx:for="{{item.keywords}}" wx:for-item="kw" wx:key="*this" size="small" variant="light" style="margin-right: 8rpx; margin-bottom: 8rpx;">{{kw}}</t-tag>
+          </view>
+          <view class="point-card__footer">
+            <t-tag size="small" variant="light">{{item.category}}</t-tag>
+            <text class="point-card__action">点击背诵</text>
+          </view>
+        </view>
+      </view>
+
+      <!-- 空状态 -->
+      <view class="empty-state" wx:if="{{displayPoints.length === 0}}">
+        <t-icon name="search" size="96rpx" color="#C9CDD4" />
+        <text class="empty-state__text">未找到相关知识点</text>
+      </view>
+    </view>
+
+    <tabbar selected="{{3}}" />
+  </view>
+
+  <!-- 背诵模式 -->
+  <view wx:if="{{isReciting}}" class="recite-mode">
+    <t-navbar title="知识点背诵" left-arrow fixed bind:go-back="handleExitRecite" />
+
+    <scroll-view scroll-y class="recite-scroll" style="margin-top: {{navBarHeight}}px; height: calc(100vh - {{navBarHeight}}px);">
+      <view class="recite-container">
+        <!-- 知识点标题 -->
+        <view class="recite-header">
+          <t-tag variant="light">{{currentPoint.category}}</t-tag>
+          <text class="recite-title">{{currentPoint.title}}</text>
+        </view>
+
+        <!-- 翻转卡片 -->
+        <view class="flip-card" bindtap="handleFlip">
+          <!-- 正面 - 提示 -->
+          <view class="flip-card__front" wx:if="{{!showAnswer}}">
+            <view class="flip-card__prompt">
+              <t-icon name="browse" size="64rpx" color="#C9CDD4" />
+              <text class="flip-card__text">点击查看内容</text>
+            </view>
+            <view class="flip-card__keywords">
+              <text class="flip-card__keywords-label">关键词提示：</text>
+              <text class="flip-card__keywords-text">{{currentPoint.keywords[0]}}、{{currentPoint.keywords[1]}}...</text>
+            </view>
+          </view>
+
+          <!-- 背面 - 内容 -->
+          <view class="flip-card__back" wx:if="{{showAnswer}}">
+            <text class="flip-card__content">{{currentPoint.content}}</text>
+            <view class="flip-card__tags">
+              <t-tag wx:for="{{currentPoint.keywords}}" wx:for-item="kw" wx:key="*this" size="small" theme="primary" variant="light" style="margin-right: 8rpx; margin-bottom: 8rpx;">{{kw}}</t-tag>
+            </view>
+          </view>
+        </view>
+
+        <!-- 操作按钮 -->
+        <view class="recite-actions">
+          <view class="recite-action-btn recite-action-btn--review {{currentPoint.mastery === 1 ? 'recite-action-btn--active' : ''}}" bindtap="handleMarkReviewing">
+            <t-icon name="edit" size="40rpx" color="{{currentPoint.mastery === 1 ? '#FFB020' : '#4E5969'}}" />
+            <text style="color: {{currentPoint.mastery === 1 ? '#FFB020' : '#4E5969'}}">背诵中</text>
+          </view>
+          <view class="recite-action-btn recite-action-btn--mastered {{currentPoint.mastery === 2 ? 'recite-action-btn--active' : ''}}" bindtap="handleMarkMemorized">
+            <t-icon name="check-circle" size="40rpx" color="{{currentPoint.mastery === 2 ? '#00A870' : '#4E5969'}}" />
+            <text style="color: {{currentPoint.mastery === 2 ? '#00A870' : '#4E5969'}}">已掌握</text>
+          </view>
+        </view>
+
+        <!-- 上下翻页 -->
+        <view class="recite-nav">
+          <t-button theme="light" size="medium" icon="chevron-left" bindtap="handlePrevPoint">上一个</t-button>
+          <t-button theme="primary" size="medium" bindtap="handleFlip">{{showAnswer ? '收起答案' : '显示答案'}}</t-button>
+          <t-button theme="light" size="medium" icon="chevron-right" bindtap="handleNextPoint">下一个</t-button>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

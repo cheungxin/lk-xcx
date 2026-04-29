@@ -1,0 +1,184 @@
+<view class="detail-page">
+  <t-navbar
+    title="{{pageTitle}}"
+    left-arrow
+    fixed
+    bind:go-back="handleGoBack"
+  />
+
+  <scroll-view
+    wx:if="{{hasQuestion}}"
+    scroll-y
+    class="detail-scroll"
+    style="margin-top: {{navBarHeight}}px; height: calc(100vh - {{navBarHeight}}px);"
+  >
+    <view class="detail-content">
+      <view class="detail-hero">
+        <view class="detail-hero__meta">
+          <t-tag theme="primary" variant="light">{{question.sourceLabel}}</t-tag>
+          <t-tag variant="outline" theme="default">{{question.type}}</t-tag>
+          <t-tag wx:if="{{question.section}}" variant="outline" theme="default">{{question.section}}</t-tag>
+        </view>
+        <text class="detail-hero__title">{{question.stem}}</text>
+        <view
+          class="detail-hero__facts"
+          wx:if="{{question.questionScoreText || question.difficultyLabel || question.source || question.year}}"
+        >
+          <view class="detail-fact" wx:if="{{question.questionScoreText}}">
+            <text class="detail-fact__label">分值</text>
+            <text class="detail-fact__value">{{question.questionScoreText}}</text>
+          </view>
+          <view class="detail-fact" wx:if="{{question.difficultyLabel}}">
+            <text class="detail-fact__label">难度</text>
+            <text class="detail-fact__value">{{question.difficultyLabel}}</text>
+          </view>
+          <view class="detail-fact" wx:if="{{question.source}}">
+            <text class="detail-fact__label">来源</text>
+            <text class="detail-fact__value">{{question.source}}</text>
+          </view>
+          <view class="detail-fact" wx:if="{{question.year}}">
+            <text class="detail-fact__label">年份</text>
+            <text class="detail-fact__value">{{question.year}}</text>
+          </view>
+        </view>
+        <image
+          wx:if="{{question.questionImage}}"
+          class="detail-hero__image"
+          src="{{question.questionImage}}"
+          mode="widthFix"
+        />
+        <view class="detail-hero__stats">
+          <view class="detail-chip detail-chip--danger">
+            <t-icon name="error-circle" size="24rpx" color="#E34D59" />
+            <text>累计错 {{question.errorCount}} 次</text>
+          </view>
+          <view wx:if="{{question.addedAt}}" class="detail-chip">
+            <t-icon name="time" size="24rpx" color="#6B7A90" />
+            <text>{{question.addedAt}}</text>
+          </view>
+        </view>
+      </view>
+
+      <view
+        class="detail-material"
+        wx:if="{{question.material || question.materialImage}}"
+        bindtap="handleShowMaterial"
+      >
+        <view class="detail-material__label">
+          <t-icon name="file-text" size="28rpx" color="#2F63FF" />
+          <text>{{question.materialTitle || '给定材料'}}</text>
+        </view>
+        <view class="detail-material__preview">
+          <text wx:if="{{question.material}}" class="detail-material__text">
+            {{question.materialPreview || question.material}}
+          </text>
+          <view wx:if="{{question.materialImage}}" class="detail-material__image-box">
+            <image class="detail-material__image" src="{{question.materialImage}}" mode="aspectFill" />
+          </view>
+          <t-icon name="chevron-right" size="28rpx" color="#A3B2C7" />
+        </view>
+      </view>
+
+      <view class="detail-card">
+        <view class="detail-card__header">
+          <text class="detail-card__title">选项与作答</text>
+        </view>
+
+        <view class="detail-options">
+          <view
+            wx:for="{{question.options}}"
+            wx:key="id"
+            class="detail-option {{option.isCorrectOption ? 'detail-option--correct' : ''}} {{option.isWrongSelection ? 'detail-option--wrong' : ''}} {{option.isSelected && !option.isWrongSelection && !option.isCorrectOption ? 'detail-option--selected' : ''}}"
+          >
+            <view class="detail-option__letter {{option.isCorrectOption ? 'detail-option__letter--correct' : ''}} {{option.isWrongSelection ? 'detail-option__letter--wrong' : ''}} {{option.isSelected && !option.isWrongSelection && !option.isCorrectOption ? 'detail-option__letter--selected' : ''}}">
+              {{option.id}}
+            </view>
+            <view class="detail-option__body">
+              <text wx:if="{{option.text}}" class="detail-option__text">{{option.text}}</text>
+              <image
+                wx:if="{{option.image}}"
+                class="detail-option__image {{option.text ? 'detail-option__image--with-text' : ''}}"
+                src="{{option.image}}"
+                mode="widthFix"
+              />
+            </view>
+            <t-icon
+              wx:if="{{option.isCorrectOption}}"
+              name="check-circle-filled"
+              size="36rpx"
+              color="#00A870"
+            />
+            <t-icon
+              wx:elif="{{option.isWrongSelection}}"
+              name="close-circle-filled"
+              size="36rpx"
+              color="#E34D59"
+            />
+          </view>
+        </view>
+      </view>
+
+      <view class="detail-card">
+        <view class="detail-answer-grid">
+          <view class="detail-answer">
+            <text class="detail-answer__label">正确答案</text>
+            <text class="detail-answer__value detail-answer__value--correct">{{question.correctAnswerText}}</text>
+          </view>
+          <view class="detail-answer">
+            <text class="detail-answer__label">你的答案</text>
+            <text class="detail-answer__value {{question.answerStatus === 'correct' ? 'detail-answer__value--correct' : (question.answerStatus === 'wrong' ? 'detail-answer__value--wrong' : 'detail-answer__value--muted')}}">
+              {{question.userAnswerText || '未作答'}}
+            </text>
+          </view>
+        </view>
+
+        <view wx:if="{{question.knowledgePoint}}" class="detail-knowledge">
+          <t-icon name="bookmark" size="24rpx" color="#5F6F86" />
+          <text>{{question.knowledgePoint}}</text>
+        </view>
+
+        <view class="detail-explanation">
+          <text class="detail-explanation__title">试题解析</text>
+          <text class="detail-explanation__content">{{question.explanation || '暂无解析'}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view wx:else class="detail-empty" style="margin-top: {{navBarHeight}}px;">
+    <t-empty image="default" description="{{emptyDesc}}" />
+    <text class="detail-empty__title">{{emptyTitle}}</text>
+  </view>
+
+  <t-popup
+    visible="{{showMaterial}}"
+    placement="bottom"
+    preventScrollThrough="{{false}}"
+    bind:visible-change="handleMaterialChange"
+  >
+    <view class="material-popup" style="height: {{materialPopupHeight}}px;">
+      <view class="material-popup__head">
+        <text class="material-popup__title">{{currentMaterial.title || '给定材料'}}</text>
+        <t-icon name="close" size="40rpx" color="#7B8794" bindtap="handleCloseMaterial" />
+      </view>
+      <scroll-view
+        scroll-y
+        enhanced="{{true}}"
+        show-scrollbar="{{false}}"
+        enable-flex="{{true}}"
+        scroll-top="{{materialScrollTop}}"
+        class="material-popup__content"
+      >
+        <view class="material-popup__body">
+          <image
+            wx:if="{{currentMaterial.image}}"
+            class="material-popup__image"
+            src="{{currentMaterial.image}}"
+            mode="widthFix"
+          />
+          <text wx:if="{{currentMaterial.text}}" class="material-popup__text">{{currentMaterial.text}}</text>
+        </view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>

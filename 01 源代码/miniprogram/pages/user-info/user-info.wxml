@@ -1,0 +1,50 @@
+<!-- 个人信息编辑页面 -->
+<view class="page">
+  <t-navbar fixed="{{true}}" left-arrow="{{true}}" title="个人信息" />
+  <view class="page-content" style="padding-top: {{navigationBarHeight}}px;">
+    <!-- 头像 -->
+    <view class="info-section">
+      <view class="info-item">
+        <text class="info-label">头像</text>
+        <button class="avatar-button" open-type="chooseAvatar" bindchooseavatar="onChooseAvatar">
+          <image class="avatar-image" src="{{userInfo.avatarUrl}}" mode="aspectFill" />
+          <view class="avatar-edit-icon">
+            <t-icon name="camera" size="28rpx" color="#fff" />
+          </view>
+        </button>
+      </view>
+    </view>
+    <!-- 昵称 -->
+    <view class="info-section">
+      <view class="info-item">
+        <text class="info-label">昵称</text>
+        <input class="info-input" type="nickname" placeholder="请输入昵称" value="{{userInfo.nickName}}" bindinput="onNicknameInput" />
+      </view>
+    </view>
+    <!-- 手机号 -->
+    <view class="info-section">
+      <view class="info-item">
+        <text class="info-label">手机号</text>
+        <view class="phone-display" bindtap="togglePhoneDisplay">
+          <text class="phone-text">{{showFullPhone ? userInfo.phone : formattedPhone}}</text>
+          <t-icon name="{{showFullPhone ? 'browse-off' : 'browse'}}" size="32rpx" color="#95A0B3" />
+        </view>
+      </view>
+    </view>
+    <!-- 个性签名 -->
+    <view class="info-section">
+      <view class="info-item info-item--column">
+        <text class="info-label">个性签名</text>
+        <textarea class="info-textarea" placeholder="写点什么介绍一下自己吧~" value="{{userInfo.desc}}" maxlength="50" disabled />
+      </view>
+    </view>
+    <!-- 保存按钮 -->
+    <view class="action-section">
+      <t-button theme="primary" size="large" block bindtap="saveNickname">保存</t-button>
+    </view>
+    <!-- 退出登录 -->
+    <view class="action-section">
+      <t-button theme="default" size="large" block bindtap="onLogout">退出登录</t-button>
+    </view>
+  </view>
+</view>

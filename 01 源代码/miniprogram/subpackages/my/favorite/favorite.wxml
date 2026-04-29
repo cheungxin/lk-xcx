@@ -1,0 +1,60 @@
+<!-- 顶部导航栏 -->
+<t-navbar title="我的收藏" left-arrow fixed bind:go-back="onBack">
+  <view slot="right" class="nav-right" bindtap="onMoreTap">
+    <t-icon name="ellipsis" size="48rpx" color="#2F3442" />
+  </view>
+</t-navbar>
+<!-- my 分包 - 收藏页 -->
+<view class="favorite-page" style="padding-top: {{navigationBarHeight}}px;">
+  <!-- 标签页 -->
+  <view class="tabs-container">
+    <t-tabs value="{{activeTab}}" bind:change="onTabChange" theme="line" space-evenly="{{false}}">
+      <t-tab-panel label="我的试题" value="questions" />
+      <t-tab-panel label="我的试卷" value="papers" />
+    </t-tabs>
+  </view>
+  <!-- 内容区域 -->
+  <view class="content-container">
+    <!-- 我的试题 -->
+    <view class="tab-content" wx:if="{{activeTab === 'questions'}}">
+      <view class="category-list">
+        <view class="category-item" wx:for="{{categories}}" wx:key="id" bindtap="onCategoryTap" data-id="{{item.id}}">
+          <view class="category-left">
+            <view class="category-icon {{item.expanded ? 'expanded' : ''}}">
+              <t-icon name="{{item.expanded ? 'remove' : 'add'}}" size="32rpx" color="#4B74FF" />
+            </view>
+            <text class="category-name">{{item.name}}</text>
+          </view>
+          <view class="category-right">
+            <text class="category-count">{{item.count}}</text>
+            <view class="category-edit" catchtap="onEditTap" data-id="{{item.id}}">
+              <t-icon name="edit" size="32rpx" color="#95A0B3" />
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 空状态 -->
+      <view class="empty-state" wx:if="{{categories.length === 0}}">
+        <view class="empty-icon">
+          <t-icon name="heart" size="120rpx" color="#D3E3FD" />
+        </view>
+        <text class="empty-text">暂无收藏的试题</text>
+        <text class="empty-desc">做题时点击收藏按钮即可添加</text>
+      </view>
+    </view>
+    <!-- 我的试卷 -->
+    <view class="tab-content" wx:if="{{activeTab === 'papers'}}">
+      <view class="empty-state">
+        <view class="empty-icon">
+          <t-icon name="file-copy" size="120rpx" color="#D3E3FD" />
+        </view>
+        <text class="empty-text">暂无收藏的试卷</text>
+        <text class="empty-desc">试卷列表中点击收藏即可添加</text>
+      </view>
+    </view>
+  </view>
+  <!-- 底部导出按钮 -->
+  <view class="bottom-bar" wx:if="{{activeTab === 'questions' && categories.length > 0}}">
+    <t-button theme="primary" size="large" block bindtap="onExportTap">导出试题</t-button>
+  </view>
+</view>

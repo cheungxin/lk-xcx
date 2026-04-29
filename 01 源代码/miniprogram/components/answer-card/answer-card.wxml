@@ -1,0 +1,70 @@
+<view class="answer-card {{themeMode === 'dark' ? 'answer-card--dark' : 'answer-card--light'}}">
+  <view class="card-header">
+    <text class="card-title">答题卡</text>
+    <view class="close-btn" bindtap="handleClose">
+      <t-icon name="close" size="40rpx" color="{{themeMode === 'dark' ? '#93A1B5' : '#86909C'}}"/>
+    </view>
+  </view>
+
+  <view class="card-subtitle" wx:if="{{paperTitle}}">{{paperTitle}}</view>
+
+  <!-- 解析模式下的分段 -->
+  <view class="card-tabs" wx:if="{{isAnalysis}}">
+    <view class="tab-item {{activeTab === 'all' || !activeTab ? 'tab-item--active' : ''}}" bindtap="handleTabChange" data-tab="all">
+      <text class="tab-text">全部</text>
+      <text class="tab-count">{{summary.total}}</text>
+    </view>
+    <view class="tab-item {{activeTab === 'wrong' ? 'tab-item--active' : ''}}" bindtap="handleTabChange" data-tab="wrong">
+      <text class="tab-text">错题</text>
+      <text class="tab-count">{{summary.wrong}}</text>
+    </view>
+    <view class="tab-item {{activeTab === 'correct' ? 'tab-item--active' : ''}}" bindtap="handleTabChange" data-tab="correct">
+      <text class="tab-text">正确</text>
+      <text class="tab-count">{{summary.correct}}</text>
+    </view>
+  </view>
+
+  <!-- 练习模式下的分段 -->
+  <view class="card-tabs" wx:else>
+    <view class="tab-item {{activeTab === 'unanswered' || !activeTab ? 'tab-item--active' : ''}}" bindtap="handleTabChange" data-tab="unanswered">
+      <text class="tab-text">未答</text>
+      <text class="tab-count">{{summary.unanswered}}</text>
+    </view>
+    <view class="tab-item {{activeTab === 'answered' ? 'tab-item--active' : ''}}" bindtap="handleTabChange" data-tab="answered">
+      <text class="tab-text">已答</text>
+      <text class="tab-count">{{summary.answered}}</text>
+    </view>
+    <view class="tab-item {{activeTab === 'marked' ? 'tab-item--active' : ''}}" bindtap="handleTabChange" data-tab="marked">
+      <text class="tab-text">标记</text>
+      <text class="tab-count">{{summary.marked}}</text>
+    </view>
+  </view>
+
+  <view class="section-title">{{sectionTitle}}</view>
+
+  <scroll-view scroll-y class="card-grid-container" wx:if="{{filteredAnswerSheet.length}}">
+    <view class="card-grid">
+      <view
+        class="grid-item {{item.index === currentIndex ? 'grid-item--current' : ''}} {{isAnalysis ? ('grid-item--' + (item.status || 'unanswered')) : (item.answered ? 'grid-item--answered' : '')}}"
+        wx:for="{{filteredAnswerSheet}}"
+        wx:key="id"
+        data-index="{{item.index}}"
+        bindtap="handleQuestionTap"
+      >
+        <text class="grid-number">{{item.displayIndex || item.index}}</text>
+        <view class="grid-mark" wx:if="{{item.marked}}"></view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view class="card-empty" wx:else>
+    <text class="card-empty__title">当前分类暂无题目</text>
+    <text class="card-empty__desc">切换标签或返回主视图查看</text>
+  </view>
+
+  <view wx:if="{{showSubmit}}" class="card-footer">
+    <t-button theme="primary" size="large" block bindtap="handleSubmit">
+      {{submitLabel}}
+    </t-button>
+  </view>
+</view>

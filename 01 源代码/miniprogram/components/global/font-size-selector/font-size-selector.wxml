@@ -1,0 +1,45 @@
+<t-popup
+  visible="{{visible}}"
+  placement="bottom"
+  bind:visible-change="handleVisibleChange"
+>
+  <view class="font-size-selector">
+    <view class="font-size-selector__header">
+      <text class="font-size-selector__title">字体大小</text>
+      <t-icon
+        name="close"
+        size="40rpx"
+        color="#86909C"
+        class="font-size-selector__close"
+        bindtap="handleClose"
+      />
+    </view>
+
+    <view class="font-size-selector__options">
+      <view
+        wx:for="{{options}}"
+        wx:key="id"
+        class="font-size-option {{currentSize === item.id ? 'font-size-option--active' : ''}}"
+        data-id="{{item.id}}"
+        bindtap="handleSelect"
+      >
+        <view class="font-size-option__preview" style="font-size: {{item.scale * 28}}rpx;">
+          <text>字</text>
+        </view>
+        <text class="font-size-option__label">{{item.label}}</text>
+        <t-icon
+          wx:if="{{currentSize === item.id}}"
+          name="check"
+          size="36rpx"
+          color="#1664FF"
+          class="font-size-option__check"
+        />
+      </view>
+    </view>
+
+    <view class="font-size-selector__tip">
+      <t-icon name="info-circle" size="28rpx" color="#86909C" />
+      <text>字体大小设置将应用到所有答题页面</text>
+    </view>
+  </view>
+</t-popup>

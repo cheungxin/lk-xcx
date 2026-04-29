@@ -1,0 +1,104 @@
+<view class="result-page">
+  <t-navbar
+    title="参考答案"
+    left-arrow
+    fixed
+    bind:go-back="handleGoBack"
+  />
+
+  <scroll-view
+    wx:if="{{hasResult}}"
+    scroll-y
+    class="result-scroll"
+    style="margin-top: {{navBarHeight}}px;"
+  >
+    <view class="result-content">
+      <view class="overview-card">
+        <text class="overview-card__title">
+          {{result.questionTypeName || '申论'}} · {{practiceLabel}}
+        </text>
+        <text class="overview-card__subtitle">完成时间：{{finishedAtText}}</text>
+
+        <view class="overview-pill-list">
+          <view class="overview-pill">
+            <text>题目 {{totalQuestions}} 道</text>
+          </view>
+          <view class="overview-pill">
+            <text>总字数 {{totalWords}}</text>
+          </view>
+          <view class="overview-pill">
+            <text>用时 {{durationText}}</text>
+          </view>
+        </view>
+      </view>
+
+      <view class="question-tabs">
+        <view
+          wx:for="{{result.questions}}"
+          wx:key="id"
+          class="question-tab {{currentIndex === index ? 'question-tab--active' : ''}}"
+          data-index="{{index}}"
+          bindtap="handleQuestionTabTap"
+        >
+          第{{index + 1}}题
+        </view>
+      </view>
+
+      <view wx:if="{{currentQuestion}}" class="question-card">
+        <view class="section-head">
+          <text class="section-head__title">题目要求</text>
+          <t-tag theme="primary" variant="light">{{currentQuestion.wordLimit}}字以内</t-tag>
+        </view>
+        <view class="question-card__meta">
+          <t-tag theme="default" variant="light">{{currentQuestion.typeName}}</t-tag>
+          <t-tag wx:if="{{currentQuestion.source}}" variant="light">{{currentQuestion.source}}</t-tag>
+          <t-tag wx:if="{{currentQuestion.year}}" variant="light">{{currentQuestion.year}}</t-tag>
+        </view>
+        <text class="question-card__title">{{currentQuestion.title}}</text>
+        <text class="question-card__text">{{currentQuestion.question}}</text>
+      </view>
+
+      <view class="answer-card">
+        <view class="section-head">
+          <text class="section-head__title">我的作答</text>
+          <text class="answer-card__count">{{currentWordCount}}字</text>
+        </view>
+        <text class="answer-card__text answer-card__text--self">
+          {{currentAnswer || '本题未作答，建议先独立尝试后再对照参考答案。'}}
+        </text>
+      </view>
+
+      <view wx:if="{{currentQuestion}}" class="answer-card">
+        <view class="section-head">
+          <text class="section-head__title">参考答案</text>
+          <t-tag theme="success" variant="light">对照学习</t-tag>
+        </view>
+        <text class="answer-card__text">{{currentQuestion.referenceAnswer}}</text>
+      </view>
+
+      <view wx:if="{{currentQuestion && currentQuestion.scoringPoints.length}}" class="score-card">
+        <view class="section-head">
+          <text class="section-head__title">评分要点</text>
+          <t-tag theme="warning" variant="light">建议逐条核对</t-tag>
+        </view>
+
+        <view class="score-list">
+          <view wx:for="{{currentQuestion.scoringPoints}}" wx:key="index" class="score-item">
+            <view class="score-item__dot"></view>
+            <text class="score-item__text">{{item}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view wx:else class="empty-state" style="margin-top: {{navBarHeight}}px;">
+    <text class="empty-state__title">暂无申论结果</text>
+    <text class="empty-state__desc">完成一次申论练习后，就可以在这里查看参考答案了。</text>
+  </view>
+
+  <view class="result-footer">
+    <t-button theme="default" size="large" bindtap="handleRetry">再练一次</t-button>
+    <t-button theme="primary" size="large" bindtap="handleBackHome">返回首页</t-button>
+  </view>
+</view>
